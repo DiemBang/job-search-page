@@ -1,0 +1,2673 @@
+{
+  "total": {
+    "value": 975
+  },
+  "positions": 1415,
+  "query_time_in_millis": 6,
+  "result_time_in_millis": 179,
+  "stats": [],
+  "freetext_concepts": {
+    "skill": [],
+    "occupation": ["lärare"],
+    "location": [],
+    "skill_must": [],
+    "occupation_must": [],
+    "location_must": [],
+    "skill_must_not": [],
+    "occupation_must_not": [],
+    "location_must_not": []
+  },
+  "hits": [
+    {
+      "relevance": 1,
+      "id": "29089380",
+      "external_id": null,
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29089380",
+      "logo_url": null,
+      "headline": "Lärare",
+      "application_deadline": "2024-10-10T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Tryserums friskola är en liten enhet med drygt 80 elever från åk F-6. Skolan drivs i gammaldags, enkla byggnader och har härliga naturmarker in på knuten. Vi är en Grön Flagg certificerad skola och arbetar aktivt med miljö- och hållbarhetsfrågor.\nNu söker vi en grundskollärare till åk 1-3. \nVi söker dig som är lyhörd, ansvarsfull och tycker om att arbeta i team. Det är också viktigt att du är initiativtagande, har god samarbetsförmåga samt ser möjligheter framför hinder. Vi vill att du ska kunna arbeta både självständigt och tillsammans med kollegor, det är viktigt att du är lojal mot organisationen och mot vårt viktiga uppdrag och våra styrdokument.\nSom lärare hos oss bör du ha ett förhållningssätt som grundar sig i en tro på eleverna, att förvänta sig det bästa av eleven utifrån den situation han eller hon befinner sig i. Du ser och lyssnar till barnen och respekterar deras tankar och åsikter. Genom tydliga strukturer, goda rutiner och genom tydlig information skapar du trygghet för barnen/eleverna. Du visar eleverna att vi alla är unika och visar att olikheter är bra, både vad gäller utseende, kön, tankar och åsikter, familjekonstellationer osv.\nTjänsten innebär ett nära samarbete med vårdnadshavare och övriga lärare på skolan, samt med fritidshemmet. Det är viktigt att du har vilja, driv, engagemang och passion för ditt uppdrag. \nSom lärare hos oss har du även ett särskilt ansvar och stora möjligheter att driva och utveckla det pedagogiska arbetet i samarbete med övriga lärare och pedagoger i verksamheten.\nLäs mer om oss på vår hemsida www.tryserumsfriskola.se eller titta in på vår Facebooksida eller Instagram Tryserums friskola",
+        "text_formatted": "<p>Tryserums friskola är en liten enhet med drygt 80 elever från åk F-6. Skolan drivs i gammaldags, enkla byggnader och har härliga naturmarker in på knuten. Vi är en Grön Flagg certificerad skola och arbetar aktivt med miljö- och hållbarhetsfrågor.</p><p><strong>Nu söker vi en grundskollärare till åk 1-3. </strong></p><p>Vi söker dig som är lyhörd, ansvarsfull och tycker om att arbeta i team. Det är också viktigt att du är initiativtagande, har god samarbetsförmåga samt ser möjligheter framför hinder. Vi vill att du ska kunna arbeta både självständigt och tillsammans med kollegor, det är viktigt att du är lojal mot organisationen och mot vårt viktiga uppdrag och våra styrdokument.</p><p>Som lärare hos oss bör du ha ett förhållningssätt som grundar sig i en tro på eleverna, att förvänta sig det bästa av eleven utifrån den situation han eller hon befinner sig i. Du ser och lyssnar till barnen och respekterar deras tankar och åsikter. Genom tydliga strukturer, goda rutiner och genom tydlig information skapar du trygghet för barnen/eleverna. Du visar eleverna att vi alla är unika och visar att olikheter är bra, både vad gäller utseende, kön, tankar och åsikter, familjekonstellationer osv.</p><p>Tjänsten innebär ett nära samarbete med vårdnadshavare och övriga lärare på skolan, samt med fritidshemmet. Det är viktigt att du har vilja, driv, engagemang och passion för ditt uppdrag. </p><p>Som lärare hos oss har du även ett särskilt ansvar och stora möjligheter att driva och utveckla det pedagogiska arbetet i samarbete med övriga lärare och pedagoger i verksamheten.</p><p>Läs mer om oss på vår hemsida www.tryserumsfriskola.se eller titta in på vår Facebooksida eller Instagram Tryserums friskola</p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": null
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": null,
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "www.tryserumsfriskola.se",
+        "organization_number": "5564809712",
+        "name": "Tryserums Friskola AB",
+        "workplace": "TRYSERUMS FRISKOLA"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "Lärare ",
+        "email": "camilla@tryserumsfriskola.se",
+        "via_af": false,
+        "url": null,
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "zGHj_2Jf_oKy",
+        "label": "Grundlärare, förskoleklass och 1-3",
+        "legacy_ams_taxonomy_id": "7652"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Valdemarsvik",
+        "municipality_code": "0563",
+        "municipality_concept_id": "Sb3D_iGB_aXu",
+        "region": "Östergötlands län",
+        "region_code": "05",
+        "region_concept_id": "oLT3_Q9p_3nn",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": "TRYSERUM",
+        "postcode": "61595",
+        "city": "Valdemarsvik",
+        "coordinates": [16.60703059157931, 58.16240090305838]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [
+          {
+            "weight": 10,
+            "concept_id": "tFCz_HSa_jwW",
+            "label": "Pedagogik och lärarutbildning",
+            "legacy_ams_taxonomy_id": "4"
+          }
+        ],
+        "education_level": [
+          {
+            "weight": 10,
+            "concept_id": "asZm_TEQ_Srk",
+            "label": "Eftergymnasial utbildning två år eller längre",
+            "legacy_ams_taxonomy_id": "6"
+          }
+        ]
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 5,
+            "concept_id": "zGHj_2Jf_oKy",
+            "label": "Grundlärare, förskoleklass och 1-3",
+            "legacy_ams_taxonomy_id": "7652"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": "Camilla Andersson",
+          "description": null,
+          "email": "camilla@tryserumsfriskola.se",
+          "telephone": "0703387203",
+          "contact_type": "Rektor"
+        }
+      ],
+      "publication_date": "2024-09-10T08:44:53",
+      "last_publication_date": "2024-10-10T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_ANNONSERA",
+      "timestamp": 1725950693680
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29129975",
+      "external_id": "46-212000-2494-CE77C7B74344451AA1DC000647F499A2",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29129975",
+      "logo_url": null,
+      "headline": "Lärare slöjd",
+      "application_deadline": "2024-09-29T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Vi på Åre kommun skapar förutsättningar för att alla som bor eller vistas här kan förverkliga sina drömmar. Vi ser till att det där självklara fungerar: att våra barn har det bra i förskolan och skolan, att vägarna är plogade och att våra äldre har en meningsfull tillvaro. Men vi nöjer oss inte där. Tillsammans tar vi hela tiden nya steg mot en hållbar framtid.\n\nDynamik, service och bemötande är en given del i vår vardag. I vår storslagna fjällmiljö samsas förväntansfulla skidåkare med jordnära livskonstnärer. Det finns plats för dig också.\n\nI Åre kommun arbetar vi utifrån värdegrunden att vi är professionella, respektfulla och lyhörda. \n\nÅre kommun är en samisk förvaltningskommun och vi välkomnar sökande som har språklig och kulturell kunskap i samiska.\n\n\r\n\r\nARBETSUPPGIFTER\nVi söker slöjdlärare i åk 3-9 som vill jobba hos oss på Duveds skola. Vi är en F-9 skola med ca 570 elever där stämningen är god mellan elever och personal. I arbetet ingår ett helhetsansvar för elevernas sociala och kunskapsmässiga utveckling. Du tar ansvar för att systematiskt dokumentera, analysera, utvärdera och följa upp elevernas lärande.  \n\nGoda resultat, hög kompetens bland personalen och höga förväntningar på verksamheten kännetecknar vår skola. Det är viktigt för oss att arbetsmiljön stimulerar kreativitet, lärande och att eleverna får möjlighet att prova sin självständighet.\r\n\r\nKVALIFIKATIONER\n• Vi söker en legitimerad lärare i slöjd för åk 3-9.\n• Du har god förmåga att arbeta såväl enskilt som i samspel med både elever, vårdnadshavare, kollegor och skolledning.\n• Vi tänker att du har mycket god förmåga att arbeta både målinriktat och lösningsfokuserat utifrån gällande styrdokument och att barnets bästa alltid finns i ditt fokus.\n\nSom person har du ett starkt ledarskap i klassrummet, lätt för att samarbeta, känner dig trygg och säker även vid utmanande lägen och kan enkelt anpassa dig till olika typer av uppgifter och situationer. Du är flexibel och prestigelös och är bra på att kommunicera på ett tydligt sätt och kan enkelt skilja på sak och person.\n\nStor vikt läggs vid personlig lämplighet.\r\n\nÖVRIGT\nTjänsten är vakant under förutsättning att ingen övertalighet, behov av omplacering eller företräde finns i kommunen. Utdrag ur belastningsregistret skall inlämnas innan tjänsten kan tillträdas.\nMer information om Åre kommun finner du på www.are.se\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.",
+        "text_formatted": "Vi på Åre kommun skapar förutsättningar för att alla som bor eller vistas här kan förverkliga sina drömmar. Vi ser till att det där självklara fungerar: att våra barn har det bra i förskolan och skolan, att vägarna är plogade och att våra äldre har en meningsfull tillvaro. Men vi nöjer oss inte där. Tillsammans tar vi hela tiden nya steg mot en hållbar framtid.\n\nDynamik, service och bemötande är en given del i vår vardag. I vår storslagna fjällmiljö samsas förväntansfulla skidåkare med jordnära livskonstnärer. Det finns plats för dig också.\n\nI Åre kommun arbetar vi utifrån värdegrunden att vi är professionella, respektfulla och lyhörda. \n\nÅre kommun är en samisk förvaltningskommun och vi välkomnar sökande som har språklig och kulturell kunskap i samiska.\n\n\r\n\r\nARBETSUPPGIFTER\nVi söker slöjdlärare i åk 3-9 som vill jobba hos oss på Duveds skola. Vi är en F-9 skola med ca 570 elever där stämningen är god mellan elever och personal. I arbetet ingår ett helhetsansvar för elevernas sociala och kunskapsmässiga utveckling. Du tar ansvar för att systematiskt dokumentera, analysera, utvärdera och följa upp elevernas lärande.  \n\nGoda resultat, hög kompetens bland personalen och höga förväntningar på verksamheten kännetecknar vår skola. Det är viktigt för oss att arbetsmiljön stimulerar kreativitet, lärande och att eleverna får möjlighet att prova sin självständighet.\r\n\r\nKVALIFIKATIONER\n• Vi söker en legitimerad lärare i slöjd för åk 3-9.\n• Du har god förmåga att arbeta såväl enskilt som i samspel med både elever, vårdnadshavare, kollegor och skolledning.\n• Vi tänker att du har mycket god förmåga att arbeta både målinriktat och lösningsfokuserat utifrån gällande styrdokument och att barnets bästa alltid finns i ditt fokus.\n\nSom person har du ett starkt ledarskap i klassrummet, lätt för att samarbeta, känner dig trygg och säker även vid utmanande lägen och kan enkelt anpassa dig till olika typer av uppgifter och situationer. Du är flexibel och prestigelös och är bra på att kommunicera på ett tydligt sätt och kan enkelt skilja på sak och person.\n\nStor vikt läggs vid personlig lämplighet.\r\n\nÖVRIGT\nTjänsten är vakant under förutsättning att ingen övertalighet, behov av omplacering eller företräde finns i kommunen. Utdrag ur belastningsregistret skall inlämnas innan tjänsten kan tillträdas.\nMer information om Åre kommun finner du på www.are.se\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Deltid. 60 % \r\nTidsbegränsad anställning 11 dagar - 3 månader, tillträde: 2024-09-30  Snarast."
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Enligt avtal.",
+      "duration": {
+        "concept_id": "Sy9J_aRd_ALx",
+        "label": "11 dagar - upp till 3 månader",
+        "legacy_ams_taxonomy_id": "7"
+      },
+      "working_hours_type": {
+        "concept_id": "947z_JGS_Uk2",
+        "label": "Deltid",
+        "legacy_ams_taxonomy_id": "2"
+      },
+      "scope_of_work": {
+        "min": 60,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2120002494",
+        "name": "Åre kommun",
+        "workplace": "Åre Kommun, Barn- och utbildningskontoret"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "C209884",
+        "email": null,
+        "via_af": false,
+        "url": "https://recruit.visma.com/spa/public/apply?guidAssignment=ce77c7b7-4344-451a-a1dc-000647f499a2&publishCode=AMS&TK=347e20b4-a305-430f-8fa4-e36ca85e8a5c",
+        "other": null
+      },
+      "experience_required": false,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "Nzmh_iTb_z7h",
+        "label": "Grundlärare, 4-6",
+        "legacy_ams_taxonomy_id": "7653"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Åre",
+        "municipality_code": "2321",
+        "municipality_concept_id": "D7ax_CXP_6r1",
+        "region": "Jämtlands län",
+        "region_code": "23",
+        "region_concept_id": "65Ms_7r1_RTG",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [13.081506, 63.399044]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Monica Sjövall",
+          "email": "monica.sjovall@are.se",
+          "telephone": null,
+          "contact_type": "Rektor"
+        }
+      ],
+      "publication_date": "2024-09-25T12:45:28",
+      "last_publication_date": "2024-09-29T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1727261128179
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29129074",
+      "external_id": "46-212000-2494-7DE8E31FF777451AB7F22C05E0E6D852",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29129074",
+      "logo_url": null,
+      "headline": "Lärare vuxenutbildningen",
+      "application_deadline": "2024-10-25T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Vi på Åre kommun skapar förutsättningar för att alla som bor eller vistas här kan förverkliga sina drömmar. Vi ser till att det där självklara fungerar: att våra barn har det bra i förskolan och skolan, att vägarna är plogade och att våra äldre har en meningsfull tillvaro. Men vi nöjer oss inte där. Tillsammans tar vi hela tiden nya steg mot en hållbar framtid.\n\nDynamik, service och bemötande är en given del i vår vardag. I vår storslagna fjällmiljö samsas förväntansfulla skidåkare med jordnära livskonstnärer. Det finns plats för dig också.\n\nI Åre kommun arbetar vi utifrån värdegrunden att vi är professionella, respektfulla och lyhörda. \n\nÅre kommun är en samisk förvaltningskommun och vi välkomnar sökande som har språklig och kulturell kunskap i samiska.\n\nGrundläggande vuxenutbildning i Åre kommun är en liten verksamhet centralt belägen i Järpen, med 4 lärare och ca 80 elever i utbildningsformerna Sfi, komvux på grundläggande nivå samt komvux som anpassad utbildning. \r\n\r\nARBETSUPPGIFTER\nEn av våra lärare ska vara tjänstledig och vi söker därför främst efter dig som är utbildad och legitimerad lärare, men det är också intressant om du saknar lärarutbildning men har erfarenhet av att undervisa vuxna elever. Vi lägger mycket stor vikt vid personlig lämplighet. \n\nDu kommer att undervisa i ett eller flera av ämnena Sfi (svenska för invandrare), engelska på grundläggande nivå, samhällskunskap på grundläggande nivå, matematik på grundläggande nivå. Även undervisning i orienteringskurser kan ingå i tjänsten. \n\nDu kommer att ha ett nära samarbete med kollegor och i arbetsuppgifterna ingår att planera, genomföra och efterarbeta lektioner samt att bedöma och betygssätta elevernas kunskaper. Du kommer också att ha ett antal ansvarselever som du följer och coachar genom studierna. Arbetet kan innebära undervisning på kvällstid 1-2 kvällar i veckan.\r\n\r\nKVALIFIKATIONER\nUtbildad och legitimerad lärare. Du har en lärarexamen som bedöms som lämplig för undervisning i kommunal vuxenutbildning grundläggande nivå. \n\nDet är meriterande om du har erfarenhet av att undervisa och betygssätta i vuxenutbildning.\n\nSom person är du trygg, står upp för egna åsikter, har mod att säga ifrån och förmåga att skilja på sak och person. Du är samarbetsorienterad, kan anpassar dig och hittar win-win-lösningar genom ett prestigelöst fokus på det gemensamma målet. Du är lösningsorienterad och ser möjliga lösningar på uppkomna utmaningar.\n\nMöjlighet till förlängning kan bli aktuell efter den 26 sep-2025. \r\n\nÖVRIGT\nTjänsten är vakant under förutsättning att ingen övertalighet, behov av omplacering eller företräde finns i kommunen. Mer information om Åre kommun finner du på www.are.se\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.",
+        "text_formatted": "Vi på Åre kommun skapar förutsättningar för att alla som bor eller vistas här kan förverkliga sina drömmar. Vi ser till att det där självklara fungerar: att våra barn har det bra i förskolan och skolan, att vägarna är plogade och att våra äldre har en meningsfull tillvaro. Men vi nöjer oss inte där. Tillsammans tar vi hela tiden nya steg mot en hållbar framtid.\n\nDynamik, service och bemötande är en given del i vår vardag. I vår storslagna fjällmiljö samsas förväntansfulla skidåkare med jordnära livskonstnärer. Det finns plats för dig också.\n\nI Åre kommun arbetar vi utifrån värdegrunden att vi är professionella, respektfulla och lyhörda. \n\nÅre kommun är en samisk förvaltningskommun och vi välkomnar sökande som har språklig och kulturell kunskap i samiska.\n\nGrundläggande vuxenutbildning i Åre kommun är en liten verksamhet centralt belägen i Järpen, med 4 lärare och ca 80 elever i utbildningsformerna Sfi, komvux på grundläggande nivå samt komvux som anpassad utbildning. \r\n\r\nARBETSUPPGIFTER\nEn av våra lärare ska vara tjänstledig och vi söker därför främst efter dig som är utbildad och legitimerad lärare, men det är också intressant om du saknar lärarutbildning men har erfarenhet av att undervisa vuxna elever. Vi lägger mycket stor vikt vid personlig lämplighet. \n\nDu kommer att undervisa i ett eller flera av ämnena Sfi (svenska för invandrare), engelska på grundläggande nivå, samhällskunskap på grundläggande nivå, matematik på grundläggande nivå. Även undervisning i orienteringskurser kan ingå i tjänsten. \n\nDu kommer att ha ett nära samarbete med kollegor och i arbetsuppgifterna ingår att planera, genomföra och efterarbeta lektioner samt att bedöma och betygssätta elevernas kunskaper. Du kommer också att ha ett antal ansvarselever som du följer och coachar genom studierna. Arbetet kan innebära undervisning på kvällstid 1-2 kvällar i veckan.\r\n\r\nKVALIFIKATIONER\nUtbildad och legitimerad lärare. Du har en lärarexamen som bedöms som lämplig för undervisning i kommunal vuxenutbildning grundläggande nivå. \n\nDet är meriterande om du har erfarenhet av att undervisa och betygssätta i vuxenutbildning.\n\nSom person är du trygg, står upp för egna åsikter, har mod att säga ifrån och förmåga att skilja på sak och person. Du är samarbetsorienterad, kan anpassar dig och hittar win-win-lösningar genom ett prestigelöst fokus på det gemensamma målet. Du är lösningsorienterad och ser möjliga lösningar på uppkomna utmaningar.\n\nMöjlighet till förlängning kan bli aktuell efter den 26 sep-2025. \r\n\nÖVRIGT\nTjänsten är vakant under förutsättning att ingen övertalighet, behov av omplacering eller företräde finns i kommunen. Mer information om Åre kommun finner du på www.are.se\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid. 75-100% \r\nTidsbegränsad anställning, tillträde: Tillträde snarast. Intervjuer kommer att ske fortlöpande., upphör: 2025-09-26  ."
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Enligt avtal.",
+      "duration": {
+        "concept_id": "qQUd_4qe_NDT",
+        "label": "6 månader eller längre",
+        "legacy_ams_taxonomy_id": "2"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2120002494",
+        "name": "Åre kommun",
+        "workplace": "Åre Kommun, Vuxenutbildning "
+      },
+      "application_details": {
+        "information": null,
+        "reference": "C209395",
+        "email": null,
+        "via_af": false,
+        "url": "https://recruit.visma.com/spa/public/apply?guidAssignment=7de8e31f-f777-451a-b7f2-2c05e0e6d852&publishCode=AMS&TK=ef1e58d4-92dd-407d-810d-8859fbe76389",
+        "other": null
+      },
+      "experience_required": false,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "Nzmh_iTb_z7h",
+        "label": "Grundlärare, 4-6",
+        "legacy_ams_taxonomy_id": "7653"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Åre",
+        "municipality_code": "2321",
+        "municipality_concept_id": "D7ax_CXP_6r1",
+        "region": "Jämtlands län",
+        "region_code": "23",
+        "region_concept_id": "65Ms_7r1_RTG",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [13.081506, 63.399044]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Nina Brandt",
+          "email": "nina.brandt@are.se",
+          "telephone": "0647-16220",
+          "contact_type": "rektor/skolchef"
+        }
+      ],
+      "publication_date": "2024-09-25T09:55:17",
+      "last_publication_date": "2024-10-25T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1727250917473
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29127821",
+      "external_id": "46-212000-3013-BD04880FABA542828EB83915F037036F",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29127821",
+      "logo_url": null,
+      "headline": "Lärare åk.4-6",
+      "application_deadline": "2024-10-11T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "I Knivsta går framtidsandan att ta på. Läget mellan Stockholm och Uppsala, bara ett stenkast från Arlanda, är attraktivt och Knivsta växer så det knakar. Varje dag bygger vi aktivt det hållbara samhället med närhet till både storstad och vilsam natur. Vill du arbeta i en innovativ framtidskommun där du utvecklas och kan göra skillnad? Och sympatiserar du med våra gemensamma värderingar delaktighet, engagemang och tydlighet? \nVälkommen till oss!\n\nÄngbyskolan är en F-6 skola belägen i natursköna omgivningar vid Upplandsleden, med närhet till goda kommunikationer. Vi är en skola med starka traditioner, men har samtidigt en framåtblickande inställning där vi ständigt utvecklar vår pedagogik för att möta framtidens behov. I vår undervisning använder vi oss av kooperativt lärande, där eleverna arbetar tillsammans i små grupper för att stödja varandras lärande och utveckla viktiga sociala färdigheter. Detta skapar en inkluderande och engagerande lärmiljö där alla bidrar till gruppens framgång.\r\n\r\nARBETSUPPGIFTER\nI arbetsuppgifterna ingår det att planera, genomföra och utvärdera undervisning i flera ämnen. Du stödjer elevernas kunskapsutveckling och sociala utveckling, anpassar undervisningen efter individuella behov och skapar en trygg och stimulerande lärmiljö. I arbetsuppgifterna innefattar det bedömning och betygsättning, samt att hålla föräldrakontakter genom utvecklingssamtal. Du som lärare samarbetar med kollegor för att planera övergripande aktiviteter och deltar i skolans utvecklingsarbete. Utöver detta ansvarar du för att hantera ordning och trivsel i klassen. I rollen som klasslärare ingår även mentorskap för elever.\r\n\r\nKVALIFIKATIONER\nLärarlegitimation - Grundkrav\n\n\n\nStrukturerad (målmedvetenhet) - Önskvärt \nArbetar enligt en tydlig process, organiserar och planerar sitt arbete väl, slutför det som påbörjats och håller deadlines.\n\nRelationsskapande (extraversion) - Önskvärt \nDu tar aktivt initiativ i sociala sammanhang, kliver fram och har lätt för att skapa nya relationer. \n\nSamarbetsorienterad (vänlighet) - Önskvärt \nAnpassar sig och hittar win-win-lösningar genom ett prestigelöst fokus på det gemensamma målet.\n\nLösningsorienterad (problemlösningsförmåga) - Önskvärt \nHittar snabbt lösningar på uppkomna problem.\n\n\r\n\nÖVRIGT\nMed anställningen följer en skyldighet att krigsplaceras, om man inte redan är krigsplacerad av annan aktör. Läs mer om krigsplacering på www.knivsta.se\n\nKnivsta kommun vill ta tillvara de kvaliteter som jämn könsfördelning och etnisk och kulturell mångfald tillför verksamheten. \n\nAnvänd länken i annonsen för att söka tjänsten. \n\nHar du frågor om tjänsten är du välkommen att höra av dig till kontaktpersonen i annonsen. \n\nVi använder e-rekrytering för att effektivisera och kvalitetssäkra rekryteringsarbetet. Alla dina uppgifter sparas på ditt CV-konto och du kan enkelt logga in och uppdatera dina uppgifter när du vill. Fyll därför i dina uppgifter så omsorgsfullt som möjligt för att ge en rättvisande bild av dig själv. Uppgifterna behandlas och sparas enligt dataskyddsförordningen. \n\nVarmt välkommen med din ansökan!\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.",
+        "text_formatted": "I Knivsta går framtidsandan att ta på. Läget mellan Stockholm och Uppsala, bara ett stenkast från Arlanda, är attraktivt och Knivsta växer så det knakar. Varje dag bygger vi aktivt det hållbara samhället med närhet till både storstad och vilsam natur. Vill du arbeta i en innovativ framtidskommun där du utvecklas och kan göra skillnad? Och sympatiserar du med våra gemensamma värderingar delaktighet, engagemang och tydlighet? \nVälkommen till oss!\n\nÄngbyskolan är en F-6 skola belägen i natursköna omgivningar vid Upplandsleden, med närhet till goda kommunikationer. Vi är en skola med starka traditioner, men har samtidigt en framåtblickande inställning där vi ständigt utvecklar vår pedagogik för att möta framtidens behov. I vår undervisning använder vi oss av kooperativt lärande, där eleverna arbetar tillsammans i små grupper för att stödja varandras lärande och utveckla viktiga sociala färdigheter. Detta skapar en inkluderande och engagerande lärmiljö där alla bidrar till gruppens framgång.\r\n\r\nARBETSUPPGIFTER\nI arbetsuppgifterna ingår det att planera, genomföra och utvärdera undervisning i flera ämnen. Du stödjer elevernas kunskapsutveckling och sociala utveckling, anpassar undervisningen efter individuella behov och skapar en trygg och stimulerande lärmiljö. I arbetsuppgifterna innefattar det bedömning och betygsättning, samt att hålla föräldrakontakter genom utvecklingssamtal. Du som lärare samarbetar med kollegor för att planera övergripande aktiviteter och deltar i skolans utvecklingsarbete. Utöver detta ansvarar du för att hantera ordning och trivsel i klassen. I rollen som klasslärare ingår även mentorskap för elever.\r\n\r\nKVALIFIKATIONER\nLärarlegitimation - Grundkrav\n\n\n\nStrukturerad (målmedvetenhet) - Önskvärt \nArbetar enligt en tydlig process, organiserar och planerar sitt arbete väl, slutför det som påbörjats och håller deadlines.\n\nRelationsskapande (extraversion) - Önskvärt \nDu tar aktivt initiativ i sociala sammanhang, kliver fram och har lätt för att skapa nya relationer. \n\nSamarbetsorienterad (vänlighet) - Önskvärt \nAnpassar sig och hittar win-win-lösningar genom ett prestigelöst fokus på det gemensamma målet.\n\nLösningsorienterad (problemlösningsförmåga) - Önskvärt \nHittar snabbt lösningar på uppkomna problem.\n\n\r\n\nÖVRIGT\nMed anställningen följer en skyldighet att krigsplaceras, om man inte redan är krigsplacerad av annan aktör. Läs mer om krigsplacering på www.knivsta.se\n\nKnivsta kommun vill ta tillvara de kvaliteter som jämn könsfördelning och etnisk och kulturell mångfald tillför verksamheten. \n\nAnvänd länken i annonsen för att söka tjänsten. \n\nHar du frågor om tjänsten är du välkommen att höra av dig till kontaktpersonen i annonsen. \n\nVi använder e-rekrytering för att effektivisera och kvalitetssäkra rekryteringsarbetet. Alla dina uppgifter sparas på ditt CV-konto och du kan enkelt logga in och uppdatera dina uppgifter när du vill. Fyll därför i dina uppgifter så omsorgsfullt som möjligt för att ge en rättvisande bild av dig själv. Uppgifterna behandlas och sparas enligt dataskyddsförordningen. \n\nVarmt välkommen med din ansökan!\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid. \r\nTillsvidareanställning, tillträde: 2024-12-16  ."
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Månadslön",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2120003013",
+        "name": "Knivsta kommun",
+        "workplace": "Knivsta kommun, Utbildningskontoret"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "C210638",
+        "email": null,
+        "via_af": false,
+        "url": "https://recruit.visma.com/spa/public/apply?guidAssignment=bd04880f-aba5-4282-8eb8-3915f037036f&publishCode=AMS&TK=3eb06c5e-b48f-43d1-a4f2-ba372612ae40",
+        "other": null
+      },
+      "experience_required": false,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "Nzmh_iTb_z7h",
+        "label": "Grundlärare, 4-6",
+        "legacy_ams_taxonomy_id": "7653"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Knivsta",
+        "municipality_code": "0330",
+        "municipality_concept_id": "KALq_sG6_VrW",
+        "region": "Uppsala län",
+        "region_code": "03",
+        "region_concept_id": "zBon_eET_fFU",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [17.792036, 59.72612]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Mimmi Ljungberg",
+          "email": "mina.ljungberg@knivsta.se",
+          "telephone": null,
+          "contact_type": "Rektor"
+        }
+      ],
+      "publication_date": "2024-09-24T15:55:18",
+      "last_publication_date": "2024-10-11T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1727186118501
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29117735",
+      "external_id": null,
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29117735",
+      "logo_url": null,
+      "headline": "Lärare mellanstadiet",
+      "application_deadline": "2024-11-01T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Minervaskolan är en obunden fristående skola med fokus på kunskap och inlärning i en trygg och trivsam miljö. Kvalitet är centralt och omfattar inlärning i ett socialt väl fungerande klimat. Kompetenta och ansvariga vuxna med bra ledaregenskaper är av största vikt. \nPå grundskolan går 678 elever från fsk-klass till åk 9. \nVi söker nu en lärare till mellanstadiet. Tjänsten är ett vikariet på ett år med stor möjlighet till förlängning. Tjänsten innefattar en klasslärartjänst med undervisning i svenska, engelska, matte och SO.\nVar vänlig och sänd oss ditt CV och en presentation av dig själv i vilken du beskriver varför du önskar arbeta på Minervaskolan. Bifoga även referenser. \nVälkommen med din ansökan!\n Vi söker lärare till mellanstadiet, åk 4–6. För tjänsten erfordras adekvat utbildning. Stor vikt kommer att läggas vid personlig lämplighet.",
+        "text_formatted": "<p>Minervaskolan är en obunden fristående skola med fokus på kunskap och inlärning i en trygg och trivsam miljö. Kvalitet är centralt och omfattar inlärning i ett socialt väl fungerande klimat. Kompetenta och ansvariga vuxna med bra ledaregenskaper är av största vikt. </p><p>På grundskolan går 678 elever från fsk-klass till åk 9. </p><p>Vi söker nu en lärare till mellanstadiet. Tjänsten är ett vikariet på ett år med stor möjlighet till förlängning. Tjänsten innefattar en klasslärartjänst med undervisning i svenska, engelska, matte och SO.</p><p>Var vänlig och sänd oss ditt CV och en presentation av dig själv i vilken du beskriver varför du önskar arbeta på Minervaskolan. Bifoga även referenser. </p><p>Välkommen med din ansökan!</p><p> Vi söker lärare till mellanstadiet, åk 4–6. För tjänsten erfordras adekvat utbildning. Stor vikt kommer att läggas vid personlig lämplighet.</p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": null
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": null,
+      "duration": {
+        "concept_id": "qQUd_4qe_NDT",
+        "label": "6 månader eller längre",
+        "legacy_ams_taxonomy_id": "2"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "www.minervaskolan.se",
+        "organization_number": "5565735049",
+        "name": "Minervaskolan i Umeå AB",
+        "workplace": "Minervaskolan"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": "info@minervaskolan.se",
+        "via_af": false,
+        "url": null,
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "Nzmh_iTb_z7h",
+        "label": "Grundlärare, 4-6",
+        "legacy_ams_taxonomy_id": "7653"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Umeå",
+        "municipality_code": "2480",
+        "municipality_concept_id": "QiGt_BLu_amP",
+        "region": "Västerbottens län",
+        "region_code": "24",
+        "region_concept_id": "g5Tt_CAV_zBd",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": "NYGATAN 47",
+        "postcode": "90330",
+        "city": "UMEÅ",
+        "coordinates": [20.278172889315485, 63.82674374871195]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 5,
+            "concept_id": "Nzmh_iTb_z7h",
+            "label": "Grundlärare, 4-6",
+            "legacy_ams_taxonomy_id": "7653"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": "Anders Nordlander",
+          "description": null,
+          "email": "anders.nordlander@minervagymnasium.se",
+          "telephone": "073-393 55 65",
+          "contact_type": "Rektor"
+        }
+      ],
+      "publication_date": "2024-09-19T17:37:39",
+      "last_publication_date": "2024-11-01T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_ANNONSERA",
+      "timestamp": 1726760259891
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29117422",
+      "external_id": "46-212000-0720-8179ADBDDD0141C6A95008CEB311E9B2",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29117422",
+      "logo_url": null,
+      "headline": "Lärare Parkskolan",
+      "application_deadline": "2024-10-06T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Mönsterås kommun ligger vid kusten mitt i Kalmar län och vi har cirka 13 400 medborgare att ge en god service till. Här finns regionens bästa företagsklimat, och vi är stolta över att rankas som en av landets bästa kommuner när det gäller allmänhetens och företagens syn på kommunal service och handläggning av ärenden.\nMönsterås kommun är kommunens största arbetsplats med över 1 400 medarbetare. Vi är en trygg arbetsgivare och en mindre kommun. Det gör att du har nära till både medborgare, kollegor och beslutsfattare, och du får vara med och utveckla individen, verksamheten och samhället! \nDet är viktigt för oss att vara en attraktiv arbetsgivare och vi erbjuder flera olika personalförmåner, bland annat ett högt friskvårdsbidrag, och strävar efter att varje medarbetare ska ha en bra balans mellan arbete och fritid. \n\n\n\n\r\n\r\nARBETSUPPGIFTER\nVi söker legitimerade lärare. I tjänsten ingår undervisning i hem- och konsumentkunskap. \r\n\r\nKVALIFIKATIONER\nVi söker dig som är legitimerad lärare i hem- och konsumentkunskap.\nTjänsten omfattar undervisning i åk 6-9 (men innevarande och kommande läsår i åk 8-9). I tjänsten ingår även klassföreståndarskap/mentorskap. Tjänsten innebär arbete och tillhörighet i ett arbetslag 7-9, samt samarbete med skolans övriga arbetslag och mentorer.\n\r\n\nÖVRIGT\nVi undanber oss alla erbjudanden om annonserings- och rekryteringshjälp i samband med denna annons. \n\nFör att kvalitetssäkra rekryteringsprocessen hos Mönsterås kommun samt möjliggöra god kommunikation med våra sökande vill vi att du skickar in din ansökan digitalt.",
+        "text_formatted": "Mönsterås kommun ligger vid kusten mitt i Kalmar län och vi har cirka 13 400 medborgare att ge en god service till. Här finns regionens bästa företagsklimat, och vi är stolta över att rankas som en av landets bästa kommuner när det gäller allmänhetens och företagens syn på kommunal service och handläggning av ärenden.\nMönsterås kommun är kommunens största arbetsplats med över 1 400 medarbetare. Vi är en trygg arbetsgivare och en mindre kommun. Det gör att du har nära till både medborgare, kollegor och beslutsfattare, och du får vara med och utveckla individen, verksamheten och samhället! \nDet är viktigt för oss att vara en attraktiv arbetsgivare och vi erbjuder flera olika personalförmåner, bland annat ett högt friskvårdsbidrag, och strävar efter att varje medarbetare ska ha en bra balans mellan arbete och fritid. \n\n\n\n\r\n\r\nARBETSUPPGIFTER\nVi söker legitimerade lärare. I tjänsten ingår undervisning i hem- och konsumentkunskap. \r\n\r\nKVALIFIKATIONER\nVi söker dig som är legitimerad lärare i hem- och konsumentkunskap.\nTjänsten omfattar undervisning i åk 6-9 (men innevarande och kommande läsår i åk 8-9). I tjänsten ingår även klassföreståndarskap/mentorskap. Tjänsten innebär arbete och tillhörighet i ett arbetslag 7-9, samt samarbete med skolans övriga arbetslag och mentorer.\n\r\n\nÖVRIGT\nVi undanber oss alla erbjudanden om annonserings- och rekryteringshjälp i samband med denna annons. \n\nFör att kvalitetssäkra rekryteringsprocessen hos Mönsterås kommun samt möjliggöra god kommunikation med våra sökande vill vi att du skickar in din ansökan digitalt.",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid. \r\nTillsvidareanställning, tillträde: 2025-01-07  ."
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Enligt avtal.",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2120000720",
+        "name": "Mönsterås kommun",
+        "workplace": "Mönsterås kommun, Parkskolan"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "MS2405",
+        "email": null,
+        "via_af": false,
+        "url": "https://recruit.visma.com/spa/public/apply?guidAssignment=8179adbd-dd01-41c6-a950-08ceb311e9b2&publishCode=AMS&TK=fd190ece-adf6-4022-8dfb-88c766997783",
+        "other": null
+      },
+      "experience_required": false,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "iYgm_hfD_Bez",
+        "label": "Ämneslärare, 7-9",
+        "legacy_ams_taxonomy_id": "7654"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Mönsterås",
+        "municipality_code": "0861",
+        "municipality_concept_id": "8eEp_iz4_cNN",
+        "region": "Kalmar län",
+        "region_code": "08",
+        "region_concept_id": "9QUH_2bb_6Np",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [16.44312, 57.04158]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Anna Skedebäck",
+          "email": "anna.skedeback@monsteras.se",
+          "telephone": "0103537298",
+          "contact_type": "Biträdande rektor"
+        },
+        {
+          "name": null,
+          "description": "Sara Brogård",
+          "email": "sara.brogard@monsteras.se",
+          "telephone": "010-353 78 62",
+          "contact_type": "Rektor"
+        }
+      ],
+      "publication_date": "2024-09-19T16:10:19",
+      "last_publication_date": "2024-10-06T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726755329516
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29113060",
+      "external_id": "46-212000-2536-753138",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29113060",
+      "logo_url": null,
+      "headline": "Lärare F-3",
+      "application_deadline": "2024-10-08T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Arbetsplatsen\nNordmalings kommun har grundskolor i centrala Nordmaling samt i byarna Lögdeå och Gräsmyr.\r\n\r\nKommunens skolor ligger i framkant vad gäller allt från IT till elevhälsa. Vi utvecklar framtiden för både samhälle och individ.\n\nArtediskolan F-3 har 195 elever och ligger centralt i Nordmaling. Våra ledord är respekt, rättvisa, empati och kunskap. Artediskolan F-3 erbjuder engagerade och kunniga kollegor samt närhet till natur och öppna utomhusmiljöer.\n\nArbetsbeskrivning\nVill du vara med och skapa det samhälle vi vill ha framöver? Vill du tillsammans med kompetenta och engagerade kollegor vara med och göra skillnad på riktigt? Då är du rätt person för att börja arbeta hos oss på Artediskolan F-3. Vi söker en varm och driven F-3 lärare. \n\nDitt jobb är klasslärare i Fklass, du tar över efter en erfaren lärare som flyttar till en annan kommun. Du kommer därefter att fortsätta arbeta klassen som klasslärare åk 1-3. \n\nAnställningen\nTillsvidareanställning, 100%. Tillträde 7 januari 2025. Vi ser gärna att du har möjlighet att arbeta tillsammans med nuvarande klasslärare några dagar under v. 50-51.\n\nKvalifikationer\nVi söker dig som är behörig lärare F-3. Lärarlegitimation är ett krav.\n\nTidigare erfarenhet av arbete i F-3 är meriterande liksom erfarenhet av att arbeta i arbetslag.\n\nViktiga egenskaper är för detta arbete är flexibilitet, samarbetsförmåga och en förmåga att bygga goda relationer till andra människor. Du ska kunna arbeta självständigt, men även ha stor förmåga att arbeta tillsammans med andra. Vi förväntar oss att du kommer bidra med idéer och vara aktivt delaktig i att utveckla verksamheten i positiv riktning. Stor vikt läggs vid personlig lämplighet.\n\nTill följd av Lagen om lämplighetskontroll ska utdrag belastnings- och misstankeregister uppvisas innan anställning.\n\nÖvrigt\nUrval och intervjuer kommer att ske fortlöpande under ansökningstiden.\n\nOm Nordmalings kommun\n\nNordmaling har ett utmärkt läge, alldeles vid kusten mellan Umeå och Örnsköldsvik med E4 och Botniabanan helt nära. Här finns all offentlig service du kan önska, fina motionsanläggningar och en trygg och lugn miljö. Närheten till hav, skog och älv och ett rikt föreningsliv ger stora möjligheter till en aktiv fritid för både stor och liten.\n\n\nArenor, köpcentra och kulturhus finns i Örnsköldsvik i söder och Umeå i norr, bägge mindre än 30 min bort med Botniabanan. Vi är helt enkelt centrum mellan städerna!\n\n\nNordmalings kommun har cirka 7050 invånare, och 650 medarbetare som gör ett viktigt jobb för att erbjuda invånarna god service och livsmiljö. Nordmalings kommun är en del av Umeåregionen.\n\n\nFunderar du på att flytta till Nordmaling? Läs mer på https://mitt.nordmaling.se/\n\n\nJobba som räddningstjänstpersonal i beredskap\n\nI kommunen finns ett stort behov av att förstärka räddningstjänsten, varför vi ser det som positivt att även kunna arbeta som räddningstjänstpersonal i beredskap (förutsatt att kvalifikationer kan uppnås).\n\n\nAnnonsering\n\nNordmalings kommun gör val av annonsplats och eventuellt rekryteringsstöd vid varje rekrytering och kontaktar själva de vi väljer att annonsera hos. Därför undanber vi oss alla erbjudanden om köp av annonsplats eller rekryteringsstöd i samband med denna annons.",
+        "text_formatted": "Arbetsplatsen\nNordmalings kommun har grundskolor i centrala Nordmaling samt i byarna Lögdeå och Gräsmyr.\r\n\r\nKommunens skolor ligger i framkant vad gäller allt från IT till elevhälsa. Vi utvecklar framtiden för både samhälle och individ.\n\nArtediskolan F-3 har 195 elever och ligger centralt i Nordmaling. Våra ledord är respekt, rättvisa, empati och kunskap. Artediskolan F-3 erbjuder engagerade och kunniga kollegor samt närhet till natur och öppna utomhusmiljöer.\n\nArbetsbeskrivning\nVill du vara med och skapa det samhälle vi vill ha framöver? Vill du tillsammans med kompetenta och engagerade kollegor vara med och göra skillnad på riktigt? Då är du rätt person för att börja arbeta hos oss på Artediskolan F-3. Vi söker en varm och driven F-3 lärare. \n\nDitt jobb är klasslärare i Fklass, du tar över efter en erfaren lärare som flyttar till en annan kommun. Du kommer därefter att fortsätta arbeta klassen som klasslärare åk 1-3. \n\nAnställningen\nTillsvidareanställning, 100%. Tillträde 7 januari 2025. Vi ser gärna att du har möjlighet att arbeta tillsammans med nuvarande klasslärare några dagar under v. 50-51.\n\nKvalifikationer\nVi söker dig som är behörig lärare F-3. Lärarlegitimation är ett krav.\n\nTidigare erfarenhet av arbete i F-3 är meriterande liksom erfarenhet av att arbeta i arbetslag.\n\nViktiga egenskaper är för detta arbete är flexibilitet, samarbetsförmåga och en förmåga att bygga goda relationer till andra människor. Du ska kunna arbeta självständigt, men även ha stor förmåga att arbeta tillsammans med andra. Vi förväntar oss att du kommer bidra med idéer och vara aktivt delaktig i att utveckla verksamheten i positiv riktning. Stor vikt läggs vid personlig lämplighet.\n\nTill följd av Lagen om lämplighetskontroll ska utdrag belastnings- och misstankeregister uppvisas innan anställning.\n\nÖvrigt\nUrval och intervjuer kommer att ske fortlöpande under ansökningstiden.\n\nOm Nordmalings kommun\n\nNordmaling har ett utmärkt läge, alldeles vid kusten mellan Umeå och Örnsköldsvik med E4 och Botniabanan helt nära. Här finns all offentlig service du kan önska, fina motionsanläggningar och en trygg och lugn miljö. Närheten till hav, skog och älv och ett rikt föreningsliv ger stora möjligheter till en aktiv fritid för både stor och liten.\n\n\nArenor, köpcentra och kulturhus finns i Örnsköldsvik i söder och Umeå i norr, bägge mindre än 30 min bort med Botniabanan. Vi är helt enkelt centrum mellan städerna!\n\n\nNordmalings kommun har cirka 7050 invånare, och 650 medarbetare som gör ett viktigt jobb för att erbjuda invånarna god service och livsmiljö. Nordmalings kommun är en del av Umeåregionen.\n\n\nFunderar du på att flytta till Nordmaling? Läs mer på https://mitt.nordmaling.se/\n\n\nJobba som räddningstjänstpersonal i beredskap\n\nI kommunen finns ett stort behov av att förstärka räddningstjänsten, varför vi ser det som positivt att även kunna arbeta som räddningstjänstpersonal i beredskap (förutsatt att kvalifikationer kan uppnås).\n\n\nAnnonsering\n\nNordmalings kommun gör val av annonsplats och eventuellt rekryteringsstöd vid varje rekrytering och kontaktar själva de vi väljer att annonsera hos. Därför undanber vi oss alla erbjudanden om köp av annonsplats eller rekryteringsstöd i samband med denna annons.",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "100 %. Tillträde: 7 jan 2025\r\nTillsvidareanställning"
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Månadslön",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2120002536",
+        "name": "Nordmalings kommun",
+        "workplace": "Sektor utbildning, Artediskolan F-3"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "2024/84",
+        "email": null,
+        "via_af": false,
+        "url": "https://nordmaling.varbi.com/what:job/jobID:753138/type:job/where:1/apply:1",
+        "other": null
+      },
+      "experience_required": false,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "zGHj_2Jf_oKy",
+        "label": "Grundlärare, förskoleklass och 1-3",
+        "legacy_ams_taxonomy_id": "7652"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Nordmaling",
+        "municipality_code": "2401",
+        "municipality_concept_id": "wMab_4Zs_wpM",
+        "region": "Västerbottens län",
+        "region_code": "24",
+        "region_concept_id": "g5Tt_CAV_zBd",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [19.5, 63.566666]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Petra Vestermark, rektor",
+          "email": null,
+          "telephone": "076-1379186",
+          "contact_type": null
+        }
+      ],
+      "publication_date": "2024-09-18T12:18:50",
+      "last_publication_date": "2024-10-08T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726654730651
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29112982",
+      "external_id": null,
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29112982",
+      "logo_url": null,
+      "headline": "Lärare F-6",
+      "application_deadline": "2024-10-18T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Alla Nationers Fria Skola är en liten friskola belägen i ett naturskönt område nära Vårbergs tunnelbana.\nVi har små klasser och arbetar mycket språkutvecklande. Våra elever kommer från hela världen och är bosatta runt Stockholm. Pedagogerna arbetar tätt tillsammans i arbetslag och vi satsar på en utveckling av arbetet med ämnesintegrering. Våra värdeord är trygghet, respekt och glädje, vilket vi värderar högt.\nOm tjänsten\nVi söker nu en engagerad och driven lärare som vill vara med och göra skillnad för våra elever i behov av extra stöd. Tjänsten innebär inte ansvar för en egen klass, utan du kommer att arbeta nära elever, stötta dem individuellt eller i mindre grupper, och ge dem det stöd de behöver för att nå sina mål. Fokus ligger främst på ämnena svenska som andraspråk (SVA) och matematik.\nArbetsuppgifter:\nGe stöd till elever som behöver extra hjälp inom svenska som andraspråk och matematik.\nAnpassa undervisningsmaterial och metoder för att möta elevernas individuella behov.\nArbeta i nära samarbete med ämneslärare och elevhälsa för att planera och genomföra stödinsatser.\nSkapa en inkluderande lärmiljö där alla elever känner sig sedda och stöttade.\n\nKvalifikationer:\nLärarutbildning med behörighet inom svenska som andraspråk (SVA) och matematik.\nErfarenhet av att arbeta med elever i behov av extra stöd, gärna med inriktning på SVA och matematik.\nGod samarbetsförmåga och förmåga att anpassa undervisningen efter olika elevers behov.\nEtt stort engagemang för att hjälpa elever att lyckas och utvecklas.\n\nÖvrigt\nTjänsten är deltid ca 50% , och är t.o.m Juni 2025. \nTillträde : Omgående\nLön: Månadslön enligt överenskommelse",
+        "text_formatted": "<p>Alla Nationers Fria Skola är en liten friskola belägen i ett naturskönt område nära Vårbergs tunnelbana.</p><p>Vi har små klasser och arbetar mycket språkutvecklande. Våra elever kommer från hela världen och är bosatta runt Stockholm. Pedagogerna arbetar tätt tillsammans i arbetslag och vi satsar på en utveckling av arbetet med ämnesintegrering. Våra värdeord är trygghet, respekt och glädje, vilket vi värderar högt.</p><p><strong>Om tjänsten</strong></p><p>Vi söker nu en engagerad och driven lärare som vill vara med och göra skillnad för våra elever i behov av extra stöd. Tjänsten innebär inte ansvar för en egen klass, utan du kommer att arbeta nära elever, stötta dem individuellt eller i mindre grupper, och ge dem det stöd de behöver för att nå sina mål. Fokus ligger främst på ämnena svenska som andraspråk (SVA) och matematik.</p><p><strong>Arbetsuppgifter</strong>:</p><ul><li>Ge stöd till elever som behöver extra hjälp inom svenska som andraspråk och matematik.</li><li>Anpassa undervisningsmaterial och metoder för att möta elevernas individuella behov.</li><li>Arbeta i nära samarbete med ämneslärare och elevhälsa för att planera och genomföra stödinsatser.</li><li>Skapa en inkluderande lärmiljö där alla elever känner sig sedda och stöttade.</li></ul><p><strong>Kvalifikationer:</strong></p><ul><li>Lärarutbildning med behörighet inom svenska som andraspråk (SVA) och matematik.</li><li>Erfarenhet av att arbeta med elever i behov av extra stöd, gärna med inriktning på SVA och matematik.</li><li>God samarbetsförmåga och förmåga att anpassa undervisningen efter olika elevers behov.</li><li>Ett stort engagemang för att hjälpa elever att lyckas och utvecklas.</li></ul><p><strong>Övrigt</strong></p><p>Tjänsten är deltid ca 50% , och är t.o.m Juni 2025. </p><p><strong>Tillträde : Omgående</strong></p><p><strong>Lön: </strong>Månadslön enligt överenskommelse</p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": null
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": null,
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "http://www.anfs.se",
+        "organization_number": "8024093869",
+        "name": "Ideella Fören För Alla Nationers Fria Skola",
+        "workplace": "Alla Nationers Fria Skola"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "Lärare F-6",
+        "email": "ansokan@anfs.se",
+        "via_af": false,
+        "url": null,
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "Nzmh_iTb_z7h",
+        "label": "Grundlärare, 4-6",
+        "legacy_ams_taxonomy_id": "7653"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Stockholm",
+        "municipality_code": "0180",
+        "municipality_concept_id": "AvNB_uwa_6n6",
+        "region": "Stockholms län",
+        "region_code": "01",
+        "region_concept_id": "CifL_Rzy_Mku",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": "Vårbergsvägen 63",
+        "postcode": "12743",
+        "city": "Skärholmen",
+        "coordinates": [17.885509336257183, 59.272084637297596]
+      },
+      "must_have": {
+        "skills": [
+          {
+            "weight": 10,
+            "concept_id": "yKnk_W7X_Zvk",
+            "label": "Lärarlegitimation",
+            "legacy_ams_taxonomy_id": "608921"
+          }
+        ],
+        "languages": [
+          {
+            "weight": 10,
+            "concept_id": "zSLA_vw2_FXN",
+            "label": "Svenska",
+            "legacy_ams_taxonomy_id": "502"
+          }
+        ],
+        "work_experiences": [],
+        "education": [
+          {
+            "weight": 10,
+            "concept_id": "tFCz_HSa_jwW",
+            "label": "Pedagogik och lärarutbildning",
+            "legacy_ams_taxonomy_id": "4"
+          }
+        ],
+        "education_level": [
+          {
+            "weight": 10,
+            "concept_id": "asZm_TEQ_Srk",
+            "label": "Eftergymnasial utbildning två år eller längre",
+            "legacy_ams_taxonomy_id": "6"
+          }
+        ]
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": "Emil Eklund",
+          "description": null,
+          "email": "ansokan@anfs.se",
+          "telephone": null,
+          "contact_type": "Biträdande Rektor"
+        }
+      ],
+      "publication_date": "2024-09-18T12:03:34",
+      "last_publication_date": "2024-10-18T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_ANNONSERA",
+      "timestamp": 1726653859930
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29112274",
+      "external_id": "46-556945-6659-quest-4874",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29112274",
+      "logo_url": null,
+      "headline": "Lärare Elektronikproduktion",
+      "application_deadline": "2024-10-18T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Åt vårt systerbolag Oplana söker vi en Lärare Elektronikproduktion.\n\nOplana är ett utbildnings- och konsultföretag inom industrin med en stark förankring inom försvar, telekom och medicinindustrin. De arbetar nischat med att ge service och stöd till företag inom i huvudsak nämnda området med en stark förankrad kunskap inom elektronikproduktion.\n\n\n\nOplana har en egen produktion och en utbildningsenhet i anpassade lokaler där de utför kundanpassade utbildningar/elektronikutbildningar åt deras kunder och kandidater. Utbildningen används även som ett verktyg i rekryteringsprocessen för blivande trainees under det konceptet.\n\nArbetsbeskrivning:\n\nDu utbildar produktionspersonal inom elektronik och/eller mekanik i exempelvis lödning, IPC-kunskap och kvalitetsbedömning. En viktig arbetsuppgift är att kunna avgöra olika individers nivå, behov och förutsättningar. Arbetet kan innefatta resor till kund och med det en uppgift att företräda Oplana inom Sveriges gränser, men resandet är ytterst begränsat och primärt i Stockholm. Du har ett ansvar att planera din utbildning på site och skapa rätt förutsättningar för att genomföra kurser med hög kvalitet och väsentligt innehåll oavsett geografisk plats. I dina arbetsuppgifter innefattas att anpassa dig till kunder, företräda Oplana och främst, sätta människan i fokus under utbildning.\n\nVem du är:\n\nDu har 3-5 års yrkeslivserfarenhet från produktion, inriktning elektronik och/eller mekanik\nBrinner för att utbilda/utveckla människor\nTekniskt intresse\nGod social kompetens\n\n\nMeriterande:\n\nCertifikat i mjuklödning fsd 5115\nErfarenhet av förbindningsteknik.\nErfarenhet av kontaktpressning.\n\n\nTjänsten är på heltid och utgår från huvudkontoret i Kista och är tillsvidare med en provanställning på 6 månader. Tjänsten utlyses då det skett en ökad orderbok och marknaden är gynnsam därför görs en satsning från Oplana.",
+        "text_formatted": "<p>Åt vårt systerbolag Oplana söker vi en <u>Lärare Elektronikproduktion.</u></p>\n<p>Oplana är ett utbildnings- och konsultföretag inom industrin med en stark förankring inom försvar, telekom och medicinindustrin. De arbetar nischat med att ge service och stöd till företag inom i huvudsak nämnda området med en stark förankrad kunskap inom elektronikproduktion.\n\n</p>\n<p>Oplana har en egen produktion och en utbildningsenhet i anpassade lokaler där de utför kundanpassade utbildningar/elektronikutbildningar åt deras kunder och kandidater. Utbildningen används även som ett verktyg i rekryteringsprocessen för blivande trainees under det konceptet.</p>\n<p><strong>Arbetsbeskrivning:</strong></p>\n<p>Du utbildar produktionspersonal inom elektronik och/eller mekanik i exempelvis lödning, IPC-kunskap och kvalitetsbedömning. En viktig arbetsuppgift är att kunna avgöra olika individers nivå, behov och förutsättningar. Arbetet kan innefatta resor till kund och med det en uppgift att företräda Oplana inom Sveriges gränser, men resandet är ytterst begränsat och primärt i Stockholm. Du har ett ansvar att planera din utbildning på site och skapa rätt förutsättningar för att genomföra kurser med hög kvalitet och väsentligt innehåll oavsett geografisk plats. I dina arbetsuppgifter innefattas att anpassa dig till kunder, företräda Oplana och främst, sätta människan i fokus under utbildning.</p>\n<p><strong>Vem du är:</strong></p>\n<ul><li>Du har 3-5 års yrkeslivserfarenhet från produktion, inriktning elektronik och/eller mekanik</li><li>Brinner för att utbilda/utveckla människor</li><li>Tekniskt intresse</li><li>God social kompetens</li></ul>\n<p><strong>Meriterande:</strong></p>\n<ul><li>Certifikat i mjuklödning fsd 5115</li><li>Erfarenhet av förbindningsteknik.</li><li>Erfarenhet av kontaktpressning.</li></ul>\n<p><u>Tjänsten är på heltid och utgår från huvudkontoret i Kista och är tillsvidare med en provanställning på 6 månader. Tjänsten utlyses då det skett en ökad orderbok och marknaden är gynnsam därför görs en satsning från Oplana.</u></p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid\r\nTillsvidare"
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Månadslön - Fast lön",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "https://quest.se/",
+        "organization_number": "5569456659",
+        "name": "Quest Consulting Sverige AB",
+        "workplace": "Quest Consulting Sverige AB"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": null,
+        "via_af": false,
+        "url": "https://pnty-apply.ponty-system.se/quest?id=4874&pnty_src=arbetsformedlingen",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "etkf_dBn_JbW",
+        "label": "Utbildningsledare",
+        "legacy_ams_taxonomy_id": "3630"
+      },
+      "occupation_group": {
+        "concept_id": "1CX5_mZw_Vcq",
+        "label": "Övriga utbildare och instruktörer",
+        "legacy_ams_taxonomy_id": "3449"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Stockholm",
+        "municipality_code": "0180",
+        "municipality_concept_id": "AvNB_uwa_6n6",
+        "region": "Stockholms län",
+        "region_code": "01",
+        "region_concept_id": "CifL_Rzy_Mku",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [18.06858, 59.329323]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 10,
+            "concept_id": "etkf_dBn_JbW",
+            "label": "Utbildningsledare",
+            "legacy_ams_taxonomy_id": "3630"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [],
+      "publication_date": "2024-09-18T09:50:18",
+      "last_publication_date": "2024-10-18T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726645818718
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29111817",
+      "external_id": "46-212000-1926-1046",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29111817",
+      "logo_url": null,
+      "headline": "Lärare F-3",
+      "application_deadline": "2024-10-02T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Vi på Folkasboskolan söker vikarie. Du kommer att få arbeta med varierande uppdrag mot elever och klasser i olika åldrar. Vi söker dig i första hand som är legitimerad lärare med bred ämnesbehörighet med inriktning mot årskurs F-3. En viktig egenskap hos dig ska vara att arbeta relationellt med eleverna då vi är arbetar hårt för att skapa trygga och positiva lärmiljöer där varje elev känner sig sedd, hörd och får möjligheten att nå sina mål. Känner du igen dig, sök till oss och var med och utveckla skolan och dess elever.\n\nVi på Folkasboskolan fokuserar på:\n\nLedarskapet i klassrummet, då vi strävar efter att hela tiden utveckla det relationella ledarskapet i våra klassrum för att främja en stimulerande och inkluderande lärmiljö där varje elev ges möjlighet att växa och utvecklas.\n\nElevdelaktighet, vi värdesätter elevens delaktighet och ser det som en central del i deras lärande. Genom att uppmuntra till aktivt deltagande och eget ansvar för sin utbildning strävar vi efter att stärka elevernas självförtroende och motivation i skolan och för framtiden.\n\nUtmaningar utifrån kunskapsnivå, varje elev är unik. Genom varierande undervisning och kunskap om eleverna så strävar vi efter att utmana varje elev utifrån deras kunskapsnivå och således främja elevens personliga- och kunskapsutveckling.\n\nStudiero, vi värnar om en lugn och harmonisk lärmiljö där eleverna ges möjlighet att fokusera och trivas tillsammans med sina lärare. I arbetet med tydliga strukturer och ett positivt relationellt ledarskap skapar vi goda förutsättningar för varje enskild individ för att nå sina mål.\n\nOm Folkasboskolan:\n\nFolkasboskolan har cirka 360 elever från förskoleklass till årskurs 9. Skolan är belägen i Pålsboda, endast ca 3 mil från Örebro och erbjuder en inspirerande och nära naturmiljö för både elever och personal.\n\nVi som skola är på en spännande resa och kan erbjuda en miljö där du får möjlighetenutvecklas tillsammans med vårt kompetenta och engagerade team av kollegor.\n\nKrav och kompetenser:\n\n\n• Legitimerad lärare med bred ämnesbehörighet med inriktning mot årskurs F-3\n• Förmåga att skapa trygga och positiva relationer med elever.\n• Engagemang för kontinuerlig utveckling och lärande.\n• Behärskar svenska i både tal och skrift.\n\nVi lägger stor vikt vid personlig lämplighet.\n\nVälkommen till Folkasboskolan - där varje elevs potential är vår drivkraft!\n\nOmfattning: heltid\n\nAnställningsform: tidsbegränsad anställning tom 241231 med möjlighet till förlängning. Sista ansökningsdag är 241002. \n\nVarmt välkommen att söka tjänsten!\n\nI den här rekryteringen kommer utdrag ur belastningsregistret att begäras. Utdraget beställs från www.polisen.se och ska gälla för arbete inom förskola och skola.\n\nVi undanber oss alla kontakter av annonserings- eller rekryteringsföretag i samband med denna annons.\n\nFackliga företrädare nås via kommunens kontaktcenter Hallsbergs kommun, 0582-685000",
+        "text_formatted": "Vi på Folkasboskolan söker vikarie. Du kommer att få arbeta med varierande uppdrag mot elever och klasser i olika åldrar. Vi söker dig i första hand som är legitimerad lärare med bred ämnesbehörighet med inriktning mot årskurs F-3. En viktig egenskap hos dig ska vara att arbeta relationellt med eleverna då vi är arbetar hårt för att skapa trygga och positiva lärmiljöer där varje elev känner sig sedd, hörd och får möjligheten att nå sina mål. Känner du igen dig, sök till oss och var med och utveckla skolan och dess elever.\n\nVi på Folkasboskolan fokuserar på:\n\nLedarskapet i klassrummet, då vi strävar efter att hela tiden utveckla det relationella ledarskapet i våra klassrum för att främja en stimulerande och inkluderande lärmiljö där varje elev ges möjlighet att växa och utvecklas.\n\nElevdelaktighet, vi värdesätter elevens delaktighet och ser det som en central del i deras lärande. Genom att uppmuntra till aktivt deltagande och eget ansvar för sin utbildning strävar vi efter att stärka elevernas självförtroende och motivation i skolan och för framtiden.\n\nUtmaningar utifrån kunskapsnivå, varje elev är unik. Genom varierande undervisning och kunskap om eleverna så strävar vi efter att utmana varje elev utifrån deras kunskapsnivå och således främja elevens personliga- och kunskapsutveckling.\n\nStudiero, vi värnar om en lugn och harmonisk lärmiljö där eleverna ges möjlighet att fokusera och trivas tillsammans med sina lärare. I arbetet med tydliga strukturer och ett positivt relationellt ledarskap skapar vi goda förutsättningar för varje enskild individ för att nå sina mål.\n\nOm Folkasboskolan:\n\nFolkasboskolan har cirka 360 elever från förskoleklass till årskurs 9. Skolan är belägen i Pålsboda, endast ca 3 mil från Örebro och erbjuder en inspirerande och nära naturmiljö för både elever och personal.\n\nVi som skola är på en spännande resa och kan erbjuda en miljö där du får möjlighetenutvecklas tillsammans med vårt kompetenta och engagerade team av kollegor.\n\nKrav och kompetenser:\n\n\n• Legitimerad lärare med bred ämnesbehörighet med inriktning mot årskurs F-3\n• Förmåga att skapa trygga och positiva relationer med elever.\n• Engagemang för kontinuerlig utveckling och lärande.\n• Behärskar svenska i både tal och skrift.\n\nVi lägger stor vikt vid personlig lämplighet.\n\nVälkommen till Folkasboskolan - där varje elevs potential är vår drivkraft!\n\nOmfattning: heltid\n\nAnställningsform: tidsbegränsad anställning tom 241231 med möjlighet till förlängning. Sista ansökningsdag är 241002. \n\nVarmt välkommen att söka tjänsten!\n\nI den här rekryteringen kommer utdrag ur belastningsregistret att begäras. Utdraget beställs från www.polisen.se och ska gälla för arbete inom förskola och skola.\n\nVi undanber oss alla kontakter av annonserings- eller rekryteringsföretag i samband med denna annons.\n\nFackliga företrädare nås via kommunens kontaktcenter Hallsbergs kommun, 0582-685000",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid/\r\nEj specificerat"
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Månadslön",
+      "duration": {
+        "concept_id": "Sy9J_aRd_ALx",
+        "label": "11 dagar - upp till 3 månader",
+        "legacy_ams_taxonomy_id": "7"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "www.hallsberg.se",
+        "organization_number": "2120001926",
+        "name": "Hallsbergs kommun",
+        "workplace": "Hallsbergs kommun"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": null,
+        "via_af": false,
+        "url": "https://go.talentech.io/hGIWV",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "zGHj_2Jf_oKy",
+        "label": "Grundlärare, förskoleklass och 1-3",
+        "legacy_ams_taxonomy_id": "7652"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Hallsberg",
+        "municipality_code": "1861",
+        "municipality_concept_id": "Ak9V_rby_yYS",
+        "region": "Örebro län",
+        "region_code": "18",
+        "region_concept_id": "xTCk_nT5_Zjm",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [15.10229, 59.066532]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 10,
+            "concept_id": "zGHj_2Jf_oKy",
+            "label": "Grundlärare, förskoleklass och 1-3",
+            "legacy_ams_taxonomy_id": "7652"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Jarmo Rajakangas",
+          "email": "jarmo.rajakangas@edu.hallsberg.se",
+          "telephone": "0582-68 6003",
+          "contact_type": null
+        }
+      ],
+      "publication_date": "2024-09-18T08:13:18",
+      "last_publication_date": "2024-10-02T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726639998703
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29106664",
+      "external_id": null,
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29106664",
+      "logo_url": null,
+      "headline": "Lärare Djurvård",
+      "application_deadline": "2024-10-16T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Om jobbet\n\n\nDinglegymnasiet söker lärare inom Djurvårdsämnen. På Dinglegymnasiet erbjuds Naturbruksprogrammet med inriktningarna Trädgård, Häst och Djurvård med profilering mot hund eller djursjukvård. Skolan har även IM-program. Tillsammans med Nuntorpsgymnasiet skapar Naturbruk Väst två skolor som är tryggt förankrade i den långvariga tradition av naturbruksutbildningar som alltid präglat orterna där skolorna ligger.\nDinglegymnasiet söker!\nNu  söker vi dig som kan undervisa såväl praktiskt som teoretiskt i kurserna inom Djurvård. Särskilt meriterande är praktisk vana och skötsel av våra olika sällskapsdjur. I tjänsten ingår även mentorskap och arbete inom arbetslag. Tjänsten vi utlyser är 50%.\nKvalifikationer\nStor vikt läggs på utbildning och yrkeserfarenhet inom Djurvård och praktiskt arbete med sällskapsdjur. Tidigare erfarenhet av undervisning i gymnasieskolan och erfarenhet av naturbruksutbildning är meriterande.\nSom lärare är du väl förtrogen med gymnasieskolans läroplan och kursplaner och är en god pedagog. Du planerar och strukturerar upp ditt arbete självständigt. Du är kreativ och öppen för nya idéer och tankesätt samt har lätt för att kommunicera och bygga relationer med såväl elever som med andra vuxna. Du är trygg och säker i ditt ledarskap i klassrummet.\nDu tar egna initiativ och brinner för skolutvecklingsfrågor - att bygga upp och bygga nytt lockar dig. Du räds inte utmaningar utan ser dem istället som möjligheter att hitta nya vägar.\nVill du bli vår nya kollega på Dinglegymnasiet? Varmt välkommen med din ansökan!\nVi tillämpar löpande urval.\nVi undanber oss vänligt men bestämt att bli kontaktade för ytterligare erbjudanden om kompetensförmedling, annonserings- och rekryteringshjälp.",
+        "text_formatted": "<p><strong>Om jobbet</strong></p><p><br></p><p>Dinglegymnasiet söker lärare inom Djurvårdsämnen. På Dinglegymnasiet erbjuds Naturbruksprogrammet med inriktningarna Trädgård, Häst och Djurvård med profilering mot hund eller djursjukvård. Skolan har även IM-program. Tillsammans med Nuntorpsgymnasiet skapar Naturbruk Väst två skolor som är tryggt förankrade i den långvariga tradition av naturbruksutbildningar som alltid präglat orterna där skolorna ligger.</p><p><strong>Dinglegymnasiet söker!</strong></p><p>Nu  söker vi dig som kan undervisa såväl praktiskt som teoretiskt i kurserna inom Djurvård. Särskilt meriterande är praktisk vana och skötsel av våra olika sällskapsdjur. I tjänsten ingår även mentorskap och arbete inom arbetslag. Tjänsten vi utlyser är 50%.</p><p><strong>Kvalifikationer</strong></p><p>Stor vikt läggs på utbildning och yrkeserfarenhet inom Djurvård och praktiskt arbete med sällskapsdjur. Tidigare erfarenhet av undervisning i gymnasieskolan och erfarenhet av naturbruksutbildning är meriterande.</p><p>Som lärare är du väl förtrogen med gymnasieskolans läroplan och kursplaner och är en god pedagog. Du planerar och strukturerar upp ditt arbete självständigt. Du är kreativ och öppen för nya idéer och tankesätt samt har lätt för att kommunicera och bygga relationer med såväl elever som med andra vuxna. Du är trygg och säker i ditt ledarskap i klassrummet.</p><p>Du tar egna initiativ och brinner för skolutvecklingsfrågor - att bygga upp och bygga nytt lockar dig. Du räds inte utmaningar utan ser dem istället som möjligheter att hitta nya vägar.</p><p>Vill du bli vår nya kollega på Dinglegymnasiet? Varmt välkommen med din ansökan!</p><p>Vi tillämpar löpande urval.</p><p><em>Vi undanber oss vänligt men bestämt att bli kontaktade för ytterligare erbjudanden om kompetensförmedling, annonserings- och rekryteringshjälp.</em></p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": null
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": null,
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "947z_JGS_Uk2",
+        "label": "Deltid",
+        "legacy_ams_taxonomy_id": "2"
+      },
+      "scope_of_work": {
+        "min": 0,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "http://www.dinglegymnasiet.se",
+        "organization_number": "5590475611",
+        "name": "Naturbruk Väst AB",
+        "workplace": "Dinglegymnasiet"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": "sokjobb@dinglegymnasiet.se",
+        "via_af": false,
+        "url": null,
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": true,
+      "driving_license": [
+        {
+          "concept_id": "VTK8_WRx_GcM",
+          "label": "B",
+          "legacy_ams_taxonomy_id": "3"
+        }
+      ],
+      "occupation": {
+        "concept_id": "Hob8_zfc_5ge",
+        "label": "Yrkeslärare",
+        "legacy_ams_taxonomy_id": "7128"
+      },
+      "occupation_group": {
+        "concept_id": "2x2V_UeL_6ke",
+        "label": "Lärare i yrkesämnen",
+        "legacy_ams_taxonomy_id": "2320"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Munkedal",
+        "municipality_code": "1430",
+        "municipality_concept_id": "96Dh_3sQ_RFb",
+        "region": "Västra Götalands län",
+        "region_code": "14",
+        "region_concept_id": "zdoY_6u5_Krt",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": "Kustvägen 11 c",
+        "postcode": "45561",
+        "city": "Dingle",
+        "coordinates": [11.57034936512133, 58.529350615832534]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 5,
+            "concept_id": "Hob8_zfc_5ge",
+            "label": "Yrkeslärare",
+            "legacy_ams_taxonomy_id": "7128"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": "Lisa Andreasson",
+          "description": null,
+          "email": "lisa@dinglegymnasiet.se",
+          "telephone": "0708939917",
+          "contact_type": null
+        }
+      ],
+      "publication_date": "2024-09-16T15:35:45",
+      "last_publication_date": "2024-10-16T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_ANNONSERA",
+      "timestamp": 1726493745334
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29105874",
+      "external_id": "46-212000-2643-34B67C776AB24DE88E66E016F883C96B",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29105874",
+      "logo_url": null,
+      "headline": "Lärare Resursskola",
+      "application_deadline": "2024-09-29T23:59:59",
+      "number_of_vacancies": 2,
+      "description": {
+        "text": "Är du redo att göra skillnad som lärare i Skellefteå kommuns nya resursskola? \n\nVi söker engagerade pedagoger som vill vara med och forma framtiden för elever i behov av särskilt stöd. Resursskolan öppnar våren 2025 och kommer att erbjuda en trygg och inspirerande lärmiljö för upp till 25 elever i årskurserna 1-9 när den är fullt utbyggd. Till våren startar vi med åk 6-9 på Norrhammarskolan. Skolan kommer att ha lokaler anpassade för att skapa förutsättningar för sammanhang och bygga gemenskap för varje elev.\n\nSkellefteå befinner sig mitt i en extraordinär samhällsomvandling, här ska många fler människor leva och bo och just nu pågår arbetet för att möta utvecklingen. På avdelning grundskola arbetar vi aktivt med att kvalitetssäkra barns rätt till utveckling och lärande, utifrån ett likvärdigt perspektiv för hela Skellefteå kommun. \n\nDu kommer att arbeta i en kommun med stark framtidstro och en expansiv utveckling. Varmt välkommen med din ansökan!\r\n\r\nARBETSUPPGIFTER\nSom lärare i resursskola ansvarar du för att planera, genomföra och utvärdera undervisningen i dina ämnen. Du är även en del i ansvaret för elevens hela skoldag. Du utgår från skolans styrdokument och skräddarsyr undervisningen för att ge alla elever bästa möjliga förutsättningar för både social och personlig utveckling.\n\nI din roll är samarbetet med elever, vårdnadshavare och kollegor avgörande. Tillsammans med dina kollegor bidrar du aktivt till skolans uppdrag och deltar i det kontinuerliga utvecklingsarbetet.\r\n\r\nKVALIFIKATIONER\nVi söker dig som har en ämneslärarexamen och lärarlegitimation med inriktning mot årskurs 6-9. Erfarenhet av att undervisa och arbeta med elever med särskilda behov är meriterande.\n\nSom person är du relationsskapande och samarbetsorienterad, med en förmåga att enkelt anpassa dig för att nå gemensamma mål. Du bidrar aktivt till en positiv och inkluderande miljö, är trygg i dig själv och värdesätter mångfald. Nytänkande och kreativitet är något du ser som en styrka i ditt arbete.\n\nPersoner som i sitt arbete kommer att befinna sig inom fritidshem eller grundskola ska lämna ett utdrag ur belastningsregistret.",
+        "text_formatted": "Är du redo att göra skillnad som lärare i Skellefteå kommuns nya resursskola? \n\nVi söker engagerade pedagoger som vill vara med och forma framtiden för elever i behov av särskilt stöd. Resursskolan öppnar våren 2025 och kommer att erbjuda en trygg och inspirerande lärmiljö för upp till 25 elever i årskurserna 1-9 när den är fullt utbyggd. Till våren startar vi med åk 6-9 på Norrhammarskolan. Skolan kommer att ha lokaler anpassade för att skapa förutsättningar för sammanhang och bygga gemenskap för varje elev.\n\nSkellefteå befinner sig mitt i en extraordinär samhällsomvandling, här ska många fler människor leva och bo och just nu pågår arbetet för att möta utvecklingen. På avdelning grundskola arbetar vi aktivt med att kvalitetssäkra barns rätt till utveckling och lärande, utifrån ett likvärdigt perspektiv för hela Skellefteå kommun. \n\nDu kommer att arbeta i en kommun med stark framtidstro och en expansiv utveckling. Varmt välkommen med din ansökan!\r\n\r\nARBETSUPPGIFTER\nSom lärare i resursskola ansvarar du för att planera, genomföra och utvärdera undervisningen i dina ämnen. Du är även en del i ansvaret för elevens hela skoldag. Du utgår från skolans styrdokument och skräddarsyr undervisningen för att ge alla elever bästa möjliga förutsättningar för både social och personlig utveckling.\n\nI din roll är samarbetet med elever, vårdnadshavare och kollegor avgörande. Tillsammans med dina kollegor bidrar du aktivt till skolans uppdrag och deltar i det kontinuerliga utvecklingsarbetet.\r\n\r\nKVALIFIKATIONER\nVi söker dig som har en ämneslärarexamen och lärarlegitimation med inriktning mot årskurs 6-9. Erfarenhet av att undervisa och arbeta med elever med särskilda behov är meriterande.\n\nSom person är du relationsskapande och samarbetsorienterad, med en förmåga att enkelt anpassa dig för att nå gemensamma mål. Du bidrar aktivt till en positiv och inkluderande miljö, är trygg i dig själv och värdesätter mångfald. Nytänkande och kreativitet är något du ser som en styrka i ditt arbete.\n\nPersoner som i sitt arbete kommer att befinna sig inom fritidshem eller grundskola ska lämna ett utdrag ur belastningsregistret.",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid. \r\nTillsvidareanställning, tillträde: Enligt överenskommelse."
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Enligt avtal.",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2120002643",
+        "name": "Skellefteå kommun",
+        "workplace": "Skellefteå kommun, Utbildning och arbetsmarknad"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "464400",
+        "email": null,
+        "via_af": false,
+        "url": "https://recruit.visma.com/spa/public/apply?guidAssignment=34b67c77-6ab2-4de8-8e66-e016f883c96b&publishCode=AMS&TK=1010a3ca-77ad-47ec-8d14-a373e911239f",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "iYgm_hfD_Bez",
+        "label": "Ämneslärare, 7-9",
+        "legacy_ams_taxonomy_id": "7654"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Skellefteå",
+        "municipality_code": "2482",
+        "municipality_concept_id": "kicB_LgH_2Dk",
+        "region": "Västerbottens län",
+        "region_code": "24",
+        "region_concept_id": "g5Tt_CAV_zBd",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [20.950916, 64.750244]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 10,
+            "concept_id": "iYgm_hfD_Bez",
+            "label": "Ämneslärare, 7-9",
+            "legacy_ams_taxonomy_id": "7654"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Jenny Eriksson",
+          "email": null,
+          "telephone": "0910 - 73 50 00",
+          "contact_type": "Rektor"
+        },
+        {
+          "name": null,
+          "description": "Anna Stenlund",
+          "email": null,
+          "telephone": "0910 - 73 50 00",
+          "contact_type": "Biträdande rektor"
+        },
+        {
+          "name": null,
+          "description": "Maria Alm",
+          "email": null,
+          "telephone": "0910 - 73 50 00",
+          "contact_type": "HR-partner, inriktning rekrytering"
+        }
+      ],
+      "publication_date": "2024-09-16T10:50:29",
+      "last_publication_date": "2024-09-29T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726476629274
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29105068",
+      "external_id": "46-845000-3481-149629",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29105068",
+      "logo_url": null,
+      "headline": "Lärare Möbelrestaurering",
+      "application_deadline": "2024-10-13T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Tibro Hantverksakademi är en del av Folkuniversitetet. Här värnar vi om kulturarvet och vi utforskar innovativa sätt att tillämpa traditionella tekniker på morgondagens möbel- och inredningsdesign. Utbildningarna hos oss bygger på den långa yrkestradition som gjort Tibro till ett av Sveriges möbelcentrum. Vi söker nu lärare i möbelrestaurering på deltid.\nVärdesätter du att arbeta i en kreativ miljö där service, bemötande, utveckling av processer och arbetsmetoder är viktig? Tror du som vi på att ge människor möjlighet till ett livslångt lärande och att kunskap förändrar? Då kan vi vara rätt arbetsgivare för dig.\nOm tjänsten\nTibro Hantverksakademi erbjuder Yrkeshögskoleutbildningar inom sex hantverksutbildningar, dekormåleri/förgyllning/ytbehandling, möbelrestaurering, möbeltapetsering, specialsnickeri, träbildhuggeri och trähantverk. Genom en nära samverkan med näringslivet utvecklar vi ständigt våra utbildningar och projekt för att kunna möta arbetslivets behov av ny kompetens.\nSom lärare på utbildningen för möbelrestaurerare ansvarar du för att planera och genomföra utbildningen, utifrån kursplan och mål, tillsammans med övriga kollegor. Du dokumentera de studerandes kunskapsutveckling som ligger till grund för betyg/bedömning av såväl praktiska som teoretiska moment, med en tydlig tyngdpunkt på det praktiska utförandet. Arbetet görs i tätt samarbete med kollegor, då vi på skolan värdesätter det kollegiala samarbetet kring de studerandes lärande. I tjänsten ingår också viss undervisning på skolans övriga utbildningar.\nDin kompetens och bakgrund\nVi söker dig som är trygg med att jobba med både traditionella och moderna material och tekniker liksom andra inom hantverket förekommande uppgifter. Vi vill att du som person är lyhörd och inom ramarna för kurserna kan anpassa utbildningen utifrån enskilda elevers förutsättningar. Du är noggrann och kvalitetsmedveten och gillar att lösa problem inom restaureringen. Det är viktigt att du har förmågan att förklara och lära ut hantverket. \nVi förutsätter också att du delar Folkuniversitets syn på människors lika värde och rätt till kunskap.\nOm anställningen\nTillsvidareanställning, på deltid 58%, med sex månaders provanställning.\n\nAnsökan\nVälkommen med din ansökan i form av CV och personligt brev senast 2024-10-13 via vår e-rekrytering. Inkomna ansökningar behandlas löpande och tjänsten kan komma att tillsättas innan sista ansökningsdag. \nFör ytterligare information eller frågor kontakta\nMaria Lans, Verksamhetschef, maria.lans@folkuniversitetet.se    \nFackliga representanter\nKrister Grahn, Sveriges Lärare, krister.grahn@folkuniversitetet.se",
+        "text_formatted": "Tibro Hantverksakademi är en del av Folkuniversitetet. Här värnar vi om kulturarvet och vi utforskar innovativa sätt att tillämpa traditionella tekniker på morgondagens möbel- och inredningsdesign. Utbildningarna hos oss bygger på den långa yrkestradition som gjort Tibro till ett av Sveriges möbelcentrum. Vi söker nu lärare i möbelrestaurering på deltid.<p>Värdesätter du att arbeta i en kreativ miljö där service, bemötande, utveckling av processer och arbetsmetoder är viktig? Tror du som vi på att ge människor möjlighet till ett livslångt lärande och att kunskap förändrar? Då kan vi vara rätt arbetsgivare för dig.</p><p><strong>Om tjänsten</strong><br />Tibro Hantverksakademi erbjuder Yrkeshögskoleutbildningar inom sex hantverksutbildningar, dekormåleri/förgyllning/ytbehandling, möbelrestaurering, möbeltapetsering, specialsnickeri, träbildhuggeri och trähantverk. Genom en nära samverkan med näringslivet utvecklar vi ständigt våra utbildningar och projekt för att kunna möta arbetslivets behov av ny kompetens.</p><p>Som lärare på utbildningen för möbelrestaurerare ansvarar du för att planera och genomföra utbildningen, utifrån kursplan och mål, tillsammans med övriga kollegor. Du dokumentera de studerandes kunskapsutveckling som ligger till grund för betyg/bedömning av såväl praktiska som teoretiska moment, med en tydlig tyngdpunkt på det praktiska utförandet. Arbetet görs i tätt samarbete med kollegor, då vi på skolan värdesätter det kollegiala samarbetet kring de studerandes lärande. I tjänsten ingår också viss undervisning på skolans övriga utbildningar.</p><p><strong>Din kompetens och bakgrund</strong><br />Vi söker dig som är trygg med att jobba med både traditionella och moderna material och tekniker liksom andra inom hantverket förekommande uppgifter. Vi vill att du som person är lyhörd och inom ramarna för kurserna kan anpassa utbildningen utifrån enskilda elevers förutsättningar. Du är noggrann och kvalitetsmedveten och gillar att lösa problem inom restaureringen. Det är viktigt att du har förmågan att förklara och lära ut hantverket. <br />Vi förutsätter också att du delar Folkuniversitets syn på människors lika värde och rätt till kunskap.</p><p><strong>Om anställningen</strong><br />Tillsvidareanställning, på deltid 58%, med sex månaders provanställning.<br /><br /><strong>Ansökan</strong><br />Välkommen med din ansökan i form av CV och personligt brev senast 2024-10-13 via vår e-rekrytering. Inkomna ansökningar behandlas löpande och tjänsten kan komma att tillsättas innan sista ansökningsdag. </p><p><strong>För ytterligare information eller frågor kontakta</strong><br />Maria Lans, Verksamhetschef, <a href=\"mailto:maria.lans@folkuniversitetet.se\">maria.lans@folkuniversitetet.se</a>    </p><p><strong>Fackliga representanter</strong><br />Krister Grahn, Sveriges Lärare, <a href=\"mailto:krister.grahn@folkuniversitetet.se\">krister.grahn@folkuniversitetet.se</a></p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Deltid/\r\nEj specificerat"
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Månadslön",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "947z_JGS_Uk2",
+        "label": "Deltid",
+        "legacy_ams_taxonomy_id": "2"
+      },
+      "scope_of_work": {
+        "min": 0,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "http://folkuniversitetet.se/",
+        "organization_number": "8450003481",
+        "name": "Folkuniversitetet Stift Kurs- Verksamheten",
+        "workplace": "Folkuniversitetet"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": null,
+        "via_af": false,
+        "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=223&ProjectId=191370&DepartmentId=5207&MediaId=5549&utm_medium=talentech_publishing&utm_source=platsbanken",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "ajWc_95L_PnQ",
+        "label": "Lärare i praktiska och estetiska ämnen",
+        "legacy_ams_taxonomy_id": "7126"
+      },
+      "occupation_group": {
+        "concept_id": "4KhP_FxL_uZ5",
+        "label": "Gymnasielärare",
+        "legacy_ams_taxonomy_id": "2330"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Tibro",
+        "municipality_code": "1472",
+        "municipality_concept_id": "aLFZ_NHw_atB",
+        "region": "Västra Götalands län",
+        "region_code": "14",
+        "region_concept_id": "zdoY_6u5_Krt",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [14.161642, 58.424324]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 10,
+            "concept_id": "ajWc_95L_PnQ",
+            "label": "Lärare i praktiska och estetiska ämnen",
+            "legacy_ams_taxonomy_id": "7126"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Maria Lans",
+          "email": "maria.lans@folkuniversitetet.se",
+          "telephone": "+4650412551",
+          "contact_type": "Verksamhetschef"
+        }
+      ],
+      "publication_date": "2024-09-16T08:53:49",
+      "last_publication_date": "2024-10-13T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726469629663
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29098146",
+      "external_id": "46-212000-2486-28E09F4077694F6791442EF70E6A43EA",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29098146",
+      "logo_url": null,
+      "headline": "Lärare musik ",
+      "application_deadline": "2024-10-21T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "För Strömsunds kommun är målet enkelt – alla ska trivas, ha kul på jobbet och få möjlighet att utvecklas och växa med sina arbetsuppgifter. Våra chefer har det viktiga uppdraget att se till att vi alla känner oss delaktiga, respekterade och ansvarstagande på jobbet. \n\nSom kommun ansvarar vi bland annat för undervisning, vård och omsorg, samhällsbyggnad, arbetsmarknad, kultur och servicetjänster. Jobben vi gör får kommunen att fungera och det är betydelsefullt för invånarna – och skapar meningsfullhet i vår arbetsvardag. \n\nVi gör skillnad för människor dygnet runt, årets alla dagar. Vill du bli en del av vårt viktiga arbete? Välkommen med din ansökan!\n\r\n\r\nARBETSUPPGIFTER\nHotings rektorsområde söker lärare i musik för grundskolan från och med Vårterminen 2025.\n\nVi söker dig som vill undervisa och fortsätta skolans utveckling. Hotings rektorsområde arbetar utifrån ett förhållningssätt som sätter barnen i fokus utifrån ett helhetsperspektiv. Samverkan med föräldrar och samarbete med övrig personal är en viktig del av arbetet.\n\n\r\n\r\nKVALIFIKATIONER\nVi söker dig som har adekvat lärarutbildning. \n\nVi söker dig som är samarbetsvillig, utåtriktad och ansvarstagande. Du är intresserad av att utveckla dig själv och ditt sätt att arbeta och vågar tänka i nya banor och har förmåga att planera, genomföra och följa upp verksamheten. \n\nDu har grundläggande datorvana för att kunna använda de IT-verktyg vi har för undervisningen.\n\r\n\nÖVRIGT\nVi har gjort ett genomtänkt val av kanaler för den här rekryteringen. Vi vill inte bli kontaktade av försäljare, vänligen respektera detta.",
+        "text_formatted": "För Strömsunds kommun är målet enkelt – alla ska trivas, ha kul på jobbet och få möjlighet att utvecklas och växa med sina arbetsuppgifter. Våra chefer har det viktiga uppdraget att se till att vi alla känner oss delaktiga, respekterade och ansvarstagande på jobbet. \n\nSom kommun ansvarar vi bland annat för undervisning, vård och omsorg, samhällsbyggnad, arbetsmarknad, kultur och servicetjänster. Jobben vi gör får kommunen att fungera och det är betydelsefullt för invånarna – och skapar meningsfullhet i vår arbetsvardag. \n\nVi gör skillnad för människor dygnet runt, årets alla dagar. Vill du bli en del av vårt viktiga arbete? Välkommen med din ansökan!\n\r\n\r\nARBETSUPPGIFTER\nHotings rektorsområde söker lärare i musik för grundskolan från och med Vårterminen 2025.\n\nVi söker dig som vill undervisa och fortsätta skolans utveckling. Hotings rektorsområde arbetar utifrån ett förhållningssätt som sätter barnen i fokus utifrån ett helhetsperspektiv. Samverkan med föräldrar och samarbete med övrig personal är en viktig del av arbetet.\n\n\r\n\r\nKVALIFIKATIONER\nVi söker dig som har adekvat lärarutbildning. \n\nVi söker dig som är samarbetsvillig, utåtriktad och ansvarstagande. Du är intresserad av att utveckla dig själv och ditt sätt att arbeta och vågar tänka i nya banor och har förmåga att planera, genomföra och följa upp verksamheten. \n\nDu har grundläggande datorvana för att kunna använda de IT-verktyg vi har för undervisningen.\n\r\n\nÖVRIGT\nVi har gjort ett genomtänkt val av kanaler för den här rekryteringen. Vi vill inte bli kontaktade av försäljare, vänligen respektera detta.",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": " Musikämnet täcker 30% av en tjänst men det finns möjlighet att kombinera med andra ämnen till en heltid. \r\nTillsvidareanställning, tillträde: Tillträde januari 2025."
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Enligt avtal.",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2120002486",
+        "name": "Strömsunds kommun",
+        "workplace": "Strömsunds kommun, Barn- kultur- och utbildningsförvaltningen"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "A1312709",
+        "email": null,
+        "via_af": false,
+        "url": "https://recruit.visma.com/spa/public/apply?guidAssignment=28e09f40-7769-4f67-9144-2ef70e6a43ea&publishCode=AMS&TK=6faaea37-c9c9-4b10-a554-ae1edc211937",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": true,
+      "driving_license": [
+        {
+          "concept_id": "VTK8_WRx_GcM",
+          "label": "B",
+          "legacy_ams_taxonomy_id": "3"
+        }
+      ],
+      "occupation": {
+        "concept_id": "iYgm_hfD_Bez",
+        "label": "Ämneslärare, 7-9",
+        "legacy_ams_taxonomy_id": "7654"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Strömsund",
+        "municipality_code": "2313",
+        "municipality_concept_id": "ppjq_Eci_Wz9",
+        "region": "Jämtlands län",
+        "region_code": "23",
+        "region_concept_id": "65Ms_7r1_RTG",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [15.5568695, 63.85366]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 10,
+            "concept_id": "iYgm_hfD_Bez",
+            "label": "Ämneslärare, 7-9",
+            "legacy_ams_taxonomy_id": "7654"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Victoria Tjernlund",
+          "email": "victoria.tjarnlund@stromsund.se",
+          "telephone": "0671-71 61 26",
+          "contact_type": "Rektor Centralskolan Hoting"
+        }
+      ],
+      "publication_date": "2024-09-16T00:00:00",
+      "last_publication_date": "2024-10-21T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726150213970
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29101588",
+      "external_id": null,
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29101588",
+      "logo_url": null,
+      "headline": "Lärare 4-6",
+      "application_deadline": "2024-10-04T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Vi vet att vi har en viktig roll att spela, och vi vill att du ska vara en del av det! \n\n\nPå Dibber har vi hjärta för lärande. Det betyder att vi brinner för att varje barn och elev ska ges de bästa förutsättningarna för att utveckla ett livslångt lärande med hjärta för världen. \n \nVår Hjärtekultur är kärnan i hela verksamheten, och präglar relationerna med barn och elever, vårdnadshavare, och mellan kollegor. Hjärtekulturen ska vara en vägledare i varje situation. Vi strävar efter att vara en inkluderande arbetsplats där varje medarbetare känner sig sedd och kan vara med och bidra. Vi erbjuder en arbetsplats med fokus på trivsel och arbetsmiljö, utveckling och tillitsfulla relationer.\nDibber har kollektivavtal genom Almega med Sveriges lärare, Kommunal och Vision (Friskoleavtalet) och erbjuder friskvårdsbidrag, föräldralön, personalstöd, företagshälsovård samt regelbundna medarbetarundersökningar för att mäta våra medarbetares trivsel och hälsa. Det är viktigt för oss att våra medarbetare trivs hos och känner trygghet. Vi vet att ledarskapet är avgörande för att vår verksamhet och våra medarbetare ska må bra och lyckas, därför jobbar vi aktivt med att utveckla våra ledare och säkerställa att de har det stöd de behöver.\n.\nVill du vara en del av Långvinkelns Montessoriskola?\nVi söker nu dig som är utbildad och legitimerad lärare 4-6. Vår skola är en liten grundskola för elever i åk F-6. Vi ligger mitt i centrala Helsingborg med närhet till allt som staden har att erbjuda. Montessoripedagogik genomsyrar arbetet på både skola och fritids.\nOm dig \nDu delar Dibbers pedagogiska förhållningssätt som handlar om att arbeta med omsorg för att utveckla egenvärde, empati och inkludering. \nDu uppmärksammar, sätter ord på och stärker situationer som bygger förtroendefulla relationer och arbetar för att bygga en positiv gemenskap såväl kring eleverna i undervisningen och i mötet med vårdnadshavare, som i ditt arbetslag. \nDu bidrar med kunskap och kreativitet, engagemang för lärande och visar tålamod. Du firar dina elevers och kollegors framgångar, stora som små och glädjs med deras nya lärdomar och upptäckter. \n\n\nOm rollen\nSom lärare på en Dibberskola ansvarar du för att vårt pedagogiska förhållningssätt genomsyrar ditt arbete. \nDu ansvarar för att genomföra planering, undervisning, dokumentation och utvärdering av undervisningen tillsammans med ditt arbetslag. \n \nDina kvalifikationer\nVi söker dig som är legitimerad och behörig lärare för årskurs 4-6. Vi ser gärna att du även är legitimerad för att undervisa i idrott och hälsa och/eller något praktiskt ämne.  \nTydlig ledare \nFörmåga att bygga förtroendefulla relationer \nErfarenhet och intresse för digitala verktyg och system \nSamarbetsförmåga och förhållningssätt att dela med sig av kunskap och erfarenhet för kollegialt lärande \nFörmåga att planera och organisera sitt arbete \n\n\n\nDibber etablerades i Sverige 2017 och bedriver idag förskolor, grundskolor, anpassade grundskolor och öppna förskolor. Dibbers huvudkontor ligger i Sollentuna, verksamhet finns i stora delar av Sverige. Dibber i Sverige är en del av den norska friskolekoncernen Dibber som startades och ägs av två engagerade pedagoger, Randi och Hans Jacob Sundby. Den första förskolan startas 2003 i den lilla stad där Randi växt upp. Idag driver Dibber mer än 600 förskolor i tio länder över hela världen.\nVi står upp för livslångt lärande och att hålla oss i framkant inom våra professioner. Vi strävar efter att bygga ett professionellt nätverk där vi lär av varandra och som kan stötta och inspirera. Oavsett vilken del av verksamheten som du arbetar inom, blir du en del av ett team som vill göra en skillnad för barn och elever, och deras framtid. Tillsammans skapar vi en inkluderande arbetsplats präglad av hjärtekultur, lärande och utveckling.\n \nVälkommen till Dibber – med hjärta för lärande!\n\n\nÖvrigt\nTillträde så snart som möjligt.\nUrval och intervjuer sker löpande under ansökningstiden. Bifoga din lärarlegitimation tillsammans med cv i din ansökan.",
+        "text_formatted": "<p><strong>Vi vet att vi har en viktig roll att spela, och vi vill att du ska vara en del av det! </strong></p><p><br></p><p>På Dibber har vi hjärta för lärande. Det betyder att vi brinner för att varje barn och elev ska ges de bästa förutsättningarna för att <strong>utveckla ett livslångt lärande med hjärta för världen. </strong></p><p> </p><p>Vår Hjärtekultur är kärnan i hela verksamheten, och präglar relationerna med barn och elever, vårdnadshavare, och mellan kollegor. Hjärtekulturen ska vara en vägledare i varje situation. Vi strävar efter att vara en inkluderande arbetsplats där varje medarbetare känner sig sedd och kan vara med och bidra. Vi erbjuder en arbetsplats med fokus på trivsel och arbetsmiljö, utveckling och tillitsfulla relationer.</p><p>Dibber har kollektivavtal genom Almega med Sveriges lärare, Kommunal och Vision (Friskoleavtalet) och erbjuder friskvårdsbidrag, föräldralön, personalstöd, företagshälsovård samt regelbundna medarbetarundersökningar för att mäta våra medarbetares trivsel och hälsa. Det är viktigt för oss att våra medarbetare trivs hos och känner trygghet. Vi vet att ledarskapet är avgörande för att vår verksamhet och våra medarbetare ska må bra och lyckas, därför jobbar vi aktivt med att utveckla våra ledare och säkerställa att de har det stöd de behöver.</p><p>.</p><p><strong>Vill du vara en del av Långvinkelns Montessoriskola?</strong></p><p>Vi söker nu dig som är utbildad och legitimerad lärare 4-6. Vår skola är en liten grundskola för elever i åk F-6. Vi ligger mitt i centrala Helsingborg med närhet till allt som staden har att erbjuda. Montessoripedagogik genomsyrar arbetet på både skola och fritids.</p><p><strong>Om dig </strong></p><p>Du delar Dibbers pedagogiska förhållningssätt som handlar om att arbeta med omsorg för att utveckla egenvärde, empati och inkludering. </p><p>Du uppmärksammar, sätter ord på och stärker situationer som bygger förtroendefulla relationer och arbetar för att bygga en positiv gemenskap såväl kring eleverna i undervisningen och i mötet med vårdnadshavare, som i ditt arbetslag. </p><p>Du bidrar med kunskap och kreativitet, engagemang för lärande och visar tålamod. Du firar dina elevers och kollegors framgångar, stora som små och glädjs med deras nya lärdomar och upptäckter. </p><p><br></p><p><strong>Om rollen</strong></p><p>Som lärare på en Dibberskola ansvarar du för att vårt pedagogiska förhållningssätt genomsyrar ditt arbete. </p><p>Du ansvarar för att genomföra planering, undervisning, dokumentation och utvärdering av undervisningen tillsammans med ditt arbetslag. </p><p> </p><p><strong>Dina kvalifikationer</strong></p><p>Vi söker dig som är legitimerad och behörig lärare för årskurs 4-6. Vi ser gärna att du även är legitimerad för att undervisa i idrott och hälsa och/eller något praktiskt ämne.  </p><ul><li>Tydlig ledare </li><li>Förmåga att bygga förtroendefulla relationer </li><li>Erfarenhet och intresse för digitala verktyg och system </li><li>Samarbetsförmåga och förhållningssätt att dela med sig av kunskap och erfarenhet för kollegialt lärande </li><li>Förmåga att planera och organisera sitt arbete </li></ul><p><br></p><p>Dibber etablerades i Sverige 2017 och bedriver idag förskolor, grundskolor, anpassade grundskolor och öppna förskolor. Dibbers huvudkontor ligger i Sollentuna, verksamhet finns i stora delar av Sverige. Dibber i Sverige är en del av den norska friskolekoncernen Dibber som startades och ägs av två engagerade pedagoger, Randi och Hans Jacob Sundby. Den första förskolan startas 2003 i den lilla stad där Randi växt upp. Idag driver Dibber mer än 600 förskolor i tio länder över hela världen.</p><p>Vi står upp för livslångt lärande och att hålla oss i framkant inom våra professioner. Vi strävar efter att bygga ett professionellt nätverk där vi lär av varandra och som kan stötta och inspirera. Oavsett vilken del av verksamheten som du arbetar inom, blir du en del av ett team som vill göra en skillnad för barn och elever, och deras framtid. Tillsammans skapar vi en inkluderande arbetsplats präglad av hjärtekultur, lärande och utveckling.</p><p> </p><p><strong>Välkommen till Dibber – med hjärta för lärande!</strong></p><p><br></p><p><strong>Övrigt</strong></p><p>Tillträde så snart som möjligt.</p><p>Urval och intervjuer sker löpande under ansökningstiden. Bifoga din lärarlegitimation tillsammans med cv i din ansökan.</p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": null
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": null,
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "5568279235",
+        "name": "Dibber Olymp AB",
+        "workplace": "Långvinkelns Montessoriskola Dibber"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": null,
+        "via_af": false,
+        "url": "https://careers.dibber.com/DibberSWE/job/Helsingborg-L%C3%A4rare-4-6-Sk%C3%A5n-25732/991370655/",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "Nzmh_iTb_z7h",
+        "label": "Grundlärare, 4-6",
+        "legacy_ams_taxonomy_id": "7653"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Helsingborg",
+        "municipality_code": "1283",
+        "municipality_concept_id": "qj3q_oXH_MGR",
+        "region": "Skåne län",
+        "region_code": "12",
+        "region_concept_id": "CaRE_1nn_cSU",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": "Nedre Långvinkelsgatan 22-24",
+        "postcode": "25220",
+        "city": "Helsingborg",
+        "coordinates": [12.693601031285407, 56.048663603192]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 5,
+            "concept_id": "Nzmh_iTb_z7h",
+            "label": "Grundlärare, 4-6",
+            "legacy_ams_taxonomy_id": "7653"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": "Lena  Bjuresäter",
+          "description": null,
+          "email": "lena.bjuresater@dibber.se",
+          "telephone": null,
+          "contact_type": "tf rektor"
+        }
+      ],
+      "publication_date": "2024-09-13T11:10:13",
+      "last_publication_date": "2024-10-04T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_ANNONSERA",
+      "timestamp": 1726218613680
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29101549",
+      "external_id": null,
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29101549",
+      "logo_url": null,
+      "headline": "Lärare F-3",
+      "application_deadline": "2024-10-04T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Vi vet att vi har en viktig roll att spela, och vi vill att du ska vara en del av det! \n\n\nPå Dibber har vi hjärta för lärande. Det betyder att vi brinner för att varje barn och elev ska ges de bästa förutsättningarna för att utveckla ett livslångt lärande med hjärta för världen. \n \nVår Hjärtekultur är kärnan i hela verksamheten, och präglar relationerna med barn och elever, vårdnadshavare, och mellan kollegor. Hjärtekulturen ska vara en vägledare i varje situation. Vi strävar efter att vara en inkluderande arbetsplats där varje medarbetare känner sig sedd och kan vara med och bidra. Vi erbjuder en arbetsplats med fokus på trivsel och arbetsmiljö, utveckling och tillitsfulla relationer.\nDibber har kollektivavtal genom Almega med Sveriges lärare, Kommunal och Vision (Friskoleavtalet) och erbjuder friskvårdsbidrag, föräldralön, personalstöd, företagshälsovård samt regelbundna medarbetarundersökningar för att mäta våra medarbetares trivsel och hälsa. Det är viktigt för oss att våra medarbetare trivs hos och känner trygghet. Vi vet att ledarskapet är avgörande för att vår verksamhet och våra medarbetare ska må bra och lyckas, därför jobbar vi aktivt med att utveckla våra ledare och säkerställa att de har det stöd de behöver.\n.\nVill du vara en del av Långvinkelns Montessoriskola?\nVi söker nu dig som är utbildad och legitimerad lärare F-3. Vår skola är en liten grundskola för elever i åk F-6. Vi ligger mitt i centrala Helsingborg med närhet till allt som staden har att erbjuda. Montessoripedagogik genomsyrar arbetet på både skola och fritids.\nOm dig \nDu delar Dibbers pedagogiska förhållningssätt som handlar om att arbeta med omsorg för att utveckla egenvärde, empati och inkludering. \nDu uppmärksammar, sätter ord på och stärker situationer som bygger förtroendefulla relationer och arbetar för att bygga en positiv gemenskap såväl kring eleverna i undervisningen och i mötet med vårdnadshavare, som i ditt arbetslag. \nDu bidrar med kunskap och kreativitet, engagemang för lärande och visar tålamod. Du firar dina elevers och kollegors framgångar, stora som små och glädjs med deras nya lärdomar och upptäckter. \n\n\nOm rollen\nSom lärare på en Dibberskola ansvarar du för att vårt pedagogiska förhållningssätt genomsyrar ditt arbete. \nDu ansvarar för att genomföra planering, undervisning, dokumentation och utvärdering av undervisningen tillsammans med ditt arbetslag. \n \nDina kvalifikationer\nVi söker dig som är legitimerad och behörig lärare för årskurs F-3. Vi ser gärna att du även är legitimerad för att undervisa i idrott och hälsa och/eller något praktiskt ämne.  \nTydlig ledare \nFörmåga att bygga förtroendefulla relationer \nErfarenhet och intresse för digitala verktyg och system \nSamarbetsförmåga och förhållningssätt att dela med sig av kunskap och erfarenhet för kollegialt lärande \nFörmåga att planera och organisera sitt arbete \n\n \nÖvrigt\nTillträde så snart som möjligt.\nUrval och intervjuer sker löpande under ansökningstiden. Bifoga din lärarlegitimation tillsammans med cv i din ansökan.\n\n\nDibber etablerades i Sverige 2017 och bedriver idag förskolor, grundskolor, anpassade grundskolor och öppna förskolor. Dibbers huvudkontor ligger i Sollentuna, verksamhet finns i stora delar av Sverige. Dibber i Sverige är en del av den norska friskolekoncernen Dibber som startades och ägs av två engagerade pedagoger, Randi och Hans Jacob Sundby. Den första förskolan startas 2003 i den lilla stad där Randi växt upp. Idag driver Dibber mer än 600 förskolor i tio länder över hela världen.\nVi står upp för livslångt lärande och att hålla oss i framkant inom våra professioner. Vi strävar efter att bygga ett professionellt nätverk där vi lär av varandra och som kan stötta och inspirera. Oavsett vilken del av verksamheten som du arbetar inom, blir du en del av ett team som vill göra en skillnad för barn och elever, och deras framtid. Tillsammans skapar vi en inkluderande arbetsplats präglad av hjärtekultur, lärande och utveckling.\n \nVälkommen till Dibber – med hjärta för lärande!",
+        "text_formatted": "<p><strong>Vi vet att vi har en viktig roll att spela, och vi vill att du ska vara en del av det! </strong></p><p><br></p><p>På Dibber har vi hjärta för lärande. Det betyder att vi brinner för att varje barn och elev ska ges de bästa förutsättningarna för att <strong>utveckla ett livslångt lärande med hjärta för världen. </strong></p><p> </p><p>Vår Hjärtekultur är kärnan i hela verksamheten, och präglar relationerna med barn och elever, vårdnadshavare, och mellan kollegor. Hjärtekulturen ska vara en vägledare i varje situation. Vi strävar efter att vara en inkluderande arbetsplats där varje medarbetare känner sig sedd och kan vara med och bidra. Vi erbjuder en arbetsplats med fokus på trivsel och arbetsmiljö, utveckling och tillitsfulla relationer.</p><p>Dibber har kollektivavtal genom Almega med Sveriges lärare, Kommunal och Vision (Friskoleavtalet) och erbjuder friskvårdsbidrag, föräldralön, personalstöd, företagshälsovård samt regelbundna medarbetarundersökningar för att mäta våra medarbetares trivsel och hälsa. Det är viktigt för oss att våra medarbetare trivs hos och känner trygghet. Vi vet att ledarskapet är avgörande för att vår verksamhet och våra medarbetare ska må bra och lyckas, därför jobbar vi aktivt med att utveckla våra ledare och säkerställa att de har det stöd de behöver.</p><p>.</p><p><strong>Vill du vara en del av Långvinkelns Montessoriskola?</strong></p><p>Vi söker nu dig som är utbildad och legitimerad lärare F-3. Vår skola är en liten grundskola för elever i åk F-6. Vi ligger mitt i centrala Helsingborg med närhet till allt som staden har att erbjuda. Montessoripedagogik genomsyrar arbetet på både skola och fritids.</p><p><strong>Om dig </strong></p><p>Du delar Dibbers pedagogiska förhållningssätt som handlar om att arbeta med omsorg för att utveckla egenvärde, empati och inkludering. </p><p>Du uppmärksammar, sätter ord på och stärker situationer som bygger förtroendefulla relationer och arbetar för att bygga en positiv gemenskap såväl kring eleverna i undervisningen och i mötet med vårdnadshavare, som i ditt arbetslag. </p><p>Du bidrar med kunskap och kreativitet, engagemang för lärande och visar tålamod. Du firar dina elevers och kollegors framgångar, stora som små och glädjs med deras nya lärdomar och upptäckter. </p><p><br></p><p><strong>Om rollen</strong></p><p>Som lärare på en Dibberskola ansvarar du för att vårt pedagogiska förhållningssätt genomsyrar ditt arbete. </p><p>Du ansvarar för att genomföra planering, undervisning, dokumentation och utvärdering av undervisningen tillsammans med ditt arbetslag. </p><p> </p><p><strong>Dina kvalifikationer</strong></p><p>Vi söker dig som är legitimerad och behörig lärare för årskurs F-3. Vi ser gärna att du även är legitimerad för att undervisa i idrott och hälsa och/eller något praktiskt ämne.  </p><ul><li>Tydlig ledare </li><li>Förmåga att bygga förtroendefulla relationer </li><li>Erfarenhet och intresse för digitala verktyg och system </li><li>Samarbetsförmåga och förhållningssätt att dela med sig av kunskap och erfarenhet för kollegialt lärande </li><li>Förmåga att planera och organisera sitt arbete </li></ul><p> </p><p><strong>Övrigt</strong></p><p>Tillträde så snart som möjligt.</p><p>Urval och intervjuer sker löpande under ansökningstiden. Bifoga din lärarlegitimation tillsammans med cv i din ansökan.</p><p><br></p><p>Dibber etablerades i Sverige 2017 och bedriver idag förskolor, grundskolor, anpassade grundskolor och öppna förskolor. Dibbers huvudkontor ligger i Sollentuna, verksamhet finns i stora delar av Sverige. Dibber i Sverige är en del av den norska friskolekoncernen Dibber som startades och ägs av två engagerade pedagoger, Randi och Hans Jacob Sundby. Den första förskolan startas 2003 i den lilla stad där Randi växt upp. Idag driver Dibber mer än 600 förskolor i tio länder över hela världen.</p><p>Vi står upp för livslångt lärande och att hålla oss i framkant inom våra professioner. Vi strävar efter att bygga ett professionellt nätverk där vi lär av varandra och som kan stötta och inspirera. Oavsett vilken del av verksamheten som du arbetar inom, blir du en del av ett team som vill göra en skillnad för barn och elever, och deras framtid. Tillsammans skapar vi en inkluderande arbetsplats präglad av hjärtekultur, lärande och utveckling.</p><p> </p><p><strong>Välkommen till Dibber – med hjärta för lärande!</strong></p><p><br></p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": null
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": null,
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "5568279235",
+        "name": "Dibber Olymp AB",
+        "workplace": "Långvinkelns Montessoriskola Dibber"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": null,
+        "via_af": false,
+        "url": "https://careers.dibber.com/DibberSWE/job/Helsingborg-L%C3%A4rare-F-3-Sk%C3%A5n-25732/991369355/",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "zGHj_2Jf_oKy",
+        "label": "Grundlärare, förskoleklass och 1-3",
+        "legacy_ams_taxonomy_id": "7652"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Helsingborg",
+        "municipality_code": "1283",
+        "municipality_concept_id": "qj3q_oXH_MGR",
+        "region": "Skåne län",
+        "region_code": "12",
+        "region_concept_id": "CaRE_1nn_cSU",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": "Nedre Långvinkelsgatan 22-24",
+        "postcode": "25220",
+        "city": "Helsingborg",
+        "coordinates": [12.693601031285407, 56.048663603192]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 5,
+            "concept_id": "zGHj_2Jf_oKy",
+            "label": "Grundlärare, förskoleklass och 1-3",
+            "legacy_ams_taxonomy_id": "7652"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": "Lena  Bjuresäter",
+          "description": null,
+          "email": "lena-bjuresater@dibber.se",
+          "telephone": null,
+          "contact_type": "tf rektor"
+        }
+      ],
+      "publication_date": "2024-09-13T11:05:08",
+      "last_publication_date": "2024-10-04T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_ANNONSERA",
+      "timestamp": 1726218308998
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29092805",
+      "external_id": "46-845000-3481-149625",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29092805",
+      "logo_url": null,
+      "headline": "Lärare fiol",
+      "application_deadline": "2024-10-31T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Folkuniversitetets kursverksamhet erbjuder kurser och föreläsningar inom områden som språk, ekonomi, kreativt skrivande och musik. En stor del av vår verksamhet består av studiecirklar och kulturarrangemang.\nVi söker nu musiklärare i fiol.\nÄr förnyelse och viljan att pröva nya vägar viktigt för dig? Det är det för oss också. Välkommen till Folkuniversitetet – ett oberoende studieförbund med en stark koppling till universiteten.\n\nOm tjänsten\nVår musikundervisning sker i form av privatundervisning (så kallad one-to-one), på alla nivåer. Vi erbjuder idag undervisning i fiol, tvärflöjt, sång och piano, och vi söker nu en fiollärare till en handfull elever under verksamhetsåret 2024-2025. Det finns möjlighet till flexibilitet gällande tider och dagar (främst vardagskvällar samt helg).\nHuvudsakliga arbetsuppgifter \n\n- Privatundervisning i ditt instrument\n- Viss administrativt arbete i form av kontakt med deltagare och din utbildningsledare.\n\nDin kompetens och bakgrund\nVi söker dig som har mycket goda kunskaper i det instrument du undervisar, samt att du ska ha goda kunskaper i svenska. Det är meriterande om du har utbildning och erfarenhet av att undervisa både vuxna och barn, eller har annan erfarenhet av att leda grupper.\nKvalifikationer\n- Tidigare erfarenhet av musikundervisning\n- Utbildning inom musik i allmänhet eller ditt instrument i synnerhet\nMeriterande\n- Tidigare erfarenhet av privatundervisning\nSom pedagog på Folkuniversitetet förväntas du ha förmågan att individanpassa undervisningen och locka fram varje individs potential. Det är viktigt att du tycker det är roligt att förmedla kunskap och att du ser det positiva i att kursdeltagare utvecklas. Du är flexibel, lyhörd och strukturerad och har vana av att arbeta självständigt. Vi förutsätter också att du delar vår syn på människors lika värde och rätt till kunskap.\n\nOm anställningen\nAnställningsform: Objektsanställning med timlön.\nUndervisningen sker hos Folkuniversitetet i Uppsala, adress Bergsbrunnagatan 1. Intervjuer sker löpande, så inkom gärna med din ansökan så snart som möjligt.\n\nAnsökan\nVälkommen med din ansökan i form av CV och personligt brev via vårt rekryteringsverktyg.\nVi behandlar inkomna ansökningar löpande och tjänsten kan komma att tillsättas innan sista ansökningsdag.\nVi undanber oss vänligen men bestämt kontakt med bemannings- och rekryteringsföretag samt försäljare av ytterligare jobbannonser.",
+        "text_formatted": "<p>Folkuniversitetets kursverksamhet erbjuder kurser och föreläsningar inom områden som språk, ekonomi, kreativt skrivande och musik. En stor del av vår verksamhet består av studiecirklar och kulturarrangemang.</p><p><strong>Vi söker nu musiklärare i fiol.</strong></p><p>Är förnyelse och viljan att pröva nya vägar viktigt för dig? Det är det för oss också. Välkommen till Folkuniversitetet – ett oberoende studieförbund med en stark koppling till universiteten.<br /><br /><strong>Om tjänsten</strong><br />Vår musikundervisning sker i form av privatundervisning (så kallad one-to-one), på alla nivåer. Vi erbjuder idag undervisning i fiol, tvärflöjt, sång och piano, och vi söker nu en fiollärare till en handfull elever under verksamhetsåret 2024-2025. Det finns möjlighet till flexibilitet gällande tider och dagar (främst vardagskvällar samt helg).</p><p>Huvudsakliga arbetsuppgifter <br /><br />- Privatundervisning i ditt instrument<br />- Viss administrativt arbete i form av kontakt med deltagare och din utbildningsledare.</p><p><br /><strong>Din kompetens och bakgrund</strong><br />Vi söker dig som har mycket goda kunskaper i det instrument du undervisar, samt att du ska ha goda kunskaper i svenska. Det är meriterande om du har utbildning och erfarenhet av att undervisa både vuxna och barn, eller har annan erfarenhet av att leda grupper.</p><p>Kvalifikationer<br />- Tidigare erfarenhet av musikundervisning<br />- Utbildning inom musik i allmänhet eller ditt instrument i synnerhet</p><p>Meriterande<br />- Tidigare erfarenhet av privatundervisning</p><p>Som pedagog på Folkuniversitetet förväntas du ha förmågan att individanpassa undervisningen och locka fram varje individs potential. Det är viktigt att du tycker det är roligt att förmedla kunskap och att du ser det positiva i att kursdeltagare utvecklas. Du är flexibel, lyhörd och strukturerad och har vana av att arbeta självständigt. Vi förutsätter också att du delar vår syn på människors lika värde och rätt till kunskap.</p><p><br /><strong>Om anställningen</strong><br />Anställningsform: Objektsanställning med timlön.</p><p>Undervisningen sker hos Folkuniversitetet i Uppsala, adress Bergsbrunnagatan 1. Intervjuer sker löpande, så inkom gärna med din ansökan så snart som möjligt.<br /><br /><strong>Ansökan</strong><br />Välkommen med din ansökan i form av CV och personligt brev via vårt rekryteringsverktyg.</p><p>Vi behandlar inkomna ansökningar löpande och tjänsten kan komma att tillsättas innan sista ansökningsdag.</p><p>Vi undanber oss vänligen men bestämt kontakt med bemannings- och rekryteringsföretag samt försäljare av ytterligare jobbannonser.</p>",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Deltid/\r\nEj specificerat"
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "timlön",
+      "duration": {
+        "concept_id": "qQUd_4qe_NDT",
+        "label": "6 månader eller längre",
+        "legacy_ams_taxonomy_id": "2"
+      },
+      "working_hours_type": {
+        "concept_id": "947z_JGS_Uk2",
+        "label": "Deltid",
+        "legacy_ams_taxonomy_id": "2"
+      },
+      "scope_of_work": {
+        "min": 0,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "http://folkuniversitetet.se/",
+        "organization_number": "8450003481",
+        "name": "Folkuniversitetet Stift Kurs- Verksamheten",
+        "workplace": "Folkuniversitetet"
+      },
+      "application_details": {
+        "information": null,
+        "reference": null,
+        "email": null,
+        "via_af": false,
+        "url": "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=223&ProjectId=191366&DepartmentId=21892&MediaId=5549&SkipAdvertisement=true&utm_medium=talentech_publishing&utm_source=platsbanken",
+        "other": null
+      },
+      "experience_required": false,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "vE2q_wQB_NGv",
+        "label": "Cirkelledare/Studiecirkelledare",
+        "legacy_ams_taxonomy_id": "6106"
+      },
+      "occupation_group": {
+        "concept_id": "1CX5_mZw_Vcq",
+        "label": "Övriga utbildare och instruktörer",
+        "legacy_ams_taxonomy_id": "3449"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Uppsala",
+        "municipality_code": "0380",
+        "municipality_concept_id": "otaF_bQY_4ZD",
+        "region": "Uppsala län",
+        "region_code": "03",
+        "region_concept_id": "zBon_eET_fFU",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [17.638927, 59.858562]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Katja Byström",
+          "email": "katja.bystrom@folkuniversitetet.se",
+          "telephone": null,
+          "contact_type": "Utbildningsledare"
+        }
+      ],
+      "publication_date": "2024-09-11T07:33:23",
+      "last_publication_date": "2024-10-31T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1726032803942
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29091361",
+      "external_id": "46-222000-3111-8473149F24A849C28536B8A7D54F874F",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29091361",
+      "logo_url": null,
+      "headline": "Lärare Samhällskunskap",
+      "application_deadline": "2024-09-29T23:59:59",
+      "number_of_vacancies": 1,
+      "description": {
+        "text": "Hälsinglands Utbildningsförbund är ett kommunalförbund som bildats av Bollnäs, Nordanstig och Söderhamns kommuner med uppdrag att möta studerandes efterfrågan på utbildning med bredd och kvalitet. \n\nFörbundets arbete ska kännetecknas av att vara en motor för tillväxt, mäklare av utbildning och mötesplats för utveckling. Vi driver gymnasie- och vuxenutbildningar för kommunernas invånare, samt ger möjlighet till yrkeshögskola och distansstudier på högskola och universitet.Vi erbjuder också uppdragsutbildningar till företag och organisationer samt möjligheter för forskning och utveckling.\n\n\r\n\r\nARBETSUPPGIFTER\nVi söker en legitimerad och ämnesbehörig pedagog för undervisning på grundläggande och gymnasial nivå inom samhällskunskap samt gärna något ytterligare ämne. Undervisningen kommer att bedrivas på plats på CFL Söderhamn, och på distans. Vissa möten med distanseleverna kan komma att ske i annan kommun. \r\n\r\nKVALIFIKATIONER\nVi söker dig med lärarutbildning mot samhällskunskap samt gärna något ytterligare ämne.\nSom pedagog har du en god förmåga att kommunicera målen med undervisningen och att tydliggöra din bedömning för eleverna liksom att ha en förmåga att anpassa ditt arbetssätt till målgruppen. Du är trygg i din läraroll och van att sammarbeta i ämnes- och arbetslag. Erfarenhet i ovannämnda krävs.\r\n\nÖVRIGT\nCV och personligt brev\nVi strävar efter en jämn könsfördelning och ser mångfald som en styrka och välkomnar därför sökande med olika bakgrund.\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.\n\nVi använder e-rekrytering för att effektivisera och kvalitetssäkra rekryteringsarbetet. Alla dina uppgifter sparas på ditt CV-konto och du kan enkelt logga in och uppdatera dina uppgifter när du vill. Fyll därför i dina uppgifter så omsorgsfullt som möjligt för att ge en rättvisande bild av dig själv. Uppgifterna behandlas och sparas enligt personuppgiftslagen.\n\nVarmt välkommen med din ansökan!",
+        "text_formatted": "Hälsinglands Utbildningsförbund är ett kommunalförbund som bildats av Bollnäs, Nordanstig och Söderhamns kommuner med uppdrag att möta studerandes efterfrågan på utbildning med bredd och kvalitet. \n\nFörbundets arbete ska kännetecknas av att vara en motor för tillväxt, mäklare av utbildning och mötesplats för utveckling. Vi driver gymnasie- och vuxenutbildningar för kommunernas invånare, samt ger möjlighet till yrkeshögskola och distansstudier på högskola och universitet.Vi erbjuder också uppdragsutbildningar till företag och organisationer samt möjligheter för forskning och utveckling.\n\n\r\n\r\nARBETSUPPGIFTER\nVi söker en legitimerad och ämnesbehörig pedagog för undervisning på grundläggande och gymnasial nivå inom samhällskunskap samt gärna något ytterligare ämne. Undervisningen kommer att bedrivas på plats på CFL Söderhamn, och på distans. Vissa möten med distanseleverna kan komma att ske i annan kommun. \r\n\r\nKVALIFIKATIONER\nVi söker dig med lärarutbildning mot samhällskunskap samt gärna något ytterligare ämne.\nSom pedagog har du en god förmåga att kommunicera målen med undervisningen och att tydliggöra din bedömning för eleverna liksom att ha en förmåga att anpassa ditt arbetssätt till målgruppen. Du är trygg i din läraroll och van att sammarbeta i ämnes- och arbetslag. Erfarenhet i ovannämnda krävs.\r\n\nÖVRIGT\nCV och personligt brev\nVi strävar efter en jämn könsfördelning och ser mångfald som en styrka och välkomnar därför sökande med olika bakgrund.\n\nInför rekryteringsarbetet har vi tagit ställning till rekryteringskanaler och marknadsföring. Vi undanbeder oss därför bestämt kontakt med mediesäljare, rekryteringssajter och liknande.\n\nVi använder e-rekrytering för att effektivisera och kvalitetssäkra rekryteringsarbetet. Alla dina uppgifter sparas på ditt CV-konto och du kan enkelt logga in och uppdatera dina uppgifter när du vill. Fyll därför i dina uppgifter så omsorgsfullt som möjligt för att ge en rättvisande bild av dig själv. Uppgifterna behandlas och sparas enligt personuppgiftslagen.\n\nVarmt välkommen med din ansökan!",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid. \r\nTillsvidareanställning, tillträde: 2025-01-07  ."
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Enligt avtal.",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": null,
+        "organization_number": "2220003111",
+        "name": "Hälsinglands Utbildningsförbund",
+        "workplace": "Hälsinglands Utbildningsförbund"
+      },
+      "application_details": {
+        "information": null,
+        "reference": "A1312839",
+        "email": null,
+        "via_af": false,
+        "url": "https://recruit.visma.com/spa/public/apply?guidAssignment=8473149f-24a8-49c2-8536-b8a7d54f874f&publishCode=AMS&TK=5e8b2a6b-05be-4d4b-87c6-20cc5efa330e",
+        "other": null
+      },
+      "experience_required": false,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "f8q7_Rwv_TP4",
+        "label": "Lärare i gymnasieskolan",
+        "legacy_ams_taxonomy_id": "7127"
+      },
+      "occupation_group": {
+        "concept_id": "4KhP_FxL_uZ5",
+        "label": "Gymnasielärare",
+        "legacy_ams_taxonomy_id": "2330"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Söderhamn",
+        "municipality_code": "2182",
+        "municipality_concept_id": "JauG_nz5_7mu",
+        "region": "Gävleborgs län",
+        "region_code": "21",
+        "region_concept_id": "zupA_8Nt_xcD",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [17.06281, 61.305576]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Erik Nilsson",
+          "email": "erik.nilsson@hufb.se",
+          "telephone": "010-454 13 72",
+          "contact_type": "Rektor"
+        }
+      ],
+      "publication_date": "2024-09-10T14:40:13",
+      "last_publication_date": "2024-09-29T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1725972013821
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29073356",
+      "external_id": "46-556913-7325-13519",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29073356",
+      "logo_url": null,
+      "headline": "Legitimerad lärare",
+      "application_deadline": "2024-09-30T23:59:59",
+      "number_of_vacancies": 5,
+      "description": {
+        "text": "Om oss\nClockwork Skolbemanning & Rekrytering är företaget med mångårig erfarenhet av skola. Vi bistår huvudmän och skolledare i hela Sverige med bemanning & rekrytering av all skolpersonal – från förskola till yrkeshögskola. Vi arbetar mot samtliga skolformer och kan genom goda samarbeten och relationer skapa utrymme för det som vi tycker är viktigt – att du som skolledare och pedagog får vara elevernas främsta resurs för inlärning.\n\nVi har själva varit verksamma inom skolan i olika roller och har således en djup förståelse och insikt i uppdraget- så när ni samarbetar med oss, får ni all vår kompetens på köpet!\n\nFör dig som söker nya utmaningar, har vi stora nätverk och god lokal kännedom. För dig som söker skolpersonal eller annat stöd, erbjuder vi skräddarsydda kompetenslösningar genom elevhälsan eller senior advisor. \n\nAlla våra konsulter erbjuds ”lön varje fredag”, gemensamma aktiviteter samt stöd av legitimerade lärare. Vi är självklart ett auktoriserat bemanning & rekryteringsföretag med ISO-certifierade processer. \n\nÄr du nyfiken, slå en signal eller starta en jobbevakning via www.pedagogjobb.nu \nTitta in på: www.clockworkpersonal.se/skolbemanningochrekrytering och läs mer hur vi stödjer huvudmän i hela Sverige med kompetens mot skola.\n\nOm företaget\nAlla skolformer i Gävleborgs län.\n\nDina arbetsuppgifter\nInför kommande lärarrekryteringar till hösten söker vi legitimerade lärare och förskollärare till olika huvudmän i länet. I din roll som lärare och förskollärare ingår sedvanliga arbetsuppgifter utifrån aktuell läroplanen för respektive skolform. Beroende på årskurs ingår bedömning och betygsättning.\n\nDin profil\nVi söker dig som kanske är i början av din lärarkarriär och/eller nyexaminerad, men även dig som arbetat ett par år och är nyfiken på vad det finns för nya utmaningar i yrkeslivet på just din ort. Clockwork har ett brett nätverk och god lokal kännedom kring vilka skolor och skolformer som passar just dig och din profil. Vi arbetar både med korta och långa uppdrag på konsultbasis, men även rekryteringar där anställningen sker direkt av huvudman. \n\nDu är legitimerad och behörig grundskollärare, förskollärare eller ämneslärare. Du har elevernas och barnens lärande i fokus och arbetar för att de ska nå så långt som möjligt i sin kunskapsutveckling. Vidare tror vi att du har ett lösningsorienterat mindset och ett förhållningsätt där allt är möjligt. Du är inspirerande och stödjande på alla plan och verkar för en god arbetsmiljö på din arbetsplats. Har du ytterligare behörigheter eller erfarenhet av att arbeta med barn eller ungdomar är det meriterande.\n\n\nAnsökan\nI denna process söker vi endast legitimerade lärare och förskollärare. \nAnsök idag, vi ser fram emot att lära känna dig, www.clockworkpeople.se \n\nVid frågor och funderingar är du varmt välkommen att höra av dig till ansvarig rekryterare. \n\nFölj oss:\nwww.linkedin.com/company/clockwork-skolbemanning\nwww.facebook.com/skolbemanning\n\nFå förslag på tjänster som passar dig i hela Sverige.\nwww.pedagogjobb.nu",
+        "text_formatted": "Om oss\nClockwork Skolbemanning &amp; Rekrytering är företaget med mångårig erfarenhet av skola. Vi bistår huvudmän och skolledare i hela Sverige med bemanning &amp; rekrytering av all skolpersonal – från förskola till yrkeshögskola. Vi arbetar mot samtliga skolformer och kan genom goda samarbeten och relationer skapa utrymme för det som vi tycker är viktigt – att du som skolledare och pedagog får vara elevernas främsta resurs för inlärning.\n\nVi har själva varit verksamma inom skolan i olika roller och har således en djup förståelse och insikt i uppdraget- så när ni samarbetar med oss, får ni all vår kompetens på köpet!\n\nFör dig som söker nya utmaningar, har vi stora nätverk och god lokal kännedom. För dig som söker skolpersonal eller annat stöd, erbjuder vi skräddarsydda kompetenslösningar genom elevhälsan eller senior advisor. \n\nAlla våra konsulter erbjuds ”lön varje fredag”, gemensamma aktiviteter samt stöd av legitimerade lärare. Vi är självklart ett auktoriserat bemanning &amp; rekryteringsföretag med ISO-certifierade processer. \n\nÄr du nyfiken, slå en signal eller starta en jobbevakning via www.pedagogjobb.nu \nTitta in på: www.clockworkpersonal.se/skolbemanningochrekrytering och läs mer hur vi stödjer huvudmän i hela Sverige med kompetens mot skola.\n\nOm företaget\nAlla skolformer i Gävleborgs län.\n\nDina arbetsuppgifter\nInför kommande lärarrekryteringar till hösten söker vi legitimerade lärare och förskollärare till olika huvudmän i länet. I din roll som lärare och förskollärare ingår sedvanliga arbetsuppgifter utifrån aktuell läroplanen för respektive skolform. Beroende på årskurs ingår bedömning och betygsättning.\n\nDin profil\nVi söker dig som kanske är i början av din lärarkarriär och/eller nyexaminerad, men även dig som arbetat ett par år och är nyfiken på vad det finns för nya utmaningar i yrkeslivet på just din ort. Clockwork har ett brett nätverk och god lokal kännedom kring vilka skolor och skolformer som passar just dig och din profil. Vi arbetar både med korta och långa uppdrag på konsultbasis, men även rekryteringar där anställningen sker direkt av huvudman. \n\nDu är legitimerad och behörig grundskollärare, förskollärare eller ämneslärare. Du har elevernas och barnens lärande i fokus och arbetar för att de ska nå så långt som möjligt i sin kunskapsutveckling. Vidare tror vi att du har ett lösningsorienterat mindset och ett förhållningsätt där allt är möjligt. Du är inspirerande och stödjande på alla plan och verkar för en god arbetsmiljö på din arbetsplats. Har du ytterligare behörigheter eller erfarenhet av att arbeta med barn eller ungdomar är det meriterande.\n\n\nAnsökan\nI denna process söker vi endast legitimerade lärare och förskollärare. \nAnsök idag, vi ser fram emot att lära känna dig, www.clockworkpeople.se \n\nVid frågor och funderingar är du varmt välkommen att höra av dig till ansvarig rekryterare. \n\nFölj oss:\nwww.linkedin.com/company/clockwork-skolbemanning\nwww.facebook.com/skolbemanning\n\nFå förslag på tjänster som passar dig i hela Sverige.\nwww.pedagogjobb.nu",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid\r\nTillsvidare"
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Fast lön",
+      "duration": {
+        "concept_id": "a7uU_j21_mkL",
+        "label": "Tills vidare",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "http://www.clockworkpersonal.se",
+        "organization_number": "5569137325",
+        "name": "Clockwork Bemanning & Rekrytering AB",
+        "workplace": "Clockwork Skolbemanning & Rekrytering AB "
+      },
+      "application_details": {
+        "information": null,
+        "reference": "13519",
+        "email": null,
+        "via_af": false,
+        "url": "http://clockworkpersonal.se/jobb/?jaid=13519&apply=true",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "iYgm_hfD_Bez",
+        "label": "Ämneslärare, 7-9",
+        "legacy_ams_taxonomy_id": "7654"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Gävle",
+        "municipality_code": "2180",
+        "municipality_concept_id": "qk8Y_2b6_82D",
+        "region": "Gävleborgs län",
+        "region_code": "21",
+        "region_concept_id": "zupA_8Nt_xcD",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [17.141273, 60.67488]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 10,
+            "concept_id": "iYgm_hfD_Bez",
+            "label": "Ämneslärare, 7-9",
+            "legacy_ams_taxonomy_id": "7654"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Mikaela Bäckstedt",
+          "email": "mikaela.backstedt@clwork.se",
+          "telephone": null,
+          "contact_type": null
+        }
+      ],
+      "publication_date": "2024-09-04T08:32:44",
+      "last_publication_date": "2024-09-30T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1725431564905
+    },
+    {
+      "relevance": 0.9527520828358007,
+      "id": "29073327",
+      "external_id": "46-556913-7325-15402",
+      "original_id": null,
+      "label": "[]",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/29073327",
+      "logo_url": null,
+      "headline": "Legitimerad lärare",
+      "application_deadline": "2024-09-30T23:59:59",
+      "number_of_vacancies": 5,
+      "description": {
+        "text": "Om oss\nClockwork Skolbemanning & Rekrytering är företaget med mångårig erfarenhet av skola. Vi bistår huvudmän och skolledare i hela Sverige med bemanning & rekrytering av all skolpersonal – från förskola till yrkeshögskola. Vi arbetar mot samtliga skolformer och kan genom goda samarbeten och relationer skapa utrymme för det som vi tycker är viktigt – att du som skolledare och pedagog får vara elevernas främsta resurs för inlärning.\n\nVi har själva varit verksamma inom skolan i olika roller och har således en djup förståelse och insikt i uppdraget- så när ni samarbetar med oss, får ni all vår kompetens på köpet!\n\nFör dig som söker nya utmaningar, har vi stora nätverk och god lokal kännedom. För dig som söker skolpersonal eller annat stöd, erbjuder vi skräddarsydda kompetenslösningar genom elevhälsan eller senior advisor. \n\nAlla våra konsulter erbjuds ”lön varje fredag”, gemensamma aktiviteter samt stöd av legitimerade lärare. Vi är självklart ett auktoriserat bemanning & rekryteringsföretag med ISO-certifierade processer. \n\nÄr du nyfiken, slå en signal eller starta en jobbevakning via www.pedagogjobb.nu \nTitta in på: www.clockworkpersonal.se/skolbemanningochrekrytering och läs mer hur vi stödjer huvudmän i hela Sverige med kompetens mot skola.\n\nOm företaget\nAlla skolformer inom norra Stockholm.\n\nDina arbetsuppgifter\nInför kommande lärarrekryteringar till våren söker vi legitimerade lärare och förskollärare till olika huvudmän i länet. I din roll som lärare och förskollärare ingår sedvanliga arbetsuppgifter utifrån aktuell läroplanen för respektive skolform. Beroende på årskurs ingår bedömning och betygsättning.\n\nDin profil\nVi söker dig som kanske är i början av din lärarkarriär och/eller nyexaminerad, men även dig som arbetat ett par år och är nyfiken på vad det finns för nya utmaningar i yrkeslivet på just din ort. Clockwork har ett brett nätverk och god lokal kännedom kring vilka skolor och skolformer som passar just dig och din profil. Vi arbetar både med korta och långa uppdrag på konsultbasis, men även rekryteringar där anställningen sker direkt av huvudman. \n\nDu är legitimerad och behörig grundskollärare, förskollärare eller ämneslärare. Du har elevernas och barnens lärande i fokus och arbetar för att de ska nå så långt som möjligt i sin kunskapsutveckling. Vidare tror vi att du har ett lösningsorienterat mindset och ett förhållningsätt där allt är möjligt. Du är inspirerande och stödjande på alla plan och verkar för en god arbetsmiljö på din arbetsplats. Har du ytterligare behörigheter eller erfarenhet av att arbeta med barn eller ungdomar är det meriterande.\n\n\nAnsökan\nI denna process söker vi endast legitimerade lärare och förskollärare. \nAnsök idag, vi ser fram emot att lära känna dig, www.clockworkpeople.se \n\nVid frågor och funderingar är du varmt välkommen att höra av dig till ansvarig rekryterare. \n\nFölj oss:\nwww.linkedin.com/company/clockwork-skolbemanning\nwww.facebook.com/skolbemanning\n\nFå förslag på tjänster som passar dig i hela Sverige.\nwww.pedagogjobb.nu",
+        "text_formatted": "Om oss\nClockwork Skolbemanning &amp; Rekrytering är företaget med mångårig erfarenhet av skola. Vi bistår huvudmän och skolledare i hela Sverige med bemanning &amp; rekrytering av all skolpersonal – från förskola till yrkeshögskola. Vi arbetar mot samtliga skolformer och kan genom goda samarbeten och relationer skapa utrymme för det som vi tycker är viktigt – att du som skolledare och pedagog får vara elevernas främsta resurs för inlärning.\n\nVi har själva varit verksamma inom skolan i olika roller och har således en djup förståelse och insikt i uppdraget- så när ni samarbetar med oss, får ni all vår kompetens på köpet!\n\nFör dig som söker nya utmaningar, har vi stora nätverk och god lokal kännedom. För dig som söker skolpersonal eller annat stöd, erbjuder vi skräddarsydda kompetenslösningar genom elevhälsan eller senior advisor. \n\nAlla våra konsulter erbjuds ”lön varje fredag”, gemensamma aktiviteter samt stöd av legitimerade lärare. Vi är självklart ett auktoriserat bemanning &amp; rekryteringsföretag med ISO-certifierade processer. \n\nÄr du nyfiken, slå en signal eller starta en jobbevakning via www.pedagogjobb.nu \nTitta in på: www.clockworkpersonal.se/skolbemanningochrekrytering och läs mer hur vi stödjer huvudmän i hela Sverige med kompetens mot skola.\n\nOm företaget\nAlla skolformer inom norra Stockholm.\n\nDina arbetsuppgifter\nInför kommande lärarrekryteringar till våren söker vi legitimerade lärare och förskollärare till olika huvudmän i länet. I din roll som lärare och förskollärare ingår sedvanliga arbetsuppgifter utifrån aktuell läroplanen för respektive skolform. Beroende på årskurs ingår bedömning och betygsättning.\n\nDin profil\nVi söker dig som kanske är i början av din lärarkarriär och/eller nyexaminerad, men även dig som arbetat ett par år och är nyfiken på vad det finns för nya utmaningar i yrkeslivet på just din ort. Clockwork har ett brett nätverk och god lokal kännedom kring vilka skolor och skolformer som passar just dig och din profil. Vi arbetar både med korta och långa uppdrag på konsultbasis, men även rekryteringar där anställningen sker direkt av huvudman. \n\nDu är legitimerad och behörig grundskollärare, förskollärare eller ämneslärare. Du har elevernas och barnens lärande i fokus och arbetar för att de ska nå så långt som möjligt i sin kunskapsutveckling. Vidare tror vi att du har ett lösningsorienterat mindset och ett förhållningsätt där allt är möjligt. Du är inspirerande och stödjande på alla plan och verkar för en god arbetsmiljö på din arbetsplats. Har du ytterligare behörigheter eller erfarenhet av att arbeta med barn eller ungdomar är det meriterande.\n\n\nAnsökan\nI denna process söker vi endast legitimerade lärare och förskollärare. \nAnsök idag, vi ser fram emot att lära känna dig, www.clockworkpeople.se \n\nVid frågor och funderingar är du varmt välkommen att höra av dig till ansvarig rekryterare. \n\nFölj oss:\nwww.linkedin.com/company/clockwork-skolbemanning\nwww.facebook.com/skolbemanning\n\nFå förslag på tjänster som passar dig i hela Sverige.\nwww.pedagogjobb.nu",
+        "company_information": null,
+        "needs": null,
+        "requirements": null,
+        "conditions": "Heltid\r\nTillfälligt arbete, 11 dagar - 3 månader"
+      },
+      "employment_type": {
+        "concept_id": "PFZr_Syz_cUq",
+        "label": "Vanlig anställning",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_type": {
+        "concept_id": "oG8G_9cW_nRf",
+        "label": "Fast månads- vecko- eller timlön",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "salary_description": "Fast lön",
+      "duration": {
+        "concept_id": "Sy9J_aRd_ALx",
+        "label": "11 dagar - upp till 3 månader",
+        "legacy_ams_taxonomy_id": "7"
+      },
+      "working_hours_type": {
+        "concept_id": "6YE1_gAC_R2G",
+        "label": "Heltid",
+        "legacy_ams_taxonomy_id": "1"
+      },
+      "scope_of_work": {
+        "min": 100,
+        "max": 100
+      },
+      "access": null,
+      "employer": {
+        "phone_number": null,
+        "email": null,
+        "url": "http://www.clockworkpersonal.se",
+        "organization_number": "5569137325",
+        "name": "Clockwork Bemanning & Rekrytering AB",
+        "workplace": "Clockwork Skolbemanning & Rekrytering AB "
+      },
+      "application_details": {
+        "information": null,
+        "reference": "15402",
+        "email": null,
+        "via_af": false,
+        "url": "http://clockworkpersonal.se/jobb/?jaid=15402&apply=true",
+        "other": null
+      },
+      "experience_required": true,
+      "access_to_own_car": false,
+      "driving_license_required": false,
+      "driving_license": null,
+      "occupation": {
+        "concept_id": "iYgm_hfD_Bez",
+        "label": "Ämneslärare, 7-9",
+        "legacy_ams_taxonomy_id": "7654"
+      },
+      "occupation_group": {
+        "concept_id": "oQUQ_D11_HPx",
+        "label": "Grundskollärare",
+        "legacy_ams_taxonomy_id": "2341"
+      },
+      "occupation_field": {
+        "concept_id": "MVqp_eS8_kDZ",
+        "label": "Pedagogik",
+        "legacy_ams_taxonomy_id": "15"
+      },
+      "workplace_address": {
+        "municipality": "Sollentuna",
+        "municipality_code": "0163",
+        "municipality_concept_id": "Z5Cq_SgB_dsB",
+        "region": "Stockholms län",
+        "region_code": "01",
+        "region_concept_id": "CifL_Rzy_Mku",
+        "country": "Sverige",
+        "country_code": "199",
+        "country_concept_id": "i46j_HmG_v64",
+        "street_address": null,
+        "postcode": null,
+        "city": null,
+        "coordinates": [17.94148, 59.43911]
+      },
+      "must_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [
+          {
+            "weight": 10,
+            "concept_id": "iYgm_hfD_Bez",
+            "label": "Ämneslärare, 7-9",
+            "legacy_ams_taxonomy_id": "7654"
+          }
+        ],
+        "education": [],
+        "education_level": []
+      },
+      "nice_to_have": {
+        "skills": [],
+        "languages": [],
+        "work_experiences": [],
+        "education": [],
+        "education_level": []
+      },
+      "application_contacts": [
+        {
+          "name": null,
+          "description": "Jonny Gebara",
+          "email": "jonny.gebara@clwork.se",
+          "telephone": null,
+          "contact_type": null
+        }
+      ],
+      "publication_date": "2024-09-04T08:27:56",
+      "last_publication_date": "2024-09-30T23:59:59",
+      "removed": false,
+      "removed_date": null,
+      "source_type": "VIA_PLATSBANKEN_DXA",
+      "timestamp": 1725431276077
+    }
+  ]
+}

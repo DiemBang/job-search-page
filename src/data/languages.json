@@ -1,0 +1,1882 @@
+{
+  "data": {
+    "concepts": [
+      {
+        "preferred_label": "Afar/Afariska",
+        "id": "5vWL_41L_udS"
+      },
+      {
+        "preferred_label": "Afrikaans",
+        "id": "vitY_dty_VbD"
+      },
+      {
+        "preferred_label": "Akan",
+        "id": "7xZB_9BJ_eLa"
+      },
+      {
+        "preferred_label": "Albanska",
+        "id": "rod1_aPk_8V5"
+      },
+      {
+        "preferred_label": "Amhariska/Amarinja",
+        "id": "EMhG_wnR_hYP"
+      },
+      {
+        "preferred_label": "Arabiska",
+        "id": "3iEY_RGP_qXq"
+      },
+      {
+        "preferred_label": "Arameiska",
+        "id": "Hk93_QrC_QXX"
+      },
+      {
+        "preferred_label": "Armeniska",
+        "id": "jsQe_Bra_Ety"
+      },
+      {
+        "preferred_label": "Assamesiska",
+        "id": "zYgB_czd_R1x"
+      },
+      {
+        "preferred_label": "Aymara",
+        "id": "Lg2z_RbL_A8S"
+      },
+      {
+        "preferred_label": "Azerbajdzjanska/Azeriska",
+        "id": "J16c_pLE_QY4"
+      },
+      {
+        "preferred_label": "Baluchiska",
+        "id": "TJsR_11M_d72"
+      },
+      {
+        "preferred_label": "Bambara",
+        "id": "T3Yk_ZEt_kLQ"
+      },
+      {
+        "preferred_label": "Banda",
+        "id": "X5sT_hmN_m2S"
+      },
+      {
+        "preferred_label": "Bantuspråk, andra",
+        "id": "udrA_ZMS_epP"
+      },
+      {
+        "preferred_label": "Basjkiriska",
+        "id": "yPxq_rk8_QqY"
+      },
+      {
+        "preferred_label": "Baskiska",
+        "id": "rucj_CJq_mV8"
+      },
+      {
+        "preferred_label": "Bemba",
+        "id": "nc4p_BwA_2HH"
+      },
+      {
+        "preferred_label": "Bengali/Bengaliska",
+        "id": "GBG3_87R_ux1"
+      },
+      {
+        "preferred_label": "Berberiska/Berberspråk",
+        "id": "QTC1_ADL_T85"
+      },
+      {
+        "preferred_label": "Bislama",
+        "id": "Ur91_w7s_dP1"
+      },
+      {
+        "preferred_label": "Bihariska",
+        "id": "9TLR_Ri9_34C"
+      },
+      {
+        "preferred_label": "Bosniska",
+        "id": "AGKq_3n1_4sm"
+      },
+      {
+        "preferred_label": "Bulgariska",
+        "id": "pW4U_gcW_VGv"
+      },
+      {
+        "preferred_label": "Burmesiska",
+        "id": "yHFe_Te6_E6F"
+      },
+      {
+        "preferred_label": "Cebuano/Bisaya",
+        "id": "y89C_Uia_Y5j"
+      },
+      {
+        "preferred_label": "Danska",
+        "id": "yGZ2_39H_oPN"
+      },
+      {
+        "preferred_label": "Dinka",
+        "id": "ov2k_GtY_wDw"
+      },
+      {
+        "preferred_label": "Divehi",
+        "id": "XFGV_NHd_eaf"
+      },
+      {
+        "preferred_label": "Dyula",
+        "id": "1bwY_BGf_CH7"
+      },
+      {
+        "preferred_label": "Bhutanesiska",
+        "id": "8RMF_7gP_NaH"
+      },
+      {
+        "preferred_label": "Efik",
+        "id": "Vfz9_yba_MkG"
+      },
+      {
+        "preferred_label": "Engelska",
+        "id": "NVxJ_hLg_TYS"
+      },
+      {
+        "preferred_label": "Estniska",
+        "id": "zg1P_hzq_eMR"
+      },
+      {
+        "preferred_label": "Ewe",
+        "id": "5FUu_wLF_tTf"
+      },
+      {
+        "preferred_label": "Fang",
+        "id": "L4AS_T9o_VwB"
+      },
+      {
+        "preferred_label": "Fanti/Fante",
+        "id": "WTZi_v28_Unh"
+      },
+      {
+        "preferred_label": "Färöiska",
+        "id": "j4rH_cw8_s7g"
+      },
+      {
+        "preferred_label": "Fidjianska",
+        "id": "ZMHx_hup_v34"
+      },
+      {
+        "preferred_label": "Finska",
+        "id": "Swhq_4Fg_qfm"
+      },
+      {
+        "preferred_label": "Fon",
+        "id": "KPgw_t5P_759"
+      },
+      {
+        "preferred_label": "Franska",
+        "id": "AJf5_p3a_b64"
+      },
+      {
+        "preferred_label": "Frisiska",
+        "id": "XXq9_Nq8_55j"
+      },
+      {
+        "preferred_label": "Fulfulde",
+        "id": "nUfQ_bem_j5n"
+      },
+      {
+        "preferred_label": "Ga",
+        "id": "6vC5_KFf_rKT"
+      },
+      {
+        "preferred_label": "Galiciska",
+        "id": "ySYP_i3K_WZ2"
+      },
+      {
+        "preferred_label": "Gaeliska (Skotsk)",
+        "id": "69WT_Knh_hLs"
+      },
+      {
+        "preferred_label": "Georgiska",
+        "id": "jALF_55z_yDE"
+      },
+      {
+        "preferred_label": "Grekiska",
+        "id": "RKH6_hwa_6nk"
+      },
+      {
+        "preferred_label": "Grönländska",
+        "id": "a1wy_pzH_aQv"
+      },
+      {
+        "preferred_label": "Guarani",
+        "id": "dWqu_Ldo_jcD"
+      },
+      {
+        "preferred_label": "Gujarati",
+        "id": "D91H_7iz_Qbn"
+      },
+      {
+        "preferred_label": "Zenaga",
+        "id": "LaYc_2hR_4i1"
+      },
+      {
+        "preferred_label": "Hausa",
+        "id": "ViTs_TnK_DzW"
+      },
+      {
+        "preferred_label": "Hebreiska",
+        "id": "uWA3_QLq_nu3"
+      },
+      {
+        "preferred_label": "Herero",
+        "id": "DFr5_o1T_Bop"
+      },
+      {
+        "preferred_label": "Hindi",
+        "id": "PwxQ_XQT_MnB"
+      },
+      {
+        "preferred_label": "Igbo/Ibo",
+        "id": "kNtt_ZNR_N23"
+      },
+      {
+        "preferred_label": "Gilbertesiska",
+        "id": "br9N_CBK_BCz"
+      },
+      {
+        "preferred_label": "Indonesiska/Malajiska",
+        "id": "Nojx_VyS_nLf"
+      },
+      {
+        "preferred_label": "Iriska",
+        "id": "yXoA_zAJ_RoN"
+      },
+      {
+        "preferred_label": "Isländska",
+        "id": "bvPv_3kf_EQK"
+      },
+      {
+        "preferred_label": "Italienska",
+        "id": "b9cE_KXy_Yxv"
+      },
+      {
+        "preferred_label": "Japanska",
+        "id": "qmex_uW7_kJw"
+      },
+      {
+        "preferred_label": "Javanesiska",
+        "id": "NNHs_R1H_ESq"
+      },
+      {
+        "preferred_label": "Jiddisch",
+        "id": "obg3_pig_x58"
+      },
+      {
+        "preferred_label": "Kabye/Kabyliska",
+        "id": "j4JW_5P4_BGA"
+      },
+      {
+        "preferred_label": "Kamba",
+        "id": "8DQh_CaG_Jsk"
+      },
+      {
+        "preferred_label": "Kanaresiska",
+        "id": "T5kG_Krh_ZBZ"
+      },
+      {
+        "preferred_label": "Kanuri",
+        "id": "uC3q_W2M_BzA"
+      },
+      {
+        "preferred_label": "Karenska/Karen",
+        "id": "hq1g_5Md_6PZ"
+      },
+      {
+        "preferred_label": "Kasmiriska",
+        "id": "kpf7_mGV_EWk"
+      },
+      {
+        "preferred_label": "Katalanska",
+        "id": "YPKq_LRQ_CHT"
+      },
+      {
+        "preferred_label": "Kazakiska",
+        "id": "mdWX_4PC_wY7"
+      },
+      {
+        "preferred_label": "Khmer",
+        "id": "LrSS_yQQ_w6c"
+      },
+      {
+        "preferred_label": "Kinesiska",
+        "id": "pgjM_8KQ_RZT"
+      },
+      {
+        "preferred_label": "Kinyarwanda",
+        "id": "TKMX_Mgp_roJ"
+      },
+      {
+        "preferred_label": "Kirgiziska/Kirgisiska",
+        "id": "H3Mn_eaX_XbQ"
+      },
+      {
+        "preferred_label": "Kirundi",
+        "id": "i2A1_KpM_osQ"
+      },
+      {
+        "preferred_label": "Kongo/Kikongo",
+        "id": "rZYz_myk_W5T"
+      },
+      {
+        "preferred_label": "Konkani",
+        "id": "xwTw_Ykx_oMZ"
+      },
+      {
+        "preferred_label": "Koreanska",
+        "id": "Wj1F_2BF_vtm"
+      },
+      {
+        "preferred_label": "Korsikanska",
+        "id": "wREW_gh2_Bxu"
+      },
+      {
+        "preferred_label": "Kreolska o pidginspråk, portugisisk-baserade,andra",
+        "id": "JFiv_95F_eNB"
+      },
+      {
+        "preferred_label": "Kroatiska",
+        "id": "ZUf8_t85_NC6"
+      },
+      {
+        "preferred_label": "Kru",
+        "id": "Sgvv_5Vd_xro"
+      },
+      {
+        "preferred_label": "Kurdiska",
+        "id": "JxfJ_kyR_CQZ"
+      },
+      {
+        "preferred_label": "Kikuyu",
+        "id": "95r9_3rM_KWz"
+      },
+      {
+        "preferred_label": "Lao/Laotiska",
+        "id": "FNQx_3PN_eiT"
+      },
+      {
+        "preferred_label": "Lettiska",
+        "id": "YiQE_ERm_7kh"
+      },
+      {
+        "preferred_label": "Lamba",
+        "id": "w7am_ASn_5uK"
+      },
+      {
+        "preferred_label": "Lingala",
+        "id": "NBKm_cvX_fGo"
+      },
+      {
+        "preferred_label": "Litauiska",
+        "id": "14pF_wSZ_fnK"
+      },
+      {
+        "preferred_label": "Lozi",
+        "id": "eW8E_sSU_sbS"
+      },
+      {
+        "preferred_label": "Kiluba/Luba-katanga",
+        "id": "QhX2_SiT_PYf"
+      },
+      {
+        "preferred_label": "Luganda/Ganda",
+        "id": "f3zb_p1z_JDE"
+      },
+      {
+        "preferred_label": "Lunda",
+        "id": "cMMJ_usJ_o6P"
+      },
+      {
+        "preferred_label": "Luo (Kenya och Tanzania)",
+        "id": "4Vfp_k1i_j59"
+      },
+      {
+        "preferred_label": "Luxemburgiska",
+        "id": "PZa9_wAR_1BZ"
+      },
+      {
+        "preferred_label": "Maduresiska",
+        "id": "518r_2Eg_WKo"
+      },
+      {
+        "preferred_label": "Makedonska",
+        "id": "X8kF_rvX_yuj"
+      },
+      {
+        "preferred_label": "Malagassiska",
+        "id": "dVEU_LsK_m8b"
+      },
+      {
+        "preferred_label": "Malajiska",
+        "id": "TrvD_6oy_oYt"
+      },
+      {
+        "preferred_label": "Malayalam",
+        "id": "QsrB_4Kx_K7y"
+      },
+      {
+        "preferred_label": "Maltesiska",
+        "id": "oJMr_g3f_9Z9"
+      },
+      {
+        "preferred_label": "Mandarin/Rikskinesiska",
+        "id": "cxiY_CBR_1Ve"
+      },
+      {
+        "preferred_label": "Manx",
+        "id": "32J8_SCe_3gR"
+      },
+      {
+        "preferred_label": "Maori",
+        "id": "vG2n_EAN_SwC"
+      },
+      {
+        "preferred_label": "Marathi",
+        "id": "XadF_xEF_Hvb"
+      },
+      {
+        "preferred_label": "Mariska",
+        "id": "Qgzp_mLJ_4tr"
+      },
+      {
+        "preferred_label": "Marwariska",
+        "id": "vSm2_7L7_xvL"
+      },
+      {
+        "preferred_label": "Masai",
+        "id": "BHDa_r1G_5Sv"
+      },
+      {
+        "preferred_label": "Maya",
+        "id": "53mz_row_sAP"
+      },
+      {
+        "preferred_label": "Mende",
+        "id": "F6YW_uCL_xCN"
+      },
+      {
+        "preferred_label": "Moldaviska",
+        "id": "vWfd_Xrt_hPJ"
+      },
+      {
+        "preferred_label": "Mongoliska/Mongolska",
+        "id": "J6dh_R8z_Ja4"
+      },
+      {
+        "preferred_label": "Mossi",
+        "id": "T3kB_EuD_ReH"
+      },
+      {
+        "preferred_label": "Nauhatl",
+        "id": "UNA7_isN_UzK"
+      },
+      {
+        "preferred_label": "Nauru",
+        "id": "jvFH_zK8_KhS"
+      },
+      {
+        "preferred_label": "Nauriska",
+        "id": "niMN_h39_tm3"
+      },
+      {
+        "preferred_label": "Ndebele Nord",
+        "id": "3rPm_Muj_kJT"
+      },
+      {
+        "preferred_label": "Nederländska",
+        "id": "6S6h_c57_VnV"
+      },
+      {
+        "preferred_label": "Nepali/Nepalesiska",
+        "id": "Lwot_W1k_dFW"
+      },
+      {
+        "preferred_label": "Norska",
+        "id": "pnjj_2JX_Fub"
+      },
+      {
+        "preferred_label": "Nyamwezi",
+        "id": "Ygzd_HiY_Ksk"
+      },
+      {
+        "preferred_label": "Nyanja",
+        "id": "Lcsi_xHg_8UW"
+      },
+      {
+        "preferred_label": "Occitanska",
+        "id": "MzzG_eb7_ojB"
+      },
+      {
+        "preferred_label": "Oriya",
+        "id": "qrBQ_mhN_W7D"
+      },
+      {
+        "preferred_label": "Oromo",
+        "id": "qDZT_5H6_ZET"
+      },
+      {
+        "preferred_label": "Pashto",
+        "id": "g6Up_z8D_oAY"
+      },
+      {
+        "preferred_label": "Persiska/Farsi",
+        "id": "sNoC_CTL_8Ph"
+      },
+      {
+        "preferred_label": "Polska",
+        "id": "Gp9q_gTW_XAw"
+      },
+      {
+        "preferred_label": "Portugisiska",
+        "id": "W1EH_yKC_wMJ"
+      },
+      {
+        "preferred_label": "Punjabi/Panjabo",
+        "id": "so8d_dR6_E8j"
+      },
+      {
+        "preferred_label": "Quechua",
+        "id": "gBd9_PJY_gbT"
+      },
+      {
+        "preferred_label": "Retoromanska",
+        "id": "ocLM_QVf_661"
+      },
+      {
+        "preferred_label": "Romani",
+        "id": "EgN8_Usb_2f6"
+      },
+      {
+        "preferred_label": "Rumänska",
+        "id": "ZDoY_SrN_mRm"
+      },
+      {
+        "preferred_label": "Ryska",
+        "id": "mHSV_SUD_wXF"
+      },
+      {
+        "preferred_label": "Samiska",
+        "id": "oRUY_CU4_s9t"
+      },
+      {
+        "preferred_label": "Samoanska",
+        "id": "qhwA_Zhw_XLy"
+      },
+      {
+        "preferred_label": "Sango",
+        "id": "wspL_wxs_ud5"
+      },
+      {
+        "preferred_label": "Santali",
+        "id": "xLXn_NYc_2Zv"
+      },
+      {
+        "preferred_label": "Sardiska/Sardiniska",
+        "id": "jcL9_M9C_mAE"
+      },
+      {
+        "preferred_label": "Serbiska",
+        "id": "CKpA_mgw_jgi"
+      },
+      {
+        "preferred_label": "Sesotho/Sesuto/Sotho",
+        "id": "ECrL_6pW_Zuz"
+      },
+      {
+        "preferred_label": "Tswana",
+        "id": "b7BB_6HR_vNr"
+      },
+      {
+        "preferred_label": "Shona",
+        "id": "duKn_okc_J3Q"
+      },
+      {
+        "preferred_label": "Sindhi",
+        "id": "97Zk_gEu_4XD"
+      },
+      {
+        "preferred_label": "Singalesiska/Sinhala",
+        "id": "PKJu_KCn_zAV"
+      },
+      {
+        "preferred_label": "Swazi/Swati",
+        "id": "tVYE_xuR_B75"
+      },
+      {
+        "preferred_label": "Skotska",
+        "id": "rcVk_VU4_zay"
+      },
+      {
+        "preferred_label": "Slovakiska",
+        "id": "mLRm_6VG_s3c"
+      },
+      {
+        "preferred_label": "Slovenska",
+        "id": "H9bz_4TN_vL5"
+      },
+      {
+        "preferred_label": "Somaliska",
+        "id": "F6dn_vX1_Qnm"
+      },
+      {
+        "preferred_label": "Songhai",
+        "id": "n69w_Nza_N6w"
+      },
+      {
+        "preferred_label": "Sorbiska språk",
+        "id": "cqJm_R5Q_Gpr"
+      },
+      {
+        "preferred_label": "Spanska",
+        "id": "i9Hd_bVm_Z3c"
+      },
+      {
+        "preferred_label": "Susu",
+        "id": "popv_w4d_5uB"
+      },
+      {
+        "preferred_label": "Swahili",
+        "id": "Hbzs_PLN_Vo8"
+      },
+      {
+        "preferred_label": "Västassyriska/Syrianska",
+        "id": "vYua_sYT_JEg"
+      },
+      {
+        "preferred_label": "Tadzjikiska/Tadjikiska",
+        "id": "ChZf_oUX_fKG"
+      },
+      {
+        "preferred_label": "Tagalog/Filipino",
+        "id": "7EYg_JZj_aU8"
+      },
+      {
+        "preferred_label": "Tahitiska",
+        "id": "YAw2_WRr_SAZ"
+      },
+      {
+        "preferred_label": "Tamashek",
+        "id": "BWtj_uTy_nUS"
+      },
+      {
+        "preferred_label": "Tamil/Tamilska",
+        "id": "u4QL_MM1_3zA"
+      },
+      {
+        "preferred_label": "Tatariska",
+        "id": "WmiH_iwb_S95"
+      },
+      {
+        "preferred_label": "Telugu",
+        "id": "4N2S_MYT_nt7"
+      },
+      {
+        "preferred_label": "Timne",
+        "id": "YQs2_RvS_UjV"
+      },
+      {
+        "preferred_label": "Thailändska",
+        "id": "ECih_Cev_hwd"
+      },
+      {
+        "preferred_label": "Tibetanska",
+        "id": "SXCC_X3z_zYJ"
+      },
+      {
+        "preferred_label": "Tigre",
+        "id": "4Qvn_5N7_AVk"
+      },
+      {
+        "preferred_label": "Tigrinska/Tigrinja",
+        "id": "nPzh_1oc_EKz"
+      },
+      {
+        "preferred_label": "Tjeckiska",
+        "id": "aAje_qMU_iU9"
+      },
+      {
+        "preferred_label": "Tjuvasjiska",
+        "id": "heWF_H1y_48o"
+      },
+      {
+        "preferred_label": "Tok Pisin",
+        "id": "wL3C_poK_fbi"
+      },
+      {
+        "preferred_label": "Tonga (Nyasa)",
+        "id": "sVLN_wnV_MxS"
+      },
+      {
+        "preferred_label": "Turkiska",
+        "id": "UaRX_FvG_rKF"
+      },
+      {
+        "preferred_label": "Turkmeniska/Turkmenska",
+        "id": "HFys_DBy_E5b"
+      },
+      {
+        "preferred_label": "Twi",
+        "id": "k3AV_Asg_TWU"
+      },
+      {
+        "preferred_label": "Tyska",
+        "id": "S368_jFS_2hP"
+      },
+      {
+        "preferred_label": "Uiguriska",
+        "id": "tAM8_qNg_sW5"
+      },
+      {
+        "preferred_label": "Ukrainska",
+        "id": "zkfD_Qwv_kTk"
+      },
+      {
+        "preferred_label": "Umbundu",
+        "id": "TWvN_hko_Uk5"
+      },
+      {
+        "preferred_label": "Ungerska",
+        "id": "Cs9j_jSN_wNH"
+      },
+      {
+        "preferred_label": "Urdu",
+        "id": "Jw1X_vyk_SbY"
+      },
+      {
+        "preferred_label": "Uzbekiska",
+        "id": "3Xxo_J8v_rez"
+      },
+      {
+        "preferred_label": "Vietnamesiska",
+        "id": "RqHU_aEE_tJA"
+      },
+      {
+        "preferred_label": "Belarusiska/Vitryska",
+        "id": "i2wN_KYK_kRT"
+      },
+      {
+        "preferred_label": "Walesiska",
+        "id": "jFod_528_29i"
+      },
+      {
+        "preferred_label": "Wolof",
+        "id": "GF87_h5U_r6r"
+      },
+      {
+        "preferred_label": "Xhosa/Isixhosa",
+        "id": "ZExV_tjM_Nbo"
+      },
+      {
+        "preferred_label": "Yoruba",
+        "id": "hWuY_56Y_gEA"
+      },
+      {
+        "preferred_label": "Zande/Azande",
+        "id": "5sps_VbV_7DK"
+      },
+      {
+        "preferred_label": "Zhuang",
+        "id": "RD8Y_xdr_zdh"
+      },
+      {
+        "preferred_label": "Zulu",
+        "id": "Mhbn_hgq_sa6"
+      },
+      {
+        "preferred_label": "Svenska",
+        "id": "zSLA_vw2_FXN"
+      },
+      {
+        "preferred_label": "Teckenspråk",
+        "id": "fYiW_4KZ_MHa"
+      },
+      {
+        "preferred_label": "Adangme",
+        "id": "43Dr_HRx_rRx"
+      },
+      {
+        "preferred_label": "Afrihili",
+        "id": "uDkg_vvB_DsN"
+      },
+      {
+        "preferred_label": "Afro-asiatiska språk",
+        "id": "RfoX_qzv_t7i"
+      },
+      {
+        "preferred_label": "Akkadiska",
+        "id": "pYrC_AU4_73N"
+      },
+      {
+        "preferred_label": "Aleutiska",
+        "id": "c2mi_duS_MDX"
+      },
+      {
+        "preferred_label": "Algokinspråk",
+        "id": "N6Hi_gMb_u2D"
+      },
+      {
+        "preferred_label": "Altaiska språk, andra",
+        "id": "jTzC_UTB_m7d"
+      },
+      {
+        "preferred_label": "Apachespråk",
+        "id": "b6Pn_p3r_nDz"
+      },
+      {
+        "preferred_label": "Arapaho",
+        "id": "Z19f_uKB_oTc"
+      },
+      {
+        "preferred_label": "Araukiska",
+        "id": "cZpA_5RH_23F"
+      },
+      {
+        "preferred_label": "Arawak",
+        "id": "J4aC_yPX_Sgt"
+      },
+      {
+        "preferred_label": "Artificiella, andra språk",
+        "id": "XVwz_HH4_PjB"
+      },
+      {
+        "preferred_label": "Athapaskspråk",
+        "id": "A2Ts_vri_15G"
+      },
+      {
+        "preferred_label": "Australiska språk",
+        "id": "xPeV_5HK_buN"
+      },
+      {
+        "preferred_label": "Austronesiska språk, andra",
+        "id": "6RTo_v81_XdA"
+      },
+      {
+        "preferred_label": "Avariska",
+        "id": "WzGi_zgx_pbJ"
+      },
+      {
+        "preferred_label": "Avestiska",
+        "id": "V5kR_n15_m1D"
+      },
+      {
+        "preferred_label": "Awadhi",
+        "id": "fwrn_bpj_4vM"
+      },
+      {
+        "preferred_label": "Acoli",
+        "id": "DKjf_DVV_vxC"
+      },
+      {
+        "preferred_label": "Abkhasiska",
+        "id": "4tXr_2NX_SSy"
+      },
+      {
+        "preferred_label": "Akinesiska",
+        "id": "YJcD_PeA_u4M"
+      },
+      {
+        "preferred_label": "Balinesiska",
+        "id": "GcJV_gXD_7YU"
+      },
+      {
+        "preferred_label": "Baltiska språk, andra",
+        "id": "gFSD_xzk_PfW"
+      },
+      {
+        "preferred_label": "Bamilekespråk",
+        "id": "c8iN_jaP_6xc"
+      },
+      {
+        "preferred_label": "Basa",
+        "id": "SRr4_baB_iSZ"
+      },
+      {
+        "preferred_label": "Batak (Indonésien)",
+        "id": "YHen_8sx_MDd"
+      },
+      {
+        "preferred_label": "Bedja",
+        "id": "Tzjp_quT_tX2"
+      },
+      {
+        "preferred_label": "Bodjpuri",
+        "id": "czZH_fp8_mbz"
+      },
+      {
+        "preferred_label": "Bikol",
+        "id": "fyTh_C2w_gsy"
+      },
+      {
+        "preferred_label": "Edo/Bini",
+        "id": "QZv8_dXK_dw8"
+      },
+      {
+        "preferred_label": "Braj",
+        "id": "XdkL_b18_aE3"
+      },
+      {
+        "preferred_label": "Bretonska",
+        "id": "txVD_z3R_P4q"
+      },
+      {
+        "preferred_label": "Buginesiska",
+        "id": "becB_LRA_kuX"
+      },
+      {
+        "preferred_label": "Burjatiska",
+        "id": "6VZ8_y2a_ViA"
+      },
+      {
+        "preferred_label": "Caddo",
+        "id": "A5So_xQX_T59"
+      },
+      {
+        "preferred_label": "Karibiska",
+        "id": "QFad_Hdf_EqL"
+      },
+      {
+        "preferred_label": "Kaukasiska språk, andra",
+        "id": "VpQH_nua_x5a"
+      },
+      {
+        "preferred_label": "Keltiska språk, andra",
+        "id": "yy2q_Zsg_6Ei"
+      },
+      {
+        "preferred_label": "Centralamerikanska indianspråk, andra",
+        "id": "DUK5_RYX_sRe"
+      },
+      {
+        "preferred_label": "Chagatai",
+        "id": "FnFC_4cc_heD"
+      },
+      {
+        "preferred_label": "Chamiska språk",
+        "id": "uyoM_hFZ_kh1"
+      },
+      {
+        "preferred_label": "Chamorro",
+        "id": "FyZY_BJZ_yz6"
+      },
+      {
+        "preferred_label": "Tjetjenska",
+        "id": "wfdT_62G_T49"
+      },
+      {
+        "preferred_label": "Cherokee",
+        "id": "p8af_zMR_sbN"
+      },
+      {
+        "preferred_label": "Cheyenne",
+        "id": "NaRV_tAk_xx2"
+      },
+      {
+        "preferred_label": "Chibcha",
+        "id": "mxQt_Uiv_X9B"
+      },
+      {
+        "preferred_label": "Tsjinuksjargong",
+        "id": "tfxQ_bTn_jVT"
+      },
+      {
+        "preferred_label": "Chipewyan",
+        "id": "tKF5_Dm1_PL5"
+      },
+      {
+        "preferred_label": "Choctaw",
+        "id": "CFaA_CXW_ZLx"
+      },
+      {
+        "preferred_label": "Kyrkslaviska",
+        "id": "WfH2_RjG_CyW"
+      },
+      {
+        "preferred_label": "Chuukesiska",
+        "id": "Utfp_DGP_qCS"
+      },
+      {
+        "preferred_label": "Koptiska",
+        "id": "gnmK_CdW_viG"
+      },
+      {
+        "preferred_label": "Korniska",
+        "id": "vk8M_mQD_JtZ"
+      },
+      {
+        "preferred_label": "Cree",
+        "id": "Y3nz_qvd_DBW"
+      },
+      {
+        "preferred_label": "Muskogee",
+        "id": "FzWY_WsG_LUy"
+      },
+      {
+        "preferred_label": "Kreolska och pidginspråk, andra",
+        "id": "e5AH_3JG_yc1"
+      },
+      {
+        "preferred_label": "Kreolska och pidginspråk, engelsk-baserade, andra",
+        "id": "h35H_jBx_XFy"
+      },
+      {
+        "preferred_label": "Kreolska och pidginspråk, fransk-baserade, andra",
+        "id": "R8WU_fQb_Y4E"
+      },
+      {
+        "preferred_label": "Kusjittiska språk, andra",
+        "id": "LrDr_WmD_Ljb"
+      },
+      {
+        "preferred_label": "Dakota",
+        "id": "MXbX_9Du_nkp"
+      },
+      {
+        "preferred_label": "Dajak",
+        "id": "AvDT_nvZ_uig"
+      },
+      {
+        "preferred_label": "Delaware",
+        "id": "Kpju_m4q_31i"
+      },
+      {
+        "preferred_label": "Dogri",
+        "id": "ttMr_bG7_Go7"
+      },
+      {
+        "preferred_label": "Dogrib",
+        "id": "utaN_9Tq_yM3"
+      },
+      {
+        "preferred_label": "Dravidiska språk, andra",
+        "id": "9AnT_Sut_QBs"
+      },
+      {
+        "preferred_label": "Duala",
+        "id": "HnUQ_rah_Akr"
+      },
+      {
+        "preferred_label": "Medelnederländska",
+        "id": "7a3p_ktX_vgP"
+      },
+      {
+        "preferred_label": "Egyptiska",
+        "id": "bJXz_kjT_LfC"
+      },
+      {
+        "preferred_label": "Ekajuk",
+        "id": "uhGZ_Xif_8jX"
+      },
+      {
+        "preferred_label": "Elamitiska",
+        "id": "NCju_o5B_Qhv"
+      },
+      {
+        "preferred_label": "Medelengelska",
+        "id": "ww2N_GEd_Pc7"
+      },
+      {
+        "preferred_label": "Gammelengelska",
+        "id": "hUGZ_TrC_T7v"
+      },
+      {
+        "preferred_label": "Esperanto",
+        "id": "aqBv_yoE_YVf"
+      },
+      {
+        "preferred_label": "Éwondo",
+        "id": "aRMQ_MKY_kwp"
+      },
+      {
+        "preferred_label": "Finsk-ugriska språk, andra",
+        "id": "RRwx_hXb_bRK"
+      },
+      {
+        "preferred_label": "Medelfranska",
+        "id": "k9XX_SU3_PiE"
+      },
+      {
+        "preferred_label": "Friuliska",
+        "id": "LHyw_YUi_539"
+      },
+      {
+        "preferred_label": "Gayo",
+        "id": "XDyM_jnY_2XB"
+      },
+      {
+        "preferred_label": "Gbaya",
+        "id": "aayg_wup_G3z"
+      },
+      {
+        "preferred_label": "Geez",
+        "id": "nX5K_BFZ_CGM"
+      },
+      {
+        "preferred_label": "Medelhögtyska",
+        "id": "kMxH_v1Y_jcW"
+      },
+      {
+        "preferred_label": "Gammalhögtyska",
+        "id": "2s87_4M9_mF8"
+      },
+      {
+        "preferred_label": "Germanska språk, andra",
+        "id": "oNtF_Wh5_nL3"
+      },
+      {
+        "preferred_label": "Gondi",
+        "id": "Sta6_5fE_6YC"
+      },
+      {
+        "preferred_label": "Gorontalo",
+        "id": "WvNj_WvF_CMS"
+      },
+      {
+        "preferred_label": "Gotiska",
+        "id": "GB2g_Bhp_zh7"
+      },
+      {
+        "preferred_label": "Grebo",
+        "id": "1V1A_8LC_9FL"
+      },
+      {
+        "preferred_label": "Gammalgrekiska",
+        "id": "sMa9_mkN_w7L"
+      },
+      {
+        "preferred_label": "Gwich'in",
+        "id": "pLK6_YGd_bDZ"
+      },
+      {
+        "preferred_label": "Haida",
+        "id": "ufzT_NXJ_Gbx"
+      },
+      {
+        "preferred_label": "Hawaiiska",
+        "id": "Xfhf_EwK_2ej"
+      },
+      {
+        "preferred_label": "Hiligaynon",
+        "id": "H2Le_YR5_AnM"
+      },
+      {
+        "preferred_label": "Himachali",
+        "id": "iNVQ_m3Y_oxH"
+      },
+      {
+        "preferred_label": "Hiri Motu",
+        "id": "hYDU_LrU_QCt"
+      },
+      {
+        "preferred_label": "Hettittiska",
+        "id": "D8L1_GrU_UEk"
+      },
+      {
+        "preferred_label": "Hmong",
+        "id": "CejU_23x_JPS"
+      },
+      {
+        "preferred_label": "Hupa",
+        "id": "5G9f_Xs6_R9R"
+      },
+      {
+        "preferred_label": "Iban",
+        "id": "sggr_4ba_xWP"
+      },
+      {
+        "preferred_label": "Ijo",
+        "id": "3dD8_TTW_5wh"
+      },
+      {
+        "preferred_label": "Iloko",
+        "id": "yBCa_NHj_TcN"
+      },
+      {
+        "preferred_label": "Indo-iranska språk, andra",
+        "id": "P69L_FCv_sf9"
+      },
+      {
+        "preferred_label": "Indo-europeiska språk, andra",
+        "id": "kwP5_3pt_hk9"
+      },
+      {
+        "preferred_label": "Interlingua",
+        "id": "dWU4_ed7_jX6"
+      },
+      {
+        "preferred_label": "Inuktitut",
+        "id": "r2HQ_7Dt_N2N"
+      },
+      {
+        "preferred_label": "Inupiak",
+        "id": "gXVC_bNa_VdA"
+      },
+      {
+        "preferred_label": "Iranska språk, andra",
+        "id": "kafF_y2Q_Md2"
+      },
+      {
+        "preferred_label": "Medelirisk",
+        "id": "8G95_iDg_rtV"
+      },
+      {
+        "preferred_label": "Gammaliriska",
+        "id": "8VDp_XA9_dBF"
+      },
+      {
+        "preferred_label": "Irokesarspråk",
+        "id": "rdv1_9u8_wCM"
+      },
+      {
+        "preferred_label": "Judeo-arabisk",
+        "id": "64Rg_xyJ_bmN"
+      },
+      {
+        "preferred_label": "Judeo-persiska",
+        "id": "W5rh_1Ec_sox"
+      },
+      {
+        "preferred_label": "Kachin",
+        "id": "ZsK2_s92_xaW"
+      },
+      {
+        "preferred_label": "Karakalpak",
+        "id": "brZn_27W_A9K"
+      },
+      {
+        "preferred_label": "Kawi",
+        "id": "DuPf_Z28_3Jv"
+      },
+      {
+        "preferred_label": "Khasi",
+        "id": "e84R_V8f_fXS"
+      },
+      {
+        "preferred_label": "Khoisanspråk, andra",
+        "id": "Vdz7_pdG_bTJ"
+      },
+      {
+        "preferred_label": "Khotanesiska",
+        "id": "aF96_PaA_VAs"
+      },
+      {
+        "preferred_label": "Kimbundu",
+        "id": "PZH4_EGP_Dz3"
+      },
+      {
+        "preferred_label": "Komi",
+        "id": "KVSQ_4pu_RSs"
+      },
+      {
+        "preferred_label": "Kosraeiska",
+        "id": "gsoZ_3LM_C79"
+      },
+      {
+        "preferred_label": "Kpelle",
+        "id": "nT65_Jya_ocT"
+      },
+      {
+        "preferred_label": "Kuanyama",
+        "id": "sXAB_vhU_zN8"
+      },
+      {
+        "preferred_label": "Kumykiska",
+        "id": "MZ9f_S5d_6Wo"
+      },
+      {
+        "preferred_label": "Kurukh",
+        "id": "qTKS_snK_ezT"
+      },
+      {
+        "preferred_label": "Kutenai",
+        "id": "fLPj_PDh_SQJ"
+      },
+      {
+        "preferred_label": "Ladino",
+        "id": "B9id_Ecv_qji"
+      },
+      {
+        "preferred_label": "Lahnda",
+        "id": "73sF_ejf_2Vx"
+      },
+      {
+        "preferred_label": "Latin",
+        "id": "7nWL_Bzc_RFQ"
+      },
+      {
+        "preferred_label": "Lesgiska",
+        "id": "9ig9_ypn_cVw"
+      },
+      {
+        "preferred_label": "Tshiluba/Luba-lulua",
+        "id": "yA84_KQv_pKJ"
+      },
+      {
+        "preferred_label": "Luiseno",
+        "id": "rEi5_NuN_9xC"
+      },
+      {
+        "preferred_label": "Lushai",
+        "id": "qeKC_PXn_cHU"
+      },
+      {
+        "preferred_label": "Magahi",
+        "id": "rJah_bYL_qdW"
+      },
+      {
+        "preferred_label": "Maithili",
+        "id": "AzXn_4ic_B5Y"
+      },
+      {
+        "preferred_label": "Makassar",
+        "id": "ER1i_tUG_y4e"
+      },
+      {
+        "preferred_label": "Mandingo",
+        "id": "PvjG_Ak1_L71"
+      },
+      {
+        "preferred_label": "Manipuriska",
+        "id": "4xVc_tVS_85F"
+      },
+      {
+        "preferred_label": "Manobospråk",
+        "id": "A4h7_WDJ_Qzf"
+      },
+      {
+        "preferred_label": "Marshalliska",
+        "id": "JDk9_Yia_DPQ"
+      },
+      {
+        "preferred_label": "Micmac",
+        "id": "3ueP_nhZ_1em"
+      },
+      {
+        "preferred_label": "Minangkabau",
+        "id": "hB5i_2eY_Kur"
+      },
+      {
+        "preferred_label": "Diverse språk",
+        "id": "8GQ1_Avf_vdR"
+      },
+      {
+        "preferred_label": "Mohawk",
+        "id": "s6ka_gDZ_Ycb"
+      },
+      {
+        "preferred_label": "Monkhmerspråk, andra",
+        "id": "wcNi_yzQ_n9V"
+      },
+      {
+        "preferred_label": "Mongo",
+        "id": "En9t_Siu_7yx"
+      },
+      {
+        "preferred_label": "Flera språk",
+        "id": "o8Xp_wvY_5pu"
+      },
+      {
+        "preferred_label": "Mundspråk",
+        "id": "EUGX_wJT_qxE"
+      },
+      {
+        "preferred_label": "Ndebele Syd",
+        "id": "8ZiC_PNc_hkY"
+      },
+      {
+        "preferred_label": "Ndonga",
+        "id": "zAgM_Myz_xeD"
+      },
+      {
+        "preferred_label": "Newari",
+        "id": "dS3F_4gn_htW"
+      },
+      {
+        "preferred_label": "Nias",
+        "id": "vNJX_dvg_1aq"
+      },
+      {
+        "preferred_label": "Niger-Kordofanspråk, andra",
+        "id": "Kmib_KAp_WkF"
+      },
+      {
+        "preferred_label": "Nilsahariska, andra",
+        "id": "MAWi_wjM_Qrb"
+      },
+      {
+        "preferred_label": "Niuea",
+        "id": "e44f_RYG_BZd"
+      },
+      {
+        "preferred_label": "Gammalnorska",
+        "id": "Xgng_L5L_T89"
+      },
+      {
+        "preferred_label": "Nordamerikanska indianerspråk, andra",
+        "id": "rztR_jw7_vez"
+      },
+      {
+        "preferred_label": "Nubiska språk",
+        "id": "5gu3_xFf_Mo8"
+      },
+      {
+        "preferred_label": "Nyankole",
+        "id": "yh9H_efB_UFJ"
+      },
+      {
+        "preferred_label": "Nyoro",
+        "id": "EwW1_aQH_EXu"
+      },
+      {
+        "preferred_label": "Nzima",
+        "id": "Agwy_4Hu_NTY"
+      },
+      {
+        "preferred_label": "Ojibwa",
+        "id": "MPVv_14T_88n"
+      },
+      {
+        "preferred_label": "Osage",
+        "id": "Ev2g_L1i_D62"
+      },
+      {
+        "preferred_label": "Ossetiska",
+        "id": "Ji47_WT1_NKN"
+      },
+      {
+        "preferred_label": "Oto-manguespråk",
+        "id": "QdLQ_Ti9_UP3"
+      },
+      {
+        "preferred_label": "Pahlavi",
+        "id": "9RmN_zLz_k9H"
+      },
+      {
+        "preferred_label": "Palauiska",
+        "id": "3ofn_Vft_AFK"
+      },
+      {
+        "preferred_label": "Pali",
+        "id": "uVrS_Lx3_7N2"
+      },
+      {
+        "preferred_label": "Pampanggo",
+        "id": "wAEM_WR9_cmv"
+      },
+      {
+        "preferred_label": "Pangasinan",
+        "id": "yymy_7L8_LDE"
+      },
+      {
+        "preferred_label": "Papiamento",
+        "id": "QWLc_9BV_8RS"
+      },
+      {
+        "preferred_label": "Papuanska språk, andra",
+        "id": "7HE9_DoQ_a56"
+      },
+      {
+        "preferred_label": "Gammelpersiska",
+        "id": "WA3P_FfD_nmy"
+      },
+      {
+        "preferred_label": "Filippinska språk, andra",
+        "id": "SUTA_7JX_JRw"
+      },
+      {
+        "preferred_label": "Fönikiska",
+        "id": "CM6d_taZ_vVL"
+      },
+      {
+        "preferred_label": "Pohnpei",
+        "id": "zASV_5vH_5Yr"
+      },
+      {
+        "preferred_label": "Prakrit",
+        "id": "HPb5_vo6_Dmp"
+      },
+      {
+        "preferred_label": "Gammelprovecanska",
+        "id": "1zy3_huH_ic1"
+      },
+      {
+        "preferred_label": "Rajasthanisja; marwariska",
+        "id": "bUdf_dcV_r3c"
+      },
+      {
+        "preferred_label": "Rapanui",
+        "id": "VEPz_1v9_Rvu"
+      },
+      {
+        "preferred_label": "Rarotonga",
+        "id": "anUm_Nr6_gpN"
+      },
+      {
+        "preferred_label": "Romanska språk, andra",
+        "id": "xxAm_o17_Sf3"
+      },
+      {
+        "preferred_label": "Saliska språk",
+        "id": "GXwq_W4u_cvX"
+      },
+      {
+        "preferred_label": "Samaritansk aramaiska",
+        "id": "kQvM_k1N_nne"
+      },
+      {
+        "preferred_label": "Sandawe",
+        "id": "FCsC_s5t_dU2"
+      },
+      {
+        "preferred_label": "Sanskrit",
+        "id": "WV6s_E7d_hBp"
+      },
+      {
+        "preferred_label": "Sasak",
+        "id": "anHt_dxL_Yvo"
+      },
+      {
+        "preferred_label": "Selkupiska",
+        "id": "agM1_4uk_nHZ"
+      },
+      {
+        "preferred_label": "Semitiska språk, andra",
+        "id": "sCUz_F8E_pKZ"
+      },
+      {
+        "preferred_label": "Serer",
+        "id": "Xajo_j9B_XWW"
+      },
+      {
+        "preferred_label": "Shan",
+        "id": "ZRA5_7p5_vY7"
+      },
+      {
+        "preferred_label": "Sidamo",
+        "id": "G8e4_Sid_vFd"
+      },
+      {
+        "preferred_label": "Siksika",
+        "id": "DJfZ_4fk_kwb"
+      },
+      {
+        "preferred_label": "Sinotibetanska språk, andra",
+        "id": "dQvb_BHK_Yxk"
+      },
+      {
+        "preferred_label": "Sioux-språk",
+        "id": "443s_ZvN_1F4"
+      },
+      {
+        "preferred_label": "Slaviska (Athapascaniska)",
+        "id": "u9Rr_v5c_iT2"
+      },
+      {
+        "preferred_label": "Slaviska språk, andra",
+        "id": "PMLh_Nss_Ehg"
+      },
+      {
+        "preferred_label": "Sogdiska",
+        "id": "kdXZ_zHa_KTB"
+      },
+      {
+        "preferred_label": "Soninke",
+        "id": "Gi82_GNa_Uvu"
+      },
+      {
+        "preferred_label": "Nordsotho",
+        "id": "HgMp_vQ1_7ed"
+      },
+      {
+        "preferred_label": "Sydamerikanska indianspråk, andra",
+        "id": "AtJY_V9b_8Ae"
+      },
+      {
+        "preferred_label": "Sukuma",
+        "id": "HJSu_QbW_htd"
+      },
+      {
+        "preferred_label": "Sumeriska",
+        "id": "s6D9_CAD_eMB"
+      },
+      {
+        "preferred_label": "Sundanesiska",
+        "id": "qLfm_7QZ_37r"
+      },
+      {
+        "preferred_label": "Thaispråk, andra",
+        "id": "rt8T_8UB_wTq"
+      },
+      {
+        "preferred_label": "Tereno",
+        "id": "Zrmd_kmh_AtN"
+      },
+      {
+        "preferred_label": "Tetum",
+        "id": "JGyZ_VXD_V8b"
+      },
+      {
+        "preferred_label": "Tiv",
+        "id": "yTWE_vfZ_HNB"
+      },
+      {
+        "preferred_label": "Tlingit",
+        "id": "mZVe_5Ug_ncD"
+      },
+      {
+        "preferred_label": "Tokelau",
+        "id": "cnGc_92Q_oex"
+      },
+      {
+        "preferred_label": "Tonganska",
+        "id": "RUJ6_xGA_eUN"
+      },
+      {
+        "preferred_label": "Tsimshian",
+        "id": "qzy8_5NW_TDP"
+      },
+      {
+        "preferred_label": "Tsonga",
+        "id": "2tws_aRJ_FC8"
+      },
+      {
+        "preferred_label": "Tumbuka",
+        "id": "VPVt_rxK_6JP"
+      },
+      {
+        "preferred_label": "Ottomanturkiska",
+        "id": "4eqr_GrX_XM6"
+      },
+      {
+        "preferred_label": "Tuvalu",
+        "id": "zunG_TL8_koW"
+      },
+      {
+        "preferred_label": "Tuvinska",
+        "id": "jE6j_5nL_t9U"
+      },
+      {
+        "preferred_label": "Ugaritiska",
+        "id": "hP5c_JJk_riU"
+      },
+      {
+        "preferred_label": "Vai",
+        "id": "h3RJ_dgP_MxH"
+      },
+      {
+        "preferred_label": "Venda",
+        "id": "sGCA_SoQ_VDz"
+      },
+      {
+        "preferred_label": "Volapük",
+        "id": "SMdj_4DK_D7D"
+      },
+      {
+        "preferred_label": "Votiska",
+        "id": "QHQc_Thx_KyY"
+      },
+      {
+        "preferred_label": "Wakashan språk",
+        "id": "Su2Y_KnM_Nm3"
+      },
+      {
+        "preferred_label": "Walamo",
+        "id": "pKgd_UJA_ahC"
+      },
+      {
+        "preferred_label": "Waray",
+        "id": "vm4L_9sD_6Dd"
+      },
+      {
+        "preferred_label": "Washo",
+        "id": "ZLh2_Qtx_GQm"
+      },
+      {
+        "preferred_label": "Jakutiska",
+        "id": "PsHc_32K_PEz"
+      },
+      {
+        "preferred_label": "Yao",
+        "id": "rYw9_SHt_yWk"
+      },
+      {
+        "preferred_label": "Yapese",
+        "id": "PWs8_ctN_ewk"
+      },
+      {
+        "preferred_label": "Zapotekiska",
+        "id": "KBWH_gdK_uVB"
+      },
+      {
+        "preferred_label": "Zuni",
+        "id": "B9Dx_jN8_QZg"
+      },
+      {
+        "preferred_label": "Yupik språk",
+        "id": "ASKN_a1S_Uqt"
+      },
+      {
+        "preferred_label": "Gammelfranska",
+        "id": "vQHk_Y7j_NVM"
+      },
+      {
+        "preferred_label": "Meänkieli/Tornedalsfinska",
+        "id": "ujrF_MeF_LSB"
+      },
+      {
+        "preferred_label": "Dari",
+        "id": "Lozg_qhA_r3y"
+      },
+      {
+        "preferred_label": "Östassyriska/Assyriska",
+        "id": "xYJh_6Ez_4Md"
+      },
+      {
+        "preferred_label": "Keldanska/Kaldeiska",
+        "id": "8VkC_Gwt_jHy"
+      },
+      {
+        "preferred_label": "Saho",
+        "id": "w9hf_iyH_FCH"
+      },
+      {
+        "preferred_label": "Kurdiska - Kurmanji",
+        "id": "nTYu_SG6_CNa"
+      },
+      {
+        "preferred_label": "Kurdiska - Sorani",
+        "id": "49Hh_qTx_aj5"
+      },
+      {
+        "preferred_label": "Kantonesiska/Yue",
+        "id": "M3e1_w6W_iLW"
+      },
+      {
+        "preferred_label": "Asanti/Asante/Ashanti",
+        "id": "FC64_K81_Bcr"
+      },
+      {
+        "preferred_label": "Bajuni/Kibajuni",
+        "id": "E9Bs_mGg_7ep"
+      },
+      {
+        "preferred_label": "Bilen",
+        "id": "2Uy8_7LB_4bL"
+      },
+      {
+        "preferred_label": "Fula/Fulani/Pular",
+        "id": "xacB_1oW_7jy"
+      },
+      {
+        "preferred_label": "Hakka",
+        "id": "mBcA_Zuz_iWQ"
+      },
+      {
+        "preferred_label": "Kurdiska - Badinani/Badini",
+        "id": "zB4i_pd8_ECK"
+      },
+      {
+        "preferred_label": "Kurdiska - Zaza/Zazaiska",
+        "id": "xm4U_i9S_bPg"
+      },
+      {
+        "preferred_label": "Kurdiska - Feyli",
+        "id": "Pqtm_Qdg_Nys"
+      },
+      {
+        "preferred_label": "Kurdiska - Gorani",
+        "id": "8mzZ_D3A_3vL"
+      },
+      {
+        "preferred_label": "Kinyamulenge",
+        "id": "4haB_RB5_Bzk"
+      },
+      {
+        "preferred_label": "Krio",
+        "id": "yX89_s8e_kXM"
+      },
+      {
+        "preferred_label": "Maay",
+        "id": "9MDD_DpY_Cun"
+      },
+      {
+        "preferred_label": "Malinke/Maninka",
+        "id": "CDJ5_hnF_FB9"
+      },
+      {
+        "preferred_label": "Mandinka",
+        "id": "svVq_va9_Y5u"
+      },
+      {
+        "preferred_label": "Masalit",
+        "id": "ASAK_XUa_etS"
+      },
+      {
+        "preferred_label": "Romani - Arli",
+        "id": "3Zq4_DS4_daE"
+      },
+      {
+        "preferred_label": "Romani - Gurbet",
+        "id": "yFxL_HkC_sUS"
+      },
+      {
+        "preferred_label": "Romani - Kalderash",
+        "id": "UD8G_ZZz_q3S"
+      },
+      {
+        "preferred_label": "Romani - Lovari",
+        "id": "MyXZ_RTz_spZ"
+      },
+      {
+        "preferred_label": "Rohingya",
+        "id": "6xEu_eBR_xw3"
+      },
+      {
+        "preferred_label": "Serbokroatiska",
+        "id": "ntmP_y1k_ycf"
+      },
+      {
+        "preferred_label": "Shanghainesiska/Wu",
+        "id": "9Uyp_C2D_u56"
+      },
+      {
+        "preferred_label": "Sylheti",
+        "id": "WtKx_UsV_Q1E"
+      },
+      {
+        "preferred_label": "Teochew/Chaozhou",
+        "id": "FMTA_tdk_mtr"
+      },
+      {
+        "preferred_label": "Ukwa",
+        "id": "ikDC_jJt_vQS"
+      },
+      {
+        "preferred_label": "Vlaski",
+        "id": "stwR_Tkb_m2Y"
+      },
+      {
+        "preferred_label": "Montenegrinska",
+        "id": "kBKA_GoN_CrX"
+      },
+      {
+        "preferred_label": "Nyöstsyriska",
+        "id": "zkF9_QE5_3sL"
+      },
+      {
+        "preferred_label": "Turoyo",
+        "id": "t2Tr_maJ_cp4"
+      },
+      {
+        "preferred_label": "Kigere",
+        "id": "xmWe_WMV_9tK"
+      },
+      {
+        "preferred_label": "Hazaragi",
+        "id": "5q1i_S5g_9Cn"
+      }
+    ]
+  }
+}

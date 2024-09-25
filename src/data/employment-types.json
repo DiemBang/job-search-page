@@ -1,0 +1,26 @@
+{
+  "data": {
+    "concepts": [
+      {
+        "preferred_label": "Tillsvidareanställning (inkl. eventuell provanställning)",
+        "id": "kpPX_CNN_gDU"
+      },
+      {
+        "preferred_label": "Tidsbegränsad anställning",
+        "id": "sTu5_NBQ_udq"
+      },
+      {
+        "preferred_label": "Vikariat",
+        "id": "gro4_cWF_6D7"
+      },
+      {
+        "preferred_label": "Behovsanställning",
+        "id": "1paU_aCR_nGn"
+      },
+      {
+        "preferred_label": "Säsongsanställning",
+        "id": "EBhX_Qm2_8eX"
+      }
+    ]
+  }
+}
