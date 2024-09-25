@@ -1,0 +1,42 @@
+{
+  "data": {
+    "concepts": [
+      {
+        "preferred_label": "Jourtid förekommer",
+        "id": "tKNu_D8M_8so"
+      },
+      {
+        "preferred_label": "Skiftarbete",
+        "id": "YnG9_nVP_CsZ"
+      },
+      {
+        "preferred_label": "Arbete som kräver personlig skyddsutrustning",
+        "id": "ztbR_i2M_V7u"
+      },
+      {
+        "preferred_label": "Underjordsarbete",
+        "id": "4qR2_6VV_t1G"
+      },
+      {
+        "preferred_label": "Resor i arbetet förekommer",
+        "id": "oaM2_JTK_muh"
+      },
+      {
+        "preferred_label": "Höghöjdsarbete/arbete med fallrisker",
+        "id": "5j91_mbw_ESR"
+      },
+      {
+        "preferred_label": "Distansarbete",
+        "id": "uwzb_xcR_vxS"
+      },
+      {
+        "preferred_label": "Arbete i miljö där allergiframkallande ämnen förekommer",
+        "id": "97Wg_pQU_4BS"
+      },
+      {
+        "preferred_label": "Beredskapstjänst förekommer",
+        "id": "9xbf_bv7_eDq"
+      }
+    ]
+  }
+}

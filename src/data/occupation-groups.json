@@ -1,0 +1,1732 @@
+{
+  "data": {
+    "concepts": [
+      {
+        "preferred_label": "Administration, ekonomi, juridik",
+        "id": "X82t_awd_Qyc",
+        "narrower": [
+          {
+            "id": "k1Nx_auG_sNh",
+            "preferred_label": "Informatörer, kommunikatörer och PR-specialister"
+          },
+          {
+            "id": "q81z_3oD_1qu",
+            "preferred_label": "Redovisningsekonomer"
+          },
+          {
+            "id": "H2Zj_eL9_x28",
+            "preferred_label": "Gruppledare för kontorspersonal"
+          },
+          {
+            "id": "sXgV_QFg_vpb",
+            "preferred_label": "Arkeologer och specialister inom humaniora m.m."
+          },
+          {
+            "id": "JAFv_ZaP_tDG",
+            "preferred_label": "Inkasserare och pantlånare m.fl."
+          },
+          {
+            "id": "FfMN_Bw1_qYR",
+            "preferred_label": "Banktjänstemän"
+          },
+          {
+            "id": "ByrL_ANp_UwV",
+            "preferred_label": "Kontorsreceptionister"
+          },
+          {
+            "id": "DZVN_v5g_Fco",
+            "preferred_label": "Affärs- och företagsjurister"
+          },
+          {
+            "id": "vPP6_rsw_dck",
+            "preferred_label": "Planerare och utredare m.fl."
+          },
+          {
+            "id": "4W6S_1kA_nrv",
+            "preferred_label": "Skattehandläggare"
+          },
+          {
+            "id": "br6a_VVS_V3y",
+            "preferred_label": "Övriga jurister"
+          },
+          {
+            "id": "Qo7p_wjf_gtv",
+            "preferred_label": "Lednings- och organisationsutvecklare"
+          },
+          {
+            "id": "zKvJ_GnC_Szx",
+            "preferred_label": "Domstols- och juristsekreterare m.fl."
+          },
+          {
+            "id": "vCAb_uuo_ek5",
+            "preferred_label": "Chefssekreterare och VD-assistenter m.fl."
+          },
+          {
+            "id": "fsnw_ZCu_v2U",
+            "preferred_label": "Arbetsförmedlare"
+          },
+          {
+            "id": "L7eh_ihX_vM5",
+            "preferred_label": "Löne- och personaladministratörer"
+          },
+          {
+            "id": "eQ4M_CNm_ozj",
+            "preferred_label": "Övriga kontorsassistenter och sekreterare"
+          },
+          {
+            "id": "qsJJ_EYo_fzA",
+            "preferred_label": "Domare"
+          },
+          {
+            "id": "JfYV_ZGg_6rm",
+            "preferred_label": "Förvaltnings- och organisationsjurister"
+          },
+          {
+            "id": "bjqk_F3A_5Hk",
+            "preferred_label": "Personal- och HR-specialister"
+          },
+          {
+            "id": "Y6yY_SuR_hVh",
+            "preferred_label": "Övriga ekonomer"
+          },
+          {
+            "id": "jv1x_tpK_32p",
+            "preferred_label": "Statistiker"
+          },
+          {
+            "id": "WZCM_nfS_eAk",
+            "preferred_label": "Nationalekonomer och makroanalytiker m.fl."
+          },
+          {
+            "id": "ij8k_EwC_zyB",
+            "preferred_label": "Ekonomiassistenter m.fl."
+          },
+          {
+            "id": "pTr9_RBT_9ur",
+            "preferred_label": "Finansanalytiker och investeringsrådgivare m.fl."
+          },
+          {
+            "id": "cRmd_536_pT1",
+            "preferred_label": "Revisorer m.fl."
+          },
+          {
+            "id": "Ru4W_zn2_LEz",
+            "preferred_label": "Skadereglerare och värderare"
+          },
+          {
+            "id": "6aak_8eh_iwT",
+            "preferred_label": "Åklagare"
+          },
+          {
+            "id": "aQpg_E2T_cWq",
+            "preferred_label": "Mäklare inom finans"
+          },
+          {
+            "id": "Uw4n_UB2_RCW",
+            "preferred_label": "Controller"
+          },
+          {
+            "id": "q8wL_kdi_WaW",
+            "preferred_label": "Advokater"
+          },
+          {
+            "id": "ZQTR_hVC_QhJ",
+            "preferred_label": "Skolassistenter m.fl."
+          },
+          {
+            "id": "GMDo_DVo_Yzh",
+            "preferred_label": "Lantmätare"
+          },
+          {
+            "id": "4aPu_2nd_8X6",
+            "preferred_label": "Telefonister"
+          },
+          {
+            "id": "Bbkh_nrm_2J8",
+            "preferred_label": "Traders och fondförvaltare"
+          },
+          {
+            "id": "ZQiZ_6Kd_D3a",
+            "preferred_label": "Socialförsäkringshandläggare"
+          },
+          {
+            "id": "oEmP_NC1_sXE",
+            "preferred_label": "Övriga handläggare"
+          },
+          {
+            "id": "TQkt_eeK_eNp",
+            "preferred_label": "Arkiv- och biblioteksassistenter m.fl."
+          },
+          {
+            "id": "pwRH_MT1_8nR",
+            "preferred_label": "Kundtjänstpersonal"
+          },
+          {
+            "id": "9dLz_BCK_oDA",
+            "preferred_label": "Försäkringssäljare och försäkringsrådgivare"
+          },
+          {
+            "id": "MGk3_LvL_AU2",
+            "preferred_label": "Backofficepersonal m.fl."
+          },
+          {
+            "id": "2kLc_pto_DpV",
+            "preferred_label": "Medicinska sekreterare, vårdadministratörer m.fl."
+          }
+        ]
+      },
+      {
+        "preferred_label": "Bygg och anläggning",
+        "id": "j7Cq_ZJe_GkT",
+        "narrower": [
+          {
+            "id": "iHrC_aRv_fVm",
+            "preferred_label": "Grovarbetare inom bygg och anläggning"
+          },
+          {
+            "id": "3ZtN_hhA_SM7",
+            "preferred_label": "Anläggningsmaskinförare m.fl."
+          },
+          {
+            "id": "bZ4J_riZ_zK6",
+            "preferred_label": "Anläggningsarbetare"
+          },
+          {
+            "id": "AD3U_cFH_rbe",
+            "preferred_label": "Övriga byggnads- och anläggningsarbetare"
+          },
+          {
+            "id": "XeBP_nMe_pXx",
+            "preferred_label": "Civilingenjörsyrken inom bygg och anläggning"
+          },
+          {
+            "id": "thZP_oR7_WrY",
+            "preferred_label": "Ingenjörer och tekniker inom bygg och anläggning"
+          },
+          {
+            "id": "3UzE_P8A_9sS",
+            "preferred_label": "Kyl- och värmepumpstekniker m.fl."
+          },
+          {
+            "id": "9mJN_VwW_Xjg",
+            "preferred_label": "Träarbetare, snickare m.fl."
+          },
+          {
+            "id": "NnB3_eWH_auo",
+            "preferred_label": "Murare m.fl."
+          },
+          {
+            "id": "q2Ge_zrQ_zJb",
+            "preferred_label": "Betongarbetare"
+          },
+          {
+            "id": "7zKm_4NW_eey",
+            "preferred_label": "Brunnsborrare m.fl."
+          },
+          {
+            "id": "3g5x_Tm7_8QH",
+            "preferred_label": "Takmontörer"
+          },
+          {
+            "id": "w6ud_quG_dgh",
+            "preferred_label": "Arbetsledare inom bygg, anläggning och gruva"
+          },
+          {
+            "id": "Y4j1_P17_wVA",
+            "preferred_label": "Ställningsbyggare"
+          },
+          {
+            "id": "QKvX_v7r_PNL",
+            "preferred_label": "Målare"
+          },
+          {
+            "id": "f71c_gjL_RDq",
+            "preferred_label": "Gruv- och stenbrottsarbetare"
+          },
+          {
+            "id": "bXfo_4hb_SXx",
+            "preferred_label": "Byggnads- och ventilationsplåtslagare"
+          },
+          {
+            "id": "XYzP_5Tn_7Ep",
+            "preferred_label": "Kranförare m.fl."
+          },
+          {
+            "id": "cGxX_R9c_kW1",
+            "preferred_label": "Isoleringsmontörer"
+          },
+          {
+            "id": "fLKb_bJ3_69p",
+            "preferred_label": "VVS-montörer m.fl."
+          },
+          {
+            "id": "V79C_DD2_3Gj",
+            "preferred_label": "Golvläggare"
+          },
+          {
+            "id": "DPPw_4wa_AsH",
+            "preferred_label": "Anläggningsdykare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Data/IT",
+        "id": "apaJ_2ja_LuF",
+        "narrower": [
+          {
+            "id": "Fv7d_YhP_YmS",
+            "preferred_label": "Webbmaster och webbadministratörer"
+          },
+          {
+            "id": "cBBa_ngH_fCx",
+            "preferred_label": "Systemförvaltare m.fl."
+          },
+          {
+            "id": "13md_uyV_BNG",
+            "preferred_label": "Drifttekniker, IT"
+          },
+          {
+            "id": "DJh5_yyF_hEM",
+            "preferred_label": "Mjukvaru- och systemutvecklare m.fl."
+          },
+          {
+            "id": "UXKZ_3zZ_ipB",
+            "preferred_label": "Systemanalytiker och IT-arkitekter m.fl."
+          },
+          {
+            "id": "D9SL_mtn_vGM",
+            "preferred_label": "Systemtestare och testledare"
+          },
+          {
+            "id": "VCpu_5EN_bBt",
+            "preferred_label": "Nätverks- och systemtekniker m.fl."
+          },
+          {
+            "id": "hmaC_cfi_UKg",
+            "preferred_label": "Supporttekniker, IT"
+          },
+          {
+            "id": "UxT1_tPF_Kbg",
+            "preferred_label": "Övriga IT-specialister"
+          },
+          {
+            "id": "Q5DF_juj_8do",
+            "preferred_label": "Utvecklare inom spel och digitala media"
+          },
+          {
+            "id": "BAeH_eg8_T2d",
+            "preferred_label": "IT-säkerhetsspecialister"
+          },
+          {
+            "id": "MYAz_x9m_2LJ",
+            "preferred_label": "Systemadministratörer"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Kropps- och skönhetsvård",
+        "id": "Uuf1_GMh_Uvw",
+        "narrower": [
+          {
+            "id": "LyBp_bY6_bZK",
+            "preferred_label": "Frisörer"
+          },
+          {
+            "id": "HATH_AfN_RRz",
+            "preferred_label": "Fotterapeuter"
+          },
+          {
+            "id": "xr7w_N6Q_QMA",
+            "preferred_label": "Hudterapeuter"
+          },
+          {
+            "id": "ezKk_kss_CiQ",
+            "preferred_label": "Övriga skönhets- och kroppsterapeuter"
+          },
+          {
+            "id": "uxHV_KXc_PKD",
+            "preferred_label": "Massörer och massageterapeuter"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Försäljning, inköp, marknadsföring",
+        "id": "RPTn_bxG_ExZ",
+        "narrower": [
+          {
+            "id": "YKL2_FCB_1yr",
+            "preferred_label": "Butikssäljare, fackhandel"
+          },
+          {
+            "id": "JnTF_wXr_6Eh",
+            "preferred_label": "Bensinstationspersonal"
+          },
+          {
+            "id": "M47D_MU2_dhS",
+            "preferred_label": "Uthyrare"
+          },
+          {
+            "id": "NCeZ_rSk_B4D",
+            "preferred_label": "Eventsäljare och butiksdemonstratörer m.fl."
+          },
+          {
+            "id": "AuTi_FEo_j3R",
+            "preferred_label": "Speditörer och transportmäklare"
+          },
+          {
+            "id": "8A1f_sxQ_adT",
+            "preferred_label": "Ordersamordnare m.fl."
+          },
+          {
+            "id": "41Az_ioZ_rmH",
+            "preferred_label": "Apotekstekniker"
+          },
+          {
+            "id": "WX67_Pfb_WMN",
+            "preferred_label": "Marknadsanalytiker och marknadsförare m.fl."
+          },
+          {
+            "id": "A6X3_efC_VNy",
+            "preferred_label": "Guider och reseledare"
+          },
+          {
+            "id": "Fp7x_Yqt_bx9",
+            "preferred_label": "Säljande butikschefer och avdelningschefer i butik"
+          },
+          {
+            "id": "PxXc_16t_oZo",
+            "preferred_label": "Telefonförsäljare m.fl."
+          },
+          {
+            "id": "p16X_44f_rwZ",
+            "preferred_label": "Marknads- och försäljningsassistenter"
+          },
+          {
+            "id": "48KE_fDE_ryL",
+            "preferred_label": "Evenemangs- och reseproducenter m.fl."
+          },
+          {
+            "id": "85cq_6uK_4cK",
+            "preferred_label": "Inköpare och upphandlare"
+          },
+          {
+            "id": "WNVp_RYe_zLX",
+            "preferred_label": "Kassapersonal m.fl."
+          },
+          {
+            "id": "83wV_GJa_vMd",
+            "preferred_label": "Marknadsundersökare och intervjuare"
+          },
+          {
+            "id": "fdLf_oPp_wVw",
+            "preferred_label": "Resesäljare och trafikassistenter m.fl."
+          },
+          {
+            "id": "dUuh_wwa_FGj",
+            "preferred_label": "Övriga förmedlare"
+          },
+          {
+            "id": "oXSW_fbY_XrY",
+            "preferred_label": "Företagssäljare"
+          },
+          {
+            "id": "xyW2_toA_Skh",
+            "preferred_label": "Torg- och marknadsförsäljare m.fl."
+          },
+          {
+            "id": "s1Qk_o98_2o1",
+            "preferred_label": "Butikssäljare, dagligvaror"
+          },
+          {
+            "id": "iWcY_mko_rq2",
+            "preferred_label": "Inköps- och orderassistenter"
+          },
+          {
+            "id": "AQrL_tTu_Wbg",
+            "preferred_label": "Optikerassistenter"
+          },
+          {
+            "id": "Fghp_zje_WA8",
+            "preferred_label": "Fastighetsmäklare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Hantverk",
+        "id": "PaxQ_o1G_wWH",
+        "narrower": [
+          {
+            "id": "vJQk_YvC_XB7",
+            "preferred_label": "Läderhantverkare och skomakare"
+          },
+          {
+            "id": "UZBj_yDX_Ctp",
+            "preferred_label": "Sömmare"
+          },
+          {
+            "id": "mwVN_oEH_g9k",
+            "preferred_label": "Skräddare och ateljésömmerskor m.fl."
+          },
+          {
+            "id": "q8Ho_3Xw_sHq",
+            "preferred_label": "Smeder"
+          },
+          {
+            "id": "1Nwn_GYH_wkH",
+            "preferred_label": "Fin-, inrednings- och möbelsnickare"
+          },
+          {
+            "id": "v7W3_cLQ_q2S",
+            "preferred_label": "Manuella ytbehandlare, trä"
+          },
+          {
+            "id": "nwSm_phw_sPo",
+            "preferred_label": "Guld- och silversmeder"
+          },
+          {
+            "id": "vhUJ_LyD_XWc",
+            "preferred_label": "Tapetserare"
+          },
+          {
+            "id": "5qT8_z9d_8rw",
+            "preferred_label": "Bagare och konditorer"
+          },
+          {
+            "id": "e6nk_AGp_y28",
+            "preferred_label": "Finmekaniker"
+          },
+          {
+            "id": "aKdV_u7V_R5j",
+            "preferred_label": "Musikinstrumentmakare och övriga konsthantverkare"
+          },
+          {
+            "id": "J17g_Q2a_2u1",
+            "preferred_label": "Glastekniker"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Hotell, restaurang, storhushåll",
+        "id": "ScKy_FHB_7wT",
+        "narrower": [
+          {
+            "id": "h324_DPT_7Tw",
+            "preferred_label": "Storhushållsföreståndare"
+          },
+          {
+            "id": "UjoW_meY_Zwt",
+            "preferred_label": "Hovmästare och servitörer"
+          },
+          {
+            "id": "XFXX_Jq9_Y2a",
+            "preferred_label": "Bartendrar"
+          },
+          {
+            "id": "bYde_Frc_xcB",
+            "preferred_label": "Hotellreceptionister m.fl."
+          },
+          {
+            "id": "tPox_ie4_X9X",
+            "preferred_label": "Restaurang- och köksbiträden m.fl."
+          },
+          {
+            "id": "1wqU_Jhj_amb",
+            "preferred_label": "Kafé- och konditoribiträden"
+          },
+          {
+            "id": "BStc_SJh_DKG",
+            "preferred_label": "Kockar och kallskänkor"
+          },
+          {
+            "id": "YHwG_fk2_MDL",
+            "preferred_label": "Croupierer och oddssättare m.fl."
+          },
+          {
+            "id": "XGyi_i4B_ME7",
+            "preferred_label": "Köksmästare och souschefer"
+          },
+          {
+            "id": "a8gg_ktU_w8V",
+            "preferred_label": "Pizzabagare m.fl."
+          }
+        ]
+      },
+      {
+        "preferred_label": "Hälso- och sjukvård",
+        "id": "NYW6_mP6_vwf",
+        "narrower": [
+          {
+            "id": "kHgb_AHf_vrY",
+            "preferred_label": "Barnsköterskor"
+          },
+          {
+            "id": "Bywn_Doc_3VF",
+            "preferred_label": "Skolsköterskor"
+          },
+          {
+            "id": "Z8ci_bBE_tmx",
+            "preferred_label": "Grundutbildade sjuksköterskor"
+          },
+          {
+            "id": "jY19_knH_MJp",
+            "preferred_label": "Undersköterskor, hemtjänst, hemsjukvård, äldreboende och habilitering"
+          },
+          {
+            "id": "PHJN_fva_yxs",
+            "preferred_label": "Ambulanssjuksköterskor m.fl."
+          },
+          {
+            "id": "F19Z_oB6_pg3",
+            "preferred_label": "Terapeuter inom alternativmedicin"
+          },
+          {
+            "id": "TMsM_oNw_j6z",
+            "preferred_label": "Apotekare"
+          },
+          {
+            "id": "3H17_ZZr_BEc",
+            "preferred_label": "Ambulanssjukvårdare"
+          },
+          {
+            "id": "XjcN_5LT_bWx",
+            "preferred_label": "Receptarier"
+          },
+          {
+            "id": "5dxv_nVQ_N8o",
+            "preferred_label": "Tandsköterskor"
+          },
+          {
+            "id": "GiNX_ESA_AL1",
+            "preferred_label": "Övrig vård- och omsorgspersonal"
+          },
+          {
+            "id": "1tGC_fXC_mxX",
+            "preferred_label": "Röntgensjuksköterskor"
+          },
+          {
+            "id": "nu7c_QuB_KVQ",
+            "preferred_label": "Specialistläkare"
+          },
+          {
+            "id": "oj4c_P4b_cja",
+            "preferred_label": "Distriktssköterskor"
+          },
+          {
+            "id": "VYeq_GDF_a2g",
+            "preferred_label": "Psykologer"
+          },
+          {
+            "id": "tAJS_JNb_hDH",
+            "preferred_label": "Vårdbiträden"
+          },
+          {
+            "id": "WL4E_r4b_ek4",
+            "preferred_label": "Veterinärer"
+          },
+          {
+            "id": "4F9o_Jzv_Pwz",
+            "preferred_label": "Tandhygienister"
+          },
+          {
+            "id": "8q1B_5AR_CEM",
+            "preferred_label": "Djursjukskötare m.fl."
+          },
+          {
+            "id": "pzch_NRY_9ZF",
+            "preferred_label": "Audionomer och logopeder"
+          },
+          {
+            "id": "6Fu3_qQA_9DK",
+            "preferred_label": "Företagssköterskor"
+          },
+          {
+            "id": "bEDv_SL7_VrL",
+            "preferred_label": "Psykiatrisjuksköterskor"
+          },
+          {
+            "id": "dyWo_sDb_MLQ",
+            "preferred_label": "Intensivvårdssjuksköterskor"
+          },
+          {
+            "id": "HPxT_fQJ_zwT",
+            "preferred_label": "Tandläkare"
+          },
+          {
+            "id": "PUhV_DVQ_MM6",
+            "preferred_label": "Optiker"
+          },
+          {
+            "id": "TPH4_2AM_isT",
+            "preferred_label": "Arbetsterapeuter"
+          },
+          {
+            "id": "LP4Z_ABV_gRm",
+            "preferred_label": "Undersköterskor, vård- och specialavdelning och mottagning"
+          },
+          {
+            "id": "7fNG_sve_JWU",
+            "preferred_label": "Skötare"
+          },
+          {
+            "id": "aWki_4uA_adn",
+            "preferred_label": "Kiropraktorer och naprapater m.fl."
+          },
+          {
+            "id": "s7vU_FhY_L5Z",
+            "preferred_label": "Fysioterapeuter och sjukgymnaster"
+          },
+          {
+            "id": "NFUg_y9y_1TY",
+            "preferred_label": "Barnsjuksköterskor"
+          },
+          {
+            "id": "UUQi_UJ5_MSb",
+            "preferred_label": "Psykoterapeuter"
+          },
+          {
+            "id": "6zAR_EHM_Kwj",
+            "preferred_label": "Övriga specialistsjuksköterskor"
+          },
+          {
+            "id": "gXqW_s5Q_ZjN",
+            "preferred_label": "Övriga läkare"
+          },
+          {
+            "id": "6eAB_cbY_i9T",
+            "preferred_label": "Geriatriksjuksköterskor"
+          },
+          {
+            "id": "nrVt_xUL_KdQ",
+            "preferred_label": "Anestesisjuksköterskor"
+          },
+          {
+            "id": "ek9W_qqp_XpF",
+            "preferred_label": "AT-läkare"
+          },
+          {
+            "id": "Pq5C_SPC_bRA",
+            "preferred_label": "Dietister"
+          },
+          {
+            "id": "7XXd_4St_nit",
+            "preferred_label": "Barnmorskor"
+          },
+          {
+            "id": "seu9_VoQ_VNo",
+            "preferred_label": "ST-läkare"
+          },
+          {
+            "id": "vTgW_pnr_QMp",
+            "preferred_label": "Övriga specialister inom hälso- och sjukvård"
+          },
+          {
+            "id": "cuaN_Rj5_YCc",
+            "preferred_label": "Operationssjuksköterskor"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Industriell tillverkning",
+        "id": "wTEr_CBC_bqh",
+        "narrower": [
+          {
+            "id": "YiQw_N87_zLU",
+            "preferred_label": "Maskinoperatörer, ytbehandling"
+          },
+          {
+            "id": "SgAJ_DW2_FN5",
+            "preferred_label": "Montörer, elektrisk och elektronisk utrustning"
+          },
+          {
+            "id": "gJtZ_EBc_n2z",
+            "preferred_label": "Maskinoperatörer, kött- och fiskberedningsindustri"
+          },
+          {
+            "id": "icae_Y69_H8E",
+            "preferred_label": "Övriga maskinoperatörer, livsmedelsindustri m.m."
+          },
+          {
+            "id": "LEvM_7Hs_w8i",
+            "preferred_label": "Processoperatörer, stenkross- och malmförädling"
+          },
+          {
+            "id": "vaEp_iBS_c5h",
+            "preferred_label": "Maskinställare och maskinoperatörer, metallarbete"
+          },
+          {
+            "id": "dAu7_VyL_hsy",
+            "preferred_label": "Provsmakare och kvalitetsbedömare"
+          },
+          {
+            "id": "mPzg_93F_QEv",
+            "preferred_label": "Bokbindare m.fl."
+          },
+          {
+            "id": "UdrS_qzV_P7i",
+            "preferred_label": "Operatörer inom sågverk, hyvleri och plywood m.m."
+          },
+          {
+            "id": "dKUb_KBP_mw3",
+            "preferred_label": "Lackerare och industrimålare"
+          },
+          {
+            "id": "aU9p_ekE_Fqf",
+            "preferred_label": "Maskinoperatörer, påfyllning, packning och märkning"
+          },
+          {
+            "id": "Kxm9_N3V_shF",
+            "preferred_label": "Montörer, metall-, gummi- och plastprodukter"
+          },
+          {
+            "id": "4bxV_58E_P9N",
+            "preferred_label": "Slipare m.fl."
+          },
+          {
+            "id": "vCBT_Pnd_8UB",
+            "preferred_label": "Stenhuggare m.fl."
+          },
+          {
+            "id": "MSnK_3Z8_4qA",
+            "preferred_label": "Verktygsmakare"
+          },
+          {
+            "id": "8ddv_P8e_iYz",
+            "preferred_label": "Montörer, träprodukter"
+          },
+          {
+            "id": "ENV6_BNa_brP",
+            "preferred_label": "Maskinoperatörer, gummiindustri"
+          },
+          {
+            "id": "m8TS_hdk_pSf",
+            "preferred_label": "Valsverksoperatörer"
+          },
+          {
+            "id": "QqHf_XKZ_eyy",
+            "preferred_label": "Slaktare och styckare m.fl."
+          },
+          {
+            "id": "VKKg_e4t_t46",
+            "preferred_label": "Maskinsnickare och maskinoperatörer, träindustri"
+          },
+          {
+            "id": "o31g_CX1_qhQ",
+            "preferred_label": "Maskinoperatörer, cement-, sten- och betongvaror"
+          },
+          {
+            "id": "Vfum_e6B_7Bw",
+            "preferred_label": "Maskinoperatörer, kemisktekniska och fotografiska produkter"
+          },
+          {
+            "id": "iZLB_KpD_LLo",
+            "preferred_label": "Maskinoperatörer, pappersvaruindustri"
+          },
+          {
+            "id": "J9Vz_JxJ_Bji",
+            "preferred_label": "Gjutare"
+          },
+          {
+            "id": "4DET_dLf_iB9",
+            "preferred_label": "Maskinoperatörer, blekning, färgning och tvättning"
+          },
+          {
+            "id": "UcNa_inr_snV",
+            "preferred_label": "Övriga maskin- och processoperatörer vid stål- och metallverk"
+          },
+          {
+            "id": "L4hA_SJP_SFi",
+            "preferred_label": "Tunnplåtslagare"
+          },
+          {
+            "id": "XeJB_bkn_mRn",
+            "preferred_label": "Tryckare"
+          },
+          {
+            "id": "skLS_kpa_Ui1",
+            "preferred_label": "Övriga maskinoperatörer, textil-, skinn- och läderindustri"
+          },
+          {
+            "id": "HXzD_qvt_HV6",
+            "preferred_label": "Övriga montörer"
+          },
+          {
+            "id": "DxiF_hTo_b3X",
+            "preferred_label": "Handpaketerare och andra fabriksarbetare"
+          },
+          {
+            "id": "sX9n_CWa_KVC",
+            "preferred_label": "Bergsprängare"
+          },
+          {
+            "id": "4obu_LL6_RqJ",
+            "preferred_label": "Processoperatörer, pappersmassa"
+          },
+          {
+            "id": "rxmK_wwM_1NA",
+            "preferred_label": "Maskinoperatörer, farmaceutiska produkter"
+          },
+          {
+            "id": "kF59_fge_kts",
+            "preferred_label": "Maskinoperatörer, kvarn-, bageri- och konfektyrindustri"
+          },
+          {
+            "id": "AUs8_M5f_dLt",
+            "preferred_label": "Maskinoperatörer inom ytbehandling, trä"
+          },
+          {
+            "id": "1G6H_AuG_qyy",
+            "preferred_label": "Processoperatörer, papper"
+          },
+          {
+            "id": "yJk6_azD_ywF",
+            "preferred_label": "Maskinoperatörer, mejeri"
+          },
+          {
+            "id": "TrwQ_RXT_W8a",
+            "preferred_label": "Stålkonstruktionsmontörer och grovplåtsslagare"
+          },
+          {
+            "id": "shkw_ojo_UL2",
+            "preferred_label": "Fordonsmontörer"
+          },
+          {
+            "id": "hxm6_xkr_dHm",
+            "preferred_label": "Övriga process- och maskinoperatörer"
+          },
+          {
+            "id": "yPQ4_EaN_Dtj",
+            "preferred_label": "Maskinoperatörer, plastindustri"
+          },
+          {
+            "id": "LeQV_umf_wUS",
+            "preferred_label": "Prepresstekniker"
+          },
+          {
+            "id": "dMVD_VYy_kgg",
+            "preferred_label": "Arbetsledare inom tillverkning"
+          },
+          {
+            "id": "wQ1E_Bzk_ZyA",
+            "preferred_label": "Svetsare och gasskärare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Installation, drift, underhåll",
+        "id": "yhCP_AqT_tns",
+        "narrower": [
+          {
+            "id": "7Zqy_hSM_Fig",
+            "preferred_label": "Övriga drifttekniker och processövervakare"
+          },
+          {
+            "id": "yyF7_jsW_EeP",
+            "preferred_label": "Installations- och serviceelektriker"
+          },
+          {
+            "id": "E87t_egE_pjA",
+            "preferred_label": "Processövervakare, metallproduktion"
+          },
+          {
+            "id": "KttZ_Skc_bMR",
+            "preferred_label": "Underhållsmekaniker och maskinreparatörer"
+          },
+          {
+            "id": "a75S_eLg_JWH",
+            "preferred_label": "Industrielektriker"
+          },
+          {
+            "id": "Lzpv_ofL_3H5",
+            "preferred_label": "Motorfordonsmekaniker och fordonsreparatörer"
+          },
+          {
+            "id": "QEBd_qHu_vGr",
+            "preferred_label": "Processövervakare, kemisk industri"
+          },
+          {
+            "id": "fWrt_sLg_koW",
+            "preferred_label": "Elektronikreparatörer och kommunikationselektriker m.fl."
+          },
+          {
+            "id": "MW1P_GNJ_4F9",
+            "preferred_label": "Distributionselektriker"
+          },
+          {
+            "id": "ieVp_d5L_rS9",
+            "preferred_label": "Övriga servicearbetare"
+          },
+          {
+            "id": "9DdK_AZY_ZNK",
+            "preferred_label": "Vaktmästare m.fl."
+          },
+          {
+            "id": "iGTu_bYL_2T7",
+            "preferred_label": "Flygmekaniker m.fl."
+          },
+          {
+            "id": "Cppd_9P7_HeR",
+            "preferred_label": "Drifttekniker vid värme- och vattenverk"
+          },
+          {
+            "id": "df9D_e6y_61z",
+            "preferred_label": "Fastighetsskötare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Kultur, media, design",
+        "id": "9puE_nYg_crq",
+        "narrower": [
+          {
+            "id": "zfve_s6G_tpc",
+            "preferred_label": "Författare m.fl."
+          },
+          {
+            "id": "iBUL_s38_izZ",
+            "preferred_label": "Skådespelare"
+          },
+          {
+            "id": "SgNH_hag_n9D",
+            "preferred_label": "Journalister m.fl."
+          },
+          {
+            "id": "rYSG_3WJ_LmC",
+            "preferred_label": "Regissörer och producenter av film, teater m.m."
+          },
+          {
+            "id": "CkRH_4Qn_iX3",
+            "preferred_label": "Bild- och sändningstekniker"
+          },
+          {
+            "id": "CSUf_ZVM_a7Z",
+            "preferred_label": "Inredare, dekoratörer och scenografer m.fl."
+          },
+          {
+            "id": "PF4H_kQD_zpL",
+            "preferred_label": "Övriga designer och formgivare"
+          },
+          {
+            "id": "AWJF_wqZ_va9",
+            "preferred_label": "Musiker, sångare och kompositörer"
+          },
+          {
+            "id": "DqLe_pH6_jyj",
+            "preferred_label": "Industridesigner"
+          },
+          {
+            "id": "Mbt6_3ko_DiD",
+            "preferred_label": "Designer inom spel och digitala medier"
+          },
+          {
+            "id": "wVfo_Njx_1rB",
+            "preferred_label": "Bibliotekarier och arkivarier"
+          },
+          {
+            "id": "gmRr_7tt_eHj",
+            "preferred_label": "Koreografer och dansare"
+          },
+          {
+            "id": "xuSE_mtB_Mir",
+            "preferred_label": "Övriga yrken inom kultur och underhållning"
+          },
+          {
+            "id": "4BsK_q2C_sCL",
+            "preferred_label": "Ljus-, ljud- och scentekniker"
+          },
+          {
+            "id": "PQDm_Z63_zst",
+            "preferred_label": "Översättare, tolkar och lingvister m.fl."
+          },
+          {
+            "id": "PH2M_uV4_r72",
+            "preferred_label": "Inspicienter och scriptor m.fl."
+          },
+          {
+            "id": "3J38_DNz_YKK",
+            "preferred_label": "Fotografer"
+          },
+          {
+            "id": "8Bmh_vtM_zts",
+            "preferred_label": "Grafiska formgivare m.fl."
+          },
+          {
+            "id": "34Tn_BQQ_tfo",
+            "preferred_label": "Bildkonstnärer m.fl."
+          },
+          {
+            "id": "Qbvf_6nd_Esn",
+            "preferred_label": "Museiintendenter m.fl."
+          }
+        ]
+      },
+      {
+        "preferred_label": "Sanering och renhållning",
+        "id": "whao_Q6A_ScE",
+        "narrower": [
+          {
+            "id": "idjo_2Wr_a3E",
+            "preferred_label": "Saneringsarbetare m.fl."
+          },
+          {
+            "id": "FtyZ_Joo_tB8",
+            "preferred_label": "Städledare och husfruar"
+          },
+          {
+            "id": "FjdF_H2e_tAG",
+            "preferred_label": "Bilrekonditionerare, fönsterputsare m.fl."
+          },
+          {
+            "id": "o1gn_FoS_fB7",
+            "preferred_label": "Övrig hemservicepersonal m.fl."
+          },
+          {
+            "id": "SUfj_4D9_FNx",
+            "preferred_label": "Skorstensfejare"
+          },
+          {
+            "id": "Z6TY_xDf_Yup",
+            "preferred_label": "Städare"
+          },
+          {
+            "id": "X7HR_rZK_4wj",
+            "preferred_label": "Renhållnings- och återvinningsarbetare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Naturbruk",
+        "id": "VuuL_7CH_adj",
+        "narrower": [
+          {
+            "id": "KYmy_iqC_xiQ",
+            "preferred_label": "Uppfödare och skötare av lantbrukets husdjur"
+          },
+          {
+            "id": "c8r8_e4L_gwj",
+            "preferred_label": "Fiskodlare"
+          },
+          {
+            "id": "1EBv_UzM_ozQ",
+            "preferred_label": "Bärplockare och plantörer m.fl."
+          },
+          {
+            "id": "k3R3_UkC_nK2",
+            "preferred_label": "Odlare av jordbruksväxter, frukt och bär"
+          },
+          {
+            "id": "qouP_wtb_93q",
+            "preferred_label": "Skogsarbetare"
+          },
+          {
+            "id": "KwVo_sQu_G2e",
+            "preferred_label": "Förare av jordbruks- och skogsmaskiner"
+          },
+          {
+            "id": "3LdB_WEJ_8Ms",
+            "preferred_label": "Specialister och rådgivare inom skogsbruk"
+          },
+          {
+            "id": "Lm3Z_gek_GYc",
+            "preferred_label": "Fiskare"
+          },
+          {
+            "id": "XurM_DVs_ggn",
+            "preferred_label": "Specialister och rådgivare inom lantbruk m.m."
+          },
+          {
+            "id": "RYCQ_ogb_uUY",
+            "preferred_label": "Växtodlare och djuruppfödare, blandad drift"
+          },
+          {
+            "id": "XBh3_Xrm_C4R",
+            "preferred_label": "Trädgårdsanläggare m.fl."
+          },
+          {
+            "id": "2xQ4_4kh_kTZ",
+            "preferred_label": "Trädgårdsodlare"
+          },
+          {
+            "id": "MSzH_F2n_Emb",
+            "preferred_label": "Uppfödare och skötare av sällskapsdjur"
+          },
+          {
+            "id": "Lrsj_wRZ_sFV",
+            "preferred_label": "Övriga djuruppfödare och djurskötare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Naturvetenskap",
+        "id": "kJeN_wmw_9wX",
+        "narrower": [
+          {
+            "id": "Z2MZ_eYc_Lfv",
+            "preferred_label": "Cell- och molekylärbiologer m.fl."
+          },
+          {
+            "id": "puim_6PY_DGj",
+            "preferred_label": "Miljö- och hälsoskyddsinspektörer"
+          },
+          {
+            "id": "eofS_oZs_RZi",
+            "preferred_label": "Kemister"
+          },
+          {
+            "id": "e9FK_VKh_ahW",
+            "preferred_label": "Växt- och djurbiologer"
+          },
+          {
+            "id": "wNrt_Ysj_WuT",
+            "preferred_label": "Biomedicinska analytiker m.fl."
+          },
+          {
+            "id": "dsK3_hkt_zGy",
+            "preferred_label": "Farmakologer och biomedicinare"
+          },
+          {
+            "id": "KM7d_Z6Y_LCJ",
+            "preferred_label": "Fysiker och astronomer"
+          },
+          {
+            "id": "ZA1N_Z2B_nFQ",
+            "preferred_label": "Matematiker och aktuarier"
+          },
+          {
+            "id": "LP8B_auW_wMp",
+            "preferred_label": "Meteorologer"
+          },
+          {
+            "id": "V7Yz_4WV_g4z",
+            "preferred_label": "Geologer och geofysiker m.fl."
+          },
+          {
+            "id": "rE1E_m3d_cx1",
+            "preferred_label": "Specialister inom miljöskydd och miljöteknik"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Pedagogik",
+        "id": "MVqp_eS8_kDZ",
+        "narrower": [
+          {
+            "id": "RPBE_x5M_cXX",
+            "preferred_label": "Övriga universitets- och högskolelärare"
+          },
+          {
+            "id": "4KhP_FxL_uZ5",
+            "preferred_label": "Gymnasielärare"
+          },
+          {
+            "id": "EA6o_N1N_QtT",
+            "preferred_label": "Idrottstränare och instruktörer m.fl."
+          },
+          {
+            "id": "Gm5j_S2Y_aTB",
+            "preferred_label": "Professorer"
+          },
+          {
+            "id": "Hi9c_iTe_gHH",
+            "preferred_label": "Barnskötare"
+          },
+          {
+            "id": "NNK9_F1o_pK5",
+            "preferred_label": "Doktorander"
+          },
+          {
+            "id": "mcRJ_kq2_jFr",
+            "preferred_label": "Övriga pedagoger med teoretisk specialistkompetens"
+          },
+          {
+            "id": "XW9L_tA9_WaX",
+            "preferred_label": "Elevassistenter m.fl."
+          },
+          {
+            "id": "5ek3_Cgq_WeZ",
+            "preferred_label": "Förskollärare"
+          },
+          {
+            "id": "P7eS_nP8_3dy",
+            "preferred_label": "Forskarassistenter m.fl."
+          },
+          {
+            "id": "jJF3_qaQ_Zsh",
+            "preferred_label": "Studie- och yrkesvägledare"
+          },
+          {
+            "id": "oQUQ_D11_HPx",
+            "preferred_label": "Grundskollärare"
+          },
+          {
+            "id": "CFW8_eBa_NaV",
+            "preferred_label": "Fritidspedagoger"
+          },
+          {
+            "id": "1CX5_mZw_Vcq",
+            "preferred_label": "Övriga utbildare och instruktörer"
+          },
+          {
+            "id": "2x2V_UeL_6ke",
+            "preferred_label": "Lärare i yrkesämnen"
+          },
+          {
+            "id": "3FP7_4Eg_x8P",
+            "preferred_label": "Speciallärare och specialpedagoger m.fl."
+          },
+          {
+            "id": "cYCo_PxY_zQd",
+            "preferred_label": "Universitets- och högskolelektorer"
+          },
+          {
+            "id": "AwXA_EM4_71n",
+            "preferred_label": "Professionella idrottsutövare"
+          },
+          {
+            "id": "yVZH_zHh_6fG",
+            "preferred_label": "Trafiklärare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Yrken med social inriktning",
+        "id": "GazW_2TU_kJw",
+        "narrower": [
+          {
+            "id": "DSGC_nw7_WnH",
+            "preferred_label": "Övrig servicepersonal"
+          },
+          {
+            "id": "FpPP_jqK_xzT",
+            "preferred_label": "Friskvårdskonsulenter och hälsopedagoger m.fl."
+          },
+          {
+            "id": "R8bW_rsJ_b2G",
+            "preferred_label": "Begravnings- och krematoriepersonal"
+          },
+          {
+            "id": "n6iX_f2z_XfE",
+            "preferred_label": "Övriga yrken inom socialt arbete"
+          },
+          {
+            "id": "5uP5_Ugw_aVE",
+            "preferred_label": "Biståndsbedömare m.fl."
+          },
+          {
+            "id": "BWwk_fYX_S5B",
+            "preferred_label": "Behandlingsassistenter och socialpedagoger m.fl."
+          },
+          {
+            "id": "2L2s_EU8_PzR",
+            "preferred_label": "Präster"
+          },
+          {
+            "id": "sq3e_WVv_Fjd",
+            "preferred_label": "Personliga assistenter"
+          },
+          {
+            "id": "pok1_ipJ_yzD",
+            "preferred_label": "Socialsekreterare"
+          },
+          {
+            "id": "7pz9_eY9_D2s",
+            "preferred_label": "Vårdare, boendestödjare"
+          },
+          {
+            "id": "aA2Z_9XX_R1v",
+            "preferred_label": "Fritidsledare m.fl."
+          },
+          {
+            "id": "dJXy_Rpq_a2u",
+            "preferred_label": "Kuratorer"
+          },
+          {
+            "id": "wzeq_No2_LF1",
+            "preferred_label": "Diakoner"
+          },
+          {
+            "id": "x5rn_vga_gRK",
+            "preferred_label": "Pastorer m.fl."
+          }
+        ]
+      },
+      {
+        "preferred_label": "Säkerhet och bevakning",
+        "id": "E7hm_BLq_fqZ",
+        "narrower": [
+          {
+            "id": "ug5y_o6z_U3L",
+            "preferred_label": "Brandmän"
+          },
+          {
+            "id": "ayQ4_G3W_A2w",
+            "preferred_label": "Övrig bevaknings- och säkerhetspersonal"
+          },
+          {
+            "id": "rNcE_Zno_pD8",
+            "preferred_label": "Poliser"
+          },
+          {
+            "id": "nuXg_Wjc_JPd",
+            "preferred_label": "Säkerhetsinspektörer m.fl."
+          },
+          {
+            "id": "Uw64_cuc_U3H",
+            "preferred_label": "Arbetsmiljöingenjörer, yrkes- och miljöhygieniker"
+          },
+          {
+            "id": "FKCE_Anf_zGH",
+            "preferred_label": "Tull- och kustbevakningstjänstemän"
+          },
+          {
+            "id": "hgAg_gLr_YGg",
+            "preferred_label": "Kriminalvårdare"
+          },
+          {
+            "id": "wCx8_rY3_XUT",
+            "preferred_label": "Brandingenjörer och byggnadsinspektörer m.fl."
+          },
+          {
+            "id": "iqZh_3yX_i8n",
+            "preferred_label": "Väktare och ordningsvakter"
+          },
+          {
+            "id": "kZwz_D8K_bKs",
+            "preferred_label": "SOS-operatörer m.fl."
+          }
+        ]
+      },
+      {
+        "preferred_label": "Yrken med teknisk inriktning",
+        "id": "6Hq3_tKo_V57",
+        "narrower": [
+          {
+            "id": "SPYW_7Z1_ShT",
+            "preferred_label": "Civilingenjörsyrken inom elektroteknik"
+          },
+          {
+            "id": "GC7L_Yw7_Mfo",
+            "preferred_label": "Tekniker, bilddiagnostik och medicinteknisk utrustning"
+          },
+          {
+            "id": "bExu_8gk_azk",
+            "preferred_label": "Laboratorieingenjörer"
+          },
+          {
+            "id": "qn2U_dB9_Cmh",
+            "preferred_label": "Civilingenjörsyrken inom kemi och kemiteknik"
+          },
+          {
+            "id": "rwpH_6RA_XTT",
+            "preferred_label": "Civilingenjörsyrken inom gruvteknik och metallurgi"
+          },
+          {
+            "id": "33Nt_DSs_YYA",
+            "preferred_label": "Ingenjörer och tekniker inom industri, logistik och produktionsplanering"
+          },
+          {
+            "id": "41KB_bfk_5jR",
+            "preferred_label": "Arkitekter m.fl."
+          },
+          {
+            "id": "mp2Y_vyC_RFV",
+            "preferred_label": "Övriga civilingenjörsyrken"
+          },
+          {
+            "id": "U8HK_Jdi_GuC",
+            "preferred_label": "Fastighetsförvaltare"
+          },
+          {
+            "id": "ETAR_ggZ_Wuw",
+            "preferred_label": "Landskapsarkitekter"
+          },
+          {
+            "id": "eRkT_cTv_H9v",
+            "preferred_label": "Flygtekniker"
+          },
+          {
+            "id": "xm5G_vGn_iyk",
+            "preferred_label": "Civilingenjörsyrken inom logistik och produktionsplanering"
+          },
+          {
+            "id": "ketV_G9W_GeR",
+            "preferred_label": "GIS- och kartingenjörer"
+          },
+          {
+            "id": "K8yg_U4C_gkY",
+            "preferred_label": "Ingenjörer och tekniker inom maskinteknik"
+          },
+          {
+            "id": "39yB_xPQ_ozd",
+            "preferred_label": "Tandtekniker och ortopedingenjörer m.fl."
+          },
+          {
+            "id": "mis4_feV_uex",
+            "preferred_label": "Övriga ingenjörer och tekniker"
+          },
+          {
+            "id": "Pd51_xnr_KCY",
+            "preferred_label": "Planeringsarkitekter m.fl."
+          },
+          {
+            "id": "PRQn_9yw_NJA",
+            "preferred_label": "Civilingenjörsyrken inom maskinteknik"
+          },
+          {
+            "id": "3jEy_yuT_aVo",
+            "preferred_label": "Ingenjörer och tekniker inom gruvteknik och metallurgi"
+          },
+          {
+            "id": "v9nU_6Fw_4Qg",
+            "preferred_label": "Ingenjörer och tekniker inom kemi och kemiteknik"
+          },
+          {
+            "id": "nDaB_vdy_eAy",
+            "preferred_label": "Ingenjörer och tekniker inom elektroteknik"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Transport, distribution, lager",
+        "id": "ASGV_zcE_bWf",
+        "narrower": [
+          {
+            "id": "3MBw_pDA_P2F",
+            "preferred_label": "Lastbilsförare m.fl."
+          },
+          {
+            "id": "SZ7Q_2zF_nFy",
+            "preferred_label": "Hamnarbetare"
+          },
+          {
+            "id": "MrcX_RDn_N53",
+            "preferred_label": "Truckförare"
+          },
+          {
+            "id": "957L_kZK_rHZ",
+            "preferred_label": "Transportledare och transportsamordnare"
+          },
+          {
+            "id": "P7Ay_ooF_pri",
+            "preferred_label": "Övriga bil-, motorcykel- och cykelförare"
+          },
+          {
+            "id": "kLyY_rwr_aJr",
+            "preferred_label": "Lager- och terminalpersonal"
+          },
+          {
+            "id": "WhBn_FAp_ZNW",
+            "preferred_label": "Arbetsledare inom lager och terminal"
+          },
+          {
+            "id": "bwnk_nv2_1cR",
+            "preferred_label": "Ramppersonal, flyttkarlar och varupåfyllare m.fl."
+          },
+          {
+            "id": "UGgc_Vm9_Bog",
+            "preferred_label": "Lokförare"
+          },
+          {
+            "id": "ffz2_2n3_R7g",
+            "preferred_label": "Taxiförare m.fl."
+          },
+          {
+            "id": "gaBh_1vR_tNE",
+            "preferred_label": "Brevbärare och postterminalarbetare"
+          },
+          {
+            "id": "7n3y_FTE_qSe",
+            "preferred_label": "Piloter m.fl."
+          },
+          {
+            "id": "Rsoy_sS6_6c4",
+            "preferred_label": "Maskinbefäl"
+          },
+          {
+            "id": "yct8_Pun_DWd",
+            "preferred_label": "Flygledare"
+          },
+          {
+            "id": "nk6Z_5oD_QoM",
+            "preferred_label": "Bangårdspersonal"
+          },
+          {
+            "id": "1Tso_4TB_RkE",
+            "preferred_label": "Kabinpersonal m.fl."
+          },
+          {
+            "id": "kDnq_Q98_sD3",
+            "preferred_label": "Fartygsbefäl m.fl."
+          },
+          {
+            "id": "CbQK_7th_Tyf",
+            "preferred_label": "Matroser och jungmän m.fl."
+          },
+          {
+            "id": "s78G_Zp2_dkq",
+            "preferred_label": "Tågvärdar och ombordansvariga m.fl."
+          },
+          {
+            "id": "qhbP_JEJ_HtK",
+            "preferred_label": "Reklamutdelare och tidningsdistributörer"
+          },
+          {
+            "id": "FiDm_2S8_gx7",
+            "preferred_label": "Buss- och spårvagnsförare"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Chefer och verksamhetsledare",
+        "id": "bh3H_Y3h_5eD",
+        "narrower": [
+          {
+            "id": "qVHD_Hj5_PXh",
+            "preferred_label": "Politiker"
+          },
+          {
+            "id": "eX3C_MtJ_nPA",
+            "preferred_label": "Hotell- och konferenschefer"
+          },
+          {
+            "id": "NQTS_fou_E6u",
+            "preferred_label": "Övriga chefer inom övrig servicenäring"
+          },
+          {
+            "id": "z8di_AqX_GBr",
+            "preferred_label": "Chefer inom grund- och gymnasieskola samt vuxenutbildning"
+          },
+          {
+            "id": "9QMD_sZ3_ZjX",
+            "preferred_label": "Förvaltare inom skogsbruk och lantbruk m.fl."
+          },
+          {
+            "id": "mNoS_AN5_drn",
+            "preferred_label": "Personal- och HR-chefer"
+          },
+          {
+            "id": "4GAs_rKs_2Ne",
+            "preferred_label": "Fastighets- och förvaltningschefer"
+          },
+          {
+            "id": "eWiB_mGP_MjE",
+            "preferred_label": "IT-chefer"
+          },
+          {
+            "id": "ddGt_fEH_432",
+            "preferred_label": "General-, landstings- och kommundirektörer m.fl."
+          },
+          {
+            "id": "coyZ_Cyv_Srw",
+            "preferred_label": "Chefer inom äldreomsorg"
+          },
+          {
+            "id": "nNxJ_YWy_vR2",
+            "preferred_label": "Inköps-, logistik- och transportchefer"
+          },
+          {
+            "id": "X1Ac_Y9P_PJo",
+            "preferred_label": "Förvaltnings- och planeringschefer"
+          },
+          {
+            "id": "3i4a_Ufc_qpp",
+            "preferred_label": "Verkställande direktörer m.fl."
+          },
+          {
+            "id": "pf1K_PTz_frm",
+            "preferred_label": "Produktionschefer inom tillverkning"
+          },
+          {
+            "id": "mZsb_A1K_Gec",
+            "preferred_label": "Ekonomi- och finanschefer"
+          },
+          {
+            "id": "8SPu_K1k_5qR",
+            "preferred_label": "Chefer inom arkitekt- och ingenjörsverksamhet"
+          },
+          {
+            "id": "NxXz_fBh_w7j",
+            "preferred_label": "Chefer inom socialt och kurativt arbete"
+          },
+          {
+            "id": "g6eC_Fwu_B3J",
+            "preferred_label": "Övriga chefer inom utbildning"
+          },
+          {
+            "id": "9Mn4_PNA_7Yz",
+            "preferred_label": "Chefer inom bank, finans och försäkring"
+          },
+          {
+            "id": "Fu4x_7KG_YgC",
+            "preferred_label": "Chefer inom handel"
+          },
+          {
+            "id": "wby2_mwq_fWV",
+            "preferred_label": "Chefer inom friskvård, sport och fritid"
+          },
+          {
+            "id": "QG4f_MCh_vND",
+            "preferred_label": "Forsknings- och utvecklingschefer"
+          },
+          {
+            "id": "womV_SEj_CAH",
+            "preferred_label": "Chefer inom hälso- och sjukvård"
+          },
+          {
+            "id": "mpuA_s56_Hsy",
+            "preferred_label": "Informations-, kommunikations- och PR-chefer"
+          },
+          {
+            "id": "x9mo_1VH_Rps",
+            "preferred_label": "Chefer och ledare inom trossamfund"
+          },
+          {
+            "id": "Pz9M_srJ_Lc9",
+            "preferred_label": "Försäljnings- och marknadschefer"
+          },
+          {
+            "id": "sWzF_6pd_Y6L",
+            "preferred_label": "Övriga chefer inom samhällsservice"
+          },
+          {
+            "id": "ajwx_FvL_YuY",
+            "preferred_label": "Chefstjänstemän i intresseorganisationer"
+          },
+          {
+            "id": "7mn2_kA9_ftp",
+            "preferred_label": "Driftchefer inom bygg, anläggning och gruva"
+          },
+          {
+            "id": "hZLv_S5f_jo2",
+            "preferred_label": "Restaurang- och kökschefer"
+          },
+          {
+            "id": "uxst_tkg_zDh",
+            "preferred_label": "Övriga administrations- och servicechefer"
+          },
+          {
+            "id": "1uau_t1u_rDL",
+            "preferred_label": "Chefer inom förskoleverksamhet"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Militära yrken",
+        "id": "bH5L_uXD_ZAX",
+        "narrower": [
+          {
+            "id": "jXUQ_rUV_iBv",
+            "preferred_label": "Soldater m.fl."
+          },
+          {
+            "id": "KiVA_anS_RJh",
+            "preferred_label": "Officerare"
+          },
+          {
+            "id": "dhgR_9jk_95r",
+            "preferred_label": "Specialistofficerare"
+          }
+        ]
+      }
+    ]
+  }
+}
