@@ -32,6 +32,10 @@
 
 .home-top-section {
   background-color: rgb(50, 196, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .home-middle-section {
