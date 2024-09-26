@@ -1,21 +1,16 @@
+import { Filters } from "./filters/Filters";
 import { SearchField } from "./SearchField";
-import { LocationFilter } from "./filters/LocationFilter";
-import { OccupationFilter } from "./filters/OccupationFilter";
-import { WorkTimeExtentFilter } from "./filters/WorktimeExtentFilter";
+import { DisplaySearchResults } from "./DisplaySearchResults";
+
 
 export const SearchPage = () => {
   return (
     <>
       <h2>Search Page</h2>
       <SearchField />
+      <Filters />
       <section>
-        <h3>Filtrera din sökning</h3>
-        <LocationFilter />
-        <OccupationFilter />
-        <WorkTimeExtentFilter />
-      </section>
-      <section>
-        {/* Result section */}
+        <DisplaySearchResults />
       </section>
       <section>
         {/* Pagination */}
