@@ -1,5 +1,12 @@
-import { FormInputSearchVariation, FormInputType, LayoutBlockVariation } from '@digi/arbetsformedlingen';
-import { DigiFormInputSearch, DigiLayoutBlock } from '@digi/arbetsformedlingen-react';
+import {
+  FormInputSearchVariation,
+  FormInputType,
+  LayoutBlockVariation,
+} from '@digi/arbetsformedlingen';
+import {
+  DigiFormInputSearch,
+  DigiLayoutBlock,
+} from '@digi/arbetsformedlingen-react';
 
 export const Home = () => {
   return (
