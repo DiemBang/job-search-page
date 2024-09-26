@@ -7,6 +7,7 @@ import {
   DigiFormInputSearch,
   DigiLayoutBlock,
   DigiMediaImage,
+  DigiTypography,
 } from '@digi/arbetsformedlingen-react';
 
 export const Home = () => {
@@ -16,7 +17,18 @@ export const Home = () => {
         afVariation={LayoutBlockVariation.PRIMARY}
         className="home-main-block"
       >
-        <section className="home-top-section"></section>
+        <section className="home-top-section">
+          <DigiTypography>
+            <span className="motivational-span">Sök jobb här hos Diggilo!</span>
+            <h2>... Jobs listed</h2>
+            <p>
+              Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam
+              dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc
+              iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi,
+              imperdiet at, tincidunt nec, gravida vehicula, nisl.
+            </p>
+          </DigiTypography>
+        </section>
         <section className="home-middle-section">
           <DigiFormInputSearch
             afLabel="Sök Här"
