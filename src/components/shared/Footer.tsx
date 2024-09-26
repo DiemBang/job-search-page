@@ -1,5 +1,6 @@
-import { FooterVariation, FooterCardVariation } from '@digi/arbetsformedlingen';
+import { FooterVariation, FooterCardVariation, ButtonSize, ButtonVariation } from '@digi/arbetsformedlingen';
 import {
+    DigiButton,
   DigiFooter,
   DigiFooterCard,
 } from '@digi/arbetsformedlingen-react';
@@ -37,7 +38,12 @@ export const AppFooter = () => {
             <DigiFooterCard afType={FooterCardVariation.BORDER}>
               <h3 className='footer-card-title'>Nyhetsbrev</h3>
               <input type="email" />
-              <button>Anmäl Dig!</button>
+              <DigiButton
+	            afSize={ButtonSize.MEDIUM}
+	            afVariation={ButtonVariation.SECONDARY}
+	            afFullWidth={false}>
+	                Anmäl Dig!
+              </DigiButton>
             </DigiFooterCard>
           </div>
           <div>
