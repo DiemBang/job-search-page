@@ -20,14 +20,13 @@
 }
 
 .home-main-block .digi-layout-container {
-  height: 800px;
   margin: 0;
   padding: 0;
   position: relative;
 }
 
 .home-top-section, .home-bottom-section {
-  height: 400px;
+  height: 425px;
 }
 
 .home-top-section {
