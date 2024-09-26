@@ -1,4 +1,4 @@
-{
+export const searchData = {
     "total": {
       "value": 20
     },
