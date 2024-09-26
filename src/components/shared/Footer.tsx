@@ -1,8 +1,9 @@
-import { FooterVariation, FooterCardVariation, ButtonSize, ButtonVariation } from '@digi/arbetsformedlingen';
+import { FooterVariation, FooterCardVariation, ButtonSize, ButtonVariation, FormInputType, FormInputValidation, FormInputVariation, FormInputMode } from '@digi/arbetsformedlingen';
 import {
     DigiButton,
   DigiFooter,
   DigiFooterCard,
+  DigiFormInput,
 } from '@digi/arbetsformedlingen-react';
 
 export const AppFooter = () => {
@@ -37,7 +38,15 @@ export const AppFooter = () => {
           <div className="footer-newsletter">
             <DigiFooterCard afType={FooterCardVariation.BORDER}>
               <h3 className='footer-card-title'>Nyhetsbrev</h3>
-              <input type="email" />
+              <DigiFormInput
+                afLabel={''} 
+                afValue={"E-postaddress"}
+                afVariation={FormInputVariation.MEDIUM}
+                afType={FormInputType.EMAIL}
+                afValidation={FormInputValidation.NEUTRAL}
+                afInputmode={FormInputMode.EMAIL} 
+              >
+              </DigiFormInput>              
               <DigiButton
 	            afSize={ButtonSize.MEDIUM}
 	            afVariation={ButtonVariation.SECONDARY}
