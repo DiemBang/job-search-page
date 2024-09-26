@@ -43,6 +43,7 @@
   width: 500px;
   border-radius: 20px;
   padding: 1em;
+  z-index: 1;
 }
 
 .digi-form-label__label-group  {
@@ -55,4 +56,10 @@
 
 .home-bottom-section {
   background-color: rgb(255, 166, 0);
+  display: flex;
+}
+
+.home-bottom-section img {
+  flex: 1;
+  z-index: 0;
 }
