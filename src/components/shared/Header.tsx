@@ -4,6 +4,14 @@ import {
   DigiHeaderNavigationItem,
 } from '@digi/arbetsformedlingen-react';
 
+const navigationItems = [
+  { href: '/', text: 'Hem' },
+  { href: '/', text: 'Om Oss' },
+  { href: '/', text: 'Kontakt' },
+  { href: '/', text: 'Sök Jobb' },
+  { href: '/', text: 'Logga In' },
+];
+
 export const AppHeader = () => {
   return (
     <>
@@ -15,21 +23,11 @@ export const AppHeader = () => {
         <div slot="header-content">
           <div slot="header-navigation">
             <DigiHeaderNavigation>
-              <DigiHeaderNavigationItem>
-                <a href="/">Hem</a>
-              </DigiHeaderNavigationItem>
-              <DigiHeaderNavigationItem>
-                <a href="/">Om Oss</a>
-              </DigiHeaderNavigationItem>
-              <DigiHeaderNavigationItem>
-                <a href="/">Kontakt</a>
-              </DigiHeaderNavigationItem>
-              <DigiHeaderNavigationItem>
-                <a href="/">Sök Jobb</a>
-              </DigiHeaderNavigationItem>
-              <DigiHeaderNavigationItem>
-                <a href="/">Logga In</a>
-              </DigiHeaderNavigationItem>
+              {navigationItems.map((item, index) => (
+                <DigiHeaderNavigationItem key={index}>
+                  <a href={item.href}>{item.text}</a>
+                </DigiHeaderNavigationItem>
+              ))}
             </DigiHeaderNavigation>
           </div>
         </div>
