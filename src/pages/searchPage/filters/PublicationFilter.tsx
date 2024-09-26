@@ -1,8 +1,4 @@
-import { FormRadiobuttonVariation } from "@digi/arbetsformedlingen";
-import {
-  DigiFormFilter,
-  DigiFormRadiobutton,
-} from "@digi/arbetsformedlingen-react";
+import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
 
 export const PublicationFilter = () => {
   return (
@@ -26,10 +22,6 @@ export const PublicationFilter = () => {
           console.log("submit filter", e.detail.listItems, e.detail.checked)
         }
       ></DigiFormFilter>
-      <DigiFormRadiobutton
-        afLabel="Kryssruta"
-        afVariation={FormRadiobuttonVariation.PRIMARY}
-      ></DigiFormRadiobutton>
     </>
   );
 };

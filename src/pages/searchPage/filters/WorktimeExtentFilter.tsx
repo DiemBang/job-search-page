@@ -21,7 +21,6 @@ export const WorkTimeExtentFilter = () => {
             console.log("submit filter", e.detail.listItems, e.detail.checked)
           }
         >
-
         </DigiFormFilter>
         
         </>

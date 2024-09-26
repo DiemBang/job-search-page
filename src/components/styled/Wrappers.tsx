@@ -6,3 +6,11 @@ export const FilterWrapper = styled.div`
     flex-wrap: wrap;
     gap: 1rem;
 `;
+
+export const SearchResultWrapper = styled.div`
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+    background-color: beige;
+    
+`;
