@@ -7,11 +7,11 @@ export const RemoteWorkFilter = () => {
           afFilterButtonText="Arbetsplats"
           afSubmitButtonText="Filtrera"
           afListItems={[
-            { id: "omr1", label: "Alla" },
-            { id: "omr2", label: "Endast distansarbete" },
+            { id: "alla", label: "Alla" },
+            { id: "endast_distans", label: "Endast distansarbete" },
 
           ]}
-          afCheckItems={["omr1"]} // optional, override internal check state of component with filter ids
+          afCheckItems={["alla"]} // optional, override internal check state of component with filter ids
           onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
           onAfResetFilter={() => console.log("reset filter")}
           onAfSubmitFilter={(e) =>

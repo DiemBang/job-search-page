@@ -7,11 +7,11 @@ export const WorkTimeExtentFilter = () => {
           afFilterButtonText="Omfattning"
           afSubmitButtonText="Filtrera"
           afListItems={[
-            { id: "omr1", label: "Alla" },
-            { id: "omr2", label: "Heltid" },
-            { id: "omr3", label: "Deltid" },
+            { id: "alla", label: "Alla" },
+            { id: "heltid", label: "Heltid" },
+            { id: "deltid", label: "Deltid" },
           ]}
-          afCheckItems={["omr1"]} // optional, override internal check state of component with filter ids
+          afCheckItems={["alla"]} // optional, override internal check state of component with filter ids
           onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
           onAfResetFilter={() => console.log("reset filter")}
           onAfSubmitFilter={(e) =>

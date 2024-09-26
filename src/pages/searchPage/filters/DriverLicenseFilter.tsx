@@ -7,9 +7,9 @@ export const DriverLicenseFilter = () => {
           afFilterButtonText="Kvalifikationer"
           afSubmitButtonText="Filtrera"
           afListItems={[
-            { id: "omr1", label: "Krav på körkort" }
+            { id: "krav_pa_korkort", label: "Krav på körkort" }
           ]}
-          afCheckItems={["omr1"]} // optional, override internal check state of component with filter ids
+          afCheckItems={["krav_pa_korkort"]} // optional, override internal check state of component with filter ids
           onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
           onAfResetFilter={() => console.log("reset filter")}
           onAfSubmitFilter={(e) =>

@@ -7,11 +7,11 @@ export const EducationFilter = () => {
           afFilterButtonText="Utbildning"
           afSubmitButtonText="Filtrera"
           afListItems={[
-            { id: "omr1", label: "Alla" },
-            { id: "omr2", label: "Utan krav på utbildning" },
-            { id: "omr3", label: "Med krav på utbildning" },
+            { id: "alla", label: "Alla" },
+            { id: "utan_krav", label: "Utan krav på utbildning" },
+            { id: "med_krav", label: "Med krav på utbildning" },
           ]}
-          afCheckItems={["omr1"]} // optional, override internal check state of component with filter ids
+          afCheckItems={["alla"]} // optional, override internal check state of component with filter ids
           onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
           onAfResetFilter={() => console.log("reset filter")}
           onAfSubmitFilter={(e) =>

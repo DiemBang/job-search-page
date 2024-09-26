@@ -7,11 +7,11 @@ export const LanguageFilter = () => {
           afFilterButtonText="Språk"
           afSubmitButtonText="Filtrera"
           afListItems={[
-            { id: "omr1", label: "Svenska" },
-            { id: "omr2", label: "Engelska" },
-            { id: "omr3", label: "Övriga" },
+            { id: "sv", label: "Svenska" },
+            { id: "eng", label: "Engelska" },
+            { id: "ovr", label: "Övriga" },
           ]}
-          afCheckItems={["omr1"]} // optional, override internal check state of component with filter ids
+          afCheckItems={["sv"]} // optional, override internal check state of component with filter ids
           onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
           onAfResetFilter={() => console.log("reset filter")}
           onAfSubmitFilter={(e) =>

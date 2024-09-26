@@ -7,12 +7,12 @@ export const PublicationFilter = () => {
         afFilterButtonText="Publicerad"
         afSubmitButtonText="Filtrera"
         afListItems={[
-          { id: "omr1", label: "Alla" },
-          { id: "omr2", label: "Idag" },
-          { id: "omr3", label: "Senaste 7 dagarna" },
-          { id: "omr3", label: "Senaste 30 dagarna" },
+          { id: "alla", label: "Alla" },
+          { id: "idag", label: "Idag" },
+          { id: "7dagar", label: "Senaste 7 dagarna" },
+          { id: "30dagar", label: "Senaste 30 dagarna" },
         ]}
-        afCheckItems={["omr1"]} // optional, override internal check state of component with filter ids
+        afCheckItems={["alla"]} // optional, override internal check state of component with filter ids
         onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
         onAfResetFilter={() => console.log("reset filter")}
         onAfSubmitFilter={(e) =>

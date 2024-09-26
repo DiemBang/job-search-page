@@ -7,11 +7,11 @@ export const EmploymentTypeFilter = () => {
           afFilterButtonText="Anställningsform"
           afSubmitButtonText="Filtrera"
           afListItems={[
-            { id: "omr1", label: "Tillsvidare" },
-            { id: "omr2", label: "Timanställning" },
-            { id: "omr3", label: "Säsong" },
+            { id: "tillsvidare", label: "Tillsvidare" },
+            { id: "timanstallning", label: "Timanställning" },
+            { id: "sasong", label: "Säsong" },
           ]}
-          afCheckItems={["omr1"]} // optional, override internal check state of component with filter ids
+          afCheckItems={["tillsvidare"]} // optional, override internal check state of component with filter ids
           onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
           onAfResetFilter={() => console.log("reset filter")}
           onAfSubmitFilter={(e) =>
