@@ -4,11 +4,15 @@
 
 
 .digi-logo__img {
-  background-image: url('/src/assets/BoLoGo.png');
-  background-size: contain;
+  background-image: url('/src/assets/logo.png');
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 44px; 
-  height: 44px;
+  width: 50px;
+  height: 50px;
+}
+
+.sc-digi-logo-h .digi-logo__system-name.sc-digi-logo::before {
+  content: none;
 }
 
 .digi-logo svg {
