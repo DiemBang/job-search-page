@@ -1,6 +1,7 @@
 import { SearchField } from "./SearchField";
 import { LocationFilter } from "./filters/LocationFilter";
 import { OccupationFilter } from "./filters/OccupationFilter";
+import { WorkTimeExtentFilter } from "./filters/WorktimeExtentFilter";
 
 export const SearchPage = () => {
   return (
@@ -10,9 +11,15 @@ export const SearchPage = () => {
       <section>
         <h3>Filtrera din sökning</h3>
         <LocationFilter />
-        <OccupationFilter />        
+        <OccupationFilter />
+        <WorkTimeExtentFilter />
       </section>
-      <section></section>
+      <section>
+        {/* Result section */}
+      </section>
+      <section>
+        {/* Pagination */}
+      </section>
     </>
   );
 };
