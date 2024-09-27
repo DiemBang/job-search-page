@@ -32,8 +32,12 @@ const Job = () => {
           <GoBackToSearch />
         </DigiLayoutContainer>
         <DigiTypography>
-          <DigiLayoutBlock afMarginBottom={true}>
-            <FlexContainer $justify="space-between" $align="flex-end">
+          <DigiLayoutBlock>
+            <FlexContainer
+              $justify="space-between"
+              $align="flex-end"
+              $padding="24px 0 0 0"
+            >
               <JobTitleInfo />
               <JobApply />
             </FlexContainer>

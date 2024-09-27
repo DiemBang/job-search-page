@@ -24,7 +24,7 @@ const JobDetails = () => {
 
   return (
     <FlexContainer $width="100%" $maxWidth="350px">
-      <DigiLayoutBlock>
+      <DigiLayoutBlock afVerticalPadding={true}>
         <FlexContainer $direction="column" $align="flex-start" $gap="30px">
           <JobQualifications mustHave={must_have} niceToHave={nice_to_have} />
           <JobPay salaryType={salary_type} salaryDesc={salary_description} />

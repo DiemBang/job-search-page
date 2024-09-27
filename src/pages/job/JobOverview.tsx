@@ -6,7 +6,7 @@ import { FlexContainer } from '../../components/styled/shared/FlexContainer';
 const JobOverview = () => {
   return (
     <FlexContainer $maxWidth="720px" $width="100%">
-      <DigiLayoutBlock afMarginBottom={true}>
+      <DigiLayoutBlock afVerticalPadding={true}>
         <FlexContainer $direction="column" $align="flex-start" $gap="20px">
           <JobDescription />
           <JobInfo />
