@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["styles.scss","base/_base.scss","tokens/_tokens.scss","partials/_jobdescription.scss"],"names":[],"mappings":"AAAQ,2FACA,mFCDR,UAEE,YAGF,KACE,sBAGF,MACE,aACA,sBACA,mBACA,gBACA,yBCZF,2BACE,2BACA,0BCJF,aACE","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["styles.scss","base/_base.scss","tokens/_tokens.scss","partials/_jobdescription.scss"],"names":[],"mappings":"AAAQ,2FACA,mFCDR,UAEE,YAGF,KACE,sBAGF,MACE,aACA,sBACA,mBACA,gBACA,yBCZF,2BACE,2BACA,0BAGF,gCACE,6CACA,6CCTF,aACE","file":"styles.css"}
