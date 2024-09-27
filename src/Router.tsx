@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { NotFound } from "./pages/NotFound";
+import { SearchPage } from "./pages/searchPage/SearchPage";
 import { jobPageLoader } from "./loaders/jobPageLoader";
 import { searchPageLoader } from "./loaders/searchPageLoader";
 import { DigiLoaderSpinner } from "@digi/arbetsformedlingen-react";
@@ -28,7 +29,7 @@ export const router = createBrowserRouter([
               ></DigiLoaderSpinner>
             }
           >
-            <Search></Search>
+            <SearchPage></SearchPage>
           </Suspense>
         ),
         loader: searchPageLoader,
