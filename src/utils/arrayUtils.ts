@@ -2,7 +2,6 @@ import { IInformationField } from '../types/types';
 
 export const createInformationFields = (
   vacancies: string | null,
-  publication: string | null,
   id: string | null,
   url: string | null
 ): IInformationField[] => [
@@ -13,11 +12,6 @@ export const createInformationFields = (
           vacancies === 'ett' ? ' tillgängligt' : ' tillgängliga'
         }`
       : null,
-    element: 'h3',
-  },
-  {
-    label: 'Publicerad',
-    value: publication,
     element: 'h3',
   },
   {

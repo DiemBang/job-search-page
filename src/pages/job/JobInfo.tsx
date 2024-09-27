@@ -2,10 +2,10 @@ import { FlexContainer } from '../../components/styled/shared/FlexContainer';
 import { useContext } from 'react';
 import JobContext from '../../context/JobContext';
 import { numberToWords } from '../../utils/numberStringUtils';
-import { formatToSwedishDate } from '../../utils/dateUtils';
 import JobPostalAddress from './JobPostalAddress';
 import { createInformationFields } from '../../utils/arrayUtils';
 import { DigiLinkExternal } from '@digi/arbetsformedlingen-react';
+import JobPublication from './JobPublication';
 
 const JobInfo = () => {
   const context = useContext(JobContext);
@@ -23,10 +23,8 @@ const JobInfo = () => {
   } = context;
 
   const vacancies = numberToWords(number_of_vacancies);
-  const publication = formatToSwedishDate(publication_date);
   const informationFields = createInformationFields(
     vacancies,
-    publication,
     id,
     employer.url
   );
@@ -49,6 +47,7 @@ const JobInfo = () => {
             </FlexContainer>
           )
       )}
+      <JobPublication publicationDate={publication_date} />
     </FlexContainer>
   );
 };
