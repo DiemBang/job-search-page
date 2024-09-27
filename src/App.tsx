@@ -1,7 +1,11 @@
-import "./App.css";
+import Job from './pages/job/Job';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Job />
+    </>
+  );
 }
 
 export default App;
