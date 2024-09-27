@@ -44,7 +44,9 @@ const JobContact = ({ contacts }: IJobContactProps) => {
                   <div>
                     {`${name ? `${name}, ${contact_type}` : `${contact_type}`}`}
                   </div>
-                  <DigiLink afHref="#">{email}</DigiLink>
+                  <DigiLink afHref="#" hideVisitedColor={true}>
+                    {email}
+                  </DigiLink>
                   <div>{telephone}</div>
                 </FlexContainer>
               </FlexContainer>

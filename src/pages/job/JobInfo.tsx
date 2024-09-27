@@ -40,7 +40,9 @@ const JobInfo = () => {
             <FlexContainer key={index} $direction="column" $align="flex-start">
               <Element>{label}</Element>
               {value === employer.url ? (
-                <DigiLinkExternal afHref="#">{value}</DigiLinkExternal>
+                <DigiLinkExternal afHref="#" hideVisitedColor={true}>
+                  {value}
+                </DigiLinkExternal>
               ) : (
                 <div>{value}</div>
               )}

@@ -6,6 +6,7 @@ import {
 } from '../../utils/dateUtils';
 import { useContext } from 'react';
 import JobContext from '../../context/JobContext';
+import { ButtonSize } from '@digi/arbetsformedlingen';
 
 const JobApply = () => {
   const context = useContext(JobContext);
@@ -21,8 +22,12 @@ const JobApply = () => {
 
   return (
     <FlexContainer $direction="column" $align="flex-end" $gap="10px">
-      <DigiButton afSize="large">
-        <DigiLinkExternal afHref="#">Ansök Nu</DigiLinkExternal>
+      <DigiButton afSize={ButtonSize.LARGE}>
+        <span className="apply">
+          <DigiLinkExternal afHref="#" hideVisitedColor={true}>
+            Ansök Nu
+          </DigiLinkExternal>
+        </span>
       </DigiButton>
       {daysLeft > 0 ? (
         <div>

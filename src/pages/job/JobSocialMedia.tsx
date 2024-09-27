@@ -25,19 +25,19 @@ const JobSocialMedia = () => {
       afSize={InfoCardSize.STANDARD}
     >
       <FlexContainer $justify="space-between" $gap="6px" $flexWrap="wrap">
-        <DigiLink afHref="#">
+        <DigiLink afHref="#" hideVisitedColor={true}>
           <DigiIconEnvelope />
           Email
         </DigiLink>
-        <DigiLink afHref="#">
+        <DigiLink afHref="#" hideVisitedColor={true}>
           <DigiIconFacebookSquare />
           Facebook
         </DigiLink>
-        <DigiLink afHref="#">
+        <DigiLink afHref="#" hideVisitedColor={true}>
           <DigiIconTwitter />
           Twitter
         </DigiLink>
-        <DigiLink afHref="#">
+        <DigiLink afHref="#" hideVisitedColor={true}>
           <DigiIconLinkedinIn />
           Linkedin
         </DigiLink>
