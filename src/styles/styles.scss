@@ -17,7 +17,7 @@
 }
 
 .digi-logo svg {
-  display: none; 
+  display: none;
 }
 
 .home-main-block .digi-layout-container {
@@ -26,7 +26,8 @@
   position: relative;
 }
 
-.home-top-section, .home-bottom-section {
+.home-top-section,
+.home-bottom-section {
   height: 425px;
 }
 
@@ -48,22 +49,22 @@
   border-radius: 20px;
   padding: 1em;
   z-index: 1;
-}
 
-.digi-form-label__label-group  {
-  display: none;
-  text-align: center;
-  justify-content: center;
-  color: white;
-  background-color: transparent;
+  .digi-form-label__label-group {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: transparent;
+  }
 }
 
 .home-bottom-section {
   background-color: rgb(255, 166, 0);
   display: flex;
-}
 
-.home-bottom-section img {
-  flex: 1;
-  z-index: 0;
+  .home-bottom-section img {
+    flex: 1;
+    z-index: 0;
+  }
 }
