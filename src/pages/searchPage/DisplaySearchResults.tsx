@@ -3,25 +3,15 @@ import { IAd, SearchResult } from "./SearchResult";
 import { searchData } from "../../data/search-data";
 
 export const DisplaySearchResults = () => {
-  // Add documents state variable
-  // In useEffect set this variable to search data which will be change to api at later stage.
-  // Loop through (with map) this documents list in return statement
-  // and for each document have a separate Document or SearchResult component taking
-  // id, annonstitel, foretag, ort etc
-  const [ads, setAds] = useState<IAd[]>([]);
-
+   const [ads, setAds] = useState<IAd[]>([]);
 
   useEffect(() => {
     const getData = async () => {
-        let data: IAd[] = searchData.hits;
+      let data: IAd[] = searchData.hits;
       setAds(data);
     };
     getData();
   });
-
-
-  console.log(searchData["positions"]);
-  console.log(searchData["hits"].length);
 
   return (
     <>
