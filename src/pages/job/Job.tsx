@@ -36,13 +36,18 @@ const Job = () => {
             <FlexContainer
               $justify="space-between"
               $align="flex-end"
-              $padding="24px 0 0 0"
+              $padding="24px 0"
             >
               <JobTitleInfo />
               <JobApply />
             </FlexContainer>
           </DigiLayoutBlock>
-          <FlexContainer $align="flex-start" $flexWrap="wrap">
+          <FlexContainer
+            $align="flex-start"
+            $flexWrap="wrap"
+            $gap="10px"
+            $padding="10px 0 0 0"
+          >
             <JobOverview />
             <JobDetails />
           </FlexContainer>
