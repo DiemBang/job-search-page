@@ -23,21 +23,26 @@ export interface IAd {
   publication_date: string;
 }
 
-export const SearchResult = (props: IAd) => {
+export interface IAdProps {
+    ad: IAd
+  }
+
+
+export const SearchResult = ({ ad }: IAdProps) => {
   return (
     <SearchResultWrapper>
-      <h3>{props.headline}</h3>
+      <h3>{ad.headline}</h3>
       <h4>
-        {props.employer.name}
-        {props.employer.name && props.workplace_address.city && <> - </>}
-        {props.workplace_address.city}
+        {ad.employer.name}
+        {ad.employer.name && ad.workplace_address.city && <> - </>}
+        {ad.workplace_address.city}
       </h4>
-      <p>{props.working_hours_type.label}</p>
+      <p>{ad.working_hours_type.label}</p>
       <p>
         Publicerad{" "}
         <DigiTypographyTime
           afVariation={TypographyTimeVariation.PRETTY}
-          afDateTime={props.publication_date}
+          afDateTime={ad.publication_date}
         ></DigiTypographyTime>
       </p>
     </SearchResultWrapper>

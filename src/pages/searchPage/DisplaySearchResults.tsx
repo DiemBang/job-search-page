@@ -21,12 +21,7 @@ export const DisplaySearchResults = () => {
       </h3>
       {ads.map((ad) => (
         <SearchResult
-          headline={ad.headline}
-          id={ad.id}
-          employer={ad.employer}
-          workplace_address={ad.workplace_address}
-          working_hours_type={ad.working_hours_type}
-          publication_date={ad.publication_date}
+        ad={ad}
         />
       ))}
     </>
