@@ -1,12 +1,13 @@
-import { RouterProvider } from "react-router-dom";
 import "./App.css";
+import Job from './pages/job/Job';
 import { SearchPage } from "./pages/searchPage/SearchPage";
-import { router } from "./Router";
+
 
 function App() {
   return (
     <>
       <SearchPage />
+      <Job />
     </>
   );
 }
