@@ -30,11 +30,16 @@ use#Main-Symbol {
 }
 
 .home-top-section {
-  background-color: rgb(50, 196, 50);
+  background-color: rgb(88, 118, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  span, h2, p {
+    font-weight: bold;
+    color: white;
+  }
 }
 
 .home-middle-section {
