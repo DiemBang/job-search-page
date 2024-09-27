@@ -14,9 +14,8 @@
 .sc-digi-logo-h .digi-logo__system-name.sc-digi-logo::before {
   content: none;
 }
-
-.digi-logo svg {
-  display: none;
+use#Main-Symbol {
+    display: none;
 }
 
 .home-main-block .digi-layout-container {
