@@ -7,7 +7,7 @@ import { SearchPageWrapper } from "../../components/styled/Wrappers";
 export const SearchPage = () => {
   return (
     <SearchPageWrapper>
-      <h2>Search Page</h2>
+      <h2>Platsbanken</h2>
       <SearchField />
       <Filters />
       <section>
