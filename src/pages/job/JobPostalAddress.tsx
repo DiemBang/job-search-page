@@ -13,8 +13,8 @@ const JobPostalAddress = ({ address, employer }: IJobPostalAddressProps) => {
   return (
     <FlexContainer $direction="column" $align="flex-start" $gap="2px">
       <h3>Postadress</h3>
-      {name && <>{name}</>}
-      {name && <div>{street_address}</div>}
+      {name && <div>{name}</div>}
+      {name && street_address && <div>{street_address}</div>}
       {postcode && city && (
         <div>
           {postcode} {city}
