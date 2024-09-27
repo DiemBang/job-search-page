@@ -44,13 +44,14 @@ use#Main-Symbol {
 
 .home-middle-section {
   position: absolute;
-  background-color: blue;
+  background-color: rgb(241, 144, 33);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   padding: 1em;
   z-index: 1;
+  width: 500px;
 
   .digi-form-label__label-group {
     display: none;
