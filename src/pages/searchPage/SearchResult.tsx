@@ -28,13 +28,18 @@ export const SearchResult = (props: IAd) => {
     <SearchResultWrapper>
       <h3>{props.headline}</h3>
       <h4>
-        {props.employer.name} - {props.workplace_address.city}
+        {props.employer.name}
+        {props.employer.name && props.workplace_address.city && <> - </>}
+        {props.workplace_address.city}
       </h4>
       <p>{props.working_hours_type.label}</p>
-      <p>Publicerad <DigiTypographyTime
-        afVariation={TypographyTimeVariation.PRETTY}
-        afDateTime={props.publication_date}
-      ></DigiTypographyTime></p>
+      <p>
+        Publicerad{" "}
+        <DigiTypographyTime
+          afVariation={TypographyTimeVariation.PRETTY}
+          afDateTime={props.publication_date}
+        ></DigiTypographyTime>
+      </p>
     </SearchResultWrapper>
   );
 };
