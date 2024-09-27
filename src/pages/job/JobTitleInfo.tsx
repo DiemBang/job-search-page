@@ -8,13 +8,23 @@ const JobTitleInfo = () => {
   if (!context) return;
 
   const {
-    occupation: { headline, logo_url, employer, working_hours_type, duration },
+    occupation: {
+      headline,
+      logo_url,
+      employer,
+      working_hours_type,
+      duration,
+      workplace_address,
+      occupation_group,
+    },
   } = context;
 
   const { name } = employer;
+  const { municipality } = workplace_address;
+  const { label } = occupation_group;
 
   return (
-    <FlexContainer $direction="column" $align="start">
+    <FlexContainer $direction="column" $align="flex-start">
       <FlexContainer>
         <h1>{headline}</h1>
         {logo_url && (
@@ -25,6 +35,10 @@ const JobTitleInfo = () => {
             height="24px"
           ></img>
         )}
+      </FlexContainer>
+      <FlexContainer $direction="column" $align="flex-start">
+        <h2>{label}</h2>
+        <h3>{municipality}</h3>
       </FlexContainer>
       <FlexContainer $direction="column" $align="flex-start">
         {name && <div>{name}</div>}
