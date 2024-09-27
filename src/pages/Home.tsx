@@ -22,10 +22,11 @@ export const Home = () => {
             <span className="motivational-span">Sök jobb här hos Diggilo!</span>
             <h2>... Jobs listed</h2>
             <p>
-              Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam
-              dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc
-              iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi,
-              imperdiet at, tincidunt nec, gravida vehicula, nisl.
+              Är du redo att ta nästa stora steg i din karriär? Sök
+              bland hundratals lediga tjänster från olika branscher och hitta
+              den roll som passar dina färdigheter och ambitioner. Vi är här för
+              att hjälpa dig att nå dina mål och ta din karriär till nya höjder.
+              Sätt igång och upptäck ditt drömjobb idag!
             </p>
           </DigiTypography>
         </section>
