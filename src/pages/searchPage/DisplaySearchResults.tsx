@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { IAd, SearchResult } from "./SearchResult";
-import { searchData } from "../../data/search-data";
+import { useEffect, useState } from 'react';
+import { IAd, SearchResult } from './SearchResult';
+import { searchData } from '../../data/search-data';
 
 export const DisplaySearchResults = () => {
-   const [ads, setAds] = useState<IAd[]>([]);
+  const [ads, setAds] = useState<IAd[]>([]);
 
   useEffect(() => {
     const getData = async () => {
-      let data: IAd[] = searchData.hits;
+      const data: IAd[] = searchData.hits;
       setAds(data);
     };
     getData();
@@ -20,9 +20,7 @@ export const DisplaySearchResults = () => {
         hittades
       </h3>
       {ads.map((ad) => (
-        <SearchResult
-        ad={ad}
-        />
+        <SearchResult key={ad.id} ad={ad} />
       ))}
     </>
   );
