@@ -1,13 +1,11 @@
-import "./App.css";
-import Job from './pages/job/Job';
-import { SearchPage } from "./pages/searchPage/SearchPage";
-
+import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Router';
 
 function App() {
   return (
     <>
-      <SearchPage />
-      <Job />
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }
