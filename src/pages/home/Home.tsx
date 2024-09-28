@@ -9,8 +9,14 @@ import {
   DigiMediaImage,
   DigiTypography,
 } from '@digi/arbetsformedlingen-react';
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+  const navigate = useNavigate();
+  const handleClickOnSearch = () => {
+    navigate('/search');
+  };
+
   return (
     <>
       <DigiLayoutBlock
@@ -22,10 +28,10 @@ export const Home = () => {
             <span className="motivational-span">Sök jobb här hos Diggilo!</span>
             <h2>... Jobs listed</h2>
             <p>
-              Är du redo att ta nästa stora steg i din karriär? Sök
-              bland hundratals lediga tjänster från olika branscher och hitta
-              den roll som passar dina färdigheter och ambitioner. Vi är här för
-              att hjälpa dig att nå dina mål och ta din karriär till nya höjder.
+              Är du redo att ta nästa stora steg i din karriär? Sök bland
+              hundratals lediga tjänster från olika branscher och hitta den roll
+              som passar dina färdigheter och ambitioner. Vi är här för att
+              hjälpa dig att nå dina mål och ta din karriär till nya höjder.
               Sätt igång och upptäck ditt drömjobb idag!
             </p>
           </DigiTypography>
@@ -35,8 +41,9 @@ export const Home = () => {
             afLabel="Sök Här"
             afVariation={FormInputSearchVariation.MEDIUM}
             afType={FormInputType.SEARCH}
-            afButtonText="Knapptext"
+            afButtonText="Sök"
             className="home-search-container"
+            onClick={handleClickOnSearch}
           ></DigiFormInputSearch>
         </section>
         <section className="home-bottom-section">
