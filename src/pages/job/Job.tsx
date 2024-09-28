@@ -1,5 +1,3 @@
-/* Temporary JSON Data used before we get props from API */
-import occupations from '../../data/temp-occupations.json';
 import GoBackToSearch from './GoBackToSearch';
 import {
   DigiLayoutBlock,
@@ -12,12 +10,12 @@ import JobOverview from './JobOverview';
 import JobDetails from './JobDetails';
 import JobTitleInfo from './JobTitleInfo';
 import JobApply from './JobApply';
+import { useLoaderData } from 'react-router-dom';
+import { IOccupation } from '../../types/occupation-types';
 
 const Job = () => {
-  /* const job = useLoaderData()  */
-
-  const occupation = occupations.hits[7];
-  console.log('current occupation: ', occupation);
+  const occupation = useLoaderData() as IOccupation;
+  console.log('this is the occupation data from the loader: ', occupation);
 
   return (
     <JobContextProvider occupation={occupation}>
