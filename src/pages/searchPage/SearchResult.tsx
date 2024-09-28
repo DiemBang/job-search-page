@@ -1,6 +1,7 @@
-import { TypographyTimeVariation } from "@digi/arbetsformedlingen";
-import { DigiTypographyTime } from "@digi/arbetsformedlingen-react";
-import { SearchResultWrapper } from "../../components/styled/Wrappers";
+import { TypographyTimeVariation } from '@digi/arbetsformedlingen';
+import { DigiTypographyTime } from '@digi/arbetsformedlingen-react';
+import { SearchResultWrapper } from '../../components/styled/Wrappers';
+import StyledRouterLink from '../../components/styled/shared/StyledRouterLink';
 
 interface IEmployer {
   name: string;
@@ -24,27 +25,27 @@ export interface IAd {
 }
 
 export interface IAdProps {
-    ad: IAd
-  }
-
+  ad: IAd;
+}
 
 export const SearchResult = ({ ad }: IAdProps) => {
   return (
-    <SearchResultWrapper>
-      <h3>{ad.headline}</h3>
-      <h4>
-        {ad.employer.name}
-        {ad.employer.name && ad.workplace_address.city && <> - </>}
-        {ad.workplace_address.city}
-      </h4>
-      <p>{ad.working_hours_type.label}</p>
-      <p>
-        Publicerad{" "}
-        <DigiTypographyTime
-          afVariation={TypographyTimeVariation.PRETTY}
-          afDateTime={ad.publication_date}
-        ></DigiTypographyTime>
-      </p>
-    </SearchResultWrapper>
+    <StyledRouterLink to={`/search/job/${ad.id}`}>
+      <SearchResultWrapper>
+        <h4>
+          {ad.employer.name}
+          {ad.employer.name && ad.workplace_address.city && <> - </>}
+          {ad.workplace_address.city}
+        </h4>
+        <p>{ad.working_hours_type.label}</p>
+        <p>
+          Publicerad{' '}
+          <DigiTypographyTime
+            afVariation={TypographyTimeVariation.PRETTY}
+            afDateTime={ad.publication_date}
+          ></DigiTypographyTime>
+        </p>
+      </SearchResultWrapper>
+    </StyledRouterLink>
   );
 };
