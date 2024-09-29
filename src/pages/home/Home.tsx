@@ -43,7 +43,7 @@ export const Home = () => {
             afType={FormInputType.SEARCH}
             afButtonText="Sök"
             className="home-search-container"
-            onClick={handleClickOnSearch}
+            onAfOnClick={handleClickOnSearch}
           ></DigiFormInputSearch>
         </section>
         <section className="home-bottom-section">
