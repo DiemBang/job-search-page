@@ -10,7 +10,8 @@ export const NotFound = () => {
         <DigiMediaImage
           afUnlazy
           afSrc={pageNotFoundImg}
-          afAlt="image of 404 error "
+          afAlt="image of 404 error"
+          className='page-not-found-img'
         ></DigiMediaImage>{' '}
         <a href="/">Gå tillbaka till startsidan</a>
       </DigiTypography>
