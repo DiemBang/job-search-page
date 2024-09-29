@@ -8,9 +8,9 @@ export const NotFound = () => {
         <h1>404 - Sidan kunde inte hittas</h1>
         <p>Tyvärr, sidan du letar efter finns inte.</p>
         <DigiMediaImage
-          afUnlazy={true}
+          afUnlazy
           afSrc={pageNotFoundImg}
-          afAlt="construction worker using a survey equipment"
+          afAlt="image of 404 error "
         ></DigiMediaImage>{' '}
         <a href="/">Gå tillbaka till startsidan</a>
       </DigiTypography>
