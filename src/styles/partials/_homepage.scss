@@ -6,6 +6,14 @@
   position: relative;
 }
 
+.home-main-block {
+    > .digi-layout-block {
+        div:first-of-type {
+            padding: 0;
+        }
+    }
+}
+
 .home-top-section,
 .home-bottom-section {
   height: 425px;
@@ -55,6 +63,10 @@
   
   > .digi-layout-container {
     display: flex;
+
+    > .digi-layout-container {
+        text-align: center;
+    }
   }
 
   .home-bottom-section img {
