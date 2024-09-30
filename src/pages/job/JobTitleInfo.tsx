@@ -25,16 +25,16 @@ const JobTitleInfo = () => {
 
   return (
     <FlexContainer $direction="column" $align="flex-start">
-      <FlexContainer>
-        <h1>{headline}</h1>
-        {logo_url && (
+      <FlexContainer $gap='16px' $direction='column' $align='flex-start'>
+      {logo_url && (
           <img
             src={logo_url}
             alt="employer logo"
-            width="24px"
-            height="24px"
+            width="92px"
+            height="64px"
           ></img>
         )}
+        <h1>{headline}</h1>
       </FlexContainer>
       <FlexContainer $direction="column" $align="flex-start">
         <h2>{label}</h2>
