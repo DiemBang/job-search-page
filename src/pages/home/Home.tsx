@@ -9,12 +9,19 @@ import {
   DigiMediaImage,
   DigiTypography,
 } from '@digi/arbetsformedlingen-react';
+import { SetStateAction, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
   const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState<string>('');
+
   const handleClickOnSearch = () => {
-    navigate('/search');
+    navigate(`/search?q=${searchQuery}`);
+  };
+
+  const handleInputChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+    setSearchQuery(e.target.value);
   };
 
   return (
@@ -43,7 +50,8 @@ export const Home = () => {
             afType={FormInputType.SEARCH}
             afButtonText="Sök"
             className="home-search-container"
-            onClick={handleClickOnSearch}
+            onAfOnClick={handleClickOnSearch}
+            onAfOnInput={handleInputChange}
           ></DigiFormInputSearch>
         </section>
         <section className="home-bottom-section">
@@ -62,3 +70,5 @@ export const Home = () => {
     </>
   );
 };
+
+

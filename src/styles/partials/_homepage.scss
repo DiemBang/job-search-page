@@ -1,0 +1,65 @@
+/* Home Page Styling */
+
+.home-main-block .digi-layout-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .home-top-section,
+  .home-bottom-section {
+    height: 425px;
+  }
+  
+  .home-top-section {
+    background-color: rgb(88, 118, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    span, h2, p {
+      font-weight: bold;
+      color: white;
+    }
+  }
+  
+  .home-middle-section {
+    position: absolute;
+    background-color: rgb(241, 144, 33);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 1em;
+    z-index: 1;
+    width: 500px;
+  
+    .digi-form-label__label-group {
+      display: none;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      background-color: transparent;
+    }
+  }
+  
+  .home-bottom-section {
+    background-color: rgb(255, 166, 0);
+    display: flex;
+  
+    .home-bottom-section img {
+      flex: 1;
+      z-index: 0;
+    }
+  }
+  
+  digi-layout-block.sc-digi-header,
+  digi-layout-block.sc-digi-footer {
+    width: 100vw;
+  }
+  
+  .digi-header__content {
+    justify-content: flex-end;
+  }
+  
