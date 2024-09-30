@@ -52,8 +52,10 @@
 }
 
 .home-bottom-section {
-  background-color: rgb(255, 166, 0);
-  display: flex;
+  
+  > .digi-layout-container {
+    display: flex;
+  }
 
   .home-bottom-section img {
     flex: 1;
