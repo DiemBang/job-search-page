@@ -55,45 +55,59 @@ use#Main-Symbol {
   position: relative;
 }
 
+.home-main-block > .digi-layout-block div:first-of-type {
+  padding: 0;
+}
+
 .home-top-section,
 .home-bottom-section {
   height: 425px;
 }
 
 .home-top-section {
-  background-color: rgb(88, 118, 255);
+  background-color: var(--digi--color--background--inverted-6);
+  display: flex;
+  align-items: center;
+}
+.home-top-section .digi-typography {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
 }
-.home-top-section span, .home-top-section h2, .home-top-section p {
-  font-weight: bold;
-  color: white;
+.home-top-section span,
+.home-top-section h2,
+.home-top-section p {
+  color: var(--digi--color--text--inverted);
+}
+.home-top-section h2 {
+  font-weight: var(--digi--typography--heading-2--font-weight--desktop-large);
 }
 
 .home-middle-section {
   position: absolute;
-  background-color: rgb(241, 144, 33);
+  background-color: var(--digi--color--background--neutral-2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 20px;
-  padding: 1em;
+  border-radius: var(--digi--border-radius--complementary-3);
+  padding: var(--digi--padding--medium);
   z-index: 1;
-  width: 500px;
+  width: var(--digi--container-width--small);
 }
 .home-middle-section .digi-form-label__label-group {
   display: none;
   text-align: center;
   justify-content: center;
-  color: white;
+  color: var(--digi--color--text--inverted);
   background-color: transparent;
 }
 
-.home-bottom-section {
-  background-color: rgb(255, 166, 0);
+.home-bottom-section > .digi-layout-container {
   display: flex;
+}
+.home-bottom-section > .digi-layout-container > .digi-layout-container {
+  text-align: center;
 }
 .home-bottom-section .home-bottom-section img {
   flex: 1;
@@ -115,4 +129,37 @@ digi-layout-block.sc-digi-footer {
 }
 .page-not-found-img img {
   width: 400px;
+}
+
+digi-footer div.digi-layout-block:first-of-type {
+  background-color: rgb(206, 202, 202);
+}
+digi-footer .digi-footer-card {
+  height: 12.5rem;
+  margin: 0 var(--digi--margin--small);
+}
+digi-footer .digi-footer__content-bottom {
+  display: none !important;
+}
+digi-footer .digi-footer-card__content > h3 {
+  font-weight: bold;
+  border-bottom: var(--digi--border-style--primary);
+  color: rgb(75, 75, 75);
+}
+digi-footer .digi-footer-card__content > address {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: var(--digi--typography--description--font-weight--desktop);
+}
+digi-footer .digi-footer-card__content a {
+  text-decoration: none !important;
+}
+digi-footer .footer-logo .digi-footer-card__content {
+  display: flex;
+  align-items: center;
+}
+digi-footer .footer-logo .digi-footer-card__content h2 {
+  margin: 0;
+  font-size: var(--digi--typography--heading-2--font-size--desktop-large) !important;
 }/*# sourceMappingURL=styles.css.map */
