@@ -30,7 +30,6 @@ export const AppFooter = () => {
                 Stockholm
                 <br />
                 <a href="#">kontakt@diggilo.se</a>
-                <br />
                 <a href="#">+46 123456789</a>
               </address>
             </DigiFooterCard>
