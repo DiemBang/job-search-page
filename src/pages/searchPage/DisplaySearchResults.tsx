@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { IAd, SearchResult } from './SearchResult';
+import { useEffect, useState } from "react";
+import { IAd, SearchResult } from "./SearchResult";
 import { getBase } from "../../services/serviceBase";
 
 export const DisplaySearchResults = () => {
@@ -11,11 +11,16 @@ export const DisplaySearchResults = () => {
   useEffect(() => {
     if (fetched) return;
     const getData = async () => {
-      const data = await getBase();
-      setAds(data.hits);
-      setTotalAds(data.total.value);
-      setTotalPositions(data.positions);
-      setFetched(true);
+      try {
+        const data = await getBase();
+        setAds(data.hits);
+        setTotalAds(data.total.value);
+        setTotalPositions(data.positions);
+        setFetched(true);
+      } catch (error) {
+        console.log("Error occured when fetching data", error);
+        return;
+      }
     };
 
     getData();
@@ -24,8 +29,7 @@ export const DisplaySearchResults = () => {
   return (
     <>
       <h3>
-        {totalAds} annonser med {totalPositions} jobb
-        hittades
+        {totalAds} annonser med {totalPositions} jobb hittades
       </h3>
       {ads.map((ad) => (
         <SearchResult key={ad.id} ad={ad} />
