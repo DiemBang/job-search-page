@@ -7,12 +7,15 @@ import {
   FormInputValidation,
   FormInputVariation,
   FormInputMode,
+  LogoColor,
+  LogoVariation,
 } from '@digi/arbetsformedlingen';
 import {
   DigiButton,
   DigiFooter,
   DigiFooterCard,
   DigiFormInput,
+  DigiLogo,
 } from '@digi/arbetsformedlingen-react';
 
 export const AppFooter = () => {
@@ -64,7 +67,11 @@ export const AppFooter = () => {
             </DigiFooterCard>
           </div>
           <div>
-            <DigiFooterCard afType={FooterCardVariation.ICON}>
+            <DigiFooterCard className="footer-logo" afType={FooterCardVariation.ICON}>
+              <DigiLogo
+                afVariation={LogoVariation.SMALL}
+                afColor={LogoColor.PRIMARY}
+              ></DigiLogo>
               <h2>Diggilo</h2>
             </DigiFooterCard>
           </div>
