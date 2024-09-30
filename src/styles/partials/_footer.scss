@@ -1,0 +1,14 @@
+digi-footer {
+    div.digi-layout-block:first-of-type {
+        background-color: rgb(206, 202, 202);
+    }
+
+    .digi-footer-card__content {
+
+        > h3 {
+            font-weight: bold;
+            border-bottom: var(--digi--border-style--primary);
+            color: rgb(75, 75, 75) ;
+        }
+    }
+}
