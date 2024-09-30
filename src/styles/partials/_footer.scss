@@ -3,12 +3,33 @@ digi-footer {
         background-color: rgb(206, 202, 202);
     }
 
+    .digi-footer-card {
+        height: 12.5rem;
+    }
+
+    .digi-footer__content-bottom {
+        display: none !important;
+    }
+
+
     .digi-footer-card__content {
 
+        
         > h3 {
             font-weight: bold;
             border-bottom: var(--digi--border-style--primary);
             color: rgb(75, 75, 75) ;
+        }
+
+        > address {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-weight: var(--digi--typography--description--font-weight--desktop);
+        }
+
+        a {
+            text-decoration: none !important;
         }
     }
 }
