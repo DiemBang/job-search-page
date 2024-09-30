@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IAd, SearchResult } from "./SearchResult";
 import { getBase } from "../../services/serviceBase";
+import { AdsContext } from "../../context/AdsContext";
 
 export const DisplaySearchResults = () => {
-  const [ads, setAds] = useState<IAd[]>([]);
+  const {ads, setAds} = useContext(AdsContext);
   const [fetched, setFetched] = useState(false);
   const [totalAds, setTotalAds] = useState(0);
   const [totalPositions, setTotalPositions] = useState(0);
+  //const [remoteWorkplace, setRemoteWorkplace] = useState(false);
 
   useEffect(() => {
     if (fetched) return;
