@@ -20,7 +20,7 @@
 }
 
 .home-top-section {
-  background-color: rgb(88, 118, 255);
+  background-color: var(--digi--color--background--inverted-6);
   display: flex;
   align-items: center;
 
@@ -34,27 +34,30 @@
   span,
   h2,
   p {
-    font-weight: bold;
-    color: white;
+    color: var(--digi--color--text--inverted)
+  }
+
+  h2 {
+    font-weight: var(--digi--typography--heading-2--font-weight--desktop-large);
   }
 }
 
 .home-middle-section {
   position: absolute;
-  background-color: rgb(241, 144, 33);
+  background-color: var(--digi--color--background--neutral-2);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 20px;
-  padding: 1em;
+  border-radius: var(--digi--border-radius--complementary-3);
+  padding: var(--digi--padding--medium);
   z-index: 1;
-  width: 500px;
+  width: var(--digi--container-width--small);
 
   .digi-form-label__label-group {
     display: none;
     text-align: center;
     justify-content: center;
-    color: white;
+    color: var(--digi--color--text--inverted);
     background-color: transparent;
   }
 }
