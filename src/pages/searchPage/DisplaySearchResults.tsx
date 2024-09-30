@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { IAd, SearchResult } from './SearchResult';
-import axios from "axios";
+import { getBase } from "../../services/serviceBase";
 
 export const DisplaySearchResults = () => {
   const [ads, setAds] = useState<IAd[]>([]);
@@ -11,12 +11,10 @@ export const DisplaySearchResults = () => {
   useEffect(() => {
     if (fetched) return;
     const getData = async () => {
-      let response = await axios.get(
-        "https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20"
-      );
-      setAds(response.data.hits);
-      setTotalAds(response.data.total.value);
-      setTotalPositions(response.data.positions);
+      const data = await getBase();
+      setAds(data.hits);
+      setTotalAds(data.total.value);
+      setTotalPositions(data.positions);
       setFetched(true);
     };
 
