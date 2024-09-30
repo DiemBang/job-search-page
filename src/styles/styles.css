@@ -32,6 +32,7 @@ body {
   white-space: pre-line;
 }
 
+/* Header Styling */
 .digi-logo__img {
   background-image: url("/src/assets/logo.png");
   background-size: 100%;
@@ -47,6 +48,7 @@ use#Main-Symbol {
   display: none;
 }
 
+/* Home Page Styling */
 .home-main-block .digi-layout-container {
   margin: 0;
   padding: 0;
@@ -105,4 +107,12 @@ digi-layout-block.sc-digi-footer {
 
 .digi-header__content {
   justify-content: flex-end;
+}
+
+/* 404 Error Page Styling */
+.page-not-found-img {
+  margin-top: 5em;
+}
+.page-not-found-img img {
+  width: 400px;
 }/*# sourceMappingURL=styles.css.map */

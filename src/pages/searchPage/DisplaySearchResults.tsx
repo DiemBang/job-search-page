@@ -1,23 +1,35 @@
-import { useEffect, useState } from 'react';
-import { IAd, SearchResult } from './SearchResult';
-import { searchData } from '../../data/search-data';
+import { useEffect, useState } from "react";
+import { IAd, SearchResult } from "./SearchResult";
+import { getBase } from "../../services/serviceBase";
 
 export const DisplaySearchResults = () => {
   const [ads, setAds] = useState<IAd[]>([]);
+  const [fetched, setFetched] = useState(false);
+  const [totalAds, setTotalAds] = useState(0);
+  const [totalPositions, setTotalPositions] = useState(0);
 
   useEffect(() => {
+    if (fetched) return;
     const getData = async () => {
-      const data: IAd[] = searchData.hits;
-      setAds(data);
+      try {
+        const data = await getBase();
+        setAds(data.hits);
+        setTotalAds(data.total.value);
+        setTotalPositions(data.positions);
+        setFetched(true);
+      } catch (error) {
+        console.log("Error occured when fetching data", error);
+        return;
+      }
     };
+
     getData();
   });
 
   return (
     <>
       <h3>
-        {searchData.total.value} annonser med {searchData.positions} jobb
-        hittades
+        {totalAds} annonser med {totalPositions} jobb hittades
       </h3>
       {ads.map((ad) => (
         <SearchResult key={ad.id} ad={ad} />
