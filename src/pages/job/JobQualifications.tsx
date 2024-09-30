@@ -35,6 +35,16 @@ const JobQualifications = ({
   mustHave,
   niceToHave,
 }: IJobQualificationsProps) => {
+  const isAllEmpty = (obj: IHave) => {
+    return Object.values(obj).every((arr) => arr.length === 0);
+  };
+
+  const bothAreEmpty = isAllEmpty(mustHave) && isAllEmpty(niceToHave);
+
+  if (bothAreEmpty) {
+    return null;
+  }
+
   return (
     <FlexContainer $width="100%">
       <DigiInfoCard
