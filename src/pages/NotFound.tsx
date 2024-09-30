@@ -1,5 +1,6 @@
-import { DigiMediaImage, DigiTypography } from '@digi/arbetsformedlingen-react';
-import pageNotFoundImg from "../assets/404-error.png";
+import { DigiLinkInternal, DigiMediaImage, DigiTypography } from '@digi/arbetsformedlingen-react';
+import pageNotFoundImg from '../assets/404-error.png';
+import { LinkVariation } from '@digi/arbetsformedlingen';
 
 export const NotFound = () => {
   return (
@@ -12,8 +13,10 @@ export const NotFound = () => {
           afSrc={pageNotFoundImg}
           afAlt="image of 404 error"
           className='page-not-found-img'
-        ></DigiMediaImage>{' '}
-        <a href="/">Gå tillbaka till startsidan</a>
+        ></DigiMediaImage>
+        <DigiLinkInternal afHref="/" afVariation={LinkVariation.SMALL}>
+          Gå tillbaka till startsidan
+        </DigiLinkInternal>
       </DigiTypography>
     </>
   );
