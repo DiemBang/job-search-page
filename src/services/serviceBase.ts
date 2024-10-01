@@ -12,7 +12,7 @@ interface IAdResponseData {
   positions: number;
 }
 
-export const getBase = async (): Promise<IAdResponseData> => {
-  const response = await axios.get<IAdResponseData>(BASE_URL);
+export const getBase = async <T>(url: string): Promise<T> => {
+  const response = await axios.get<T>(url);
   return response.data;
 };
