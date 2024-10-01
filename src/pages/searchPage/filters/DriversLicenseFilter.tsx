@@ -2,7 +2,7 @@ import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
 import { FilterContext } from "../../../context/FilterContext";
 import { useContext } from "react";
 
-export const DriverLicenseFilter = () => {
+export const DriversLicenseFilter = () => {
   const { drivingLicense, setDrivingLicense } = useContext(FilterContext);
 
   const changeDrivingLicenseReq = (value:boolean) => {

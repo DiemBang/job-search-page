@@ -3,7 +3,7 @@ import { OccupationFilter } from ".//OccupationFilter";
 import { WorkTimeExtentFilter } from "./WorktimeExtentFilter";
 import { EmploymentTypeFilter } from "./EmploymentTypeFilter";
 import { RemoteWorkFilter } from "./RemoteWorkFilter";
-import { DriverLicenseFilter } from "./DriverLicenseFilter";
+import { DriversLicenseFilter } from "./DriversLicenseFilter";
 import { EducationFilter } from "./EducationFilter";
 import { LanguageFilter } from "./LanguageFilter";
 import { PublicationFilter } from "./PublicationFilter";
@@ -19,7 +19,7 @@ export const Filters = () => {
         <WorkTimeExtentFilter />
         <EmploymentTypeFilter />
         <RemoteWorkFilter />
-        <DriverLicenseFilter />
+        <DriversLicenseFilter />
         <EducationFilter />
         <LanguageFilter />
         <PublicationFilter />
