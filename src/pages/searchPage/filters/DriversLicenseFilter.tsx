@@ -7,23 +7,22 @@ export const DriversLicenseFilter = () => {
   const { drivingLicense, setDrivingLicense } = useContext(FilterContext);
   const { createFilterParams, getData } = useContext(AdsContext);
 
-  const changeDrivingLicenseReq = (value:boolean) => {
+  const changeDrivingLicenseReq = (value: boolean) => {
     setDrivingLicense(value);
-  }
+  };
 
   // Create filter params after each change of driving license
   useEffect(() => {
     let filterParams = createFilterParams();
     getData(filterParams);
-  }, [drivingLicense])
-  
+  }, [drivingLicense]);
+
   return (
     <>
       <DigiFormFilter
         afFilterButtonText="Kvalifikationer"
         afSubmitButtonText="Filtrera"
         afListItems={[{ id: "krav_pa_korkort", label: "Krav på körkort" }]}
-        // afCheckItems={["krav_pa_korkort"]} // optional, override internal check state of component with filter ids
         onAfChangeFilter={(e) => changeDrivingLicenseReq(e.detail.isChecked)}
         onAfResetFilter={() => console.log("reset filter")}
         onAfSubmitFilter={(e) =>
