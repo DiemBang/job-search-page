@@ -16,9 +16,9 @@ export const SearchPage = () => {
   const [totalAds, setTotalAds] = useState(0);
   const [totalPositions, setTotalPositions] = useState(0);
 
-  const getData = async () => {
+  const getData = async (params:URLSearchParams | null) => {
     try {
-      const data = await getBase();
+      const data = await getBase(params);
       setAds(data.hits);
       setTotalAds(data.total.value);
       setTotalPositions(data.positions);
@@ -32,9 +32,9 @@ export const SearchPage = () => {
   const createFilterParams = () => {
     const params = new URLSearchParams();
 
-    if (drivingLicense) params.append("drivingLicense", "true");
+    if (drivingLicense) params.append("driving-license-required", "true");
 
-    return params.toString();
+    return params;
   } 
 
   return (

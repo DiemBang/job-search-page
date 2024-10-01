@@ -4,15 +4,15 @@ import { IAd, SearchResult } from "./SearchResult";
 import { AdsContext } from "../../context/AdsContext";
 
 export const DisplaySearchResults = () => {
-  const {ads, setAds, createFilterParams, getData, totalAds, totalPositions, fetched} = useContext(AdsContext);
+  const {ads, getData, totalAds, totalPositions, fetched} = useContext(AdsContext);
  
   
   //const [remoteWorkplace, setRemoteWorkplace] = useState(false);
 
   useEffect(() => {
     if (fetched) return;
-    createFilterParams();
-    getData();
+
+    getData(null);
   });
 
   return (

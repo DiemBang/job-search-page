@@ -5,19 +5,16 @@ import { AdsContext } from "../../../context/AdsContext";
 
 export const DriversLicenseFilter = () => {
   const { drivingLicense, setDrivingLicense } = useContext(FilterContext);
-  const { createFilterParams } = useContext(AdsContext);
+  const { createFilterParams, getData } = useContext(AdsContext);
 
   const changeDrivingLicenseReq = (value:boolean) => {
     setDrivingLicense(value);
-    
-    
-    // Make API request with params
-    // Show results (setAds)
   }
 
+  // Create filter params after each change of driving license
   useEffect(() => {
     let filterParams = createFilterParams();
-    console.log(filterParams);
+    getData(filterParams);
   }, [drivingLicense])
   
   return (
