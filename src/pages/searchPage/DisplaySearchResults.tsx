@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { IAd, SearchResult } from "./SearchResult";
-import { getBase } from "../../services/serviceBase";
+import { useLoaderData } from "react-router-dom";
+import { IOccupations } from "../../types/occupation-types";
 
 export const DisplaySearchResults = () => {
   const [ads, setAds] = useState<IAd[]>([]);
@@ -8,11 +9,11 @@ export const DisplaySearchResults = () => {
   const [totalAds, setTotalAds] = useState(0);
   const [totalPositions, setTotalPositions] = useState(0);
 
+  const data = useLoaderData() as IOccupations;
   useEffect(() => {
     if (fetched) return;
     const getData = async () => {
       try {
-        const data = await getBase();
         setAds(data.hits);
         setTotalAds(data.total.value);
         setTotalPositions(data.positions);
