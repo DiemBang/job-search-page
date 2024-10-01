@@ -1,0 +1,19 @@
+.occupation-filter {
+  position: relative;
+  .filter-dropdown {
+    border-radius: 12px;
+    background-color: white;
+  }
+}
+.subcategories-container {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  .subcategories-panel {
+    max-height: 850px;
+    overflow-y: auto;
+  }
+}
+
+.active-category {
+  background-color: green;
+  border: 5px solid hotpink;
+}
