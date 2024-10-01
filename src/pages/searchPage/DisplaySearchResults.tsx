@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
-import { IAd, SearchResult } from "./SearchResult";
-import { getBase } from "../../services/serviceBase";
+import { useEffect, useState } from 'react';
+import { IAd, SearchResult } from './SearchResult';
+import { getBase } from '../../services/serviceBase';
+import useAdsContext from '../../hooks/useAdsContext';
 
 export const DisplaySearchResults = () => {
-  const [ads, setAds] = useState<IAd[]>([]);
-  const [fetched, setFetched] = useState(false);
-  const [totalAds, setTotalAds] = useState(0);
-  const [totalPositions, setTotalPositions] = useState(0);
+  const { occupations } = useAdsContext();
 
-  useEffect(() => {
+  const [ads, setAds] = useState<IAd[]>(occupations.hits);
+  const [totalAds, setTotalAds] = useState(occupations.total.value);
+  const [totalPositions, setTotalPositions] = useState(occupations.positions);
+
+  /*   useEffect(() => {
     if (fetched) return;
     const getData = async () => {
       try {
@@ -25,7 +27,7 @@ export const DisplaySearchResults = () => {
 
     getData();
   });
-
+ */
   return (
     <>
       <h3>
