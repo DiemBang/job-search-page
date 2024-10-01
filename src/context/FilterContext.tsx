@@ -1,9 +1,9 @@
 import { createContext } from "react";
 
-interface ILanguages {
-    languages: string | [];
-    education: string | [];
-}
+// interface ILanguages {
+//     languages: string | [];
+//     education: string | [];
+// }
 
 interface IFilterContext {
     // employment_type: string;
