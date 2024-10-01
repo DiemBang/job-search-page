@@ -11,6 +11,7 @@ import { getBase } from "../../services/serviceBase";
 
 export const SearchPage = () => {
   const [drivingLicense, setDrivingLicense] = useState<boolean>(false);
+  const [remoteWorkplace, setRemoteWorkplace] = useState<boolean>(false);
   const [ads, setAds] = useState<IAd[]>([]);
   const [fetched, setFetched] = useState(false);
   const [totalAds, setTotalAds] = useState(0);
@@ -33,13 +34,14 @@ export const SearchPage = () => {
     const params = new URLSearchParams();
 
     if (drivingLicense) params.append("driving-license-required", "true");
+    if (remoteWorkplace) params.append("remote", "true");
 
     return params;
   } 
 
   return (
     <AdsContext.Provider value={{ads, setAds, createFilterParams, getData, totalAds, totalPositions, fetched}}>
-    <FilterContext.Provider value={{drivingLicense, setDrivingLicense}}>
+    <FilterContext.Provider value={{drivingLicense, setDrivingLicense, remoteWorkplace, setRemoteWorkplace}}>
     <SearchPageWrapper>
       <h2>Platsbanken</h2>
       <SearchField />

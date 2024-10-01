@@ -12,7 +12,8 @@ interface IFilterContext {
     drivingLicense: boolean;
     setDrivingLicense: (value:boolean) => void;
     // must_have: ILanguages;
-    // remote: boolean;
+    remoteWorkplace: boolean;
+    setRemoteWorkplace: (value:boolean) => void;
 }
 
 export const FilterContext = createContext<IFilterContext>({
@@ -25,5 +26,6 @@ export const FilterContext = createContext<IFilterContext>({
     //     languages: "",
     //     education: "",
     // },
-    // remote: false,
+    remoteWorkplace: false,
+    setRemoteWorkplace: () => {}
 });
