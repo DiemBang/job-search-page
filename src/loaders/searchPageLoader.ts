@@ -1,7 +1,7 @@
 import { getBase } from "../services/serviceBase";
 import { IOccupations } from "../types/occupation-types";
 
-const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=10';
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
 
 
 export const searchPageLoader = async ({request}: {request: Request}): Promise<IOccupations | null> => {
