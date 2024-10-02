@@ -3,13 +3,13 @@ import { OccupationFilter } from './occupation-filter/OccupationFilter';
 import { WorkTimeExtentFilter } from './WorktimeExtentFilter';
 import { EmploymentTypeFilter } from './EmploymentTypeFilter';
 import { RemoteWorkFilter } from './RemoteWorkFilter';
-import { DriverLicenseFilter } from './DriverLicenseFilter';
 import { EducationFilter } from './EducationFilter';
 import { LanguageFilter } from './LanguageFilter';
 import { PublicationFilter } from './PublicationFilter';
 import { FilterWrapper } from '../../../components/styled/Wrappers';
 import { OverlayContainer } from '../../../components/styled/shared/OverlayContainer';
 import useModalsContext from '../../../hooks/useModalsContext';
+import { DriversLicenseFilter } from './DriversLicenseFilter';
 
 export const Filters = () => {
   const { isDropDownsOpen, closeAllDropDowns } = useModalsContext();
@@ -26,7 +26,7 @@ export const Filters = () => {
         <WorkTimeExtentFilter />
         <EmploymentTypeFilter />
         <RemoteWorkFilter />
-        <DriverLicenseFilter />
+        <DriversLicenseFilter />
         <EducationFilter />
         <LanguageFilter />
         <PublicationFilter />

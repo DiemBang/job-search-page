@@ -17,10 +17,8 @@ export const SearchPage = () => {
           <h2>Platsbanken</h2>
           <SearchField />
           <Filters />
-          <section>
-            <DisplaySearchResults />
-          </section>
-          <section>{/* Pagination */}</section>
+          <DisplaySearchResults />
+          {/* Pagination */}
         </SearchPageWrapper>
       </AdvertsContextProvider>
     </ModalsContextProvider>

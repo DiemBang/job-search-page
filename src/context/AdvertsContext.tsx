@@ -11,6 +11,8 @@ import {
   handleClickOnCategory,
   toggleSubcategoryActiveState,
 } from '../utils/adsUtils';
+import { getBaseCopy } from '../services/serviceBase';
+import { IAd } from '../pages/searchPage/SearchResult';
 
 const AdvertsContext = createContext<IAdvertsContextValues | null>(null);
 
@@ -27,6 +29,17 @@ interface IAdvertsContextValues {
   fields: ICategory[];
   occupationsQuerys: string[];
   municipalitiesQuerys: string[];
+  ads: IAd[];
+  drivingLicense: boolean;
+  remoteWorkplace: boolean;
+  totalAds: number;
+  totalPositions: number;
+  fetched: boolean;
+  setAds: (value: IAd[]) => void;
+  createFilterParams: () => URLSearchParams;
+  getData: (params: URLSearchParams | null) => void;
+  setDrivingLicense: (value: boolean) => void;
+  setRemoteWorkplace: (value: boolean) => void;
   handleClickOnRegion: (taxonomyId: string) => void;
   handleClickOnMunicipality: (taxonomyId: string) => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
@@ -56,6 +69,12 @@ export const AdvertsContextProvider = ({
     []
   );
   const [occupationsQuerys, setoccupationsQuerys] = useState<string[]>([]);
+  const [drivingLicense, setDrivingLicense] = useState<boolean>(false);
+  const [remoteWorkplace, setRemoteWorkplace] = useState<boolean>(false);
+  const [fetched, setFetched] = useState(false);
+  const [ads, setAds] = useState<IAd[]>(occupations.hits);
+  const [totalAds, setTotalAds] = useState(occupations.total.value);
+  const [totalPositions, setTotalPositions] = useState(occupations.positions);
 
   const handleClickOnRegion = (taxonomyId: string) => {
     handleClickOnCategory(
@@ -106,6 +125,28 @@ export const AdvertsContextProvider = ({
     );
   };
 
+  const getData = async (params: URLSearchParams | null) => {
+    try {
+      const data = await getBaseCopy(params);
+      setAds(data.hits);
+      setTotalAds(data.total.value);
+      setTotalPositions(data.positions);
+      setFetched(true);
+    } catch (error) {
+      console.log('Error occured when fetching data', error);
+      return;
+    }
+  };
+
+  const createFilterParams = () => {
+    const params = new URLSearchParams();
+
+    if (drivingLicense) params.append('driving-license-required', 'true');
+    if (remoteWorkplace) params.append('remote', 'true');
+
+    return params;
+  };
+
   const resetAllFieldsAndGroups = () => {
     resetAllCategoriesAndSubCategories(fields, setFields, setoccupationsQuerys);
   };
@@ -150,6 +191,14 @@ export const AdvertsContextProvider = ({
     fields,
     occupationsQuerys,
     municipalitiesQuerys,
+    totalAds,
+    totalPositions,
+    fetched,
+    ads,
+    drivingLicense,
+    remoteWorkplace,
+    setRemoteWorkplace,
+    setDrivingLicense,
     handleClickOnMunicipality,
     handleClickOnRegion,
     handleClickOnOccupationField,
@@ -158,6 +207,9 @@ export const AdvertsContextProvider = ({
     resetAllFieldsAndGroups,
     resetMunicipalities,
     resetOccupationGroups,
+    setAds,
+    createFilterParams,
+    getData,
   };
 
   return (
