@@ -1,6 +1,7 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
-import { DigiButton } from '@digi/arbetsformedlingen-react';
+import { DigiButton, DigiFormCheckbox } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../../../hooks/useAdvertsContext';
+import { FormCheckboxVariation } from '@digi/arbetsformedlingen';
 
 const LocationMunicipalities = () => {
   const {
@@ -18,13 +19,15 @@ const LocationMunicipalities = () => {
       $justify="flex-start"
       $align="flex-start"
       className="subcategories-container"
-      $padding="0 0 0 32px"
+      $padding="0 24px"
     >
       <FlexContainer
         $justify="space-between"
         $width="100%"
         $align="flex-start"
         $maxHeight="40px"
+        $padding="0 0 10px 0"
+        className="filter-title"
       >
         <h4>Yrken</h4>
         <DigiButton
@@ -46,25 +49,26 @@ const LocationMunicipalities = () => {
         $justify="flex-start"
         className="subcategories-panel"
       >
+        <DigiFormCheckbox
+          afLabel="Alla kommuner"
+          afVariation={FormCheckboxVariation.PRIMARY}
+          onAfOnChange={() => console.log('click')}
+        ></DigiFormCheckbox>
         {visibleMunicipalities?.visibleSubcategories.map((municipiality) => {
           const isActive = municipalitiesQuerys.includes(municipiality.id);
-
           return (
             <FlexContainer
               $align="flex-start"
-              $gap="16px"
+              $gap="10px"
               key={municipiality.id}
             >
-              <input
-                type="checkbox"
-                checked={isActive}
-                onChange={() => handleClickOnMunicipality(municipiality.id)}
-              ></input>
-              {/*     <DigiFormCheckbox
+              <DigiFormCheckbox
                 afLabel=""
-                onClick={(e) => handleClick(municipiality.id, e)}
-                afVariation={FormCheckboxVariation.SECONDARY}
-              /> */}
+                afVariation={FormCheckboxVariation.PRIMARY}
+                afChecked={isActive}
+                onAfOnChange={() => handleClickOnMunicipality(municipiality.id)}
+              ></DigiFormCheckbox>
+
               {municipiality.preferred_label}
             </FlexContainer>
           );

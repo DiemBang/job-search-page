@@ -1,6 +1,7 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
-import { DigiButton } from '@digi/arbetsformedlingen-react';
+import { DigiButton, DigiFormCheckbox } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../../../hooks/useAdvertsContext';
+import { FormCheckboxVariation } from '@digi/arbetsformedlingen';
 
 const OccupationGroups = () => {
   const {
@@ -48,16 +49,22 @@ const OccupationGroups = () => {
         $justify="flex-start"
         className="subcategories-panel"
       >
+        <DigiFormCheckbox
+          afLabel="Alla yrken"
+          afVariation={FormCheckboxVariation.PRIMARY}
+          onAfOnChange={() => console.log('click')}
+        ></DigiFormCheckbox>
         {visibleGroups?.visibleSubcategories.map((group) => {
           const isActive = occupationsQuerys.includes(group.id);
 
           return (
-            <FlexContainer $align="flex-start" $gap="16px" key={group.id}>
-              <input
-                type="checkbox"
-                checked={isActive}
-                onChange={() => handleClickOnOccupationGroup(group.id)}
-              ></input>
+            <FlexContainer $align="flex-start" $gap="10px" key={group.id}>
+              <DigiFormCheckbox
+                afLabel=""
+                afVariation={FormCheckboxVariation.PRIMARY}
+                afChecked={isActive}
+                onAfOnChange={() => handleClickOnOccupationGroup(group.id)}
+              ></DigiFormCheckbox>
               {group.preferred_label}
             </FlexContainer>
           );
