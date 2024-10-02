@@ -1,6 +1,6 @@
-import { DigiFormFilter } from '@digi/arbetsformedlingen-react';
-import { useEffect } from 'react';
-import useAdvertsContext from '../../../hooks/useAdvertsContext';
+import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
+import { useEffect } from "react";
+import useAdvertsContext from "../../../hooks/useAdvertsContext";
 
 export const RemoteWorkFilter = () => {
   const { remoteWorkplace, setRemoteWorkplace, createFilterParams, getData } =
@@ -21,17 +21,14 @@ export const RemoteWorkFilter = () => {
       <DigiFormFilter
         afFilterButtonText="Arbetsplats"
         afSubmitButtonText="Filtrera"
-        afListItems={[
-          // { id: "alla", label: "Alla" },
-          { id: 'endast_distans', label: 'Endast distansarbete' },
-        ]}
-        onAfChangeFilter={(e) => changeToRemoteWorkplace(e.detail.isChecked)}
-        onAfResetFilter={() => console.log('reset filter')}
+        afListItems={[{ id: "endast_distans", label: "Endast distansarbete" }]}
+        onAfChangeFilter={(e) => (e.detail.isChecked)}
+        onAfResetFilter={() => console.log("reset filter")}
         onAfSubmitFilter={(e) =>
-          console.log('submit filter', e.detail.listItems, e.detail.checked)
+          changeToRemoteWorkplace(e.detail.checked.includes("endast_distans"))
         }
         onAfCloseFilter={(e) =>
-          console.log('submit filter', e.detail.listItems, e.detail.checked)
+          console.log("submit filter", e.detail.listItems, e.detail.checked)
         }
       ></DigiFormFilter>
     </>
