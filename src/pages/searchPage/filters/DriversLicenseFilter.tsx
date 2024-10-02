@@ -1,32 +1,29 @@
 import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
+import { FilterContext } from "../../../context/FilterContext";
 import { useContext, useEffect } from "react";
 import { AdsContext } from "../../../context/AdsContext";
-import { FilterContext } from "../../../context/FilterContext";
 
-export const RemoteWorkFilter = () => {
-  const { remoteWorkplace, setRemoteWorkplace } = useContext(FilterContext);
+export const DriversLicenseFilter = () => {
+  const { drivingLicense, setDrivingLicense } = useContext(FilterContext);
   const { createFilterParams, getData } = useContext(AdsContext);
 
-  const changeToRemoteWorkplace = (isChecked: boolean) => {
-    setRemoteWorkplace(isChecked);
+  const changeDrivingLicenseReq = (value: boolean) => {
+    setDrivingLicense(value);
   };
 
-  // Create filter params after each change of remote workplace
+  // Create filter params after each change of driving license
   useEffect(() => {
     let filterParams = createFilterParams();
     getData(filterParams);
-  }, [remoteWorkplace]);
+  }, [drivingLicense]);
 
   return (
     <>
       <DigiFormFilter
-        afFilterButtonText="Arbetsplats"
+        afFilterButtonText="Kvalifikationer"
         afSubmitButtonText="Filtrera"
-        afListItems={[
-          // { id: "alla", label: "Alla" },
-          { id: "endast_distans", label: "Endast distansarbete" },
-        ]}
-        onAfChangeFilter={(e) => changeToRemoteWorkplace(e.detail.isChecked)}
+        afListItems={[{ id: "krav_pa_korkort", label: "Krav på körkort" }]}
+        onAfChangeFilter={(e) => changeDrivingLicenseReq(e.detail.isChecked)}
         onAfResetFilter={() => console.log("reset filter")}
         onAfSubmitFilter={(e) =>
           console.log("submit filter", e.detail.listItems, e.detail.checked)

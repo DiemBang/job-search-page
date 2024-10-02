@@ -1,29 +1,15 @@
-import { useEffect, useState } from "react";
-import { IAd, SearchResult } from "./SearchResult";
-import { getBase } from "../../services/serviceBase";
+import { useContext, useEffect } from "react";
+import { SearchResult } from "./SearchResult";
+
+import { AdsContext } from "../../context/AdsContext";
 
 export const DisplaySearchResults = () => {
-  const [ads, setAds] = useState<IAd[]>([]);
-  const [fetched, setFetched] = useState(false);
-  const [totalAds, setTotalAds] = useState(0);
-  const [totalPositions, setTotalPositions] = useState(0);
-
+  const {ads, getData, totalAds, totalPositions, fetched} = useContext(AdsContext);
+ 
   useEffect(() => {
     if (fetched) return;
-    const getData = async () => {
-      try {
-        const data = await getBase();
-        setAds(data.hits);
-        setTotalAds(data.total.value);
-        setTotalPositions(data.positions);
-        setFetched(true);
-      } catch (error) {
-        console.log("Error occured when fetching data", error);
-        return;
-      }
-    };
 
-    getData();
+    getData(null);
   });
 
   return (
