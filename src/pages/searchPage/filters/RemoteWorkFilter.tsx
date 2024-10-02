@@ -1,20 +1,12 @@
 import { DigiFormFilter } from '@digi/arbetsformedlingen-react';
-import { useEffect } from 'react';
 import useAdvertsContext from '../../../hooks/useAdvertsContext';
 
 export const RemoteWorkFilter = () => {
-  const { remoteWorkplace, setRemoteWorkplace, createFilterParams, getData } =
-    useAdvertsContext();
+  const { setRemoteWorkplace } = useAdvertsContext();
 
   const changeToRemoteWorkplace = (isChecked: boolean) => {
     setRemoteWorkplace(isChecked);
   };
-
-  // Create filter params after each change of remote workplace
-  useEffect(() => {
-    const filterParams = createFilterParams();
-    getData(filterParams);
-  }, [remoteWorkplace]);
 
   return (
     <>

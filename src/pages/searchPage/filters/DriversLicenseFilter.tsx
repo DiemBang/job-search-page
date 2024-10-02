@@ -1,20 +1,12 @@
 import { DigiFormFilter } from '@digi/arbetsformedlingen-react';
-import { useEffect } from 'react';
 import useAdvertsContext from '../../../hooks/useAdvertsContext';
 
 export const DriversLicenseFilter = () => {
-  const { createFilterParams, getData, drivingLicense, setDrivingLicense } =
-    useAdvertsContext();
+  const { setDrivingLicense } = useAdvertsContext();
 
   const changeDrivingLicenseReq = (value: boolean) => {
     setDrivingLicense(value);
   };
-
-  // Create filter params after each change of driving license
-  useEffect(() => {
-    const filterParams = createFilterParams();
-    getData(filterParams);
-  }, [drivingLicense]);
 
   return (
     <>
