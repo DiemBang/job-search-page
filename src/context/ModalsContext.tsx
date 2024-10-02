@@ -34,7 +34,7 @@ export const ModalsContextProvider = ({
   const locationRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (isDropDownsOpen.occupationOpen || isDropDownsOpen.occupationOpen) {
+    if (isDropDownsOpen.occupationOpen || isDropDownsOpen.locationOpen) {
       setIsDropDownsOpen((prev) => ({ ...prev, overlay: true }));
     } else {
       setIsDropDownsOpen((prev) => ({ ...prev, overlay: false }));
