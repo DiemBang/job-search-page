@@ -22,7 +22,7 @@ export const DriversLicenseFilter = () => {
           changeDrivingLicenseReq(e.detail.checked.includes("krav_pa_korkort"))
         }
         onAfCloseFilter={(e) =>
-          console.log("submit filter", e.detail.listItems, e.detail.checked)
+          changeDrivingLicenseReq(e.detail.checked.includes("krav_pa_korkort"))
         }
       ></DigiFormFilter>
     </>

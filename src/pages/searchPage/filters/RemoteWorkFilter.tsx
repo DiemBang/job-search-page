@@ -22,7 +22,7 @@ export const RemoteWorkFilter = () => {
           changeToRemoteWorkplace(e.detail.checked.includes("endast_distans"))
         }
         onAfCloseFilter={(e) =>
-          console.log("submit filter", e.detail.listItems, e.detail.checked)
+          changeToRemoteWorkplace(e.detail.checked.includes("endast_distans"))
         }
       ></DigiFormFilter>
     </>
