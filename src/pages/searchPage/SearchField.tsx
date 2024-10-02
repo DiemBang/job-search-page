@@ -3,17 +3,17 @@ import {
   FormInputType,
 } from "@digi/arbetsformedlingen";
 import { DigiFormInputSearch } from "@digi/arbetsformedlingen-react";
-import { useState } from "react";
 import useAdvertsContext from '../../hooks/useAdvertsContext';
 
 
 export const SearchField = () => {
-  const [searchQuery, setSearchQuery] = useState(""); 
-  const { getData } = useAdvertsContext();
+  
+  const { getData, createFilterParams, searchQuery, setSearchQuery } = useAdvertsContext();
 
   const handleSearch = () => {
     
-    const params = new URLSearchParams();    
+    // const params = new URLSearchParams();  
+    const params = createFilterParams();  
 
     if(searchQuery) {
       params.append("q", searchQuery);

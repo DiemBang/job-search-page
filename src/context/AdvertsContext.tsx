@@ -1,8 +1,8 @@
-import { createContext, ReactNode, useState, useEffect } from 'react';
-import { IOccupations, ICategory } from '../types/occupation-types';
-import { IVisibleSubcategories } from '../types/types';
-import locationsData from '../data/regions-municipalities.json';
-import occupationsData from '../data/occupation-groups.json';
+import { createContext, ReactNode, useState, useEffect } from "react";
+import { IOccupations, ICategory } from "../types/occupation-types";
+import { IVisibleSubcategories } from "../types/types";
+import locationsData from "../data/regions-municipalities.json";
+import occupationsData from "../data/occupation-groups.json";
 import {
   addSelectedAndActiveKeys,
   updateActiveState,
@@ -10,9 +10,9 @@ import {
   resetSubCategoriesOfCategory,
   handleClickOnCategory,
   toggleSubcategoryActiveState,
-} from '../utils/adsUtils';
-import { getBaseCopy } from '../services/serviceBase';
-import { IAd } from '../pages/searchPage/SearchResult';
+} from "../utils/adsUtils";
+import { getBaseCopy } from "../services/serviceBase";
+import { IAd } from "../pages/searchPage/SearchResult";
 
 const AdvertsContext = createContext<IAdvertsContextValues | null>(null);
 
@@ -35,11 +35,13 @@ interface IAdvertsContextValues {
   totalAds: number;
   totalPositions: number;
   fetched: boolean;
+  searchQuery: string;
   setAds: (value: IAd[]) => void;
   createFilterParams: () => URLSearchParams;
   getData: (params: URLSearchParams | null) => void;
   setDrivingLicense: (value: boolean) => void;
   setRemoteWorkplace: (value: boolean) => void;
+  setSearchQuery: (value: string) => void;
   handleClickOnRegion: (taxonomyId: string) => void;
   handleClickOnMunicipality: (taxonomyId: string) => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
@@ -71,6 +73,7 @@ export const AdvertsContextProvider = ({
   const [occupationsQuerys, setoccupationsQuerys] = useState<string[]>([]);
   const [drivingLicense, setDrivingLicense] = useState<boolean>(false);
   const [remoteWorkplace, setRemoteWorkplace] = useState<boolean>(false);
+  const [searchQuery, setSearchQuery] = useState(""); 
   const [fetched, setFetched] = useState(false);
   const [ads, setAds] = useState<IAd[]>(occupations.hits);
   const [totalAds, setTotalAds] = useState(occupations.total.value);
@@ -86,7 +89,7 @@ export const AdvertsContextProvider = ({
   };
 
   const handleClickOnOccupationField = (taxonomyId: string) => {
-    console.log('this is the taxonomy id', taxonomyId);
+    console.log("this is the taxonomy id", taxonomyId);
     handleClickOnCategory(taxonomyId, fields, setFields, setVisibleGroups);
   };
 
@@ -133,7 +136,7 @@ export const AdvertsContextProvider = ({
       setTotalPositions(data.positions);
       setFetched(true);
     } catch (error) {
-      console.log('Error occured when fetching data', error);
+      console.log("Error occured when fetching data", error);
       return;
     }
   };
@@ -141,11 +144,19 @@ export const AdvertsContextProvider = ({
   const createFilterParams = () => {
     const params = new URLSearchParams();
 
-    if (drivingLicense) params.append('driving-license-required', 'true');
-    if (remoteWorkplace) params.append('remote', 'true');
+    if (drivingLicense) params.append("driving-license-required", "true");
+    if (remoteWorkplace) params.append("remote", "true");
 
     return params;
   };
+
+  useEffect(() => {
+    const params = createFilterParams();
+    if (searchQuery) {
+      params.append("q", searchQuery);
+    }
+    getData(params);
+  }, [drivingLicense, remoteWorkplace]);
 
   const resetAllFieldsAndGroups = () => {
     resetAllCategoriesAndSubCategories(fields, setFields, setoccupationsQuerys);
@@ -170,16 +181,16 @@ export const AdvertsContextProvider = ({
   };
 
   useEffect(() => {
-    console.log('active occupations: ', occupationsQuerys);
+    console.log("active occupations: ", occupationsQuerys);
     setFields(updateActiveState(fields));
   }, [occupationsQuerys]);
 
   useEffect(() => {
-    console.log('updated fields', fields);
+    console.log("updated fields", fields);
   }, [fields]);
 
   useEffect(() => {
-    console.log('active municipalites', municipalitiesQuerys);
+    console.log("active municipalites", municipalitiesQuerys);
     setRegions(updateActiveState(regions));
   }, [municipalitiesQuerys]);
 
@@ -197,8 +208,10 @@ export const AdvertsContextProvider = ({
     ads,
     drivingLicense,
     remoteWorkplace,
+    searchQuery,
     setRemoteWorkplace,
     setDrivingLicense,
+    setSearchQuery,
     handleClickOnMunicipality,
     handleClickOnRegion,
     handleClickOnOccupationField,
