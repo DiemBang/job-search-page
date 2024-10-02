@@ -1,7 +1,11 @@
-import axios, { AxiosResponse } from "axios";
-import { IAd } from "../pages/searchPage/SearchResult";
+import axios, { AxiosResponse } from 'axios';
+import { IAd } from '../pages/searchPage/SearchResult';
 
-const BASE_URL = "https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20";
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
+export const getBase = async <T>(url: string) => {
+  const response = await axios.get<T>(url);
+  return response.data;
+};
 
 interface ITotalAds {
   value: number;
@@ -12,7 +16,7 @@ interface IAdResponseData {
   positions: number;
 }
 
-export const getBase = async (
+export const getBaseCopy = async (
   params: URLSearchParams | null
 ): Promise<IAdResponseData> => {
   let response: AxiosResponse;

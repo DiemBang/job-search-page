@@ -1,11 +1,10 @@
-import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
-import { useContext, useEffect } from "react";
-import { AdsContext } from "../../../context/AdsContext";
-import { FilterContext } from "../../../context/FilterContext";
+import { DigiFormFilter } from '@digi/arbetsformedlingen-react';
+import { useEffect } from 'react';
+import useAdvertsContext from '../../../hooks/useAdvertsContext';
 
 export const RemoteWorkFilter = () => {
-  const { remoteWorkplace, setRemoteWorkplace } = useContext(FilterContext);
-  const { createFilterParams, getData } = useContext(AdsContext);
+  const { remoteWorkplace, setRemoteWorkplace, createFilterParams, getData } =
+    useAdvertsContext();
 
   const changeToRemoteWorkplace = (isChecked: boolean) => {
     setRemoteWorkplace(isChecked);
@@ -13,7 +12,7 @@ export const RemoteWorkFilter = () => {
 
   // Create filter params after each change of remote workplace
   useEffect(() => {
-    let filterParams = createFilterParams();
+    const filterParams = createFilterParams();
     getData(filterParams);
   }, [remoteWorkplace]);
 
@@ -24,15 +23,15 @@ export const RemoteWorkFilter = () => {
         afSubmitButtonText="Filtrera"
         afListItems={[
           // { id: "alla", label: "Alla" },
-          { id: "endast_distans", label: "Endast distansarbete" },
+          { id: 'endast_distans', label: 'Endast distansarbete' },
         ]}
         onAfChangeFilter={(e) => changeToRemoteWorkplace(e.detail.isChecked)}
-        onAfResetFilter={() => console.log("reset filter")}
+        onAfResetFilter={() => console.log('reset filter')}
         onAfSubmitFilter={(e) =>
-          console.log("submit filter", e.detail.listItems, e.detail.checked)
+          console.log('submit filter', e.detail.listItems, e.detail.checked)
         }
         onAfCloseFilter={(e) =>
-          console.log("submit filter", e.detail.listItems, e.detail.checked)
+          console.log('submit filter', e.detail.listItems, e.detail.checked)
         }
       ></DigiFormFilter>
     </>

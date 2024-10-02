@@ -14,6 +14,18 @@ interface IJobContactProps {
 }
 
 const JobContact = ({ contacts }: IJobContactProps) => {
+  const isAllFieldsEmpty = (obj: IApplicationContact): boolean => {
+    return Object.values(obj).every((value) => value === null || value === '');
+  };
+
+  const validContacts = contacts.filter(
+    (contact) => !isAllFieldsEmpty(contact)
+  );
+
+  if (validContacts.length === 0) {
+    return null;
+  }
+
   return (
     <DigiInfoCard
       afHeading="Kontakt"
@@ -23,35 +35,50 @@ const JobContact = ({ contacts }: IJobContactProps) => {
       afSize={InfoCardSize.STANDARD}
     >
       <FlexContainer $align="flex-start" $direction="column" $gap="10px">
-        {contacts.length > 0 &&
-          contacts.map((contact, index) => {
-            const { name, contact_type, email, telephone } = contact;
-            return (
+        {validContacts.map((contact, index) => {
+          const { name, contact_type, email, telephone } = contact;
+
+          const hasContactInfo = name || contact_type || email || telephone;
+
+          return (
+            <FlexContainer
+              key={index}
+              $justify="flex-start"
+              $align="flex-start"
+              $gap="8px"
+              $width="100%"
+            >
+              <DigiIconUserAlt />
               <FlexContainer
-                key={index}
-                $justify="flex-start"
+                $direction="column"
+                $gap="10px"
                 $align="flex-start"
-                $gap="8px"
-                $width="100%"
+                $padding="0 0 0 10px"
               >
-                <DigiIconUserAlt />
-                <FlexContainer
-                  $direction="column"
-                  $gap="10px"
-                  $align="flex-start"
-                  $padding="0 0 0 10px"
-                >
-                  <div>
-                    {`${name ? `${name}, ${contact_type}` : `${contact_type}`}`}
-                  </div>
-                  <DigiLink afHref="#" hideVisitedColor={true}>
-                    {email}
-                  </DigiLink>
-                  <div>{telephone}</div>
-                </FlexContainer>
+                {hasContactInfo ? (
+                  <>
+                    {(name || contact_type) && (
+                      <div>
+                        {name && name}
+                        {name && contact_type
+                          ? `, ${contact_type}`
+                          : contact_type}
+                      </div>
+                    )}
+                    {email && (
+                      <DigiLink afHref="#" hideVisitedColor={true}>
+                        {email}
+                      </DigiLink>
+                    )}
+                    {telephone && <div>{telephone}</div>}
+                  </>
+                ) : (
+                  <div>Uppgifter saknas</div>
+                )}
               </FlexContainer>
-            );
-          })}
+            </FlexContainer>
+          );
+        })}
       </FlexContainer>
     </DigiInfoCard>
   );

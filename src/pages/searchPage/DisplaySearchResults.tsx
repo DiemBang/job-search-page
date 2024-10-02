@@ -1,11 +1,11 @@
-import { useContext, useEffect } from "react";
-import { SearchResult } from "./SearchResult";
-
-import { AdsContext } from "../../context/AdsContext";
+import { useEffect } from 'react';
+import { SearchResult } from './SearchResult';
+import useAdvertsContext from '../../hooks/useAdvertsContext';
 
 export const DisplaySearchResults = () => {
-  const {ads, getData, totalAds, totalPositions, fetched} = useContext(AdsContext);
- 
+  const { ads, getData, totalAds, totalPositions, fetched } =
+    useAdvertsContext();
+
   useEffect(() => {
     if (fetched) return;
 

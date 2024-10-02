@@ -30,8 +30,8 @@ export interface IOccupation {
   driving_license_required: boolean;
   driving_license: IDuration[] | null;
   occupation: IDuration;
-  occupation_group: IDuration;
-  occupation_field: IDuration;
+  occupation_group: ISubCategory;
+  occupation_field: ICategory;
   workplace_address: IWorkplaceAddress;
   must_have: IHave;
   nice_to_have: IHave;
@@ -90,6 +90,21 @@ export interface IEmployer {
   organization_number: string;
   name: string;
   workplace: string;
+}
+
+export interface ICategory {
+  id: string;
+  narrower: ISubCategory[];
+  preferred_label: string;
+  active?: boolean;
+  selected?: boolean;
+}
+
+export interface ISubCategory {
+  id: string;
+  preferred_label: string;
+  active?: boolean;
+  selected?: boolean;
 }
 
 export interface IHave {
