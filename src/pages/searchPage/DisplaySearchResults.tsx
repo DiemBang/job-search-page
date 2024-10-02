@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { IAd, SearchResult } from './SearchResult';
 import { getBase } from '../../services/serviceBase';
-import useAdsContext from '../../hooks/useAdsContext';
+import useAdvertsContext from '../../hooks/useAdvertsContext';
 
 export const DisplaySearchResults = () => {
-  const { occupations } = useAdsContext();
+  const { occupations } = useAdvertsContext();
 
   const [ads, setAds] = useState<IAd[]>(occupations.hits);
   const [totalAds, setTotalAds] = useState(occupations.total.value);

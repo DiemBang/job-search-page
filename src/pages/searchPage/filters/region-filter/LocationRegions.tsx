@@ -1,10 +1,10 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
 import { DigiButton } from '@digi/arbetsformedlingen-react';
-import useAdsContext from '../../../../hooks/useAdsContext';
+import useAdvertsContext from '../../../../hooks/useAdvertsContext';
 
 const LocationRegions = () => {
   const { regions, handleClickOnRegion, resetAllRegionsAndMunicipalities } =
-    useAdsContext();
+    useAdvertsContext();
 
   return (
     <FlexContainer

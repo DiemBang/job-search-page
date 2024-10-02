@@ -1,10 +1,10 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
 import { DigiButton } from '@digi/arbetsformedlingen-react';
-import useAdsContext from '../../../../hooks/useAdsContext';
+import useAdvertsContext from '../../../../hooks/useAdvertsContext';
 
 const OccupationFields = () => {
   const { fields, handleClickOnOccupationField, resetAllFieldsAndGroups } =
-    useAdsContext();
+    useAdvertsContext();
   return (
     <FlexContainer
       $direction="column"

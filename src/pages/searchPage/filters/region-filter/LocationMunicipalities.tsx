@@ -1,14 +1,14 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
 import { DigiButton } from '@digi/arbetsformedlingen-react';
-import useAdsContext from '../../../../hooks/useAdsContext';
+import useAdvertsContext from '../../../../hooks/useAdvertsContext';
 
 const LocationMunicipalities = () => {
   const {
     visibleMunicipalities,
-    activeMunicipalities,
+    municipalitiesQuerys,
     handleClickOnMunicipality,
     resetMunicipalities,
-  } = useAdsContext();
+  } = useAdvertsContext();
 
   return (
     <FlexContainer
@@ -47,7 +47,7 @@ const LocationMunicipalities = () => {
         className="subcategories-panel"
       >
         {visibleMunicipalities?.visibleSubcategories.map((municipiality) => {
-          const isActive = activeMunicipalities.includes(municipiality.id);
+          const isActive = municipalitiesQuerys.includes(municipiality.id);
 
           return (
             <FlexContainer

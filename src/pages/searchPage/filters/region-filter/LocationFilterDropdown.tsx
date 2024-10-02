@@ -3,11 +3,11 @@ import { FlexContainer } from '../../../../components/styled/shared/FlexContaine
 import LocationRegions from './LocationRegions';
 import LocationMunicipalities from './LocationMunicipalities';
 import useModalsContext from '../../../../hooks/useModalsContext';
-import useAdsContext from '../../../../hooks/useAdsContext';
+import useAdvertsContext from '../../../../hooks/useAdvertsContext';
 
 const OccupationFilterDropDown = () => {
   const { locationRef } = useModalsContext();
-  const { visibleMunicipalities } = useAdsContext();
+  const { visibleMunicipalities } = useAdvertsContext();
 
   return (
     <PositionContainer

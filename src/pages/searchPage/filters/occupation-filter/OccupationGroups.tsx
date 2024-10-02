@@ -1,14 +1,14 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
 import { DigiButton } from '@digi/arbetsformedlingen-react';
-import useAdsContext from '../../../../hooks/useAdsContext';
+import useAdvertsContext from '../../../../hooks/useAdvertsContext';
 
 const OccupationGroups = () => {
   const {
     visibleGroups,
-    activeOccupationGroups,
+    occupationsQuerys,
     handleClickOnOccupationGroup,
     resetOccupationGroups,
-  } = useAdsContext();
+  } = useAdvertsContext();
 
   return (
     <FlexContainer
@@ -47,7 +47,7 @@ const OccupationGroups = () => {
         className="subcategories-panel"
       >
         {visibleGroups?.visibleSubcategories.map((group) => {
-          const isActive = activeOccupationGroups.includes(group.id);
+          const isActive = occupationsQuerys.includes(group.id);
 
           return (
             <FlexContainer $align="flex-start" $gap="16px" key={group.id}>

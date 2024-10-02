@@ -23,5 +23,5 @@ export const OverlayContainer = styled.div<IOverlayContainerProps>`
     rgba(0, 0, 0, 0.5) 100%
   );
   z-index: 10;
-  margin-top: 40%;
+  margin-top: 200px;
 `;

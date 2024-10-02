@@ -3,7 +3,7 @@ import { SearchField } from './SearchField';
 import { DisplaySearchResults } from './DisplaySearchResults';
 import { SearchPageWrapper } from '../../components/styled/Wrappers';
 import { useLoaderData } from 'react-router-dom';
-import { AdsContextProvider } from '../../context/AdsContext';
+import { AdvertsContextProvider } from '../../context/AdvertsContext';
 import { IOccupations } from '../../types/occupation-types';
 import { ModalsContextProvider } from '../../context/ModalsContext';
 
@@ -12,7 +12,7 @@ export const SearchPage = () => {
 
   return (
     <ModalsContextProvider>
-      <AdsContextProvider occupations={occupations}>
+      <AdvertsContextProvider occupations={occupations}>
         <SearchPageWrapper>
           <h2>Platsbanken</h2>
           <SearchField />
@@ -22,7 +22,7 @@ export const SearchPage = () => {
           </section>
           <section>{/* Pagination */}</section>
         </SearchPageWrapper>
-      </AdsContextProvider>
+      </AdvertsContextProvider>
     </ModalsContextProvider>
   );
 };

@@ -12,21 +12,21 @@ import {
   toggleSubcategoryActiveState,
 } from '../utils/adsUtils';
 
-const AdsContext = createContext<IAdsContextValues | null>(null);
+const AdvertsContext = createContext<IAdvertsContextValues | null>(null);
 
-interface IAdsContextProviderProps {
+interface IAdvertsContextProviderProps {
   children: ReactNode;
   occupations: IOccupations;
 }
 
-interface IAdsContextValues {
+interface IAdvertsContextValues {
   occupations: IOccupations;
   visibleMunicipalities: IVisibleSubcategories | null;
   visibleGroups: IVisibleSubcategories | null;
   regions: ICategory[];
   fields: ICategory[];
-  activeOccupationGroups: string[];
-  activeMunicipalities: string[];
+  occupationsQuerys: string[];
+  municipalitiesQuerys: string[];
   handleClickOnRegion: (taxonomyId: string) => void;
   handleClickOnMunicipality: (taxonomyId: string) => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
@@ -42,22 +42,20 @@ const occupationFieldData = addSelectedAndActiveKeys(
   occupationsData.data.concepts
 );
 
-export const AdsContextProvider = ({
+export const AdvertsContextProvider = ({
   children,
   occupations,
-}: IAdsContextProviderProps) => {
+}: IAdvertsContextProviderProps) => {
   const [visibleMunicipalities, setVisibleMunicipalities] =
     useState<IVisibleSubcategories | null>(null);
   const [visibleGroups, setVisibleGroups] =
     useState<IVisibleSubcategories | null>(null);
   const [regions, setRegions] = useState<ICategory[]>(regionsData);
   const [fields, setFields] = useState<ICategory[]>(occupationFieldData);
-  const [activeMunicipalities, setActiveMunicipalities] = useState<string[]>(
+  const [municipalitiesQuerys, setmunicipalitiesQuerys] = useState<string[]>(
     []
   );
-  const [activeOccupationGroups, setActiveOccupationGroups] = useState<
-    string[]
-  >([]);
+  const [occupationsQuerys, setoccupationsQuerys] = useState<string[]>([]);
 
   const handleClickOnRegion = (taxonomyId: string) => {
     handleClickOnCategory(
@@ -74,7 +72,7 @@ export const AdsContextProvider = ({
   };
 
   const handleClickOnMunicipality = (taxonomyId: string) => {
-    setActiveSubCategories(taxonomyId, setActiveMunicipalities);
+    setActiveSubCategories(taxonomyId, setmunicipalitiesQuerys);
     setRegions((prevRegions) =>
       toggleSubcategoryActiveState(prevRegions, taxonomyId)
     );
@@ -94,7 +92,7 @@ export const AdsContextProvider = ({
   };
 
   const handleClickOnOccupationGroup = (taxonomyId: string) => {
-    setActiveSubCategories(taxonomyId, setActiveOccupationGroups);
+    setActiveSubCategories(taxonomyId, setoccupationsQuerys);
     setFields((prevFields) =>
       toggleSubcategoryActiveState(prevFields, taxonomyId)
     );
@@ -104,16 +102,12 @@ export const AdsContextProvider = ({
     resetAllCategoriesAndSubCategories(
       regions,
       setRegions,
-      setActiveMunicipalities
+      setmunicipalitiesQuerys
     );
   };
 
   const resetAllFieldsAndGroups = () => {
-    resetAllCategoriesAndSubCategories(
-      fields,
-      setFields,
-      setActiveOccupationGroups
-    );
+    resetAllCategoriesAndSubCategories(fields, setFields, setoccupationsQuerys);
   };
 
   const resetMunicipalities = (regionId: string | null) => {
@@ -121,7 +115,7 @@ export const AdsContextProvider = ({
       regionId,
       regions,
       setRegions,
-      setActiveMunicipalities
+      setmunicipalitiesQuerys
     );
   };
 
@@ -130,32 +124,32 @@ export const AdsContextProvider = ({
       fieldId,
       fields,
       setFields,
-      setActiveOccupationGroups
+      setoccupationsQuerys
     );
   };
 
   useEffect(() => {
-    console.log('active occupations: ', activeOccupationGroups);
+    console.log('active occupations: ', occupationsQuerys);
     setFields(updateActiveState(fields));
-  }, [activeOccupationGroups]);
+  }, [occupationsQuerys]);
 
   useEffect(() => {
     console.log('updated fields', fields);
   }, [fields]);
 
   useEffect(() => {
-    console.log('active municipalites', activeMunicipalities);
+    console.log('active municipalites', municipalitiesQuerys);
     setRegions(updateActiveState(regions));
-  }, [activeMunicipalities]);
+  }, [municipalitiesQuerys]);
 
-  const adsValues: IAdsContextValues = {
+  const adsValues: IAdvertsContextValues = {
     occupations,
     visibleMunicipalities,
     visibleGroups,
     regions,
     fields,
-    activeOccupationGroups,
-    activeMunicipalities,
+    occupationsQuerys,
+    municipalitiesQuerys,
     handleClickOnMunicipality,
     handleClickOnRegion,
     handleClickOnOccupationField,
@@ -167,8 +161,10 @@ export const AdsContextProvider = ({
   };
 
   return (
-    <AdsContext.Provider value={adsValues}>{children}</AdsContext.Provider>
+    <AdvertsContext.Provider value={adsValues}>
+      {children}
+    </AdvertsContext.Provider>
   );
 };
 
-export default AdsContext;
+export default AdvertsContext;
