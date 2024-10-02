@@ -125,6 +125,31 @@ export const resetAllCategoriesAndSubCategories = (
 };
 
 /**
+ * toggles all subcategories
+ * @param {IVisibleSubcategories | null} visibleState
+ * @param {React.Dispatch<React.SetStateAction<IVisibleSubcategories | null>>} setVisibleState
+ * @returns {IVisibleSubcategories}
+ */
+export const toggleVisibilityOfAllSubcategories = (
+  visibleState: IVisibleSubcategories | null,
+  setVisibleState: React.Dispatch<
+    React.SetStateAction<IVisibleSubcategories | null>
+  >
+) => {
+  if (!visibleState || !visibleState.visibleSubcategories) {
+    return;
+  }
+
+  setVisibleState({
+    ...visibleState,
+    visibleSubcategories: visibleState.visibleSubcategories.map((subc) => ({
+      ...subc,
+      active: !subc.active,
+    })),
+  });
+};
+
+/**
  * toggles the selected state of the category
  * finds the categories subcategories and sets them as visible so the user can see them on the right side of the dropdown
  * @param {string} taxonomyId
