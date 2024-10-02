@@ -1,5 +1,8 @@
 .occupation-filter {
   position: relative;
+  .filter-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
   .filter-dropdown {
     border-radius: 12px;
     background-color: white;

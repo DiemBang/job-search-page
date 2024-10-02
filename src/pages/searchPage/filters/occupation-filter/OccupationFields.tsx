@@ -11,13 +11,15 @@ const OccupationFields = () => {
       $align="flex-start"
       $justify="flex-start"
       $gap="24px"
-      $padding="0 32px 0 0"
+      $padding="0 24px"
     >
       <FlexContainer
         $justify="space-between"
         $width="100%"
         $align="flex-start"
         $maxHeight="40px"
+        $padding="0 0 10px 0"
+        className="filter-title"
       >
         <h4>Yrkesområden</h4>
         <DigiButton afSize="small" onClick={resetAllFieldsAndGroups}>

@@ -18,13 +18,15 @@ const OccupationGroups = () => {
       $justify="flex-start"
       $align="flex-start"
       className="subcategories-container"
-      $padding="0 0 0 32px"
+      $padding="0 24px"
     >
       <FlexContainer
         $justify="space-between"
         $width="100%"
         $align="flex-start"
         $maxHeight="40px"
+        $padding="0 0 10px 0"
+        className="filter-title"
       >
         <h4>Yrken</h4>
         <DigiButton

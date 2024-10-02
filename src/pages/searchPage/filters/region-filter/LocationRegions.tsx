@@ -19,6 +19,7 @@ const LocationRegions = () => {
         $width="100%"
         $align="flex-start"
         $maxHeight="40px"
+        $padding="0 0 10px 0"
       >
         <h4>Region</h4>
         <DigiButton afSize="small" onClick={resetAllRegionsAndMunicipalities}>
