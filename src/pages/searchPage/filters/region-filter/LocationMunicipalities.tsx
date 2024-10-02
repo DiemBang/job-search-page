@@ -6,7 +6,7 @@ import { FormCheckboxVariation } from '@digi/arbetsformedlingen';
 const LocationMunicipalities = () => {
   const {
     visibleMunicipalities,
-    municipalitiesQuerys,
+    municipalitiesQueries,
     handleClickOnMunicipality,
     resetMunicipalities,
   } = useAdvertsContext();
@@ -55,7 +55,7 @@ const LocationMunicipalities = () => {
           onAfOnChange={() => console.log('click')}
         ></DigiFormCheckbox>
         {visibleMunicipalities?.visibleSubcategories.map((municipiality) => {
-          const isActive = municipalitiesQuerys.includes(municipiality.id);
+          const isActive = municipalitiesQueries.includes(municipiality.id);
           return (
             <FlexContainer
               $align="flex-start"
