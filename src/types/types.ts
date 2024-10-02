@@ -10,3 +10,8 @@ export interface IVisibleSubcategories {
   categoryId: string;
   visibleSubcategories: ISubCategory[];
 }
+
+export interface IQuery {
+  query: string;
+  value: string;
+}
