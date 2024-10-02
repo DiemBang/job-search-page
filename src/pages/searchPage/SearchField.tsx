@@ -38,7 +38,3 @@ export const SearchField = () => {
   );
 };
 
-// Add onChange event handler to input field: anytime the value of the input field changes we set the value to searchQuery using the useState hook.
-// Getting search parameters from the API data
-// Use search query to search and filter out the data returned from the API
-// use the data returned from the search(data) function to display our users list. 
