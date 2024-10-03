@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState, useEffect } from 'react';
+import { createContext, ReactNode, useState, useEffect, useRef } from 'react';
 import { IOccupations, ICategory } from '../types/occupation-types';
 import { IVisibleSubcategories, IQuery, IAdResponseData } from '../types/types';
 import locationsData from '../data/regions-municipalities.json';
@@ -64,6 +64,7 @@ export const AdvertsContextProvider = ({
   children,
   occupations,
 }: IAdvertsContextProviderProps) => {
+  const initialRender = useRef(true);
   const [visibleMunicipalities, setVisibleMunicipalities] =
     useState<IVisibleSubcategories | null>(null);
   const [visibleGroups, setVisibleGroups] =
@@ -80,13 +81,19 @@ export const AdvertsContextProvider = ({
     []
   );
   const [occupationsQueries, setoccupationsQueries] = useState<string[]>([]);
-  const [queries, setQueries] = useState<IQuery[]>([
-    { query: 'q=', value: '' },
-    { query: 'sort=', value: '' },
-    { query: 'driving-license-required=', value: '' },
-    { query: 'remote=', value: '' },
-    { query: 'page', value: '' }, // FILL MORE QUERIES HERE!
-  ]);
+  const [queries, setQueries] = useState<IQuery[]>(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return [
+      { query: 'q=', value: urlParams.get('q') || '' },
+      { query: 'sort=', value: urlParams.get('sort') || '' },
+      {
+        query: 'driving-license-required=',
+        value: urlParams.get('driving-license-required') || '',
+      },
+      { query: 'remote=', value: urlParams.get('remote') || '' },
+      /*    { query: 'page', value: urlParams.get('page') || '1' }, */
+    ];
+  });
 
   const getAdvertsData = async (params: URLSearchParams | null) => {
     console.log('these are the current params', params?.toString());
@@ -114,6 +121,8 @@ export const AdvertsContextProvider = ({
   const refreshData = (queries: IQuery[]) => {
     const queryUrl = getQueryStringFromQueries(queries);
     const urlParams = new URLSearchParams(queryUrl);
+
+    console.log('url params', urlParams);
 
     getAdvertsData(urlParams);
 
@@ -183,6 +192,10 @@ export const AdvertsContextProvider = ({
 
   // everytime we change a query we will fetch new occupation data
   useEffect(() => {
+    if (initialRender.current) {
+      initialRender.current = false;
+      return;
+    }
     refreshData(queries);
   }, [queries]);
 
@@ -251,15 +264,10 @@ export const AdvertsContextProvider = ({
 
   useEffect(() => {
     setFields(updateActiveState(fields));
-    console.log('these are the queries for occupations: ', occupationsQueries);
   }, [occupationsQueries]);
 
   useEffect(() => {
     setRegions(updateActiveState(regions));
-    console.log(
-      'these are the queries for municipalities: ',
-      municipalitiesQueries
-    );
   }, [municipalitiesQueries]);
 
   const adsValues: IAdvertsContextValues = {
