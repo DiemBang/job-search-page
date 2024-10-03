@@ -23,10 +23,10 @@ const SortAds = () => {
       afDisableValidation={true}
       afValue={selectedOption}
       onAfOnSelect={(e) => handleSelectChange(e)}
-      style={{ width: '200px' }}
+      className="sort-selector"
     >
       <option value="Relevans">Relevans</option>
-      <option value="Publiceringsdatum">Rubliceringsdatum</option>
+      <option value="Publiceringsdatum">Publiceringsdatum</option>
       <option value="Ansökningsdatum">Ansökningsdatum</option>
     </DigiFormSelect>
   );
