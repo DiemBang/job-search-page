@@ -1,8 +1,8 @@
-import { createContext, ReactNode, useState, useEffect, useRef } from 'react';
-import { IOccupations, ICategory } from '../types/occupation-types';
-import { IVisibleSubcategories, IQuery, IAdResponseData } from '../types/types';
-import locationsData from '../data/regions-municipalities.json';
-import occupationsData from '../data/occupation-groups.json';
+import { createContext, ReactNode, useState, useEffect, useRef } from "react";
+import { IOccupations, ICategory } from "../types/occupation-types";
+import { IVisibleSubcategories, IQuery, IAdResponseData } from "../types/types";
+import locationsData from "../data/regions-municipalities.json";
+import occupationsData from "../data/occupation-groups.json";
 import {
   addSelectedAndActiveKeys,
   updateActiveState,
@@ -11,10 +11,10 @@ import {
   handleClickOnCategory,
   toggleSubcategoryActiveState,
   setActiveSubCategories,
-} from '../utils/adsUtils';
-import { getBase } from '../services/serviceBase';
-import { IAd } from '../pages/searchPage/SearchResult';
-import { DigiFormSelectCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
+} from "../utils/adsUtils";
+import { getBase } from "../services/serviceBase";
+import { IAd } from "../pages/searchPage/SearchResult";
+import { DigiFormSelectCustomEvent } from "@digi/arbetsformedlingen/dist/types/components";
 
 const AdvertsContext = createContext<IAdvertsContextValues | null>(null);
 
@@ -51,6 +51,7 @@ interface IAdvertsContextValues {
   changeDrivingLicenseReq: (filterValue: boolean) => void;
   changeToRemoteWorkplace: (filterValue: boolean) => void;
   changeWorktimeExtent: (checked: string[]) => void;
+  changeEmploymentType: (checked: string[]) => void;
   handleClickOnSearch: (searchInput: string) => void;
 }
 
@@ -59,7 +60,7 @@ const occupationFieldData = addSelectedAndActiveKeys(
   occupationsData.data.concepts
 );
 
-const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
+const BASE_URL = "https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20";
 
 export const AdvertsContextProvider = ({
   children,
@@ -85,23 +86,27 @@ export const AdvertsContextProvider = ({
   const [queries, setQueries] = useState<IQuery[]>(() => {
     const urlParams = new URLSearchParams(window.location.search);
     return [
-      { query: 'q=', value: urlParams.get('q') || '' },
-      { query: 'sort=', value: urlParams.get('sort') || '' },
+      { query: "q=", value: urlParams.get("q") || "" },
+      { query: "sort=", value: urlParams.get("sort") || "" },
       {
-        query: 'worktime-extent=',
-        value: urlParams.get('worktime-extent') || '',
+        query: "worktime-extent=",
+        value: urlParams.get("worktime-extent") || "",
       },
       {
-        query: 'driving-license-required=',
-        value: urlParams.get('driving-license-required') || '',
+        query: "employment-type=",
+        value: urlParams.get("employment-type") || "",
       },
-      { query: 'remote=', value: urlParams.get('remote') || '' },
+      {
+        query: "driving-license-required=",
+        value: urlParams.get("driving-license-required") || "",
+      },
+      { query: "remote=", value: urlParams.get("remote") || "" },
       /*    { query: 'page', value: urlParams.get('page') || '1' }, */
     ];
   });
 
   const getAdvertsData = async (params: URLSearchParams | null) => {
-    console.log('these are the current params', params?.toString());
+    console.log("these are the current params", params?.toString());
     try {
       const occupationUrl = params ? `${BASE_URL}&${params}` : BASE_URL;
       const occupationData = await getBase<IAdResponseData>(occupationUrl);
@@ -112,7 +117,7 @@ export const AdvertsContextProvider = ({
       setTotalAds(total.value);
       setTotalPositions(positions);
     } catch (error) {
-      console.log('Error occured when fetching data', error);
+      console.log("Error occured when fetching data", error);
       return;
     }
   };
@@ -127,12 +132,12 @@ export const AdvertsContextProvider = ({
     const queryUrl = getQueryStringFromQueries(queries);
     const urlParams = new URLSearchParams(queryUrl);
 
-    console.log('url params', urlParams);
+    console.log("url params", urlParams);
 
     getAdvertsData(urlParams);
 
     const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
-    window.history.replaceState(null, '', newUrl);
+    window.history.replaceState(null, "", newUrl);
   };
 
   /**
@@ -145,20 +150,20 @@ export const AdvertsContextProvider = ({
   ) => {
     const target = e.target as HTMLDigiFormSelectElement;
     const pickedOption = target.value;
-    let sortValue = '';
+    let sortValue = "";
     switch (pickedOption) {
-      case 'Publiceringsdatum':
-        sortValue = 'pubdate-desc';
+      case "Publiceringsdatum":
+        sortValue = "pubdate-desc";
         break;
-      case 'Ansökningsdatum':
-        sortValue = 'applydate-desc';
+      case "Ansökningsdatum":
+        sortValue = "applydate-desc";
         break;
-      case 'Relevans':
-        sortValue = 'relevance';
+      case "Relevans":
+        sortValue = "relevance";
         break;
     }
 
-    updateQuery('sort=', sortValue);
+    updateQuery("sort=", sortValue);
   };
 
   /**
@@ -169,10 +174,10 @@ export const AdvertsContextProvider = ({
   const getQueryStringFromQueries = (queries: IQuery[]): string => {
     return queries
       .map((q) => {
-        return q.value ? `${q.query}${q.value}` : '';
+        return q.value ? `${q.query}${q.value}` : "";
       })
       .filter(Boolean)
-      .join('&');
+      .join("&");
   };
 
   const handleClickOnRegion = (taxonomyId: string) => {
@@ -226,27 +231,47 @@ export const AdvertsContextProvider = ({
   };
 
   const changeDrivingLicenseReq = (filterValue: boolean) => {
-    updateQuery('driving-license-required=', filterValue.toString());
+    updateQuery("driving-license-required=", filterValue.toString());
   };
 
   const changeWorktimeExtent = (checked: string[]) => {
     console.log(checked);
-    
-    if (checked.includes("alla") ) {
-      updateQuery('worktime-extent=', ""); 
+
+    if (checked.length === 0) {
+      updateQuery("worktime-extent=", "");
+    } else if (checked.includes("alla")) {
+      updateQuery("worktime-extent=", "");
     } else if (checked.includes("heltid")) {
-      updateQuery('worktime-extent=', "6YE1_gAC_R2G");
+      updateQuery("worktime-extent=", "6YE1_gAC_R2G");
     } else if (checked.includes("deltid")) {
-      updateQuery('worktime-extent=', "947z_JGS_Uk2");
+      updateQuery("worktime-extent=", "947z_JGS_Uk2");
+    }
+  };
+
+  const changeEmploymentType = (checked: string[]) => {
+    console.log(checked);
+
+    if (checked.length === 0) {
+      updateQuery("employment-type=", "");
+    } else if (checked.includes("tillsvidare")) {
+      updateQuery("employment-type=", "kpPX_CNN_gDU");
+    } else if (checked.includes("timanstallning")) {
+      updateQuery("employment-type=", "sTu5_NBQ_udq");
+    } else if (checked.includes("vikariat")) {
+      updateQuery("employment-type=", "gro4_cWF_6D7");
+    } else if (checked.includes("behov")) {
+      updateQuery("employment-type=", "1paU_aCR_nGn");
+    } else if (checked.includes("sasong")) {
+      updateQuery("employment-type=", "EBhX_Qm2_8eX");
     }
   };
 
   const changeToRemoteWorkplace = (filterValue: boolean) => {
-    updateQuery('remote=', filterValue.toString());
+    updateQuery("remote=", filterValue.toString());
   };
 
   const handleClickOnSearch = (searchInput: string) => {
-    updateQuery('q=', searchInput);
+    updateQuery("q=", searchInput);
   };
 
   const resetAllFieldsAndGroups = () => {
@@ -311,6 +336,7 @@ export const AdvertsContextProvider = ({
     changeSortingOnSelect,
     toggleAllOccupationGroups,
     changeWorktimeExtent,
+    changeEmploymentType,
     changeToRemoteWorkplace,
     changeDrivingLicenseReq,
     handleClickOnSearch,
