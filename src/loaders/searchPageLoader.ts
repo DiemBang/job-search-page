@@ -1,7 +1,7 @@
 import { getBase } from '../services/serviceBase';
 import { IOccupations } from '../types/occupation-types';
 
-const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?&limit=20';
 
 export const searchPageLoader = async ({
   request,
@@ -13,6 +13,7 @@ export const searchPageLoader = async ({
   const sort = url.searchParams.get('sort');
   const drivingLicense = url.searchParams.get('driving-license-required');
   const remote = url.searchParams.get('remote');
+  const pageValue = url.searchParams.get('page');
 
   const page: number = pageValue ? parseInt(pageValue) : 1;    
   const offsetValue = (page - 1) * 10;
@@ -31,6 +32,10 @@ export const searchPageLoader = async ({
   }
   if (remote) {
     occupationUrl += `&remote=${remote}`;
+  }
+
+  if (page) {
+    occupationUrl += `&offset=${offsetValue}`
   }
 
   console.log('this is occupationUrl:', occupationUrl);
