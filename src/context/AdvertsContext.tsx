@@ -50,6 +50,7 @@ interface IAdvertsContextValues {
   toggleAllOccupationGroups: (fieldId: string | null) => void;
   changeDrivingLicenseReq: (filterValue: boolean) => void;
   changeToRemoteWorkplace: (filterValue: boolean) => void;
+  changeWorktimeExtent: (checked: string[]) => void;
   handleClickOnSearch: (searchInput: string) => void;
 }
 
@@ -86,6 +87,10 @@ export const AdvertsContextProvider = ({
     return [
       { query: 'q=', value: urlParams.get('q') || '' },
       { query: 'sort=', value: urlParams.get('sort') || '' },
+      {
+        query: 'worktime-extent=',
+        value: urlParams.get('worktime-extent') || '',
+      },
       {
         query: 'driving-license-required=',
         value: urlParams.get('driving-license-required') || '',
@@ -190,7 +195,7 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  // everytime we change a query we will fetch new occupation data
+  // every time we change a query we will fetch new occupation data
   useEffect(() => {
     if (initialRender.current) {
       initialRender.current = false;
@@ -222,6 +227,18 @@ export const AdvertsContextProvider = ({
 
   const changeDrivingLicenseReq = (filterValue: boolean) => {
     updateQuery('driving-license-required=', filterValue.toString());
+  };
+
+  const changeWorktimeExtent = (checked: string[]) => {
+    console.log(checked);
+    
+    if (checked.includes("alla") ) {
+      updateQuery('worktime-extent=', ""); 
+    } else if (checked.includes("heltid")) {
+      updateQuery('worktime-extent=', "6YE1_gAC_R2G");
+    } else if (checked.includes("deltid")) {
+      updateQuery('worktime-extent=', "947z_JGS_Uk2");
+    }
   };
 
   const changeToRemoteWorkplace = (filterValue: boolean) => {
@@ -293,6 +310,7 @@ export const AdvertsContextProvider = ({
     setAds,
     changeSortingOnSelect,
     toggleAllOccupationGroups,
+    changeWorktimeExtent,
     changeToRemoteWorkplace,
     changeDrivingLicenseReq,
     handleClickOnSearch,
