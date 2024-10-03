@@ -277,8 +277,6 @@ export const AdvertsContextProvider = ({
       updateQuery("language=", "zSLA_vw2_FXN");
     } else if (checked.includes("eng")) {
       updateQuery("language=", "NVxJ_hLg_TYS");
-    } else if (checked.includes("ovriga")) {
-      updateQuery("language=", "947z_JGS_Uk2"); // check id for other languages?
     }
   };
 

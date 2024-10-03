@@ -11,7 +11,6 @@ export const LanguageFilter = () => {
         afListItems={[
           { id: "sv", label: "Svenska" },
           { id: "eng", label: "Engelska" },
-          { id: "ovriga", label: "Övriga" },
         ]}
         onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
         onAfResetFilter={() => {changeLanguage([]);}}
