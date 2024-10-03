@@ -1,0 +1,1292 @@
+{
+  "data": {
+    "concepts": [
+      {
+        "preferred_label": "Norrbottens län",
+        "id": "9hXe_F4g_eTG",
+        "narrower": [
+          {
+            "preferred_label": "Jokkmokk",
+            "id": "mp6j_2b6_1bz"
+          },
+          {
+            "preferred_label": "Piteå",
+            "id": "umej_bP2_PpK"
+          },
+          {
+            "preferred_label": "Haparanda",
+            "id": "tfRE_hXa_eq7"
+          },
+          {
+            "preferred_label": "Älvsbyn",
+            "id": "14WF_zh1_W3y"
+          },
+          {
+            "preferred_label": "Arvidsjaur",
+            "id": "A5WX_XVo_Zt6"
+          },
+          {
+            "preferred_label": "Arjeplog",
+            "id": "vkQW_GB6_MNk"
+          },
+          {
+            "preferred_label": "Kalix",
+            "id": "cUyN_C9V_HLU"
+          },
+          {
+            "preferred_label": "Luleå",
+            "id": "CXbY_gui_14v"
+          },
+          {
+            "preferred_label": "Boden",
+            "id": "y4NQ_tnB_eVd"
+          },
+          {
+            "preferred_label": "Gällivare",
+            "id": "6R2u_zkb_uoS"
+          },
+          {
+            "preferred_label": "Kiruna",
+            "id": "biN6_UiL_Qob"
+          },
+          {
+            "preferred_label": "Övertorneå",
+            "id": "ehMP_onv_Chk"
+          },
+          {
+            "preferred_label": "Överkalix",
+            "id": "n5Sq_xxo_QWL"
+          },
+          {
+            "preferred_label": "Pajala",
+            "id": "dHMF_72G_4NM"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Jämtlands län",
+        "id": "65Ms_7r1_RTG",
+        "narrower": [
+          {
+            "preferred_label": "Krokom",
+            "id": "yurW_aLE_4ga"
+          },
+          {
+            "preferred_label": "Härjedalen",
+            "id": "j35Q_VKL_NiM"
+          },
+          {
+            "preferred_label": "Östersund",
+            "id": "Vt7P_856_WZS"
+          },
+          {
+            "preferred_label": "Strömsund",
+            "id": "ppjq_Eci_Wz9"
+          },
+          {
+            "preferred_label": "Berg",
+            "id": "gRNJ_hVW_Gpg"
+          },
+          {
+            "preferred_label": "Åre",
+            "id": "D7ax_CXP_6r1"
+          },
+          {
+            "preferred_label": "Bräcke",
+            "id": "eNSc_Nj1_CDP"
+          },
+          {
+            "preferred_label": "Ragunda",
+            "id": "Voto_egJ_FZP"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Jönköpings län",
+        "id": "MtbE_xWT_eMi",
+        "narrower": [
+          {
+            "preferred_label": "Vaggeryd",
+            "id": "zFup_umX_LVv"
+          },
+          {
+            "preferred_label": "Jönköping",
+            "id": "KURg_KJF_Lwc"
+          },
+          {
+            "preferred_label": "Habo",
+            "id": "9zQB_3vU_BQA"
+          },
+          {
+            "preferred_label": "Tranås",
+            "id": "Namm_SpC_RPG"
+          },
+          {
+            "preferred_label": "Sävsjö",
+            "id": "L1cX_MjM_y8W"
+          },
+          {
+            "preferred_label": "Mullsjö",
+            "id": "smXg_BXp_jTW"
+          },
+          {
+            "preferred_label": "Gnosjö",
+            "id": "91VR_Hxi_GN4"
+          },
+          {
+            "preferred_label": "Eksjö",
+            "id": "VacK_WF6_XVg"
+          },
+          {
+            "preferred_label": "Gislaved",
+            "id": "cNQx_Yqi_83Q"
+          },
+          {
+            "preferred_label": "Vetlanda",
+            "id": "xJqx_SLC_415"
+          },
+          {
+            "preferred_label": "Nässjö",
+            "id": "KfXT_ySA_do2"
+          },
+          {
+            "preferred_label": "Värnamo",
+            "id": "6bS8_fzf_xpW"
+          },
+          {
+            "preferred_label": "Aneby",
+            "id": "y9HE_XD7_WaD"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Uppsala län",
+        "id": "zBon_eET_fFU",
+        "narrower": [
+          {
+            "preferred_label": "Östhammar",
+            "id": "VE3L_3Ei_XbG"
+          },
+          {
+            "preferred_label": "Heby",
+            "id": "sD2e_1Tr_4WZ"
+          },
+          {
+            "preferred_label": "Håbo",
+            "id": "Bbs5_JUs_Qh5"
+          },
+          {
+            "preferred_label": "Tierp",
+            "id": "K8A2_JBa_e6e"
+          },
+          {
+            "preferred_label": "Enköping",
+            "id": "HGwg_unG_TsG"
+          },
+          {
+            "preferred_label": "Älvkarleby",
+            "id": "cbyw_9aK_Cni"
+          },
+          {
+            "preferred_label": "Uppsala",
+            "id": "otaF_bQY_4ZD"
+          },
+          {
+            "preferred_label": "Knivsta",
+            "id": "KALq_sG6_VrW"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Västmanlands län",
+        "id": "G6DV_fKE_Viz",
+        "narrower": [
+          {
+            "preferred_label": "Kungsör",
+            "id": "Fac5_h7a_UoM"
+          },
+          {
+            "preferred_label": "Fagersta",
+            "id": "7D9G_yrX_AGJ"
+          },
+          {
+            "preferred_label": "Norberg",
+            "id": "jbVe_Cps_vtd"
+          },
+          {
+            "preferred_label": "Hallstahammar",
+            "id": "oXYf_HmD_ddE"
+          },
+          {
+            "preferred_label": "Skinnskatteberg",
+            "id": "Nufj_vmt_VrH"
+          },
+          {
+            "preferred_label": "Surahammar",
+            "id": "jfD3_Hdg_UhT"
+          },
+          {
+            "preferred_label": "Arboga",
+            "id": "Jkyb_5MQ_7pB"
+          },
+          {
+            "preferred_label": "Västerås",
+            "id": "8deT_FRF_2SP"
+          },
+          {
+            "preferred_label": "Sala",
+            "id": "dAen_yTK_tqz"
+          },
+          {
+            "preferred_label": "Köping",
+            "id": "4Taz_AuG_tSm"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Gotlands län",
+        "id": "K8iD_VQv_2BA",
+        "narrower": [
+          {
+            "preferred_label": "Gotland",
+            "id": "Ft9P_E8F_VLJ"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Hallands län",
+        "id": "wjee_qH2_yb6",
+        "narrower": [
+          {
+            "preferred_label": "Hylte",
+            "id": "3XMe_nGt_RcU"
+          },
+          {
+            "preferred_label": "Kungsbacka",
+            "id": "3JKV_KSK_x6z"
+          },
+          {
+            "preferred_label": "Falkenberg",
+            "id": "qaJg_wMR_C8T"
+          },
+          {
+            "preferred_label": "Halmstad",
+            "id": "kUQB_KdK_kAh"
+          },
+          {
+            "preferred_label": "Laholm",
+            "id": "c1iL_rqh_Zja"
+          },
+          {
+            "preferred_label": "Varberg",
+            "id": "AkUx_yAq_kGr"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Västerbottens län",
+        "id": "g5Tt_CAV_zBd",
+        "narrower": [
+          {
+            "preferred_label": "Vindeln",
+            "id": "izT6_zWu_tta"
+          },
+          {
+            "preferred_label": "Norsjö",
+            "id": "XmpG_vPQ_K7T"
+          },
+          {
+            "preferred_label": "Vännäs",
+            "id": "utQc_6xq_Dfm"
+          },
+          {
+            "preferred_label": "Vilhelmina",
+            "id": "tUnW_mFo_Hvi"
+          },
+          {
+            "preferred_label": "Sorsele",
+            "id": "VM7L_yJK_Doo"
+          },
+          {
+            "preferred_label": "Malå",
+            "id": "7sHJ_YCE_5Zv"
+          },
+          {
+            "preferred_label": "Bjurholm",
+            "id": "vQkf_tw2_CmR"
+          },
+          {
+            "preferred_label": "Robertsfors",
+            "id": "p8Mv_377_bxp"
+          },
+          {
+            "preferred_label": "Umeå",
+            "id": "QiGt_BLu_amP"
+          },
+          {
+            "preferred_label": "Storuman",
+            "id": "gQgT_BAk_fMu"
+          },
+          {
+            "preferred_label": "Lycksele",
+            "id": "7rpN_naz_3Uz"
+          },
+          {
+            "preferred_label": "Nordmaling",
+            "id": "wMab_4Zs_wpM"
+          },
+          {
+            "preferred_label": "Skellefteå",
+            "id": "kicB_LgH_2Dk"
+          },
+          {
+            "preferred_label": "Åsele",
+            "id": "xLdL_tMA_JJv"
+          },
+          {
+            "preferred_label": "Dorotea",
+            "id": "tSkf_Tbn_rHk"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Örebro län",
+        "id": "xTCk_nT5_Zjm",
+        "narrower": [
+          {
+            "preferred_label": "Hallsberg",
+            "id": "Ak9V_rby_yYS"
+          },
+          {
+            "preferred_label": "Degerfors",
+            "id": "pvzC_muj_rcq"
+          },
+          {
+            "preferred_label": "Karlskoga",
+            "id": "wgJm_upX_z5W"
+          },
+          {
+            "preferred_label": "Lindesberg",
+            "id": "JQE9_189_Ska"
+          },
+          {
+            "preferred_label": "Örebro",
+            "id": "kuMn_feU_hXx"
+          },
+          {
+            "preferred_label": "Askersund",
+            "id": "dbF7_Ecz_CWF"
+          },
+          {
+            "preferred_label": "Hällefors",
+            "id": "sCbY_r36_xhs"
+          },
+          {
+            "preferred_label": "Ljusnarsberg",
+            "id": "eF2n_714_hSU"
+          },
+          {
+            "preferred_label": "Laxå",
+            "id": "oYEQ_m8Q_unY"
+          },
+          {
+            "preferred_label": "Kumla",
+            "id": "viCA_36P_pQp"
+          },
+          {
+            "preferred_label": "Nora",
+            "id": "WFXN_hsU_gmx"
+          },
+          {
+            "preferred_label": "Lekeberg",
+            "id": "yaHU_E7z_YnE"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Stockholms län",
+        "id": "CifL_Rzy_Mku",
+        "narrower": [
+          {
+            "preferred_label": "Värmdö",
+            "id": "15nx_Vut_GrH"
+          },
+          {
+            "preferred_label": "Stockholm",
+            "id": "AvNB_uwa_6n6"
+          },
+          {
+            "preferred_label": "Sundbyberg",
+            "id": "UTJZ_zHH_mJm"
+          },
+          {
+            "preferred_label": "Vallentuna",
+            "id": "K4az_Bm6_hRV"
+          },
+          {
+            "preferred_label": "Södertälje",
+            "id": "g6hK_M1o_hiU"
+          },
+          {
+            "preferred_label": "Vaxholm",
+            "id": "9aAJ_j6L_DST"
+          },
+          {
+            "preferred_label": "Tyresö",
+            "id": "sTPc_k2B_SqV"
+          },
+          {
+            "preferred_label": "Sollentuna",
+            "id": "Z5Cq_SgB_dsB"
+          },
+          {
+            "preferred_label": "Ekerö",
+            "id": "magF_Gon_YL2"
+          },
+          {
+            "preferred_label": "Nynäshamn",
+            "id": "37UU_T7x_oxG"
+          },
+          {
+            "preferred_label": "Nykvarn",
+            "id": "mBKv_q3B_SK8"
+          },
+          {
+            "preferred_label": "Danderyd",
+            "id": "E4CV_a5E_ucX"
+          },
+          {
+            "preferred_label": "Huddinge",
+            "id": "g1Gc_aXK_EKu"
+          },
+          {
+            "preferred_label": "Haninge",
+            "id": "Q7gp_9dT_k2F"
+          },
+          {
+            "preferred_label": "Nacka",
+            "id": "aYA7_PpG_BqP"
+          },
+          {
+            "preferred_label": "Norrtälje",
+            "id": "btgf_fS7_sKG"
+          },
+          {
+            "preferred_label": "Österåker",
+            "id": "8gKt_ZsV_PGj"
+          },
+          {
+            "preferred_label": "Salem",
+            "id": "4KBw_CPU_VQv"
+          },
+          {
+            "preferred_label": "Botkyrka",
+            "id": "CCVZ_JA7_d3y"
+          },
+          {
+            "preferred_label": "Upplands-Bro",
+            "id": "w6yq_CGR_Fiv"
+          },
+          {
+            "preferred_label": "Upplands Väsby",
+            "id": "XWKY_c49_5nv"
+          },
+          {
+            "preferred_label": "Solna",
+            "id": "zHxw_uJZ_NJ8"
+          },
+          {
+            "preferred_label": "Täby",
+            "id": "onpA_B5a_zfv"
+          },
+          {
+            "preferred_label": "Järfälla",
+            "id": "qm5H_jsD_fUF"
+          },
+          {
+            "preferred_label": "Sigtuna",
+            "id": "8ryy_X54_xJj"
+          },
+          {
+            "preferred_label": "Lidingö",
+            "id": "FBbF_mda_TYD"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Kalmar län",
+        "id": "9QUH_2bb_6Np",
+        "narrower": [
+          {
+            "preferred_label": "Mönsterås",
+            "id": "8eEp_iz4_cNN"
+          },
+          {
+            "preferred_label": "Kalmar",
+            "id": "Pnmg_SgP_uHQ"
+          },
+          {
+            "preferred_label": "Hultsfred",
+            "id": "AEQD_1RT_vM9"
+          },
+          {
+            "preferred_label": "Nybro",
+            "id": "xk68_bJa_6Fh"
+          },
+          {
+            "preferred_label": "Vimmerby",
+            "id": "a7hJ_zwv_2FR"
+          },
+          {
+            "preferred_label": "Oskarshamn",
+            "id": "tUP8_hRE_NcF"
+          },
+          {
+            "preferred_label": "Borgholm",
+            "id": "LY9i_qNL_kXf"
+          },
+          {
+            "preferred_label": "Mörbylånga",
+            "id": "Muim_EAi_EFp"
+          },
+          {
+            "preferred_label": "Emmaboda",
+            "id": "1koj_6Bg_8K6"
+          },
+          {
+            "preferred_label": "Västervik",
+            "id": "t7H4_S2P_3Fw"
+          },
+          {
+            "preferred_label": "Högsby",
+            "id": "WPDh_pMr_RLZ"
+          },
+          {
+            "preferred_label": "Torsås",
+            "id": "wYFb_q7w_Nnh"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Gävleborgs län",
+        "id": "zupA_8Nt_xcD",
+        "narrower": [
+          {
+            "preferred_label": "Söderhamn",
+            "id": "JauG_nz5_7mu"
+          },
+          {
+            "preferred_label": "Ovanåker",
+            "id": "JPSe_mUQ_NDs"
+          },
+          {
+            "preferred_label": "Hofors",
+            "id": "yuNd_3bg_ttc"
+          },
+          {
+            "preferred_label": "Ljusdal",
+            "id": "63iQ_V6F_REB"
+          },
+          {
+            "preferred_label": "Hudiksvall",
+            "id": "Utks_mwF_axY"
+          },
+          {
+            "preferred_label": "Ockelbo",
+            "id": "GEvW_wKy_A9H"
+          },
+          {
+            "preferred_label": "Sandviken",
+            "id": "BbdN_xLB_k6s"
+          },
+          {
+            "preferred_label": "Gävle",
+            "id": "qk8Y_2b6_82D"
+          },
+          {
+            "preferred_label": "Nordanstig",
+            "id": "fFeF_RCz_Tm5"
+          },
+          {
+            "preferred_label": "Bollnäs",
+            "id": "KxjG_ig5_exF"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Kronobergs län",
+        "id": "tF3y_MF9_h5G",
+        "narrower": [
+          {
+            "preferred_label": "Markaryd",
+            "id": "ZhVf_yL5_Q5g"
+          },
+          {
+            "preferred_label": "Uppvidinge",
+            "id": "78cu_S5T_Pgp"
+          },
+          {
+            "preferred_label": "Tingsryd",
+            "id": "qz8Q_kDz_N2Y"
+          },
+          {
+            "preferred_label": "Lessebo",
+            "id": "nXZy_1Jd_D8X"
+          },
+          {
+            "preferred_label": "Alvesta",
+            "id": "MMph_wmN_esc"
+          },
+          {
+            "preferred_label": "Växjö",
+            "id": "mmot_H3A_auW"
+          },
+          {
+            "preferred_label": "Ljungby",
+            "id": "GzKo_S48_QCm"
+          },
+          {
+            "preferred_label": "Älmhult",
+            "id": "EK6X_wZq_CQ8"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Östergötlands län",
+        "id": "oLT3_Q9p_3nn",
+        "narrower": [
+          {
+            "preferred_label": "Kinda",
+            "id": "U4XJ_hYF_FBA"
+          },
+          {
+            "preferred_label": "Norrköping",
+            "id": "SYty_Yho_JAF"
+          },
+          {
+            "preferred_label": "Mjölby",
+            "id": "stqv_JGB_x8A"
+          },
+          {
+            "preferred_label": "Boxholm",
+            "id": "e5LB_m9V_TnT"
+          },
+          {
+            "preferred_label": "Söderköping",
+            "id": "Pcv9_yYh_Uw8"
+          },
+          {
+            "preferred_label": "Ödeshög",
+            "id": "Fu8g_29u_3xF"
+          },
+          {
+            "preferred_label": "Ydre",
+            "id": "vRRz_nLT_vYv"
+          },
+          {
+            "preferred_label": "Åtvidaberg",
+            "id": "bFWo_FRJ_x2T"
+          },
+          {
+            "preferred_label": "Finspång",
+            "id": "dMFe_J6W_iJv"
+          },
+          {
+            "preferred_label": "Linköping",
+            "id": "bm2x_1mr_Qhx"
+          },
+          {
+            "preferred_label": "Motala",
+            "id": "E1MC_1uG_phm"
+          },
+          {
+            "preferred_label": "Vadstena",
+            "id": "VcCU_Y86_eKU"
+          },
+          {
+            "preferred_label": "Valdemarsvik",
+            "id": "Sb3D_iGB_aXu"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Värmlands län",
+        "id": "EVVp_h6U_GSZ",
+        "narrower": [
+          {
+            "preferred_label": "Säffle",
+            "id": "wmxQ_Guc_dsy"
+          },
+          {
+            "preferred_label": "Hagfors",
+            "id": "qk9a_g5U_sAH"
+          },
+          {
+            "preferred_label": "Sunne",
+            "id": "oqNH_cnJ_Tdi"
+          },
+          {
+            "preferred_label": "Kil",
+            "id": "ocMw_Rz5_B1L"
+          },
+          {
+            "preferred_label": "Kristinehamn",
+            "id": "SVQS_uwJ_m2B"
+          },
+          {
+            "preferred_label": "Forshaga",
+            "id": "xnEt_JN3_GkA"
+          },
+          {
+            "preferred_label": "Karlstad",
+            "id": "hRDj_PoV_sFU"
+          },
+          {
+            "preferred_label": "Eda",
+            "id": "N5HQ_hfp_7Rm"
+          },
+          {
+            "preferred_label": "Årjäng",
+            "id": "ymBu_aFc_QJA"
+          },
+          {
+            "preferred_label": "Torsby",
+            "id": "hQdb_zn9_Sok"
+          },
+          {
+            "preferred_label": "Arvika",
+            "id": "yGue_F32_wev"
+          },
+          {
+            "preferred_label": "Munkfors",
+            "id": "x73h_7rW_mXN"
+          },
+          {
+            "preferred_label": "Filipstad",
+            "id": "UXir_vKD_FuW"
+          },
+          {
+            "preferred_label": "Storfors",
+            "id": "mPt5_3QD_LTM"
+          },
+          {
+            "preferred_label": "Hammarö",
+            "id": "x5qW_BXr_aut"
+          },
+          {
+            "preferred_label": "Grums",
+            "id": "PSNt_P95_x6q"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Södermanlands län",
+        "id": "s93u_BEb_sx2",
+        "narrower": [
+          {
+            "preferred_label": "Katrineholm",
+            "id": "snx9_qVD_Dr1"
+          },
+          {
+            "preferred_label": "Nyköping",
+            "id": "KzvD_ePV_DKQ"
+          },
+          {
+            "preferred_label": "Trosa",
+            "id": "rjzu_nQn_mCK"
+          },
+          {
+            "preferred_label": "Oxelösund",
+            "id": "72XK_mUU_CAH"
+          },
+          {
+            "preferred_label": "Eskilstuna",
+            "id": "kMxr_NiX_YrU"
+          },
+          {
+            "preferred_label": "Flen",
+            "id": "P8yp_WT9_Bks"
+          },
+          {
+            "preferred_label": "Vingåker",
+            "id": "rut9_f5W_kTX"
+          },
+          {
+            "preferred_label": "Strängnäs",
+            "id": "shnD_RiE_RKL"
+          },
+          {
+            "preferred_label": "Gnesta",
+            "id": "os8Y_RUo_U3u"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Blekinge län",
+        "id": "DQZd_uYs_oKb",
+        "narrower": [
+          {
+            "preferred_label": "Sölvesborg",
+            "id": "EVPy_phD_8Vf"
+          },
+          {
+            "preferred_label": "Ronneby",
+            "id": "vH8x_gVz_z7R"
+          },
+          {
+            "preferred_label": "Olofström",
+            "id": "1gEC_kvM_TXK"
+          },
+          {
+            "preferred_label": "Karlshamn",
+            "id": "HtGW_WgR_dpE"
+          },
+          {
+            "preferred_label": "Karlskrona",
+            "id": "YSt4_bAa_ccs"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Västernorrlands län",
+        "id": "NvUF_SP1_1zo",
+        "narrower": [
+          {
+            "preferred_label": "Kramfors",
+            "id": "yR8g_7Jz_HBZ"
+          },
+          {
+            "preferred_label": "Örnsköldsvik",
+            "id": "zBmE_n6s_MnQ"
+          },
+          {
+            "preferred_label": "Sollefteå",
+            "id": "v5y4_YPe_TMZ"
+          },
+          {
+            "preferred_label": "Ånge",
+            "id": "swVa_cyS_EMN"
+          },
+          {
+            "preferred_label": "Sundsvall",
+            "id": "dJbx_FWY_tK6"
+          },
+          {
+            "preferred_label": "Timrå",
+            "id": "oJ8D_rq6_kjt"
+          },
+          {
+            "preferred_label": "Härnösand",
+            "id": "uYRx_AdM_r4A"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Västra Götalands län",
+        "id": "zdoY_6u5_Krt",
+        "narrower": [
+          {
+            "preferred_label": "Skara",
+            "id": "k1SK_gxg_dW4"
+          },
+          {
+            "preferred_label": "Grästorp",
+            "id": "ZNZy_Hh5_gSW"
+          },
+          {
+            "preferred_label": "Lidköping",
+            "id": "FN1Y_asc_D8y"
+          },
+          {
+            "preferred_label": "Munkedal",
+            "id": "96Dh_3sQ_RFb"
+          },
+          {
+            "preferred_label": "Orust",
+            "id": "tmAp_ykH_N6k"
+          },
+          {
+            "preferred_label": "Gullspång",
+            "id": "roiB_uVV_4Cj"
+          },
+          {
+            "preferred_label": "Mariestad",
+            "id": "Lzpu_thX_Wpa"
+          },
+          {
+            "preferred_label": "Lerum",
+            "id": "yHV7_2Y6_zQx"
+          },
+          {
+            "preferred_label": "Vårgårda",
+            "id": "NfFx_5jj_ogg"
+          },
+          {
+            "preferred_label": "Alingsås",
+            "id": "UQ75_1eU_jaC"
+          },
+          {
+            "preferred_label": "Stenungsund",
+            "id": "wHrG_FBH_hoD"
+          },
+          {
+            "preferred_label": "Skövde",
+            "id": "fqAy_4ji_Lz2"
+          },
+          {
+            "preferred_label": "Vara",
+            "id": "fbHM_yhA_BqS"
+          },
+          {
+            "preferred_label": "Svenljunga",
+            "id": "rZWC_pXf_ySZ"
+          },
+          {
+            "preferred_label": "Tibro",
+            "id": "aLFZ_NHw_atB"
+          },
+          {
+            "preferred_label": "Mölndal",
+            "id": "mc45_ki9_Bv3"
+          },
+          {
+            "preferred_label": "Tidaholm",
+            "id": "Zsf5_vpP_Bs4"
+          },
+          {
+            "preferred_label": "Tjörn",
+            "id": "TbL3_HmF_gnx"
+          },
+          {
+            "preferred_label": "Hjo",
+            "id": "YbFS_34r_K2v"
+          },
+          {
+            "preferred_label": "Strömstad",
+            "id": "PAxT_FLT_3Kq"
+          },
+          {
+            "preferred_label": "Trollhättan",
+            "id": "CSy8_41F_YvX"
+          },
+          {
+            "preferred_label": "Ulricehamn",
+            "id": "an4a_8t2_Zpd"
+          },
+          {
+            "preferred_label": "Ale",
+            "id": "17Ug_Btv_mBr"
+          },
+          {
+            "preferred_label": "Lysekil",
+            "id": "z2cX_rjC_zFo"
+          },
+          {
+            "preferred_label": "Uddevalla",
+            "id": "xQc2_SzA_rHK"
+          },
+          {
+            "preferred_label": "Mellerud",
+            "id": "tt1B_7rH_vhG"
+          },
+          {
+            "preferred_label": "Borås",
+            "id": "TpRZ_bFL_jhL"
+          },
+          {
+            "preferred_label": "Åmål",
+            "id": "M1UC_Cnf_r7g"
+          },
+          {
+            "preferred_label": "Sotenäs",
+            "id": "aKkp_sEX_cVM"
+          },
+          {
+            "preferred_label": "Vänersborg",
+            "id": "THif_q6H_MjG"
+          },
+          {
+            "preferred_label": "Kungälv",
+            "id": "ZkZf_HbK_Mcr"
+          },
+          {
+            "preferred_label": "Tranemo",
+            "id": "SEje_LdC_9qN"
+          },
+          {
+            "preferred_label": "Bollebygd",
+            "id": "ypAQ_vTD_KLU"
+          },
+          {
+            "preferred_label": "Mark",
+            "id": "7HAb_9or_eFM"
+          },
+          {
+            "preferred_label": "Töreboda",
+            "id": "a15F_gAH_pn6"
+          },
+          {
+            "preferred_label": "Herrljunga",
+            "id": "J116_VFs_cg6"
+          },
+          {
+            "preferred_label": "Härryda",
+            "id": "dzWW_R3G_6Eh"
+          },
+          {
+            "preferred_label": "Färgelanda",
+            "id": "kCHb_icw_W5E"
+          },
+          {
+            "preferred_label": "Falköping",
+            "id": "ZySF_gif_zE4"
+          },
+          {
+            "preferred_label": "Öckerö",
+            "id": "Zjiv_rhk_oJK"
+          },
+          {
+            "preferred_label": "Göteborg",
+            "id": "PVZL_BQT_XtL"
+          },
+          {
+            "preferred_label": "Dals-Ed",
+            "id": "NMc9_oEm_yxy"
+          },
+          {
+            "preferred_label": "Bengtsfors",
+            "id": "hejM_Jct_XJk"
+          },
+          {
+            "preferred_label": "Götene",
+            "id": "txzq_PQY_FGi"
+          },
+          {
+            "preferred_label": "Partille",
+            "id": "CCiR_sXa_BVW"
+          },
+          {
+            "preferred_label": "Karlsborg",
+            "id": "e413_94L_hdh"
+          },
+          {
+            "preferred_label": "Essunga",
+            "id": "ZzEA_2Fg_Pt2"
+          },
+          {
+            "preferred_label": "Lilla Edet",
+            "id": "YQcE_SNB_Tv3"
+          },
+          {
+            "preferred_label": "Tanum",
+            "id": "qffn_qY4_DLk"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Dalarnas län",
+        "id": "oDpK_oZ2_WYt",
+        "narrower": [
+          {
+            "preferred_label": "Mora",
+            "id": "UGcC_kYx_fTs"
+          },
+          {
+            "preferred_label": "Orsa",
+            "id": "CRyF_5Jg_4ht"
+          },
+          {
+            "preferred_label": "Borlänge",
+            "id": "cpya_jJg_pGp"
+          },
+          {
+            "preferred_label": "Malung-Sälen",
+            "id": "FPCd_poj_3tq"
+          },
+          {
+            "preferred_label": "Leksand",
+            "id": "7Zsu_ant_gcn"
+          },
+          {
+            "preferred_label": "Hedemora",
+            "id": "DE9u_V4K_Z1S"
+          },
+          {
+            "preferred_label": "Gagnef",
+            "id": "Nn7p_W3Z_y68"
+          },
+          {
+            "preferred_label": "Smedjebacken",
+            "id": "5zZX_8FH_Sbq"
+          },
+          {
+            "preferred_label": "Rättvik",
+            "id": "Jy3D_2ux_dg8"
+          },
+          {
+            "preferred_label": "Säter",
+            "id": "c3Zx_jBf_CqF"
+          },
+          {
+            "preferred_label": "Falun",
+            "id": "N1wJ_Cuu_7Cs"
+          },
+          {
+            "preferred_label": "Älvdalen",
+            "id": "cZtt_qGo_oBr"
+          },
+          {
+            "preferred_label": "Vansbro",
+            "id": "4eS9_HX1_M7V"
+          },
+          {
+            "preferred_label": "Avesta",
+            "id": "Szbq_2fg_ydQ"
+          },
+          {
+            "preferred_label": "Ludvika",
+            "id": "Ny2b_2bo_7EL"
+          }
+        ]
+      },
+      {
+        "preferred_label": "Skåne län",
+        "id": "CaRE_1nn_cSU",
+        "narrower": [
+          {
+            "preferred_label": "Åstorp",
+            "id": "tEv6_ktG_QQb"
+          },
+          {
+            "preferred_label": "Osby",
+            "id": "najS_Lvy_mDD"
+          },
+          {
+            "preferred_label": "Klippan",
+            "id": "JARU_FAY_hTS"
+          },
+          {
+            "preferred_label": "Vellinge",
+            "id": "Tcog_5sH_b46"
+          },
+          {
+            "preferred_label": "Svedala",
+            "id": "n6r4_fjK_kRr"
+          },
+          {
+            "preferred_label": "Trelleborg",
+            "id": "STvk_dra_M1X"
+          },
+          {
+            "preferred_label": "Lund",
+            "id": "muSY_tsR_vDZ"
+          },
+          {
+            "preferred_label": "Östra Göinge",
+            "id": "LTt7_CGG_RUf"
+          },
+          {
+            "preferred_label": "Perstorp",
+            "id": "BN7r_iPV_F9p"
+          },
+          {
+            "preferred_label": "Bromölla",
+            "id": "WMNK_PXa_Khm"
+          },
+          {
+            "preferred_label": "Ystad",
+            "id": "hdYk_hnP_uju"
+          },
+          {
+            "preferred_label": "Båstad",
+            "id": "i8vK_odq_6ar"
+          },
+          {
+            "preferred_label": "Staffanstorp",
+            "id": "vBrj_bov_KEX"
+          },
+          {
+            "preferred_label": "Skurup",
+            "id": "oezL_78x_r89"
+          },
+          {
+            "preferred_label": "Höör",
+            "id": "N29z_AqQ_Ppc"
+          },
+          {
+            "preferred_label": "Malmö",
+            "id": "oYPt_yRA_Smm"
+          },
+          {
+            "preferred_label": "Eslöv",
+            "id": "gfCw_egj_1M4"
+          },
+          {
+            "preferred_label": "Simrishamn",
+            "id": "dLxo_EpC_oPe"
+          },
+          {
+            "preferred_label": "Höganäs",
+            "id": "8QQ6_e95_a1d"
+          },
+          {
+            "preferred_label": "Kristianstad",
+            "id": "vrvW_sr8_1en"
+          },
+          {
+            "preferred_label": "Ängelholm",
+            "id": "pCuv_P5A_9oh"
+          },
+          {
+            "preferred_label": "Bjuv",
+            "id": "waQp_FjW_qhF"
+          },
+          {
+            "preferred_label": "Burlöv",
+            "id": "64g5_Lio_aMU"
+          },
+          {
+            "preferred_label": "Lomma",
+            "id": "naG4_AUS_z2v"
+          },
+          {
+            "preferred_label": "Hässleholm",
+            "id": "bP5q_53x_aqJ"
+          },
+          {
+            "preferred_label": "Sjöbo",
+            "id": "P3Cs_1ZP_9XB"
+          },
+          {
+            "preferred_label": "Örkelljunga",
+            "id": "nBTS_Nge_dVH"
+          },
+          {
+            "preferred_label": "Svalöv",
+            "id": "2r6J_g2w_qp5"
+          },
+          {
+            "preferred_label": "Kävlinge",
+            "id": "5ohg_WJU_Ktn"
+          },
+          {
+            "preferred_label": "Helsingborg",
+            "id": "qj3q_oXH_MGR"
+          },
+          {
+            "preferred_label": "Hörby",
+            "id": "autr_KMa_cfp"
+          },
+          {
+            "preferred_label": "Landskrona",
+            "id": "Yt5s_Vf9_rds"
+          },
+          {
+            "preferred_label": "Tomelilla",
+            "id": "UMev_wGs_9bg"
+          }
+        ]
+      }
+    ]
+  }
+}

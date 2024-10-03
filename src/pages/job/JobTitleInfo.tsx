@@ -21,23 +21,23 @@ const JobTitleInfo = () => {
 
   const { name } = employer;
   const { municipality } = workplace_address;
-  const { label } = occupation_group;
+  const { preferred_label } = occupation_group;
 
   return (
     <FlexContainer $direction="column" $align="flex-start">
-      <FlexContainer>
-        <h1>{headline}</h1>
+      <FlexContainer $gap="16px" $direction="column" $align="flex-start">
         {logo_url && (
           <img
             src={logo_url}
             alt="employer logo"
-            width="24px"
-            height="24px"
+            width="92px"
+            height="64px"
           ></img>
         )}
+        <h1>{headline}</h1>
       </FlexContainer>
       <FlexContainer $direction="column" $align="flex-start">
-        <h2>{label}</h2>
+        <h2>{preferred_label}</h2>
         <h3>{municipality}</h3>
       </FlexContainer>
       <FlexContainer $direction="column" $align="flex-start">

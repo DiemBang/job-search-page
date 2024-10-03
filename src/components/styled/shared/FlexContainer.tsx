@@ -11,6 +11,7 @@ interface IFlexContainerProps {
   $margin?: string;
   $flexWrap?: string;
   $height?: string;
+  $maxHeight?: string;
 }
 
 export const FlexContainer = styled.div<IFlexContainerProps>`
@@ -21,6 +22,7 @@ export const FlexContainer = styled.div<IFlexContainerProps>`
   gap: ${(props) => props.$gap || '0'};
   width: ${(props) => props.$width || 'auto'};
   height: ${(props) => props.$height || '100%'};
+  max-height: ${(props) => props.$maxHeight || '100%'};
   padding: ${(props) => props.$padding || '0'};
   max-width: ${(props) => props.$maxWidth || '100%'};
   flex-wrap: ${(props) => props.$flexWrap || 'nowrap'};

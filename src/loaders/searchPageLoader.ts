@@ -1,29 +1,45 @@
-import { getBase } from "../services/serviceBase";
-import { IOccupations } from "../types/occupation-types";
+import { getBase } from '../services/serviceBase';
+import { IOccupations } from '../types/occupation-types';
 
-const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?limit=10';
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
 
+export const searchPageLoader = async ({
+  request,
+}: {
+  request: Request;
+}): Promise<IOccupations | null> => {
+  const url = new URL(request.url);
+  const freeSearch = url.searchParams.get('q');
+  const sort = url.searchParams.get('sort');
+  const drivingLicense = url.searchParams.get('driving-license-required');
+  const remote = url.searchParams.get('remote');
 
-export const searchPageLoader = async ({request}: {request: Request}): Promise<IOccupations | null> => {
-    const url = new URL(request.url);
-    const freeSearch = url.searchParams.get("q");
-    const pageValue = url.searchParams.get("page");
+  const page: number = pageValue ? parseInt(pageValue) : 1;    
+  const offsetValue = (page - 1) * 10;
 
-    const page: number = pageValue ? parseInt(pageValue) : 1;    
-    const offsetValue = (page - 1) * 10;
+  console.log(drivingLicense, remote);
+  let occupationUrl = BASE_URL;
 
-    try {
-        const occupationUrl = `${BASE_URL}&offset=${offsetValue}&q=${freeSearch}`;
-        const occupationsData = await getBase<IOccupations>(occupationUrl);
+  if (freeSearch?.length) {
+    occupationUrl += `&q=${freeSearch}`;
+  }
+  if (sort) {
+    occupationUrl += `&sort=${sort}`;
+  }
+  if (drivingLicense) {
+    occupationUrl += `&driving-license-required=${drivingLicense}`;
+  }
+  if (remote) {
+    occupationUrl += `&remote=${remote}`;
+  }
 
-        return occupationsData;
+  console.log('this is occupationUrl:', occupationUrl);
 
-    }
-
-    catch (err) {
-        console.log("Error fetching occupations:", err)
-        return null;
-    }
-
-    
-}
+  try {
+    const occupationsData = await getBase<IOccupations>(occupationUrl);
+    return occupationsData;
+  } catch (err) {
+    console.log('Error fetching occupations:', err);
+    return null;
+  }
+};
