@@ -37,7 +37,7 @@ interface IAdvertsContextValues {
   totalPositions: number;
   queries: IQuery[];
   setAds: (value: IAd[]) => void;
-  createFilterParams: () => URLSearchParams;
+  /*   createFilterParams: () => URLSearchParams; */
   setDrivingLicense: (value: boolean) => void;
   setRemoteWorkplace: (value: boolean) => void;
   handleClickOnRegion: (taxonomyId: string) => void;
@@ -84,9 +84,10 @@ export const AdvertsContextProvider = ({
   );
   const [occupationsQueries, setoccupationsQueries] = useState<string[]>([]);
   const [queries, setQueries] = useState<IQuery[]>([
-    { query: 'q=', value: '' },
+    { query: 'q=', value: 'lärare' },
     { query: 'sort=', value: '' },
-    { query: '', value: '' }, // FILL MORE QUERIES HERE!
+    { query: 'driving-license-required=', value: 'true' },
+    { query: 'remote=', value: '' }, // FILL MORE QUERIES HERE!
   ]);
 
   const getAdvertsData = async (params: URLSearchParams | null) => {
@@ -113,11 +114,12 @@ export const AdvertsContextProvider = ({
    * @param {IQuery[]} queries
    */
   const refreshData = (queries: IQuery[]) => {
-    const combinedParams = combineFiltersAndQueries(queries);
+    const queryUrl = getQueryStringFromQueries(queries);
+    const urlParams = new URLSearchParams(queryUrl);
 
-    getAdvertsData(combinedParams);
+    getAdvertsData(urlParams);
 
-    const newUrl = `${window.location.pathname}?${combinedParams.toString()}`;
+    const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
     window.history.replaceState(null, '', newUrl);
   };
 
@@ -148,7 +150,7 @@ export const AdvertsContextProvider = ({
       return q.query === 'sort=' ? { ...q, value: sortValue } : q;
     });
 
-    setQueries(updatedQueries);
+    updateQuery('sort=', sortValue);
     refreshData(updatedQueries);
   };
 
@@ -164,25 +166,6 @@ export const AdvertsContextProvider = ({
       })
       .filter(Boolean)
       .join('&');
-  };
-
-  /**
-   * combines filter params and our queries
-   * @param {IQuery[]} queries
-   * @returns {URLSearchParams}
-   */
-  const combineFiltersAndQueries = (queries: IQuery[]): URLSearchParams => {
-    const queriesUrl = getQueryStringFromQueries(queries);
-    console.log('these are the queriesUrl', queriesUrl);
-    const combinedParams = new URLSearchParams(queriesUrl);
-
-    const filterParams = createFilterParams();
-
-    for (const [key, value] of filterParams.entries()) {
-      combinedParams.append(key, value);
-    }
-
-    return combinedParams;
   };
 
   const handleClickOnRegion = (taxonomyId: string) => {
@@ -233,14 +216,28 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  const createFilterParams = () => {
+  const updateQuery = (queryKey: string, value: string) => {
+    setQueries((prevQueries) =>
+      prevQueries.map((q) => (q.query === queryKey ? { ...q, value } : q))
+    );
+  };
+
+  const handleClickOnFilterDriving = () => {
+    updateQuery('driving-license-required', 'true');
+  };
+
+  const handleClickOnFilterRemove = () => {
+    updateQuery('remote', 'true');
+  };
+
+  /*   const createFilterParams = () => {
     const params = new URLSearchParams();
 
     if (drivingLicense) params.append('driving-license-required', 'true');
     if (remoteWorkplace) params.append('remote', 'true');
 
     return params;
-  };
+  }; */
 
   const resetAllFieldsAndGroups = () => {
     resetAllCategoriesAndSubCategories(
@@ -322,7 +319,7 @@ export const AdvertsContextProvider = ({
     resetMunicipalities,
     resetOccupationGroups,
     setAds,
-    createFilterParams,
+    /*     createFilterParams, */
     changeSortingOnSelect,
     toggleAllOccupationGroups,
   };
