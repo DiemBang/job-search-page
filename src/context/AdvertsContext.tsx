@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useState, useEffect } from 'react';
 import { IOccupations, ICategory } from '../types/occupation-types';
-import { IVisibleSubcategories, IQuery } from '../types/types';
+import { IVisibleSubcategories, IQuery, IAdResponseData } from '../types/types';
 import locationsData from '../data/regions-municipalities.json';
 import occupationsData from '../data/occupation-groups.json';
 import {
@@ -11,7 +11,7 @@ import {
   handleClickOnCategory,
   toggleSubcategoryActiveState,
 } from '../utils/adsUtils';
-import { getBaseCopy } from '../services/serviceBase';
+import { getBase } from '../services/serviceBase';
 import { IAd } from '../pages/searchPage/SearchResult';
 import { DigiFormSelectCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
 
@@ -35,7 +35,6 @@ interface IAdvertsContextValues {
   remoteWorkplace: boolean;
   totalAds: number;
   totalPositions: number;
-  fetched: boolean;
   queries: IQuery[];
   setAds: (value: IAd[]) => void;
   createFilterParams: () => URLSearchParams;
@@ -52,12 +51,15 @@ interface IAdvertsContextValues {
   changeSortingOnSelect: (
     e: DigiFormSelectCustomEvent<HTMLDigiFormSelectElement>
   ) => void;
+  toggleAllOccupationGroups: (fieldId: string | null) => void;
 }
 
 const regionsData = addSelectedAndActiveKeys(locationsData.data.concepts);
 const occupationFieldData = addSelectedAndActiveKeys(
   occupationsData.data.concepts
 );
+
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
 
 export const AdvertsContextProvider = ({
   children,
@@ -71,7 +73,6 @@ export const AdvertsContextProvider = ({
   const [fields, setFields] = useState<ICategory[]>(occupationFieldData);
   const [drivingLicense, setDrivingLicense] = useState<boolean>(false);
   const [remoteWorkplace, setRemoteWorkplace] = useState<boolean>(false);
-  const [fetched, setFetched] = useState(false);
   const [ads, setAds] = useState<IAd[]>(occupations.hits);
   const [totalAds, setTotalAds] = useState(occupations.total.value);
   const [totalPositions, setTotalPositions] = useState(occupations.positions);
@@ -85,7 +86,40 @@ export const AdvertsContextProvider = ({
   const [queries, setQueries] = useState<IQuery[]>([
     { query: 'q=', value: '' },
     { query: 'sort=', value: '' },
+    { query: '', value: '' }, // FILL MORE QUERIES HERE!
   ]);
+
+  const getAdvertsData = async (params: URLSearchParams | null) => {
+    console.log('these are the current params', params?.toString());
+    try {
+      const occupationUrl = params ? `${BASE_URL}&${params}` : BASE_URL;
+      const occupationData = await getBase<IAdResponseData>(occupationUrl);
+
+      const { hits, total, positions } = occupationData;
+
+      setAds(hits);
+      setTotalAds(total.value);
+      setTotalPositions(positions);
+    } catch (error) {
+      console.log('Error occured when fetching data', error);
+      return;
+    }
+  };
+
+  /**
+   * combines both queries and filter params
+   * uses the combined params and fetches new occupation data
+   * replaces old url history in browser with the new one using window.location
+   * @param {IQuery[]} queries
+   */
+  const refreshData = (queries: IQuery[]) => {
+    const combinedParams = combineFiltersAndQueries(queries);
+
+    getAdvertsData(combinedParams);
+
+    const newUrl = `${window.location.pathname}?${combinedParams.toString()}`;
+    window.history.replaceState(null, '', newUrl);
+  };
 
   /**
    * sets query value for the selected option when we sort occupations
@@ -114,9 +148,8 @@ export const AdvertsContextProvider = ({
       return q.query === 'sort=' ? { ...q, value: sortValue } : q;
     });
 
-    const queryString = getQueryStringFromQueries(updatedQueries);
     setQueries(updatedQueries);
-    refreshData(queryString);
+    refreshData(updatedQueries);
   };
 
   /**
@@ -134,18 +167,22 @@ export const AdvertsContextProvider = ({
   };
 
   /**
-   * uses query url and sends these as params and gets new occupation data
-   * replaces old url history in browser with the new one using window.location
-   * @param {string} queryString
+   * combines filter params and our queries
+   * @param {IQuery[]} queries
+   * @returns {URLSearchParams}
    */
-  const refreshData = (queryString: string) => {
-    if (queryString) {
-      const params = new URLSearchParams(queryString);
-      getData(params);
+  const combineFiltersAndQueries = (queries: IQuery[]): URLSearchParams => {
+    const queriesUrl = getQueryStringFromQueries(queries);
+    console.log('these are the queriesUrl', queriesUrl);
+    const combinedParams = new URLSearchParams(queriesUrl);
 
-      const newUrl = `${window.location.pathname}?${queryString}`;
-      window.history.replaceState(null, '', newUrl);
+    const filterParams = createFilterParams();
+
+    for (const [key, value] of filterParams.entries()) {
+      combinedParams.append(key, value);
     }
+
+    return combinedParams;
   };
 
   const handleClickOnRegion = (taxonomyId: string) => {
@@ -196,21 +233,6 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  const getData = async (params: URLSearchParams | null) => {
-    console.log('this is the params', params?.toString());
-
-    try {
-      const data = await getBaseCopy(params);
-      setAds(data.hits);
-      setTotalAds(data.total.value);
-      setTotalPositions(data.positions);
-      setFetched(true);
-    } catch (error) {
-      console.log('Error occured when fetching data', error);
-      return;
-    }
-  };
-
   const createFilterParams = () => {
     const params = new URLSearchParams();
 
@@ -246,16 +268,20 @@ export const AdvertsContextProvider = ({
     );
   };
 
+  const toggleAllOccupationGroups = () => {
+    // LOGIC FOR TOGGLING HERE!!!
+  };
+
   // Create filter params after each change of remote workplace
   /*   useEffect(() => {
     const filterParams = createFilterParams();
-    getData(filterParams);
+    getAdvertsData(filterParams);
   }, [remoteWorkplace]); */
 
   // Create filter params after each change of driving license
   /*  useEffect(() => {
     const filterParams = createFilterParams();
-    getData(filterParams);
+    getAdvertsData(filterParams);
   }, [drivingLicense]);  */
 
   useEffect(() => {
@@ -282,7 +308,6 @@ export const AdvertsContextProvider = ({
     municipalitiesQueries,
     totalAds,
     totalPositions,
-    fetched,
     ads,
     drivingLicense,
     remoteWorkplace,
@@ -299,6 +324,7 @@ export const AdvertsContextProvider = ({
     setAds,
     createFilterParams,
     changeSortingOnSelect,
+    toggleAllOccupationGroups,
   };
 
   return (
