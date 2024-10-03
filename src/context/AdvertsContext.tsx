@@ -32,15 +32,10 @@ interface IAdvertsContextValues {
   occupationsQueries: string[];
   municipalitiesQueries: string[];
   ads: IAd[];
-  /*   drivingLicense: boolean;
-  remoteWorkplace: boolean; */
   totalAds: number;
   totalPositions: number;
   queries: IQuery[];
   setAds: (value: IAd[]) => void;
-  /*   createFilterParams: () => URLSearchParams; */
-  /*   setDrivingLicense: (value: boolean) => void;
-  setRemoteWorkplace: (value: boolean) => void; */
   handleClickOnRegion: (taxonomyId: string) => void;
   handleClickOnMunicipality: (taxonomyId: string) => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
@@ -53,6 +48,9 @@ interface IAdvertsContextValues {
     e: DigiFormSelectCustomEvent<HTMLDigiFormSelectElement>
   ) => void;
   toggleAllOccupationGroups: (fieldId: string | null) => void;
+  changeDrivingLicenseReq: (filterValue: boolean) => void;
+  changeToRemoteWorkplace: (filterValue: boolean) => void;
+  handleClickOnSearch: (searchInput: string) => void;
 }
 
 const regionsData = addSelectedAndActiveKeys(locationsData.data.concepts);
@@ -72,8 +70,6 @@ export const AdvertsContextProvider = ({
     useState<IVisibleSubcategories | null>(null);
   const [regions, setRegions] = useState<ICategory[]>(regionsData);
   const [fields, setFields] = useState<ICategory[]>(occupationFieldData);
-  /*   const [drivingLicense, setDrivingLicense] = useState<boolean>(false);
-  const [remoteWorkplace, setRemoteWorkplace] = useState<boolean>(false); */
   const [ads, setAds] = useState<IAd[]>(occupations.hits);
   const [totalAds, setTotalAds] = useState(occupations.total.value);
   const [totalPositions, setTotalPositions] = useState(occupations.positions);
@@ -85,10 +81,11 @@ export const AdvertsContextProvider = ({
   );
   const [occupationsQueries, setoccupationsQueries] = useState<string[]>([]);
   const [queries, setQueries] = useState<IQuery[]>([
-    { query: 'q=', value: 'lärare' },
+    { query: 'q=', value: '' },
     { query: 'sort=', value: '' },
-    { query: 'driving-license-required=', value: 'true' },
-    { query: 'remote=', value: '' }, // FILL MORE QUERIES HERE!
+    { query: 'driving-license-required=', value: '' },
+    { query: 'remote=', value: '' },
+    { query: 'page', value: '' }, // FILL MORE QUERIES HERE!
   ]);
 
   const getAdvertsData = async (params: URLSearchParams | null) => {
@@ -210,22 +207,17 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  const handleClickOnFilterDriving = () => {
-    updateQuery('driving-license-required', 'true');
+  const changeDrivingLicenseReq = (filterValue: boolean) => {
+    updateQuery('driving-license-required=', filterValue.toString());
   };
 
-  const handleClickOnFilterRemove = () => {
-    updateQuery('remote', 'true');
+  const changeToRemoteWorkplace = (filterValue: boolean) => {
+    updateQuery('remote=', filterValue.toString());
   };
 
-  /*   const createFilterParams = () => {
-    const params = new URLSearchParams();
-
-    if (drivingLicense) params.append('driving-license-required', 'true');
-    if (remoteWorkplace) params.append('remote', 'true');
-
-    return params;
-  }; */
+  const handleClickOnSearch = (searchInput: string) => {
+    updateQuery('q=', searchInput);
+  };
 
   const resetAllFieldsAndGroups = () => {
     resetAllCategoriesAndSubCategories(
@@ -257,18 +249,6 @@ export const AdvertsContextProvider = ({
     // LOGIC FOR TOGGLING HERE!!!
   };
 
-  // Create filter params after each change of remote workplace
-  /*   useEffect(() => {
-    const filterParams = createFilterParams();
-    getAdvertsData(filterParams);
-  }, [remoteWorkplace]); */
-
-  // Create filter params after each change of driving license
-  /*  useEffect(() => {
-    const filterParams = createFilterParams();
-    getAdvertsData(filterParams);
-  }, [drivingLicense]);  */
-
   useEffect(() => {
     setFields(updateActiveState(fields));
     console.log('these are the queries for occupations: ', occupationsQueries);
@@ -294,10 +274,6 @@ export const AdvertsContextProvider = ({
     totalAds,
     totalPositions,
     ads,
-    /*     drivingLicense,
-    remoteWorkplace,
-    setRemoteWorkplace,
-    setDrivingLicense, */
     handleClickOnMunicipality,
     handleClickOnRegion,
     handleClickOnOccupationField,
@@ -307,9 +283,11 @@ export const AdvertsContextProvider = ({
     resetMunicipalities,
     resetOccupationGroups,
     setAds,
-    /*     createFilterParams, */
     changeSortingOnSelect,
     toggleAllOccupationGroups,
+    changeToRemoteWorkplace,
+    changeDrivingLicenseReq,
+    handleClickOnSearch,
   };
 
   return (
