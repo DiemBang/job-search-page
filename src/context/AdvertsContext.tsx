@@ -53,6 +53,7 @@ interface IAdvertsContextValues {
   changeWorktimeExtent: (checked: string[]) => void;
   changeEmploymentType: (checked: string[]) => void;
   changeLanguage: (checked: string[]) => void;
+  changePublishedDate: (checked: string[]) => void;
   handleClickOnSearch: (searchInput: string) => void;
 }
 
@@ -103,6 +104,7 @@ export const AdvertsContextProvider = ({
       },
       { query: "remote=", value: urlParams.get("remote") || "" },
       { query: "language=", value: urlParams.get("language") || "" },
+      { query: "published-after=", value: urlParams.get("published-after") || "" },
       /*    { query: 'page', value: urlParams.get('page') || '1' }, */
     ];
   });
@@ -280,6 +282,36 @@ export const AdvertsContextProvider = ({
     }
   };
 
+  const getTodayDateTime = (): string => {
+    const now = new Date();
+    return now.toISOString().split('.')[0]; 
+  };
+  
+  const getDateFromPastDays = (days: number): string => {
+    const date = new Date();
+    date.setDate(date.getDate() - days);
+    return date.toISOString().split('.')[0]; 
+  };
+
+  const changePublishedDate = (checked: string[]) => {
+    console.log("published date", checked);
+
+    if (checked.length === 0 || checked.includes("alla")) {
+      updateQuery("published-after=", "");
+    } else if (checked.includes("idag")) {
+      const today = getTodayDateTime();
+      console.log("today's date is:", today);
+      
+      updateQuery("published-after=", today);
+    } else if (checked.includes("7dagar")) {
+      const sevenDaysAgo = getDateFromPastDays(7);
+      updateQuery("published-after=", sevenDaysAgo);
+    } else if (checked.includes("30dagar")) {
+      const thirtyDaysAgo = getDateFromPastDays(30);
+      updateQuery("published-after=", thirtyDaysAgo);
+    }
+  };
+
   const changeToRemoteWorkplace = (filterValue: boolean) => {
     updateQuery("remote=", filterValue.toString());
   };
@@ -354,6 +386,7 @@ export const AdvertsContextProvider = ({
     changeToRemoteWorkplace,
     changeDrivingLicenseReq,
     changeLanguage,
+    changePublishedDate,
     handleClickOnSearch,
   };
 
