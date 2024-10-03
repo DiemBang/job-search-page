@@ -1,0 +1,14 @@
+.suggestion-dropdown {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  .suggestion {
+    cursor: pointer;
+    &:hover {
+      background-color: #d6d6d6;
+    }
+  }
+}
