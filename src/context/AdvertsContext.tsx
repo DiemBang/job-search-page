@@ -10,6 +10,7 @@ import {
   resetSubCategoriesOfCategory,
   handleClickOnCategory,
   toggleSubcategoryActiveState,
+  setActiveSubCategories,
 } from '../utils/adsUtils';
 import { getBase } from '../services/serviceBase';
 import { IAd } from '../pages/searchPage/SearchResult';
@@ -31,15 +32,15 @@ interface IAdvertsContextValues {
   occupationsQueries: string[];
   municipalitiesQueries: string[];
   ads: IAd[];
-  drivingLicense: boolean;
-  remoteWorkplace: boolean;
+  /*   drivingLicense: boolean;
+  remoteWorkplace: boolean; */
   totalAds: number;
   totalPositions: number;
   queries: IQuery[];
   setAds: (value: IAd[]) => void;
   /*   createFilterParams: () => URLSearchParams; */
-  setDrivingLicense: (value: boolean) => void;
-  setRemoteWorkplace: (value: boolean) => void;
+  /*   setDrivingLicense: (value: boolean) => void;
+  setRemoteWorkplace: (value: boolean) => void; */
   handleClickOnRegion: (taxonomyId: string) => void;
   handleClickOnMunicipality: (taxonomyId: string) => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
@@ -71,8 +72,8 @@ export const AdvertsContextProvider = ({
     useState<IVisibleSubcategories | null>(null);
   const [regions, setRegions] = useState<ICategory[]>(regionsData);
   const [fields, setFields] = useState<ICategory[]>(occupationFieldData);
-  const [drivingLicense, setDrivingLicense] = useState<boolean>(false);
-  const [remoteWorkplace, setRemoteWorkplace] = useState<boolean>(false);
+  /*   const [drivingLicense, setDrivingLicense] = useState<boolean>(false);
+  const [remoteWorkplace, setRemoteWorkplace] = useState<boolean>(false); */
   const [ads, setAds] = useState<IAd[]>(occupations.hits);
   const [totalAds, setTotalAds] = useState(occupations.total.value);
   const [totalPositions, setTotalPositions] = useState(occupations.positions);
@@ -146,12 +147,7 @@ export const AdvertsContextProvider = ({
         break;
     }
 
-    const updatedQueries = queries.map((q) => {
-      return q.query === 'sort=' ? { ...q, value: sortValue } : q;
-    });
-
     updateQuery('sort=', sortValue);
-    refreshData(updatedQueries);
   };
 
   /**
@@ -188,18 +184,10 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  const setActiveSubCategories = (
-    taxonomyId: string,
-    setSubCategories: React.Dispatch<React.SetStateAction<string[]>>
-  ) => {
-    setSubCategories((prevSubC) => {
-      if (prevSubC.includes(taxonomyId)) {
-        return prevSubC.filter((id) => id !== taxonomyId);
-      } else {
-        return [...prevSubC, taxonomyId];
-      }
-    });
-  };
+  // everytime we change a query we will fetch new occupation data
+  useEffect(() => {
+    refreshData(queries);
+  }, [queries]);
 
   const handleClickOnOccupationGroup = (taxonomyId: string) => {
     setActiveSubCategories(taxonomyId, setoccupationsQueries);
@@ -306,10 +294,10 @@ export const AdvertsContextProvider = ({
     totalAds,
     totalPositions,
     ads,
-    drivingLicense,
+    /*     drivingLicense,
     remoteWorkplace,
     setRemoteWorkplace,
-    setDrivingLicense,
+    setDrivingLicense, */
     handleClickOnMunicipality,
     handleClickOnRegion,
     handleClickOnOccupationField,
