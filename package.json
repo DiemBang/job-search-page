@@ -13,6 +13,7 @@
     "@digi/arbetsformedlingen": "^27.0.1",
     "@digi/arbetsformedlingen-react": "^27.0.1",
     "axios": "^1.7.7",
+    "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@types/lodash": "^4.17.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/styled-components": "^5.1.34",
