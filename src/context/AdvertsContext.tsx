@@ -58,7 +58,7 @@ const occupationFieldData = addSelectedAndActiveKeys(
   occupationsData.data.concepts
 );
 
-const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?limit=20';
 
 export const AdvertsContextProvider = ({
   children,
@@ -91,14 +91,18 @@ export const AdvertsContextProvider = ({
         value: urlParams.get('driving-license-required') || '',
       },
       { query: 'remote=', value: urlParams.get('remote') || '' },
-      /*    { query: 'page', value: urlParams.get('page') || '1' }, */
+      { query: 'page=', value: urlParams.get('page') || '1' }
     ];
   });
 
   const getAdvertsData = async (params: URLSearchParams | null) => {
     console.log('these are the current params', params?.toString());
     try {
-      const occupationUrl = params ? `${BASE_URL}&${params}` : BASE_URL;
+      const pageValue = params?.get('page');
+      const page: number = pageValue ? parseInt(pageValue) : 1;
+      const offsetValue = (page - 1) * 10; 
+      
+      const occupationUrl = params ? `${BASE_URL}&${params}&offset=${offsetValue}` : BASE_URL;
       const occupationData = await getBase<IAdResponseData>(occupationUrl);
 
       const { hits, total, positions } = occupationData;
