@@ -5,7 +5,7 @@ import { EmploymentTypeFilter } from './EmploymentTypeFilter';
 import { RemoteWorkFilter } from './RemoteWorkFilter';
 import { EducationFilter } from './EducationFilter';
 import { LanguageFilter } from './LanguageFilter';
-import { PublicationFilter } from './PublicationFilter';
+import { PublishedFilter } from './PublishedFilter';
 import { FilterWrapper } from '../../../components/styled/Wrappers';
 import { OverlayContainer } from '../../../components/styled/shared/OverlayContainer';
 import useModalsContext from '../../../hooks/useModalsContext';
@@ -29,7 +29,7 @@ export const Filters = () => {
         <DriversLicenseFilter />
         <EducationFilter />
         <LanguageFilter />
-        <PublicationFilter />
+        <PublishedFilter />
       </FilterWrapper>
     </section>
   );

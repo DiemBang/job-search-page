@@ -1,6 +1,6 @@
 import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
 
-export const PublicationFilter = () => {
+export const PublishedFilter = () => {
   return (
     <>
       <DigiFormFilter
