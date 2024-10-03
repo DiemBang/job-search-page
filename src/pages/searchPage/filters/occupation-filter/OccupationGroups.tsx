@@ -6,7 +6,7 @@ import { FormCheckboxVariation } from '@digi/arbetsformedlingen';
 const OccupationGroups = () => {
   const {
     visibleGroups,
-    occupationsQuerys,
+    occupationsQueries,
     handleClickOnOccupationGroup,
     resetOccupationGroups,
   } = useAdvertsContext();
@@ -55,7 +55,7 @@ const OccupationGroups = () => {
           onAfOnChange={() => console.log('click')}
         ></DigiFormCheckbox>
         {visibleGroups?.visibleSubcategories.map((group) => {
-          const isActive = occupationsQuerys.includes(group.id);
+          const isActive = occupationsQueries.includes(group.id);
 
           return (
             <FlexContainer $align="flex-start" $gap="10px" key={group.id}>

@@ -1,28 +1,19 @@
 import {
   FormInputSearchVariation,
   FormInputType,
-} from "@digi/arbetsformedlingen";
-import { DigiFormInputSearch } from "@digi/arbetsformedlingen-react";
+} from '@digi/arbetsformedlingen';
+import { DigiFormInputSearch } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../hooks/useAdvertsContext';
-
+import { useState } from 'react';
 
 export const SearchField = () => {
-  
-  const { getData, createFilterParams, searchQuery, setSearchQuery } = useAdvertsContext();
+  const { handleClickOnSearch } = useAdvertsContext();
 
-  const handleSearch = () => {
-    
-    // const params = new URLSearchParams();  
-    const params = createFilterParams();  
+  const [searchValue, setSearchValue] = useState('');
 
-    if(searchQuery) {
-      params.append("q", searchQuery);
-    }
-
-    getData(params);
-
-    console.log("search button works, search query:", searchQuery);  
-  }
+  const handleSearchInputOnChange = (value: string) => {
+    setSearchValue(value);
+  };
 
   return (
     <section>
@@ -31,10 +22,9 @@ export const SearchField = () => {
         afVariation={FormInputSearchVariation.MEDIUM}
         afType={FormInputType.SEARCH}
         afButtonText="Sök"
-        onAfOnInput={(e) => setSearchQuery(e.target.value)}
-        onAfOnClick={handleSearch}
+        onAfOnInput={(e) => handleSearchInputOnChange(e.target.value)}
+        onAfOnClick={() => handleClickOnSearch(searchValue)}
       ></DigiFormInputSearch>
     </section>
   );
 };
-

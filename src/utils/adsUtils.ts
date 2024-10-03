@@ -54,6 +54,19 @@ export const toggleCategorySelectedState = (
   });
 };
 
+export const setActiveSubCategories = (
+  taxonomyId: string,
+  setSubCategories: React.Dispatch<React.SetStateAction<string[]>>
+) => {
+  setSubCategories((prevSubC) => {
+    if (prevSubC.includes(taxonomyId)) {
+      return prevSubC.filter((id) => id !== taxonomyId);
+    } else {
+      return [...prevSubC, taxonomyId];
+    }
+  });
+};
+
 /**
  * toggles a subcategory by its ids
  * @param {ICategory[]} categories
