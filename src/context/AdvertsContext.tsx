@@ -52,6 +52,7 @@ interface IAdvertsContextValues {
   changeToRemoteWorkplace: (filterValue: boolean) => void;
   changeWorktimeExtent: (checked: string[]) => void;
   changeEmploymentType: (checked: string[]) => void;
+  changeLanguage: (checked: string[]) => void;
   handleClickOnSearch: (searchInput: string) => void;
 }
 
@@ -101,6 +102,7 @@ export const AdvertsContextProvider = ({
         value: urlParams.get("driving-license-required") || "",
       },
       { query: "remote=", value: urlParams.get("remote") || "" },
+      { query: "language=", value: urlParams.get("language") || "" },
       /*    { query: 'page', value: urlParams.get('page') || '1' }, */
     ];
   });
@@ -266,6 +268,20 @@ export const AdvertsContextProvider = ({
     }
   };
 
+  const changeLanguage = (checked: string[]) => {
+    console.log(checked);
+
+    if (checked.length === 0) {
+      updateQuery("language=", "");
+    } else if (checked.includes("sv")) {
+      updateQuery("language=", "zSLA_vw2_FXN");
+    } else if (checked.includes("eng")) {
+      updateQuery("language=", "NVxJ_hLg_TYS");
+    } else if (checked.includes("ovriga")) {
+      updateQuery("language=", "947z_JGS_Uk2"); // check id for other languages?
+    }
+  };
+
   const changeToRemoteWorkplace = (filterValue: boolean) => {
     updateQuery("remote=", filterValue.toString());
   };
@@ -339,6 +355,7 @@ export const AdvertsContextProvider = ({
     changeEmploymentType,
     changeToRemoteWorkplace,
     changeDrivingLicenseReq,
+    changeLanguage,
     handleClickOnSearch,
   };
 
