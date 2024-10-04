@@ -53,6 +53,10 @@ interface IAdvertsContextValues {
   toggleAllOccupationGroups: (fieldId: string | null) => void;
   changeDrivingLicenseReq: (filterValue: boolean) => void;
   changeToRemoteWorkplace: (filterValue: boolean) => void;
+  changeWorktimeExtent: (checked: string[]) => void;
+  changeEmploymentType: (checked: string[]) => void;
+  changeLanguage: (checked: string[]) => void;
+  changePublishedDate: (checked: string[]) => void;
   handleClickOnSearch: (searchInput: string) => void;
 }
 
@@ -90,10 +94,23 @@ export const AdvertsContextProvider = ({
       { query: 'q=', value: urlParams.get('q') || '' },
       { query: 'sort=', value: urlParams.get('sort') || '' },
       {
+        query: 'worktime-extent=',
+        value: urlParams.get('worktime-extent') || '',
+      },
+      {
+        query: 'employment-type=',
+        value: urlParams.get('employment-type') || '',
+      },
+      {
         query: 'driving-license-required=',
         value: urlParams.get('driving-license-required') || '',
       },
       { query: 'remote=', value: urlParams.get('remote') || '' },
+      { query: 'language=', value: urlParams.get('language') || '' },
+      {
+        query: 'published-after=',
+        value: urlParams.get('published-after') || '',
+      },
       /*    { query: 'page', value: urlParams.get('page') || '1' }, */
     ];
   });
@@ -193,7 +210,7 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  // everytime we change a query we will fetch new occupation data
+  // every time we change a query we will fetch new occupation data
   useEffect(() => {
     if (initialRender.current) {
       initialRender.current = false;
@@ -224,11 +241,93 @@ export const AdvertsContextProvider = ({
   };
 
   const changeDrivingLicenseReq = (filterValue: boolean) => {
-    updateQuery('driving-license-required=', filterValue.toString());
+    if (filterValue === false) {
+      updateQuery('driving-license-required=', '');
+    } else {
+      updateQuery('driving-license-required=', filterValue.toString());
+    }
   };
 
   const changeToRemoteWorkplace = (filterValue: boolean) => {
-    updateQuery('remote=', filterValue.toString());
+    if (filterValue === false) {
+      updateQuery('remote=', '');
+    } else {
+      updateQuery('remote=', filterValue.toString());
+    }
+  };
+
+  const changeWorktimeExtent = (checked: string[]) => {
+    console.log(checked);
+
+    if (checked.length === 0) {
+      updateQuery('worktime-extent=', '');
+    } else if (checked.includes('alla')) {
+      updateQuery('worktime-extent=', '');
+    } else if (checked.includes('heltid')) {
+      updateQuery('worktime-extent=', '6YE1_gAC_R2G');
+    } else if (checked.includes('deltid')) {
+      updateQuery('worktime-extent=', '947z_JGS_Uk2');
+    }
+  };
+
+  const changeEmploymentType = (checked: string[]) => {
+    console.log(checked);
+
+    if (checked.length === 0) {
+      updateQuery('employment-type=', '');
+    } else if (checked.includes('tillsvidare')) {
+      updateQuery('employment-type=', 'kpPX_CNN_gDU');
+    } else if (checked.includes('timanstallning')) {
+      updateQuery('employment-type=', 'sTu5_NBQ_udq');
+    } else if (checked.includes('vikariat')) {
+      updateQuery('employment-type=', 'gro4_cWF_6D7');
+    } else if (checked.includes('behov')) {
+      updateQuery('employment-type=', '1paU_aCR_nGn');
+    } else if (checked.includes('sasong')) {
+      updateQuery('employment-type=', 'EBhX_Qm2_8eX');
+    }
+  };
+
+  const changeLanguage = (checked: string[]) => {
+    console.log(checked);
+
+    if (checked.length === 0) {
+      updateQuery('language=', '');
+    } else if (checked.includes('sv')) {
+      updateQuery('language=', 'zSLA_vw2_FXN');
+    } else if (checked.includes('eng')) {
+      updateQuery('language=', 'NVxJ_hLg_TYS');
+    }
+  };
+
+  const getTodayDateTime = (): string => {
+    const now = new Date();
+    return now.toISOString().split('.')[0];
+  };
+
+  const getDateFromPastDays = (days: number): string => {
+    const date = new Date();
+    date.setDate(date.getDate() - days);
+    return date.toISOString().split('.')[0];
+  };
+
+  const changePublishedDate = (checked: string[]) => {
+    console.log('published date', checked);
+
+    if (checked.length === 0 || checked.includes('alla')) {
+      updateQuery('published-after=', '');
+    } else if (checked.includes('idag')) {
+      const today = getTodayDateTime();
+      console.log("today's date is:", today);
+
+      updateQuery('published-after=', today);
+    } else if (checked.includes('7dagar')) {
+      const sevenDaysAgo = getDateFromPastDays(7);
+      updateQuery('published-after=', sevenDaysAgo);
+    } else if (checked.includes('30dagar')) {
+      const thirtyDaysAgo = getDateFromPastDays(30);
+      updateQuery('published-after=', thirtyDaysAgo);
+    }
   };
 
   const handleClickOnSearch = (searchInput: string) => {
@@ -296,8 +395,12 @@ export const AdvertsContextProvider = ({
     setAds,
     changeSortingOnSelect,
     toggleAllOccupationGroups,
+    changeWorktimeExtent,
+    changeEmploymentType,
     changeToRemoteWorkplace,
     changeDrivingLicenseReq,
+    changeLanguage,
+    changePublishedDate,
     handleClickOnSearch,
   };
 
