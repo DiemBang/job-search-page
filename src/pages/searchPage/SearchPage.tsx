@@ -6,6 +6,7 @@ import { useLoaderData } from 'react-router-dom';
 import { AdvertsContextProvider } from '../../context/AdvertsContext';
 import { IOccupations } from '../../types/occupation-types';
 import { ModalsContextProvider } from '../../context/ModalsContext';
+import Map from './Map';
 
 export const SearchPage = () => {
   const occupations = useLoaderData() as IOccupations;
@@ -19,6 +20,7 @@ export const SearchPage = () => {
           <Filters />
           <DisplaySearchResults />
           {/* Pagination */}
+          <Map />
         </SearchPageWrapper>
       </AdvertsContextProvider>
     </ModalsContextProvider>
