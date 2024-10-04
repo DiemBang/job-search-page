@@ -1,6 +1,9 @@
 import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
+import useAdvertsContext from "../../../hooks/useAdvertsContext";
 
-export const PublicationFilter = () => {
+export const PublishedFilter = () => {
+  const { changePublishedDate } = useAdvertsContext();
+
   return (
     <>
       <DigiFormFilter
@@ -12,14 +15,13 @@ export const PublicationFilter = () => {
           { id: "7dagar", label: "Senaste 7 dagarna" },
           { id: "30dagar", label: "Senaste 30 dagarna" },
         ]}
-        afCheckItems={["alla"]} // optional, override internal check state of component with filter ids
         onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
-        onAfResetFilter={() => console.log("reset filter")}
+        onAfResetFilter={() => {changePublishedDate([]);}}
         onAfSubmitFilter={(e) =>
-          console.log("submit filter", e.detail.listItems, e.detail.checked)
+          changePublishedDate(e.detail.checked)
         }
         onAfCloseFilter={(e) =>
-          console.log("submit filter", e.detail.listItems, e.detail.checked)
+          changePublishedDate(e.detail.checked)
         }
       ></DigiFormFilter>
     </>
