@@ -27,7 +27,6 @@ export const Filters = () => {
         <EmploymentTypeFilter />
         <RemoteWorkFilter />
         <DriversLicenseFilter />
-        <EducationFilter />
         <LanguageFilter />
         <PublishedFilter />
       </FilterWrapper>
