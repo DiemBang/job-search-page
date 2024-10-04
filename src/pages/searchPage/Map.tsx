@@ -6,9 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 const Map = () => {
   const navigate = useNavigate();
-  const { ads } = useAdvertsContext();
+  const { adsData } = useAdvertsContext();
 
-  const locations = ads.map((ad) => {
+  const locations = adsData?.hits.map((ad) => {
     return {
       id: ad.id,
       employer: ad.employer.name,
@@ -24,7 +24,6 @@ const Map = () => {
 
   useEffect(() => {
     const token = import.meta.env.VITE_MAPBOX_TOKEN;
-    console.log(token);
 
     mapboxgl.accessToken = token;
 
@@ -38,37 +37,48 @@ const Map = () => {
         maxZoom: 12,
       });
 
-      locations.forEach((location) => {
-        const marker = new mapboxgl.Marker()
-          .setLngLat([location.lgn, location.lat])
-          .addTo(mapRef.current!);
+      const markers: mapboxgl.Marker[] = [];
 
-        // Popups
-        const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
-            <div class="map-popup">
-                <h3>${location.headline}${location.address}</h3>
-                <p>${location.employer}</p>
-                <button class="map-popup-button" id="popup-button-${location.id}">Gå till annons</button>
-            </div>
-          `);
+      if (locations) {
+        locations.forEach((location) => {
+          const marker = new mapboxgl.Marker()
+            .setLngLat([location.lgn, location.lat])
+            .addTo(mapRef.current!);
 
-        marker.setPopup(popup);
+          // Popups
+          const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
+                <div class="map-popup">
+                    <h3>${location.headline}${location.address}</h3>
+                    <p>${location.employer}</p>
+                    <button class="map-popup-button" id="popup-button-${location.id}">Gå till annons</button>
+                </div>
+              `);
 
-        popup.on('open', () => {
-          document
-            .getElementById(`popup-button-${location.id}`)
-            ?.addEventListener('click', () => {
+          marker.setPopup(popup);
+
+          popup.on('open', () => {
+            const button = document.getElementById(
+              `popup-button-${location.id}`
+            );
+            button?.addEventListener('click', () => {
               navigate(`/search/job/${location.id}`);
-              /*               alert(`you clicked the button for: ${location.headline}`); */
             });
-        });
-      });
-    }
+          });
 
-    return () => {
-      mapRef.current?.remove();
-    };
+          markers.push(marker);
+        });
+      }
+
+      return () => {
+        markers.forEach((marker) => marker.remove());
+        mapRef.current?.remove();
+      };
+    }
   }, [locations]);
+
+  if (adsData?.hits.length === 0 || adsData === null) {
+    return null;
+  }
 
   return (
     <>
