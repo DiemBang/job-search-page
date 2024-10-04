@@ -1,5 +1,9 @@
 import { createContext, ReactNode, useState, useEffect, useRef } from 'react';
-import { IOccupations, ICategory } from '../types/occupation-types';
+import {
+  IOccupations,
+  ICategory,
+  IOccupation,
+} from '../types/occupation-types';
 import { IVisibleSubcategories, IQuery, IAdResponseData } from '../types/types';
 import locationsData from '../data/regions-municipalities.json';
 import occupationsData from '../data/occupation-groups.json';
@@ -13,7 +17,6 @@ import {
   setActiveSubCategories,
 } from '../utils/adsUtils';
 import { getBase } from '../services/serviceBase';
-import { IAd } from '../pages/searchPage/SearchResult';
 import { DigiFormSelectCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
 
 const AdvertsContext = createContext<IAdvertsContextValues | null>(null);
@@ -31,11 +34,11 @@ interface IAdvertsContextValues {
   fields: ICategory[];
   occupationsQueries: string[];
   municipalitiesQueries: string[];
-  ads: IAd[];
+  ads: IOccupation[];
   totalAds: number;
   totalPositions: number;
   queries: IQuery[];
-  setAds: (value: IAd[]) => void;
+  setAds: (value: IOccupation[]) => void;
   handleClickOnRegion: (taxonomyId: string) => void;
   handleClickOnMunicipality: (taxonomyId: string) => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
@@ -71,7 +74,7 @@ export const AdvertsContextProvider = ({
     useState<IVisibleSubcategories | null>(null);
   const [regions, setRegions] = useState<ICategory[]>(regionsData);
   const [fields, setFields] = useState<ICategory[]>(occupationFieldData);
-  const [ads, setAds] = useState<IAd[]>(occupations.hits);
+  const [ads, setAds] = useState<IOccupation[]>(occupations.hits);
   const [totalAds, setTotalAds] = useState(occupations.total.value);
   const [totalPositions, setTotalPositions] = useState(occupations.positions);
 
