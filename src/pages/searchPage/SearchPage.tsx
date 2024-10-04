@@ -20,7 +20,7 @@ export const SearchPage = () => {
           <Filters />
           <DisplaySearchResults />
           {/* Pagination */}
-          <Map />
+          {occupations.hits.length > 0 && <Map />}
         </SearchPageWrapper>
       </AdvertsContextProvider>
     </ModalsContextProvider>
