@@ -235,7 +235,19 @@ export const AdvertsContextProvider = ({
   };
 
   const changeDrivingLicenseReq = (filterValue: boolean) => {
-    updateQuery("driving-license-required=", filterValue.toString());
+    if (filterValue === false) {
+      updateQuery("driving-license-required=", "");
+    } else {
+      updateQuery("driving-license-required=", filterValue.toString());
+    }
+  };
+
+  const changeToRemoteWorkplace = (filterValue: boolean) => {
+    if (filterValue === false) {
+      updateQuery("remote=", "");
+    } else {
+      updateQuery("remote=", filterValue.toString());
+    }    
   };
 
   const changeWorktimeExtent = (checked: string[]) => {
@@ -310,10 +322,6 @@ export const AdvertsContextProvider = ({
       const thirtyDaysAgo = getDateFromPastDays(30);
       updateQuery("published-after=", thirtyDaysAgo);
     }
-  };
-
-  const changeToRemoteWorkplace = (filterValue: boolean) => {
-    updateQuery("remote=", filterValue.toString());
   };
 
   const handleClickOnSearch = (searchInput: string) => {
