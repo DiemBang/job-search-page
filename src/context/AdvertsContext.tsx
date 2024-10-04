@@ -1,9 +1,5 @@
 import { createContext, ReactNode, useState, useEffect, useRef } from 'react';
-import {
-  IOccupations,
-  ICategory,
-  IOccupation,
-} from '../types/occupation-types';
+import { IOccupations, ICategory } from '../types/occupation-types';
 import { IVisibleSubcategories, IQuery, IAdResponseData } from '../types/types';
 import locationsData from '../data/regions-municipalities.json';
 import occupationsData from '../data/occupation-groups.json';
@@ -34,13 +30,11 @@ interface IAdvertsContextValues {
   fields: ICategory[];
   occupationsQueries: string[];
   municipalitiesQueries: string[];
-  ads: IOccupation[];
-  totalAds: number;
-  totalPositions: number;
   queries: IQuery[];
-  setAds: (value: IOccupation[]) => void;
+  adsData: IAdResponseData | null;
   handleClickOnRegion: (taxonomyId: string) => void;
   handleClickOnMunicipality: (taxonomyId: string) => void;
+  handleClickOnMunicipialitiesFilter: () => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
   handleClickOnOccupationGroup: (taxonomyId: string) => void;
   resetAllRegionsAndMunicipalities: () => void;
@@ -58,6 +52,7 @@ interface IAdvertsContextValues {
   changeLanguage: (checked: string[]) => void;
   changePublishedDate: (checked: string[]) => void;
   handleClickOnSearch: (searchInput: string) => void;
+  handleClickOnOccupationFilter: () => void;
 }
 
 const regionsData = addSelectedAndActiveKeys(locationsData.data.concepts);
@@ -78,9 +73,7 @@ export const AdvertsContextProvider = ({
     useState<IVisibleSubcategories | null>(null);
   const [regions, setRegions] = useState<ICategory[]>(regionsData);
   const [fields, setFields] = useState<ICategory[]>(occupationFieldData);
-  const [ads, setAds] = useState<IOccupation[]>(occupations.hits);
-  const [totalAds, setTotalAds] = useState(occupations.total.value);
-  const [totalPositions, setTotalPositions] = useState(occupations.positions);
+  const [adsData, setAdsData] = useState<IAdResponseData | null>(occupations);
 
   // ----- QUERIES ----- //
 
@@ -90,6 +83,10 @@ export const AdvertsContextProvider = ({
   const [occupationsQueries, setoccupationsQueries] = useState<string[]>([]);
   const [queries, setQueries] = useState<IQuery[]>(() => {
     const urlParams = new URLSearchParams(window.location.search);
+
+    const occupationGroupParams = urlParams.getAll('occupation-group');
+    const municipalitiesGroupParams = urlParams.getAll('municipality');
+
     return [
       { query: 'q=', value: urlParams.get('q') || '' },
       { query: 'sort=', value: urlParams.get('sort') || '' },
@@ -111,10 +108,26 @@ export const AdvertsContextProvider = ({
         query: 'published-after=',
         value: urlParams.get('published-after') || '',
       },
-      /*    { query: 'page', value: urlParams.get('page') || '1' }, */
+      { query: 'occupation-group=', value: occupationGroupParams },
+      { query: 'municipality=', value: municipalitiesGroupParams },
     ];
   });
 
+  // every time we change a query we will fetch new occupation data
+  useEffect(() => {
+    if (initialRender.current) {
+      initialRender.current = false;
+      return;
+    }
+    refreshData(queries);
+  }, [queries]);
+
+  /**
+   * based on search params gets the occupationdata from the AF API
+   * set states for
+   * @param {URLSearchParams | null} params
+   * @returns
+   */
   const getAdvertsData = async (params: URLSearchParams | null) => {
     console.log('these are the current params', params?.toString());
     try {
@@ -123,9 +136,13 @@ export const AdvertsContextProvider = ({
 
       const { hits, total, positions } = occupationData;
 
-      setAds(hits);
-      setTotalAds(total.value);
-      setTotalPositions(positions);
+      console.log(occupationData);
+
+      setAdsData({
+        hits: hits,
+        total: total,
+        positions: positions,
+      });
     } catch (error) {
       console.log('Error occured when fetching data', error);
       return;
@@ -184,6 +201,9 @@ export const AdvertsContextProvider = ({
   const getQueryStringFromQueries = (queries: IQuery[]): string => {
     return queries
       .map((q) => {
+        if (Array.isArray(q.value)) {
+          return q.value.map((v) => `${q.query}${v}`).join('&');
+        }
         return q.value ? `${q.query}${q.value}` : '';
       })
       .filter(Boolean)
@@ -210,14 +230,13 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  // every time we change a query we will fetch new occupation data
-  useEffect(() => {
-    if (initialRender.current) {
-      initialRender.current = false;
-      return;
-    }
-    refreshData(queries);
-  }, [queries]);
+  const handleClickOnOccupationFilter = () => {
+    updateQuery('occupation-group=', occupationsQueries);
+  };
+
+  const handleClickOnMunicipialitiesFilter = () => {
+    updateQuery('municipality=', municipalitiesQueries);
+  };
 
   const handleClickOnOccupationGroup = (taxonomyId: string) => {
     setActiveSubCategories(taxonomyId, setoccupationsQueries);
@@ -234,7 +253,7 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  const updateQuery = (queryKey: string, value: string) => {
+  const updateQuery = (queryKey: string, value: string | string[]) => {
     setQueries((prevQueries) =>
       prevQueries.map((q) => (q.query === queryKey ? { ...q, value } : q))
     );
@@ -257,7 +276,7 @@ export const AdvertsContextProvider = ({
   };
 
   const changeWorktimeExtent = (checked: string[]) => {
-    console.log(checked);
+    console.log('is worktime checked: ', checked);
 
     if (checked.length === 0) {
       updateQuery('worktime-extent=', '');
@@ -271,7 +290,7 @@ export const AdvertsContextProvider = ({
   };
 
   const changeEmploymentType = (checked: string[]) => {
-    console.log(checked);
+    console.log('is employment type checked: ', checked);
 
     if (checked.length === 0) {
       updateQuery('employment-type=', '');
@@ -289,7 +308,7 @@ export const AdvertsContextProvider = ({
   };
 
   const changeLanguage = (checked: string[]) => {
-    console.log(checked);
+    console.log('is language checked: ', checked);
 
     if (checked.length === 0) {
       updateQuery('language=', '');
@@ -312,7 +331,7 @@ export const AdvertsContextProvider = ({
   };
 
   const changePublishedDate = (checked: string[]) => {
-    console.log('published date', checked);
+    console.log('is published date checked', checked);
 
     if (checked.length === 0 || checked.includes('alla')) {
       updateQuery('published-after=', '');
@@ -366,10 +385,12 @@ export const AdvertsContextProvider = ({
 
   useEffect(() => {
     setFields(updateActiveState(fields));
+    console.log('active occupations', occupationsQueries);
   }, [occupationsQueries]);
 
   useEffect(() => {
     setRegions(updateActiveState(regions));
+    console.log('active regions', municipalitiesQueries);
   }, [municipalitiesQueries]);
 
   const adsValues: IAdvertsContextValues = {
@@ -381,9 +402,8 @@ export const AdvertsContextProvider = ({
     fields,
     occupationsQueries,
     municipalitiesQueries,
-    totalAds,
-    totalPositions,
-    ads,
+    adsData,
+    handleClickOnMunicipialitiesFilter,
     handleClickOnMunicipality,
     handleClickOnRegion,
     handleClickOnOccupationField,
@@ -392,7 +412,6 @@ export const AdvertsContextProvider = ({
     resetAllFieldsAndGroups,
     resetMunicipalities,
     resetOccupationGroups,
-    setAds,
     changeSortingOnSelect,
     toggleAllOccupationGroups,
     changeWorktimeExtent,
@@ -402,6 +421,7 @@ export const AdvertsContextProvider = ({
     changeLanguage,
     changePublishedDate,
     handleClickOnSearch,
+    handleClickOnOccupationFilter,
   };
 
   return (
