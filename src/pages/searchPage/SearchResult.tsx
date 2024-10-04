@@ -2,6 +2,7 @@ import { TypographyTimeVariation } from "@digi/arbetsformedlingen";
 import { DigiTypographyTime } from "@digi/arbetsformedlingen-react";
 import { SearchResultWrapper } from "../../components/styled/Wrappers";
 import StyledRouterLink from "../../components/styled/shared/StyledRouterLink";
+import { AddFavourite } from "./AddFavourite";
 
 interface IEmployer {
   name: string;
@@ -46,6 +47,7 @@ export const SearchResult = ({ ad }: IAdProps) => {
             afDateTime={ad.publication_date}
           ></DigiTypographyTime>
         </p>
+        <AddFavourite></AddFavourite>
       </SearchResultWrapper>
     </StyledRouterLink>
   );
