@@ -6,6 +6,8 @@ import { useLoaderData } from "react-router-dom";
 import { IOccupations } from '../../types/occupation-types';
 import { AdvertsContextProvider } from '../../context/AdvertsContext';
 import { DigiNavigationPagination } from "@digi/arbetsformedlingen-react";
+import { useState } from "react";
+import { ModalsContextProvider } from "../../context/ModalsContext";
 
 
 
@@ -21,12 +23,19 @@ export const SearchPage = () => {
   const handlePageChange = (e: CustomEvent<number>): void => {
     const newPage = e.detail;
     setCurrentPage(newPage);
+  
+    const currentUrl = new URL(window.location.href);
+  
+    currentUrl.searchParams.set('page', newPage.toString());
+  
+    window.history.replaceState({}, '', currentUrl.toString());
+  
     console.log("Page number has been changed to: ", newPage);
-  }
+  };
 
   return (
     <ModalsContextProvider>
-      <AdvertsContextProvider occupations={occupations}>
+      <AdvertsContextProvider occupations={data}>
         <SearchPageWrapper>
           <h2>Platsbanken</h2>
           <SearchField />
