@@ -15,7 +15,7 @@ export const SearchPage = () => {
     <ModalsContextProvider>
       <AdvertsContextProvider occupations={occupations}>
         <DigiTypography>
-          <SearchPageWrapper>
+          <SearchPageWrapper className='search-page'>
             <h2>Platsbanken</h2>
             <SearchField />
             <Filters />
