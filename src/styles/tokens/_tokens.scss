@@ -9,3 +9,12 @@
   --digi--link-external--color--default: white;
   --digi--link-external--color--visited: white;
 }
+
+.sc-digi-logo-h .digi-logo__system-name.sc-digi-logo {
+  --digi--logo--margin--system: 0;
+}
+
+.sc-digi-header-navigation-h .digi-header-navigation__wrapper.sc-digi-header-navigation {
+  --digi--color--background--neutral-8: white;
+  --digi--header--border-width: 0;
+}
