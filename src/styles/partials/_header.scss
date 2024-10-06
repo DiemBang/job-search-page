@@ -1,16 +1,23 @@
 /* Header Styling */
 
-.digi-logo__img {
+header {
+  > digi-layout-block {
+    > div {
+      padding: 0 var(--digi--padding--largest-3);
+    }
+  }
+
+  .digi-logo__img {
     background-image: url('/src/assets/logo.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 50px;
   }
-  
+
   .sc-digi-logo-h .digi-logo__system-name.sc-digi-logo::before {
     content: none;
   }
   use#Main-Symbol {
-      display: none;
+    display: none;
   }
-  
+}
