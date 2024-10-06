@@ -1,27 +1,26 @@
-import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
+import { DigiFormFilter } from '@digi/arbetsformedlingen-react';
+import useAdvertsContext from '../../../hooks/useAdvertsContext';
 
 export const RemoteWorkFilter = () => {
-    return (
-        <>
-        <DigiFormFilter
-          afFilterButtonText="Arbetsplats"
-          afSubmitButtonText="Filtrera"
-          afListItems={[
-            { id: "alla", label: "Alla" },
-            { id: "endast_distans", label: "Endast distansarbete" },
+  const { changeToRemoteWorkplace } = useAdvertsContext();
 
-          ]}
-          afCheckItems={["alla"]} // optional, override internal check state of component with filter ids
-          onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
-          onAfResetFilter={() => console.log("reset filter")}
-          onAfSubmitFilter={(e) =>
-            console.log("submit filter", e.detail.listItems, e.detail.checked)
-          }
-          onAfCloseFilter={(e) =>
-            console.log("submit filter", e.detail.listItems, e.detail.checked)
-          }
-        ></DigiFormFilter>
-        
-        </>
-    )
-}
+  return (
+    <>
+      <DigiFormFilter
+        afFilterButtonText="Arbetsplats"
+        afSubmitButtonText="Filtrera"
+        afListItems={[{ id: 'endast_distans', label: 'Endast distansarbete' }]}
+        onAfChangeFilter={(e) => e.detail.isChecked}
+        onAfResetFilter={() => {
+          changeToRemoteWorkplace(false);
+        }}
+        onAfSubmitFilter={(e) =>
+          changeToRemoteWorkplace(e.detail.checked.includes('endast_distans'))
+        }
+        onAfCloseFilter={(e) =>
+          changeToRemoteWorkplace(e.detail.checked.includes('endast_distans'))
+        }
+      ></DigiFormFilter>
+    </>
+  );
+};
