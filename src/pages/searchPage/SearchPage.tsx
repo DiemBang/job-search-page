@@ -6,6 +6,7 @@ import { useLoaderData } from 'react-router-dom';
 import { AdvertsContextProvider } from '../../context/AdvertsContext';
 import { IOccupations } from '../../types/occupation-types';
 import { ModalsContextProvider } from '../../context/ModalsContext';
+import Map from './Map';
 import { DigiTypography } from '@digi/arbetsformedlingen-react';
 
 export const SearchPage = () => {
@@ -21,7 +22,8 @@ export const SearchPage = () => {
             <Filters />
             <DisplaySearchResults />
             {/* Pagination */}
-          </SearchPageWrapper>
+            {occupations.hits.length > 0 && <Map />}
+        </SearchPageWrapper>
         </DigiTypography>
       </AdvertsContextProvider>
     </ModalsContextProvider>

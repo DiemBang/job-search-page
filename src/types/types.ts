@@ -1,5 +1,4 @@
-import { ISubCategory } from './occupation-types';
-import { IAd } from '../pages/searchPage/SearchResult';
+import { IOccupation, ISubCategory } from './occupation-types';
 
 export interface IInformationField {
   label: string;
@@ -14,14 +13,14 @@ export interface IVisibleSubcategories {
 
 export interface IQuery {
   query: string;
-  value: string;
+  value: string | string[];
 }
 
 export interface ITotalAds {
   value: number;
 }
 export interface IAdResponseData {
-  hits: IAd[];
+  hits: IOccupation[];
   total: ITotalAds;
   positions: number;
 }
