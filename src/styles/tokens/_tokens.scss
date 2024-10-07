@@ -37,6 +37,10 @@ digi-header {
 
 digi-footer {
   .sc-digi-layout-block-h .digi-layout-block--profile.sc-digi-layout-block {
-    --digi--layout-block--background--profile: green;
+    --digi--layout-block--background--profile: #FF7752;
+  }
+
+  .sc-digi-footer-card-h {
+    --digi--footer-card--border-bottom: var(--digi--border-width--primary) solid white;
   }
 }
