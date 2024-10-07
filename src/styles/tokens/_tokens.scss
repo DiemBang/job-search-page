@@ -15,15 +15,22 @@
 }
 
 .sc-digi-header-navigation-h .digi-header-navigation__wrapper.sc-digi-header-navigation {
-  --digi--color--background--neutral-8: white;
+  --digi--color--background--neutral-8: FF7752;
   --digi--header--border-width: 0;
 }
 
-/* CHANGE TO DESIRED COLOR FOR FOOTER BACKGROUND
-
+// FF7752 Green
 digi-header {
   .sc-digi-layout-block-h .digi-layout-block--primary.sc-digi-layout-block {
-    --digi--layout-block--background--primary: green;
+    --digi--layout-block--background--primary: #FF7752;
+  }
+
+  .sc-digi-logo-h .digi-logo--system-name.sc-digi-logo {
+    --COLOR: white;
+  }
+
+  .sc-digi-header-navigation-item-s>a {
+    --digi--header-navigation-item--color: white;
   }
 }
 
@@ -33,4 +40,3 @@ digi-footer {
     --digi--layout-block--background--profile: green;
   }
 }
-*/
