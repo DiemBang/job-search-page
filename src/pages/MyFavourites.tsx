@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { IAd, SearchResult } from "./searchPage/SearchResult";
+import { SearchResult } from "./searchPage/SearchResult";
+import { IOccupation } from "../types/occupation-types";
 
 export const MyFavourites = () => {
-  const [favourites, setFavourites] = useState<IAd[]>([]);
+  const [favourites, setFavourites] = useState<IOccupation[]>([]);
 
   useEffect(() => {
     const savedFavouritesList = localStorage.getItem("savedFavouritesList");
@@ -14,7 +15,7 @@ export const MyFavourites = () => {
 
   return (
     <>
-      <h2>Mina Sparade Annonser</h2>
+      <h2>Mina sparade annonser</h2>
       {favourites.length === 0 ? (
         <p>Du har inga sparade annonser</p>
       ) : (
