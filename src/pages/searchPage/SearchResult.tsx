@@ -1,31 +1,11 @@
-import { TypographyTimeVariation } from "@digi/arbetsformedlingen";
-import { DigiTypographyTime } from "@digi/arbetsformedlingen-react";
-import { SearchResultWrapper } from "../../components/styled/Wrappers";
-import StyledRouterLink from "../../components/styled/shared/StyledRouterLink";
-
-interface IEmployer {
-  name: string;
-}
-
-interface IWorkplaceAddress {
-  municipality: string | null;
-}
-
-interface IWorkinghoursType {
-  label: string;
-}
-
-export interface IAd {
-  id: string;
-  headline: string;
-  working_hours_type: IWorkinghoursType;
-  employer: IEmployer;
-  workplace_address: IWorkplaceAddress;
-  publication_date: string;
-}
+import { TypographyTimeVariation } from '@digi/arbetsformedlingen';
+import { DigiTypographyTime } from '@digi/arbetsformedlingen-react';
+import { SearchResultWrapper } from '../../components/styled/Wrappers';
+import StyledRouterLink from '../../components/styled/shared/StyledRouterLink';
+import { IOccupation } from '../../types/occupation-types';
 
 export interface IAdProps {
-  ad: IAd;
+  ad: IOccupation;
 }
 
 export const SearchResult = ({ ad }: IAdProps) => {
@@ -40,7 +20,7 @@ export const SearchResult = ({ ad }: IAdProps) => {
         </h4>
         <p>{ad.working_hours_type.label}</p>
         <p>
-          Publicerad{" "}
+          Publicerad{' '}
           <DigiTypographyTime
             afVariation={TypographyTimeVariation.PRETTY}
             afDateTime={ad.publication_date}

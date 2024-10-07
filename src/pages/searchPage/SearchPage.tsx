@@ -12,6 +12,8 @@ import { ModalsContextProvider } from "../../context/ModalsContext";
 
 
 
+import Map from './Map';
+import { DigiTypography } from '@digi/arbetsformedlingen-react';
 
 export const SearchPage = () => {
 
@@ -36,17 +38,20 @@ export const SearchPage = () => {
   return (
     <ModalsContextProvider>
       <AdvertsContextProvider occupations={data}>
-        <SearchPageWrapper>
-          <h2>Platsbanken</h2>
-          <SearchField />
-          <Filters />
-          <DisplaySearchResults />
-        <DigiNavigationPagination
-	      afInitActivePage={currentPage}
-        onAfOnPageChange={handlePageChange}
-        afLimit={totalPages}
-      ></DigiNavigationPagination>
+        <DigiTypography>
+          <SearchPageWrapper className='search-page'>
+            <h2>Platsbanken</h2>
+            <SearchField />
+            <Filters />
+            <DisplaySearchResults />
+            <DigiNavigationPagination
+	            afInitActivePage={currentPage}
+              onAfOnPageChange={handlePageChange}
+              afLimit={totalPages}
+            ></DigiNavigationPagination>
+            {occupations.hits.length > 0 && <Map />}
         </SearchPageWrapper>
+        </DigiTypography>
       </AdvertsContextProvider>
     </ModalsContextProvider>
   );

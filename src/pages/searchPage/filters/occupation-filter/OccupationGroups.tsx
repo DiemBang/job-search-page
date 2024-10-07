@@ -1,7 +1,12 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
 import { DigiButton, DigiFormCheckbox } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../../../hooks/useAdvertsContext';
-import { FormCheckboxVariation } from '@digi/arbetsformedlingen';
+import {
+  ButtonSize,
+  ButtonVariation,
+  FormCheckboxVariation,
+} from '@digi/arbetsformedlingen';
+import useModalsContext from '../../../../hooks/useModalsContext';
 
 const OccupationGroups = () => {
   const {
@@ -9,7 +14,14 @@ const OccupationGroups = () => {
     occupationsQueries,
     handleClickOnOccupationGroup,
     resetOccupationGroups,
+    handleClickOnOccupationFilter,
   } = useAdvertsContext();
+  const { closeAllDropDowns } = useModalsContext();
+
+  const handleClickOnFilter = () => {
+    handleClickOnOccupationFilter();
+    closeAllDropDowns();
+  };
 
   return (
     <FlexContainer
@@ -17,7 +29,6 @@ const OccupationGroups = () => {
       $gap="24px"
       $width="300px"
       $justify="flex-start"
-      $align="flex-start"
       className="subcategories-container"
       $padding="0 24px"
     >
@@ -49,11 +60,6 @@ const OccupationGroups = () => {
         $justify="flex-start"
         className="subcategories-panel"
       >
-        <DigiFormCheckbox
-          afLabel="Alla yrken"
-          afVariation={FormCheckboxVariation.PRIMARY}
-          onAfOnChange={() => console.log('click')}
-        ></DigiFormCheckbox>
         {visibleGroups?.visibleSubcategories.map((group) => {
           const isActive = occupationsQueries.includes(group.id);
 
@@ -70,6 +76,14 @@ const OccupationGroups = () => {
           );
         })}
       </FlexContainer>
+      <DigiButton
+        afSize={ButtonSize.MEDIUM}
+        afVariation={ButtonVariation.PRIMARY}
+        afFullWidth={false}
+        onAfOnClick={handleClickOnFilter}
+      >
+        Filtrera Annonser
+      </DigiButton>
     </FlexContainer>
   );
 };

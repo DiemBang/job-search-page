@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { DigiFormSelectCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
 
 const SortAds = () => {
-  const { changeSortingOnSelect } = useAdvertsContext();
+  const { changeSortingOnSelect, adsData } = useAdvertsContext();
   const [selectedOption, setSelectedOption] = useState('Relevans');
 
   const handleSelectChange = (
@@ -15,6 +15,10 @@ const SortAds = () => {
     setSelectedOption(target.value);
     changeSortingOnSelect(e);
   };
+
+  if (adsData?.hits.length === 0) {
+    return null;
+  }
 
   return (
     <DigiFormSelect

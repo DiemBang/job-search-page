@@ -11,12 +11,22 @@
 .subcategories-container {
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   .subcategories-panel {
-    max-height: 850px;
+    max-height: 800px;
     overflow-y: auto;
   }
 }
 
-.active-category {
-  background-color: green;
-  border: 5px solid hotpink;
+
+
+.filter-dropdown {
+
+  .active-category > .digi-button--variation-secondary.sc-digi-button {
+    --COLOR--BACKGROUND--DEFAULT: #FF7752;
+    --COLOR--BACKGROUND--HOVER: #ffa187;
+  }
+
+  .sc-digi-form-checkbox-h {
+    --digi--form-checkbox--background-color--primary: #FF7752;
+  }
+
 }
