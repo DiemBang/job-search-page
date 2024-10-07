@@ -9,3 +9,67 @@
   --digi--link-external--color--default: white;
   --digi--link-external--color--visited: white;
 }
+
+.sc-digi-logo-h .digi-logo__system-name.sc-digi-logo {
+  --digi--logo--margin--system: 0;
+}
+
+.sc-digi-header-navigation-h .digi-header-navigation__wrapper.sc-digi-header-navigation {
+  --digi--color--background--neutral-8: FF7752;
+  --digi--header--border-width: 0;
+}
+
+.digi-button--variation-primary  {
+  --digi--button--color--background--primary--default: #ffa187;
+  --digi--button--color--background--primary--hover: #FF7752;
+  --digi--button--color--background--primary--active: #f66037;
+  --digi--button--color--text--primary--default: black;
+  --digi--button--color--text--primary--hover: black;
+  --digi--button--color--text--primary--active: black;
+  --digi--button--color--icon--primary--default: black;
+  --digi--button--color--icon--primary--hover: black;
+  --digi--button--color--icon--primary--active: black;
+
+  .sc-digi-icon-arrow-left-h, .sc-digi-link-external-h {
+    --digi--icon--color: black;
+    --digi--link-external--color--default: black;
+  }
+}
+
+.digi-button--variation-secondary {
+  --digi--button--color--background--secondary--default: #85d5fd;
+  --digi--button--color--background--secondary--hover: #34b7f8;
+  --digi--button--color--background--secondary--active: #0aa9f8;
+  --digi--button--color--text--secondary--default: black;
+  --digi--button--color--text--secondary--hover: black;
+  --digi--button--color--text--secondary--active: black;
+  --digi--button--color--icon--secondary--default: black;
+  --digi--button--color--icon--secondary--hover: black;
+  --digi--button--color--icon--secondary--active: black;
+
+}
+
+digi-header {
+  .sc-digi-layout-block-h .digi-layout-block--primary.sc-digi-layout-block {
+    --digi--layout-block--background--primary: #FF7752;
+  }
+
+  .sc-digi-logo-h .digi-logo--system-name.sc-digi-logo {
+    --COLOR: white;
+  }
+
+  .sc-digi-header-navigation-item-s>a {
+    --digi--header-navigation-item--color: white;
+  }
+}
+
+
+digi-footer {
+  .sc-digi-layout-block-h .digi-layout-block--profile.sc-digi-layout-block {
+    --digi--layout-block--background--profile: #FF7752;
+  }
+
+  .sc-digi-footer-card-h {
+    --digi--footer-card--border-bottom: var(--digi--border-width--primary) solid white;
+  }
+}

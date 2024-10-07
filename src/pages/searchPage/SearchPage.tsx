@@ -7,6 +7,7 @@ import { AdvertsContextProvider } from '../../context/AdvertsContext';
 import { IOccupations } from '../../types/occupation-types';
 import { ModalsContextProvider } from '../../context/ModalsContext';
 import Map from './Map';
+import { DigiTypography } from '@digi/arbetsformedlingen-react';
 
 export const SearchPage = () => {
   const occupations = useLoaderData() as IOccupations;
@@ -14,14 +15,16 @@ export const SearchPage = () => {
   return (
     <ModalsContextProvider>
       <AdvertsContextProvider occupations={occupations}>
-        <SearchPageWrapper>
-          <h2>Platsbanken</h2>
-          <SearchField />
-          <Filters />
-          <DisplaySearchResults />
-          {/* Pagination */}
-          {occupations.hits.length > 0 && <Map />}
+        <DigiTypography>
+          <SearchPageWrapper className='search-page'>
+            <h2>Platsbanken</h2>
+            <SearchField />
+            <Filters />
+            <DisplaySearchResults />
+            {/* Pagination */}
+            {occupations.hits.length > 0 && <Map />}
         </SearchPageWrapper>
+        </DigiTypography>
       </AdvertsContextProvider>
     </ModalsContextProvider>
   );

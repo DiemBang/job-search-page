@@ -26,6 +26,7 @@ const Job = () => {
         $gap="24px"
         $maxWidth="1100px"
         $justify="left"
+        $padding="55px 0"
       >
         <DigiLayoutContainer>
           <GoBackToSearch />
