@@ -9,7 +9,7 @@ const navigationItems = [
   { href: '/', text: 'Om Oss' },
   { href: '/', text: 'Kontakt' },
   { href: '/', text: 'Sök Jobb' },
-  { href: '/', text: 'Logga In' },
+  { href: '/', text: 'Sparade Annonser' },
 ];
 
 export const AppHeader = () => {

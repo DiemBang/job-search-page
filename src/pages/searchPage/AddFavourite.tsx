@@ -1,7 +1,7 @@
 import { DigiIconStar, DigiIconStarReg } from "@digi/arbetsformedlingen-react";
 
 export const AddFavourite = () => {
-    return(
+    return (
         <>
         <p>Spara annons</p>
         <DigiIconStarReg afSvgAriaLabelledby="star icon symbol" afSvgAriaHidden="false"></DigiIconStarReg>
