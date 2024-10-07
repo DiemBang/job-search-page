@@ -3,6 +3,7 @@ import { DigiTypographyTime } from "@digi/arbetsformedlingen-react";
 import { SearchResultWrapper } from "../../components/styled/Wrappers";
 import StyledRouterLink from "../../components/styled/shared/StyledRouterLink";
 import { AddFavourite } from "./AddFavourite";
+import { IOccupation } from '../../types/occupation-types';
 
 interface IEmployer {
   name: string;
@@ -26,7 +27,7 @@ export interface IAd {
 }
 
 export interface IAdProps {
-  ad: IAd;
+  ad: IOccupation;
 }
 
 export const SearchResult = ({ ad }: IAdProps) => {

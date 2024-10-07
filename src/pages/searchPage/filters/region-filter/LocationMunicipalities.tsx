@@ -1,7 +1,12 @@
 import { FlexContainer } from '../../../../components/styled/shared/FlexContainer';
 import { DigiButton, DigiFormCheckbox } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../../../hooks/useAdvertsContext';
-import { FormCheckboxVariation } from '@digi/arbetsformedlingen';
+import {
+  ButtonSize,
+  ButtonVariation,
+  FormCheckboxVariation,
+} from '@digi/arbetsformedlingen';
+import useModalsContext from '../../../../hooks/useModalsContext';
 
 const LocationMunicipalities = () => {
   const {
@@ -9,7 +14,14 @@ const LocationMunicipalities = () => {
     municipalitiesQueries,
     handleClickOnMunicipality,
     resetMunicipalities,
+    handleClickOnMunicipialitiesFilter,
   } = useAdvertsContext();
+  const { closeAllDropDowns } = useModalsContext();
+
+  const handleClickOnFilter = () => {
+    handleClickOnMunicipialitiesFilter();
+    closeAllDropDowns();
+  };
 
   return (
     <FlexContainer
@@ -17,7 +29,6 @@ const LocationMunicipalities = () => {
       $gap="24px"
       $width="300px"
       $justify="flex-start"
-      $align="flex-start"
       className="subcategories-container"
       $padding="0 24px"
     >
@@ -46,14 +57,10 @@ const LocationMunicipalities = () => {
         $align="flex-start"
         $gap="12px"
         $height="auto"
+        $width="100%"
         $justify="flex-start"
         className="subcategories-panel"
       >
-        <DigiFormCheckbox
-          afLabel="Alla kommuner"
-          afVariation={FormCheckboxVariation.PRIMARY}
-          onAfOnChange={() => console.log('click')}
-        ></DigiFormCheckbox>
         {visibleMunicipalities?.visibleSubcategories.map((municipiality) => {
           const isActive = municipalitiesQueries.includes(municipiality.id);
           return (
@@ -74,6 +81,14 @@ const LocationMunicipalities = () => {
           );
         })}
       </FlexContainer>
+      <DigiButton
+        afSize={ButtonSize.MEDIUM}
+        afVariation={ButtonVariation.PRIMARY}
+        afFullWidth={false}
+        onAfOnClick={handleClickOnFilter}
+      >
+        Filtrera Annonser
+      </DigiButton>
     </FlexContainer>
   );
 };

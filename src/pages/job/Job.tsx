@@ -12,19 +12,21 @@ import JobTitleInfo from './JobTitleInfo';
 import JobApply from './JobApply';
 import { useLoaderData } from 'react-router-dom';
 import { IOccupation } from '../../types/occupation-types';
+import ScrollToTop from '../../components/shared/ScrollToTop';
 
 const Job = () => {
   const occupation = useLoaderData() as IOccupation;
-  console.log('this is the occupation data from the loader: ', occupation);
 
   return (
     <JobContextProvider occupation={occupation}>
+      <ScrollToTop />
       <FlexContainer
         $direction="column"
         $align="flex-start"
         $gap="24px"
         $maxWidth="1100px"
         $justify="left"
+        $padding="55px 0"
       >
         <DigiLayoutContainer>
           <GoBackToSearch />
