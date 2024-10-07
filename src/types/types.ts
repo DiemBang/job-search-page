@@ -24,3 +24,16 @@ export interface IAdResponseData {
   total: ITotalAds;
   positions: number;
 }
+
+export interface IComplete {
+  value: string;
+  found_phrase: string;
+  type: string;
+  occurences: number;
+}
+
+export interface IGetCompleteResponse {
+  result_time_in_millis: number;
+  time_in_millis: number;
+  typeahead: IComplete[];
+}
