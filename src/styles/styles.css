@@ -7,6 +7,7 @@ body {
 
 body {
   box-sizing: border-box;
+  margin: 0;
 }
 
 #root {
@@ -254,6 +255,25 @@ digi-footer .footer-logo .digi-footer-card__content h2 {
 
 .search-page .digi-form-input__input-wrapper.sc-digi-form-input {
   width: var(--digi--container-width--medium);
+}
+
+.suggestion-dropdown {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.suggestion-dropdown .suggestion {
+  cursor: pointer;
+}
+.suggestion-dropdown .suggestion:hover {
+  background-color: #d6d6d6;
 }
 
 .map-container {
