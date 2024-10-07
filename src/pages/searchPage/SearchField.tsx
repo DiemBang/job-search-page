@@ -2,10 +2,7 @@ import {
   FormInputSearchVariation,
   FormInputType,
 } from '@digi/arbetsformedlingen';
-import {
-  DigiFormInputSearch,
-  DigiTypography,
-} from '@digi/arbetsformedlingen-react';
+import { DigiFormInputSearch } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../hooks/useAdvertsContext';
 import { useEffect, useRef, useState } from 'react';
 import { getComplete } from '../../services/serviceBase';
@@ -33,15 +30,23 @@ export const SearchField = () => {
    * debouncing to load the data correctly when user is typing without poor performance
    */
   const debounceSuggestions = debounce(async (value: string) => {
-    if (value.trim().length > 0) {
-      const suggestions = await getComplete(value);
-      console.log(suggestions);
-      setSuggestions(suggestions);
-    } else {
-      setSuggestions(initialSuggestions);
+    try {
+      if (value.trim().length > 0) {
+        const suggestions = await getComplete(value);
+
+        console.log('searchValue:', searchValue);
+        console.log('suggestions:', suggestions);
+        console.log('suggestionsOpen:', suggestionsOpen);
+        console.log('Fetched suggestions:', suggestions);
+        setSuggestions(suggestions || []);
+      } else {
+        setSuggestions(initialSuggestions);
+      }
+    } catch (err) {
+      console.error('Error fetching suggestions:', err);
+      setSuggestions([]); // Set an empty array if an error occurs
     }
   }, 300);
-
   const handleSearchInputOnChange = async (value: string) => {
     setSearchValue(value);
     debounceSuggestions(value);
@@ -54,33 +59,40 @@ export const SearchField = () => {
    */
   const handleSuggestionOnClick = (suggestion: string) => {
     setSearchValue(suggestion);
-
     setTimeout(() => {
       setSuggestionsOpen(false);
-    }, 50);
+    }, 100);
   };
 
-  const closeSuggestionDropdown = (event: any) => {
-    if (
-      suggestionRef.current &&
-      !suggestionRef.current.contains(event.target) &&
-      !event.target.closest('.digi-form-input__input-wrapper')
-    ) {
-      setSuggestionsOpen(false);
-    }
+  const handleClickOnSearchButton = (searchInput: string) => {
+    handleClickOnSearch(searchInput);
+    setSearchValue('');
+    setSuggestionsOpen(false);
   };
 
   /* 
   Tried onAfBlur on DigiFomrInputSearch could not make it work
   instead using eventlistener to close suggestion dropdown when clicking outside of it
   */
-
   useEffect(() => {
+    const closeSuggestionDropdown = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null;
+
+      if (
+        suggestionRef.current &&
+        !suggestionRef.current.contains(target) &&
+        !target?.closest('.digi-form-input__input-wrapper')
+      ) {
+        setSuggestionsOpen(false);
+      }
+    };
+
     document.addEventListener('mousedown', closeSuggestionDropdown);
+
     return () => {
       document.removeEventListener('mousedown', closeSuggestionDropdown);
     };
-  }, []);
+  }, [suggestionsOpen]);
 
   return (
     <PositionContainer $position="relative" $zIndex={11}>
@@ -90,29 +102,27 @@ export const SearchField = () => {
         afType={FormInputType.SEARCH}
         afButtonText="Sök"
         onAfOnInput={(e) => handleSearchInputOnChange(e.target.value)}
-        onAfOnClick={() => handleClickOnSearch(searchValue)}
+        onAfOnClick={() => handleClickOnSearchButton(searchValue)}
         onAfOnFocus={() => setSuggestionsOpen(true)}
         afValue={searchValue}
       ></DigiFormInputSearch>
-      {suggestionsOpen && (
+      {suggestionsOpen && suggestions.length > 0 && (
         <PositionContainer
           ref={suggestionRef}
           $position="absolute"
           className="suggestion-dropdown"
         >
-          <DigiTypography>
-            {suggestions.map((suggestion, index) => {
-              return (
-                <div
-                  className="suggestion"
-                  onClick={() => handleSuggestionOnClick(suggestion)}
-                  key={index}
-                >
-                  {suggestion}
-                </div>
-              );
-            })}
-          </DigiTypography>
+          {suggestions.map((suggestion, index) => {
+            return (
+              <div
+                className="suggestion"
+                onClick={() => handleSuggestionOnClick(suggestion)}
+                key={`${suggestion}-${index}`}
+              >
+                {suggestion}
+              </div>
+            );
+          })}
         </PositionContainer>
       )}
     </PositionContainer>
