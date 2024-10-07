@@ -29,6 +29,11 @@
   --digi--button--color--icon--primary--default: black;
   --digi--button--color--icon--primary--hover: black;
   --digi--button--color--icon--primary--active: black;
+
+  .sc-digi-icon-arrow-left-h, .sc-digi-link-s>a:visited svg  {
+    --digi--icon--color: black;
+    color: black;
+  }
 }
 
 .digi-button--variation-secondary {
