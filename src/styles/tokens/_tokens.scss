@@ -23,22 +23,27 @@
   --digi--button--color--background--primary--default: #ffa187;
   --digi--button--color--background--primary--hover: #FF7752;
   --digi--button--color--background--primary--active: #f66037;
+  --digi--button--color--text--primary--default: black;
+  --digi--button--color--text--primary--hover: black;
+  --digi--button--color--text--primary--active: black;
+  --digi--button--color--icon--primary--default: black;
+  --digi--button--color--icon--primary--hover: black;
+  --digi--button--color--icon--primary--active: black;
 }
 
 .digi-button--variation-secondary {
   --digi--button--color--background--secondary--default: #85d5fd;
   --digi--button--color--background--secondary--hover: #34b7f8;
   --digi--button--color--background--secondary--active: #0aa9f8;
-  --digi--button--color--text--secondary--default: white;
-  --digi--button--color--text--secondary--hover: white;
-  --digi--button--color--text--secondary--active: white;
-  --digi--button--color--icon--secondary--default: white;
-  --digi--button--color--icon--secondary--hover: white;
-  --digi--button--color--icon--secondary--active: white;
+  --digi--button--color--text--secondary--default: black;
+  --digi--button--color--text--secondary--hover: black;
+  --digi--button--color--text--secondary--active: black;
+  --digi--button--color--icon--secondary--default: black;
+  --digi--button--color--icon--secondary--hover: black;
+  --digi--button--color--icon--secondary--active: black;
 
 }
 
-// FF7752 Green
 digi-header {
   .sc-digi-layout-block-h .digi-layout-block--primary.sc-digi-layout-block {
     --digi--layout-block--background--primary: #FF7752;
