@@ -47,25 +47,55 @@ use#Main-Symbol {
 }
 
 .sc-digi-header-navigation-h .digi-header-navigation__wrapper.sc-digi-header-navigation {
-  --digi--color--background--neutral-8: white;
+  --digi--color--background--neutral-8: FF7752;
   --digi--header--border-width: 0;
 }
 
-/* CHANGE TO DESIRED COLOR FOR FOOTER BACKGROUND
-
-digi-header {
-  .sc-digi-layout-block-h .digi-layout-block--primary.sc-digi-layout-block {
-    --digi--layout-block--background--primary: green;
-  }
+.digi-button--variation-primary {
+  --digi--button--color--background--primary--default: #ffa187;
+  --digi--button--color--background--primary--hover: #FF7752;
+  --digi--button--color--background--primary--active: #f66037;
+  --digi--button--color--text--primary--default: black;
+  --digi--button--color--text--primary--hover: black;
+  --digi--button--color--text--primary--active: black;
+  --digi--button--color--icon--primary--default: black;
+  --digi--button--color--icon--primary--hover: black;
+  --digi--button--color--icon--primary--active: black;
+}
+.digi-button--variation-primary .sc-digi-icon-arrow-left-h, .digi-button--variation-primary .sc-digi-link-external-h {
+  --digi--icon--color: black;
+  --digi--link-external--color--default: black;
 }
 
-
-digi-footer {
-  .sc-digi-layout-block-h .digi-layout-block--profile.sc-digi-layout-block {
-    --digi--layout-block--background--profile: green;
-  }
+.digi-button--variation-secondary {
+  --digi--button--color--background--secondary--default: #85d5fd;
+  --digi--button--color--background--secondary--hover: #34b7f8;
+  --digi--button--color--background--secondary--active: #0aa9f8;
+  --digi--button--color--text--secondary--default: black;
+  --digi--button--color--text--secondary--hover: black;
+  --digi--button--color--text--secondary--active: black;
+  --digi--button--color--icon--secondary--default: black;
+  --digi--button--color--icon--secondary--hover: black;
+  --digi--button--color--icon--secondary--active: black;
 }
-*/
+
+digi-header .sc-digi-layout-block-h .digi-layout-block--primary.sc-digi-layout-block {
+  --digi--layout-block--background--primary: #FF7752;
+}
+digi-header .sc-digi-logo-h .digi-logo--system-name.sc-digi-logo {
+  --COLOR: white;
+}
+digi-header .sc-digi-header-navigation-item-s > a {
+  --digi--header-navigation-item--color: white;
+}
+
+digi-footer .sc-digi-layout-block-h .digi-layout-block--profile.sc-digi-layout-block {
+  --digi--layout-block--background--profile: #FF7752;
+}
+digi-footer .sc-digi-footer-card-h {
+  --digi--footer-card--border-bottom: var(--digi--border-width--primary) solid white;
+}
+
 .line-breaks {
   white-space: pre-line;
 }
@@ -92,7 +122,7 @@ header > digi-layout-block > div {
 }
 
 .home-top-section {
-  background-color: var(--digi--color--background--inverted-6);
+  background-color: #85d5fd;
   display: flex;
   align-items: center;
 }
@@ -210,9 +240,12 @@ digi-footer .footer-logo .digi-footer-card__content h2 {
   overflow-y: auto;
 }
 
-.active-category {
-  background-color: green;
-  border: 5px solid hotpink;
+.filter-dropdown .active-category > .digi-button--variation-secondary.sc-digi-button {
+  --COLOR--BACKGROUND--DEFAULT: #FF7752;
+  --COLOR--BACKGROUND--HOVER: #ffa187;
+}
+.filter-dropdown .sc-digi-form-checkbox-h {
+  --digi--form-checkbox--background-color--primary: #FF7752;
 }
 
 .sort-selector {
