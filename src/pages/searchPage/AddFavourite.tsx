@@ -1,6 +1,6 @@
 import { DigiIconStar, DigiIconStarReg } from "@digi/arbetsformedlingen-react";
 import { useEffect, useState } from "react";
-import { IAdProps } from "./SearchResult";
+import { IAd, IAdProps } from "./SearchResult";
 
 export const AddFavourite = ({ ad }: IAdProps) => {
   const [isFavourite, setIsFavourite] = useState(false);
@@ -9,11 +9,16 @@ export const AddFavourite = ({ ad }: IAdProps) => {
     const savedFavourites = JSON.parse(
       localStorage.getItem("savedFavouritesList") || "[]"
     );
-    setIsFavourite(savedFavourites.includes(ad.id));
-  }, [ad.id]);
+    const savedFavouriteIds: string[] = [];
+    
+    savedFavourites.forEach((element: IAd) => {
+        savedFavouriteIds.push(element.id);
+    });
+    const isAdAlreadyFavourite = savedFavouriteIds.includes(ad.id);
+    setIsFavourite(isAdAlreadyFavourite);
+  }, [ad]);
 
   const toggleFavourite = () => {
-    console.log(ad.id);
     const savedFavourites = JSON.parse(
       localStorage.getItem("savedFavouritesList") || "[]"
     );
@@ -21,10 +26,10 @@ export const AddFavourite = ({ ad }: IAdProps) => {
     let updatedFavourites;
     if (isFavourite) {
       updatedFavourites = savedFavourites.filter(
-        (favId: string) => favId !== ad.id
+        (favAd: IAd) => favAd !== ad
       );
     } else {
-      updatedFavourites = [...savedFavourites, ad.id];
+      updatedFavourites = [...savedFavourites, ad];
     }
 
     localStorage.setItem(

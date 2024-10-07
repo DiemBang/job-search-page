@@ -8,8 +8,8 @@ const navigationItems = [
   { href: '/', text: 'Hem' },
   { href: '/', text: 'Om Oss' },
   { href: '/', text: 'Kontakt' },
-  { href: '/', text: 'Sök Jobb' },
-  { href: '/', text: 'Sparade Annonser' },
+  { href: '/search', text: 'Sök Jobb' },
+  { href: '/savedAds', text: 'Sparade Annonser' },
 ];
 
 export const AppHeader = () => {
