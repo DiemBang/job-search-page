@@ -32,3 +32,7 @@ export const numberToWords = (number: number) => {
 
   return 'Över 20 jobb';
 };
+
+export const getFirstLetterWithUppercase = (text: string): string => {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+};
