@@ -30,9 +30,9 @@
   --digi--button--color--icon--primary--hover: black;
   --digi--button--color--icon--primary--active: black;
 
-  .sc-digi-icon-arrow-left-h, .sc-digi-link-s>a:visited svg  {
+  .sc-digi-icon-arrow-left-h, .sc-digi-link-external-h {
     --digi--icon--color: black;
-    color: black;
+    --digi--link-external--color--default: black;
   }
 }
 
