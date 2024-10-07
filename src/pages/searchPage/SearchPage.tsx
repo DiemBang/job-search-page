@@ -17,10 +17,10 @@ import { DigiTypography } from '@digi/arbetsformedlingen-react';
 
 export const SearchPage = () => {
 
-  const data = useLoaderData() as IOccupations;
+  const occupations = useLoaderData() as IOccupations;
   const [currentPage, setCurrentPage] = useState<number>(1);
 
-  const totalPages = Math.ceil(data.total.value / 10);
+  const totalPages = Math.ceil(occupations.total.value / 10);
 
   const handlePageChange = (e: CustomEvent<number>): void => {
     const newPage = e.detail;
@@ -37,7 +37,7 @@ export const SearchPage = () => {
 
   return (
     <ModalsContextProvider>
-      <AdvertsContextProvider occupations={data}>
+      <AdvertsContextProvider occupations={occupations}>
         <DigiTypography>
           <SearchPageWrapper className='search-page'>
             <h2>Platsbanken</h2>
