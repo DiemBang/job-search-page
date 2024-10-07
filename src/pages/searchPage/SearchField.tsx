@@ -8,13 +8,14 @@ import { useEffect, useRef, useState } from 'react';
 import { getComplete } from '../../services/serviceBase';
 import { debounce } from 'lodash';
 import { PositionContainer } from '../../components/styled/shared/PositionContainer';
+import { getFirstLetterWithUppercase } from '../../utils/numberStringUtils';
 
 const initialSuggestions = [
-  'lärare',
-  'läkare',
-  'advokat',
-  'ingenjör',
-  'städare',
+  'Lärare',
+  'Läkare stockholms Län',
+  'Byggbranschen engelska',
+  'Ingenjör körkort',
+  'Städare västra götaland',
 ];
 
 export const SearchField = () => {
@@ -34,9 +35,6 @@ export const SearchField = () => {
       if (value.trim().length > 0) {
         const suggestions = await getComplete(value);
 
-        console.log('searchValue:', searchValue);
-        console.log('suggestions:', suggestions);
-        console.log('suggestionsOpen:', suggestionsOpen);
         console.log('Fetched suggestions:', suggestions);
         setSuggestions(suggestions || []);
       } else {
@@ -119,7 +117,7 @@ export const SearchField = () => {
                 onClick={() => handleSuggestionOnClick(suggestion)}
                 key={`${suggestion}-${index}`}
               >
-                {suggestion}
+                {getFirstLetterWithUppercase(suggestion)}
               </div>
             );
           })}
