@@ -5,52 +5,28 @@ import { SearchPageWrapper } from "../../components/styled/Wrappers";
 import { useLoaderData } from "react-router-dom";
 import { IOccupations } from '../../types/occupation-types';
 import { AdvertsContextProvider } from '../../context/AdvertsContext';
-import { DigiNavigationPagination } from "@digi/arbetsformedlingen-react";
-import { useState } from "react";
 import { ModalsContextProvider } from "../../context/ModalsContext";
-
-
-
-
 import Map from './Map';
 import { DigiTypography } from '@digi/arbetsformedlingen-react';
+import { Pagination } from "../../components/shared/Pagination";
+
 
 export const SearchPage = () => {
-
   const occupations = useLoaderData() as IOccupations;
-  const [currentPage, setCurrentPage] = useState<number>(1);
-
-  const totalPages = Math.ceil(occupations.total.value / 10);
-
-  const handlePageChange = (e: CustomEvent<number>): void => {
-    const newPage = e.detail;
-    setCurrentPage(newPage);
-  
-    const currentUrl = new URL(window.location.href);
-  
-    currentUrl.searchParams.set('page', newPage.toString());
-  
-    window.history.replaceState({}, '', currentUrl.toString());
-  
-    console.log("Page number has been changed to: ", newPage);
-  };
+  const totalPages = Math.ceil(occupations.total.value / 20);
 
   return (
     <ModalsContextProvider>
       <AdvertsContextProvider occupations={occupations}>
         <DigiTypography>
-          <SearchPageWrapper className='search-page'>
+          <SearchPageWrapper>
             <h2>Platsbanken</h2>
             <SearchField />
             <Filters />
             <DisplaySearchResults />
-            <DigiNavigationPagination
-	            afInitActivePage={currentPage}
-              onAfOnPageChange={handlePageChange}
-              afLimit={totalPages}
-            ></DigiNavigationPagination>
+            <Pagination totalPages={totalPages} totalResults={occupations.total.value}></Pagination>
             {occupations.hits.length > 0 && <Map />}
-        </SearchPageWrapper>
+          </SearchPageWrapper>
         </DigiTypography>
       </AdvertsContextProvider>
     </ModalsContextProvider>
