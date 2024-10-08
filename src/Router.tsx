@@ -9,6 +9,7 @@ import { LoaderSpinnerSize } from '@digi/arbetsformedlingen';
 import { Layout } from './pages/Layout';
 import { Home } from './pages/home/Home';
 import Job from './pages/job/Job';
+import { MyFavourites } from "./pages/MyFavourites";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
         element: <Job></Job>,
         loader: jobPageLoader,
       },
+      {
+        path: '/savedAds',
+        element: <MyFavourites></MyFavourites>
+      }
     ],
   },
 ]);
