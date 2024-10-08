@@ -93,6 +93,7 @@ export const searchPageLoader = async ({
     { query: 'published-after=', value: publishedAfter },
     { query: 'occupation-group=', value: occupationGroupParams },
     { query: 'municipality=', value: municipalitiesGroupParams },
+    { query: 'page=', value: pageValue || '1' }
   ];
 
   try {
