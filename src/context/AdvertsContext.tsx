@@ -40,6 +40,7 @@ interface IAdvertsContextValues {
   handleClickOnMunicipialitiesFilter: () => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
   handleClickOnOccupationGroup: (taxonomyId: string) => void;
+  handleClickOnPaginationButton: (pageNumber: number) => void;
   resetAllRegionsAndMunicipalities: () => void;
   resetAllFieldsAndGroups: () => void;
   resetMunicipalities: (regionId: string | null) => void;
@@ -62,7 +63,7 @@ const occupationFieldData = addSelectedAndActiveKeys(
   occupationsData.data.concepts
 );
 
-const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?limit=20';
 
 export const AdvertsContextProvider = ({
   children,
@@ -112,7 +113,11 @@ export const AdvertsContextProvider = ({
    */
   const getAdvertsData = async (params: URLSearchParams | null) => {
     try {
-      const occupationUrl = params ? `${BASE_URL}&${params}` : BASE_URL;
+      const pageValue = params?.get('page');
+      const page: number = pageValue ? parseInt(pageValue) : 1;
+      const offsetValue = (page - 1) * 20; 
+      
+      const occupationUrl = params ? `${BASE_URL}&${params}&offset=${offsetValue}` : BASE_URL;
       const occupationData = await getBase<IAdResponseData>(occupationUrl);
 
       const { hits, total, positions } = occupationData;
@@ -351,6 +356,10 @@ export const AdvertsContextProvider = ({
     updateQuery('municipality=', municipalitiesQueries);
   };
 
+  const handleClickOnPaginationButton = (pageNumber: number) => {
+    updateQuery('page=', pageNumber.toString());
+  }
+
   /** --- RESET REGIONS / OCCUPATIONS  **/
 
   const resetAllRegionsAndMunicipalities = () => {
@@ -412,6 +421,7 @@ export const AdvertsContextProvider = ({
     handleClickOnRegion,
     handleClickOnOccupationField,
     handleClickOnOccupationGroup,
+    handleClickOnPaginationButton,
     resetAllRegionsAndMunicipalities,
     resetAllFieldsAndGroups,
     resetMunicipalities,

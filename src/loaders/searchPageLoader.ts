@@ -2,7 +2,7 @@ import { getBase } from '../services/serviceBase';
 import { IOccupations } from '../types/occupation-types';
 import { IQuery } from '../types/types';
 
-const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?offset=0&limit=20';
+const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?&limit=20';
 
 export const searchPageLoader = async ({
   request,
@@ -25,6 +25,14 @@ export const searchPageLoader = async ({
   const publishedAfter = url.searchParams.get('published-after') || '';
   const language = url.searchParams.get('language') || '';
 
+  const pageValue = url.searchParams.get('page') || '';
+
+  const page: number = pageValue ? parseInt(pageValue) : 1;    
+  const offsetValue = (page - 1) * 20;
+
+  
+
+  console.log(drivingLicense, remote);
   let occupationUrl = BASE_URL;
 
   if (freeSearch) {
@@ -39,7 +47,8 @@ export const searchPageLoader = async ({
   if (remote) {
     occupationUrl += `&remote=${remote}`;
   }
-  if (worktimeExtent) {
+  // Kolla kanske length istället
+  if (worktimeExtent.length > 0) {
     occupationUrl += `&worktime-extent=${worktimeExtent}`;
   }
   if (publishedAfter) {
@@ -68,6 +77,11 @@ export const searchPageLoader = async ({
       .map((param) => `&municipality=${param}`)
       .join('');
   }
+
+  if (page) {
+    occupationUrl += `&offset=${offsetValue}`
+  }
+
   const initialQueries: IQuery[] = [
     { query: 'q=', value: freeSearch },
     { query: 'sort=', value: sort },
@@ -79,9 +93,11 @@ export const searchPageLoader = async ({
     { query: 'published-after=', value: publishedAfter },
     { query: 'occupation-group=', value: occupationGroupParams },
     { query: 'municipality=', value: municipalitiesGroupParams },
+    { query: 'page=', value: pageValue || '1' }
   ];
 
   try {
+    console.log("this", offsetValue)
     const occupationsData = await getBase<IOccupations>(occupationUrl);
     return { occupationsData, initialQueries };
   } catch (err) {

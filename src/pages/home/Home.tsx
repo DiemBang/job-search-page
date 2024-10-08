@@ -18,7 +18,7 @@ export const Home = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
 
   const handleClickOnSearch = () => {
-    navigate(`/search?q=${searchQuery}`);
+    navigate(`/search?q=${searchQuery}&page=1`);
   };
 
   const handleInputChange = (e: { target: { value: SetStateAction<string>; }; }) => {

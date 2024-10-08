@@ -1,13 +1,14 @@
-import { Filters } from './filters/Filters';
-import { SearchField } from './SearchField';
-import { DisplaySearchResults } from './DisplaySearchResults';
-import { SearchPageWrapper } from '../../components/styled/Wrappers';
-import { useLoaderData } from 'react-router-dom';
-import { AdvertsContextProvider } from '../../context/AdvertsContext';
+import { Filters } from "./filters/Filters";
+import { SearchField } from "./SearchField";
+import { DisplaySearchResults } from "./DisplaySearchResults";
+import { SearchPageWrapper } from "../../components/styled/Wrappers";
+import { useLoaderData } from "react-router-dom";
 import { IOccupations } from '../../types/occupation-types';
-import { ModalsContextProvider } from '../../context/ModalsContext';
+import { AdvertsContextProvider } from '../../context/AdvertsContext';
+import { ModalsContextProvider } from "../../context/ModalsContext";
 import Map from './Map';
 import { DigiTypography } from '@digi/arbetsformedlingen-react';
+import { Pagination } from "../../components/shared/Pagination";
 import { IQuery } from '../../types/types';
 
 export const SearchPage = () => {
@@ -15,7 +16,8 @@ export const SearchPage = () => {
     occupationsData: IOccupations;
     initialQueries: IQuery[];
   };
-
+  let totalPages = Math.ceil(occupationsData.total.value / 20);
+  totalPages = Math.min(totalPages, 100);
   return (
     <AdvertsContextProvider
       occupations={occupationsData}
@@ -28,9 +30,9 @@ export const SearchPage = () => {
             <SearchField />
             <Filters />
             <DisplaySearchResults />
-            {/* Pagination */}
+            <Pagination totalPages={totalPages} totalResults={occupationsData.total.value}></Pagination>
             {occupationsData.hits.length > 0 && <Map />}
-          </SearchPageWrapper>
+            </SearchPageWrapper>
         </DigiTypography>
       </ModalsContextProvider>
     </AdvertsContextProvider>
