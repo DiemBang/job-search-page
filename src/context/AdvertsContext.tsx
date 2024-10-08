@@ -356,6 +356,10 @@ export const AdvertsContextProvider = ({
     updateQuery('municipality=', municipalitiesQueries);
   };
 
+  const handleClickOnPaginationButton = (pageNumber: number) => {
+    updateQuery('page=', pageNumber.toString());
+  }
+
   /** --- RESET REGIONS / OCCUPATIONS  **/
 
   const resetAllRegionsAndMunicipalities = () => {
