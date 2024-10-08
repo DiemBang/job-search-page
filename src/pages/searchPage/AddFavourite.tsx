@@ -26,8 +26,10 @@ export const AddFavourite = ({ ad }: IAdProps) => {
 
     let updatedFavourites;
     if (isFavourite) {
-      updatedFavourites = savedFavourites.filter((favAd: IAd) => favAd !== ad);
+        console.log(1, ad);
+      updatedFavourites = savedFavourites.filter((favAd: IAd) => favAd.id !== ad.id);
     } else {
+        console.log(2, ad);
       updatedFavourites = [...savedFavourites, ad];
     }
 
