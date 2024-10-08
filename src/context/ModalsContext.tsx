@@ -1,5 +1,6 @@
-import { createContext, ReactNode, useEffect, useRef } from 'react';
+import { createContext, ReactNode, useEffect, useRef, useContext } from 'react';
 import { useState } from 'react';
+import AdvertsContext from './AdvertsContext';
 
 const ModalsContext = createContext<IModalsContextValues | null>(null);
 
@@ -24,7 +25,7 @@ interface IisDropDownsOpen {
 export const ModalsContextProvider = ({
   children,
 }: IModalsContextProviderProps) => {
-  const [isDropDownsOpen, setIsDropDownsOpen] = useState({
+  const [isDropDownsOpen, setIsDropDownsOpen] = useState<IisDropDownsOpen>({
     occupationOpen: false,
     locationOpen: false,
     overlay: false,
@@ -32,6 +33,15 @@ export const ModalsContextProvider = ({
 
   const occupationRef = useRef<HTMLDivElement>(null);
   const locationRef = useRef<HTMLDivElement>(null);
+
+  const advertsContext = useContext(AdvertsContext);
+
+  if (!advertsContext) {
+    throw new Error('AdvertsContext must be used within a provider');
+  }
+
+  const { handleClickOnOccupationFilter, handleClickOnMunicipialitiesFilter } =
+    advertsContext;
 
   useEffect(() => {
     if (isDropDownsOpen.occupationOpen || isDropDownsOpen.locationOpen) {
@@ -51,6 +61,7 @@ export const ModalsContextProvider = ({
         { ref: occupationRef, key: 'occupationOpen' },
         { ref: locationRef, key: 'locationOpen' },
       ];
+
       dropDownRefs.forEach(({ ref, key }) => {
         if (
           ref.current &&
@@ -68,10 +79,20 @@ export const ModalsContextProvider = ({
     };
   }, [isDropDownsOpen]);
 
+  useEffect(() => {
+    if (!isDropDownsOpen.occupationOpen) {
+      handleClickOnOccupationFilter();
+    }
+    if (!isDropDownsOpen.locationOpen) {
+      handleClickOnMunicipialitiesFilter();
+    }
+  }, [isDropDownsOpen.occupationOpen, isDropDownsOpen.locationOpen]);
+
   const toggleDropDown = (key: keyof IisDropDownsOpen) => {
-    setIsDropDownsOpen((prev) => {
-      return { ...prev, [key]: !prev[key] };
-    });
+    setIsDropDownsOpen((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
   };
 
   const closeAllDropDowns = () => {
