@@ -19,3 +19,14 @@ export const getDayAndMonthFromIsoString = (isoDate: string) => {
   const month = date.toLocaleString('sv-SE', { month: 'short' });
   return `${day} ${month}`;
 };
+
+export const getTodayDateTime = (): string => {
+  const now = new Date();
+  return now.toISOString().split('.')[0];
+};
+
+export const getDateFromPastDays = (days: number): string => {
+  const date = new Date();
+  date.setDate(date.getDate() - days);
+  return date.toISOString().split('.')[0];
+};

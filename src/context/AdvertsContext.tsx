@@ -11,7 +11,9 @@ import {
   handleClickOnCategory,
   toggleSubcategoryActiveState,
   setActiveSubCategories,
+  getQueryStringFromQueries,
 } from '../utils/adsUtils';
+import { getTodayDateTime, getDateFromPastDays } from '../utils/dateUtils';
 import { getBase } from '../services/serviceBase';
 import { DigiFormSelectCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
 
@@ -20,6 +22,7 @@ const AdvertsContext = createContext<IAdvertsContextValues | null>(null);
 interface IAdvertsContextProviderProps {
   children: ReactNode;
   occupations: IOccupations;
+  initialQueries: IQuery[];
 }
 
 interface IAdvertsContextValues {
@@ -45,7 +48,6 @@ interface IAdvertsContextValues {
   changeSortingOnSelect: (
     e: DigiFormSelectCustomEvent<HTMLDigiFormSelectElement>
   ) => void;
-  toggleAllOccupationGroups: (fieldId: string | null) => void;
   changeDrivingLicenseReq: (filterValue: boolean) => void;
   changeToRemoteWorkplace: (filterValue: boolean) => void;
   changeWorktimeExtent: (checked: string[]) => void;
@@ -66,7 +68,13 @@ const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?limit=20';
 export const AdvertsContextProvider = ({
   children,
   occupations,
+  initialQueries,
 }: IAdvertsContextProviderProps) => {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const occupationGroupParams = urlParams.getAll('occupation-group');
+  const municipalitiesGroupParams = urlParams.getAll('municipality');
+
   const initialRender = useRef(true);
   const [visibleMunicipalities, setVisibleMunicipalities] =
     useState<IVisibleSubcategories | null>(null);
@@ -79,49 +87,22 @@ export const AdvertsContextProvider = ({
   // ----- QUERIES ----- //
 
   const [municipalitiesQueries, setmunicipalitiesQueries] = useState<string[]>(
-    []
+    municipalitiesGroupParams
   );
-  const [occupationsQueries, setoccupationsQueries] = useState<string[]>([]);
-  const [queries, setQueries] = useState<IQuery[]>(() => {
-    const urlParams = new URLSearchParams(window.location.search);
+  const [occupationsQueries, setoccupationsQueries] = useState<string[]>(
+    occupationGroupParams
+  );
+  const [queries, setQueries] = useState<IQuery[]>(initialQueries);
 
-    const occupationGroupParams = urlParams.getAll('occupation-group');
-    const municipalitiesGroupParams = urlParams.getAll('municipality');
-
-    return [
-      { query: 'q=', value: urlParams.get('q') || '' },
-      { query: 'sort=', value: urlParams.get('sort') || '' },
-      {
-        query: 'worktime-extent=',
-        value: urlParams.get('worktime-extent') || '',
-      },
-      {
-        query: 'employment-type=',
-        value: urlParams.get('employment-type') || '',
-      },
-      {
-        query: 'driving-license-required=',
-        value: urlParams.get('driving-license-required') || '',
-      },
-      { query: 'remote=', value: urlParams.get('remote') || '' },
-      { query: 'language=', value: urlParams.get('language') || '' },
-      {
-        query: 'published-after=',
-        value: urlParams.get('published-after') || '',
-      },
-      { query: 'occupation-group=', value: occupationGroupParams },
-      { query: 'municipality=', value: municipalitiesGroupParams },
-      { query: 'page=', value: urlParams.get('page') || '1' }
-    ];
-  });
-
-  // every time we change a query we will fetch new occupation data
   useEffect(() => {
     if (initialRender.current) {
       initialRender.current = false;
       return;
     }
+
     refreshData(queries);
+
+    console.log('these are the current queries', queries);
   }, [queries]);
 
   /**
@@ -131,7 +112,6 @@ export const AdvertsContextProvider = ({
    * @returns
    */
   const getAdvertsData = async (params: URLSearchParams | null) => {
-    console.log('these are the current params', params?.toString());
     try {
       const pageValue = params?.get('page');
       const page: number = pageValue ? parseInt(pageValue) : 1;
@@ -142,7 +122,57 @@ export const AdvertsContextProvider = ({
 
       const { hits, total, positions } = occupationData;
 
-      console.log(occupationData);
+      const urlParams = new URLSearchParams(window.location.search);
+      const occupationGroupParams = urlParams.getAll('occupation-group');
+      const municipalitiesGroupParams = urlParams.getAll('municipality');
+
+      setFields((prevFields) =>
+        updateActiveState(
+          prevFields.map((occupationGroup) => {
+            const updatedNarrower = occupationGroup.narrower.map(
+              (narrowerItem) => {
+                const matchedOccupation = hits.find(
+                  (hit) => hit.occupation_group.id === narrowerItem.id
+                );
+                return {
+                  ...narrowerItem,
+                  active:
+                    occupationGroupParams.includes(narrowerItem.id) ||
+                    !!matchedOccupation,
+                };
+              }
+            );
+            return { ...occupationGroup, narrower: updatedNarrower };
+          })
+        )
+      );
+
+      setRegions((prevRegions) =>
+        updateActiveState(
+          prevRegions.map((region) => {
+            const updatedMunicipalities = region.narrower.map(
+              (municipality) => {
+                const matchedMunicipality =
+                  municipalitiesGroupParams.length > 0
+                    ? hits.find(
+                        (hit) =>
+                          hit.workplace_address.municipality_concept_id ===
+                          municipality.id
+                      )
+                    : null;
+
+                return {
+                  ...municipality,
+                  active:
+                    municipalitiesGroupParams.includes(municipality.id) ||
+                    !!matchedMunicipality,
+                };
+              }
+            );
+            return { ...region, narrower: updatedMunicipalities };
+          })
+        )
+      );
 
       setAdsData({
         hits: hits,
@@ -150,8 +180,7 @@ export const AdvertsContextProvider = ({
         positions: positions,
       });
     } catch (error) {
-      console.log('Error occured when fetching data', error);
-      return;
+      console.log('Error occurred when fetching data', error);
     }
   };
 
@@ -164,8 +193,6 @@ export const AdvertsContextProvider = ({
   const refreshData = (queries: IQuery[]) => {
     const queryUrl = getQueryStringFromQueries(queries);
     const urlParams = new URLSearchParams(queryUrl);
-
-    console.log('url params', urlParams);
 
     getAdvertsData(urlParams);
 
@@ -197,70 +224,6 @@ export const AdvertsContextProvider = ({
     }
 
     updateQuery('sort=', sortValue);
-  };
-
-  /**
-   * takes queries and puts them together to one query url string
-   * @param {IQuery[]} queries
-   * @returns {string} - url query endpoint
-   */
-  const getQueryStringFromQueries = (queries: IQuery[]): string => {
-    return queries
-      .map((q) => {
-        if (Array.isArray(q.value)) {
-          return q.value.map((v) => `${q.query}${v}`).join('&');
-        }
-        return q.value ? `${q.query}${q.value}` : '';
-      })
-      .filter(Boolean)
-      .join('&');
-  };
-
-  const handleClickOnRegion = (taxonomyId: string) => {
-    handleClickOnCategory(
-      taxonomyId,
-      regions,
-      setRegions,
-      setVisibleMunicipalities
-    );
-  };
-
-  const handleClickOnOccupationField = (taxonomyId: string) => {
-    handleClickOnCategory(taxonomyId, fields, setFields, setVisibleGroups);
-  };
-
-  const handleClickOnMunicipality = (taxonomyId: string) => {
-    setActiveSubCategories(taxonomyId, setmunicipalitiesQueries);
-    setRegions((prevRegions) =>
-      toggleSubcategoryActiveState(prevRegions, taxonomyId)
-    );
-  };
-
-  const handleClickOnOccupationFilter = () => {
-    updateQuery('occupation-group=', occupationsQueries);
-  };
-
-  const handleClickOnMunicipialitiesFilter = () => {
-    updateQuery('municipality=', municipalitiesQueries);
-  };
-
-  const handleClickOnOccupationGroup = (taxonomyId: string) => {
-    setActiveSubCategories(taxonomyId, setoccupationsQueries);
-    setFields((prevFields) =>
-      toggleSubcategoryActiveState(prevFields, taxonomyId)
-    );
-  };
-
-  const handleClickOnPaginationButton = (pageNumber: number) => {
-    updateQuery('page=', pageNumber.toString());
-  }
-
-  const resetAllRegionsAndMunicipalities = () => {
-    resetAllCategoriesAndSubCategories(
-      regions,
-      setRegions,
-      setmunicipalitiesQueries
-    );
   };
 
   const updateQuery = (queryKey: string, value: string | string[]) => {
@@ -329,17 +292,6 @@ export const AdvertsContextProvider = ({
     }
   };
 
-  const getTodayDateTime = (): string => {
-    const now = new Date();
-    return now.toISOString().split('.')[0];
-  };
-
-  const getDateFromPastDays = (days: number): string => {
-    const date = new Date();
-    date.setDate(date.getDate() - days);
-    return date.toISOString().split('.')[0];
-  };
-
   const changePublishedDate = (checked: string[]) => {
     console.log('is published date checked', checked);
 
@@ -363,11 +315,66 @@ export const AdvertsContextProvider = ({
     updateQuery('q=', searchInput);
   };
 
+  const handleClickOnRegion = (taxonomyId: string) => {
+    handleClickOnCategory(
+      taxonomyId,
+      regions,
+      setRegions,
+      setVisibleMunicipalities
+    );
+  };
+
+  const handleClickOnOccupationField = (taxonomyId: string) => {
+    handleClickOnCategory(taxonomyId, fields, setFields, setVisibleGroups);
+  };
+
+  const handleClickOnMunicipality = (taxonomyId: string) => {
+    setActiveSubCategories(taxonomyId, setmunicipalitiesQueries);
+
+    setRegions((prevRegions) =>
+      toggleSubcategoryActiveState(prevRegions, taxonomyId)
+    );
+
+    setRegions((prevRegions) => updateActiveState(prevRegions));
+  };
+
+  const handleClickOnOccupationGroup = (taxonomyId: string) => {
+    setActiveSubCategories(taxonomyId, setoccupationsQueries);
+
+    setFields((prevFields) =>
+      toggleSubcategoryActiveState(prevFields, taxonomyId)
+    );
+
+    setFields((prevFields) => updateActiveState(prevFields));
+  };
+
+  const handleClickOnOccupationFilter = () => {
+    updateQuery('occupation-group=', occupationsQueries);
+  };
+
+  const handleClickOnMunicipialitiesFilter = () => {
+    updateQuery('municipality=', municipalitiesQueries);
+  };
+
+  /** --- RESET REGIONS / OCCUPATIONS  **/
+
+  const resetAllRegionsAndMunicipalities = () => {
+    resetAllCategoriesAndSubCategories(
+      regions,
+      setRegions,
+      setmunicipalitiesQueries,
+      'municipality=',
+      updateQuery
+    );
+  };
+
   const resetAllFieldsAndGroups = () => {
     resetAllCategoriesAndSubCategories(
       fields,
       setFields,
-      setoccupationsQueries
+      setoccupationsQueries,
+      'occupation-group=',
+      updateQuery
     );
   };
 
@@ -376,7 +383,10 @@ export const AdvertsContextProvider = ({
       regionId,
       regions,
       setRegions,
-      setmunicipalitiesQueries
+      setmunicipalitiesQueries,
+      'municipality=',
+      updateQuery,
+      municipalitiesQueries
     );
   };
 
@@ -385,23 +395,12 @@ export const AdvertsContextProvider = ({
       fieldId,
       fields,
       setFields,
-      setoccupationsQueries
+      setoccupationsQueries,
+      'occupation-group=',
+      updateQuery,
+      occupationsQueries
     );
   };
-
-  const toggleAllOccupationGroups = () => {
-    // LOGIC FOR TOGGLING HERE!!!
-  };
-
-  useEffect(() => {
-    setFields(updateActiveState(fields));
-    console.log('active occupations', occupationsQueries);
-  }, [occupationsQueries]);
-
-  useEffect(() => {
-    setRegions(updateActiveState(regions));
-    console.log('active regions', municipalitiesQueries);
-  }, [municipalitiesQueries]);
 
   const adsValues: IAdvertsContextValues = {
     queries,
@@ -424,7 +423,6 @@ export const AdvertsContextProvider = ({
     resetMunicipalities,
     resetOccupationGroups,
     changeSortingOnSelect,
-    toggleAllOccupationGroups,
     changeWorktimeExtent,
     changeEmploymentType,
     changeToRemoteWorkplace,

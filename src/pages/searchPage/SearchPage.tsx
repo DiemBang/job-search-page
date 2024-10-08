@@ -9,26 +9,32 @@ import { ModalsContextProvider } from "../../context/ModalsContext";
 import Map from './Map';
 import { DigiTypography } from '@digi/arbetsformedlingen-react';
 import { Pagination } from "../../components/shared/Pagination";
-
+import { IQuery } from '../../types/types';
 
 export const SearchPage = () => {
-  const occupations = useLoaderData() as IOccupations;
+  const { occupationsData, initialQueries } = useLoaderData() as {
+    occupationsData: IOccupations;
+    initialQueries: IQuery[];
+  };
   const totalPages = Math.ceil(occupations.total.value / 20);
 
   return (
-    <ModalsContextProvider>
-      <AdvertsContextProvider occupations={occupations}>
+    <AdvertsContextProvider
+      occupations={occupationsData}
+      initialQueries={initialQueries}
+    >
+      <ModalsContextProvider>
         <DigiTypography>
-          <SearchPageWrapper>
+          <SearchPageWrapper className="search-page">
             <h2>Platsbanken</h2>
             <SearchField />
             <Filters />
             <DisplaySearchResults />
             <Pagination totalPages={totalPages} totalResults={occupations.total.value}></Pagination>
-            {occupations.hits.length > 0 && <Map />}
-          </SearchPageWrapper>
+            {occupationsData.hits.length > 0 && <Map />}
+            </SearchPageWrapper>
         </DigiTypography>
-      </AdvertsContextProvider>
-    </ModalsContextProvider>
+      </ModalsContextProvider>
+    </AdvertsContextProvider>
   );
 };
