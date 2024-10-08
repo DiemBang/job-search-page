@@ -115,7 +115,7 @@ export const AdvertsContextProvider = ({
     try {
       const pageValue = params?.get('page');
       const page: number = pageValue ? parseInt(pageValue) : 1;
-      const offsetValue = (page - 1) * 10; 
+      const offsetValue = (page - 1) * 20; 
       
       const occupationUrl = params ? `${BASE_URL}&${params}&offset=${offsetValue}` : BASE_URL;
       const occupationData = await getBase<IAdResponseData>(occupationUrl);
