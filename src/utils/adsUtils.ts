@@ -1,5 +1,6 @@
 import { ICategory } from '../types/occupation-types';
 import { IVisibleSubcategories } from '../types/types';
+import { IQuery } from '../types/types';
 
 /**
  * adds new keys selected/active for categories and active for subcategories
@@ -18,6 +19,23 @@ export const addSelectedAndActiveKeys = (
       active: false,
     })),
   }));
+};
+
+/**
+ * takes queries and puts them together to one query url string
+ * @param {IQuery[]} queries
+ * @returns {string} - url query endpoint
+ */
+export const getQueryStringFromQueries = (queries: IQuery[]): string => {
+  return queries
+    .map((q) => {
+      if (Array.isArray(q.value)) {
+        return q.value.map((v) => `${q.query}${v}`).join('&');
+      }
+      return q.value ? `${q.query}${q.value}` : '';
+    })
+    .filter(Boolean)
+    .join('&');
 };
 
 /**
@@ -95,11 +113,15 @@ export const resetSubCategoriesOfCategory = (
   categoryId: string | null,
   categories: ICategory[],
   setCategories: React.Dispatch<React.SetStateAction<ICategory[]>>,
-  setActiveSubCategories: React.Dispatch<React.SetStateAction<string[]>>
+  setActiveSubCategories: React.Dispatch<React.SetStateAction<string[]>>,
+  queryKey: string,
+  updateQuery: (queryKey: string, value: string[]) => void,
+  activeSubCategories: string[]
 ) => {
   if (!categoryId) {
-    throw new Error('could not find the category id');
+    throw new Error('Could not find the category id');
   }
+
   setCategories(
     categories.map((category) => {
       if (category.id === categoryId) {
@@ -114,13 +136,24 @@ export const resetSubCategoriesOfCategory = (
       }
     })
   );
-  setActiveSubCategories([]);
+
+  const filteredSubcategories = activeSubCategories.filter(
+    (subcatId) =>
+      !categories
+        .find((category) => category.id === categoryId)
+        ?.narrower.some((narrower) => narrower.id === subcatId)
+  );
+
+  setActiveSubCategories(filteredSubcategories);
+  updateQuery(queryKey, filteredSubcategories);
 };
 
 export const resetAllCategoriesAndSubCategories = (
   categories: ICategory[],
   setCategories: React.Dispatch<React.SetStateAction<ICategory[]>>,
-  setActiveSubCategories: React.Dispatch<React.SetStateAction<string[]>>
+  setActiveSubCategories: React.Dispatch<React.SetStateAction<string[]>>,
+  queryKey: string,
+  updateQuery: (queryKey: string, value: string[]) => void
 ) => {
   setCategories(
     categories.map((category) => {
@@ -134,7 +167,9 @@ export const resetAllCategoriesAndSubCategories = (
       };
     })
   );
+
   setActiveSubCategories([]);
+  updateQuery(queryKey, []);
 };
 
 /**
