@@ -28,7 +28,7 @@ export const searchPageLoader = async ({
   const pageValue = url.searchParams.get('page') || '';
 
   const page: number = pageValue ? parseInt(pageValue) : 1;    
-  const offsetValue = (page - 1) * 10;
+  const offsetValue = (page - 1) * 20;
 
   
 
@@ -97,6 +97,7 @@ export const searchPageLoader = async ({
   ];
 
   try {
+    console.log("this", offsetValue)
     const occupationsData = await getBase<IOccupations>(occupationUrl);
     return { occupationsData, initialQueries };
   } catch (err) {
