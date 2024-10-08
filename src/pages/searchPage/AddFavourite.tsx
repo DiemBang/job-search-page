@@ -1,6 +1,7 @@
 import { DigiIconStar, DigiIconStarReg } from "@digi/arbetsformedlingen-react";
 import { useEffect, useState } from "react";
 import { IAd, IAdProps } from "./SearchResult";
+import { FavWrapper } from "../../components/styled/Wrappers";
 
 export const AddFavourite = ({ ad }: IAdProps) => {
   const [isFavourite, setIsFavourite] = useState(false);
@@ -10,9 +11,9 @@ export const AddFavourite = ({ ad }: IAdProps) => {
       localStorage.getItem("savedFavouritesList") || "[]"
     );
     const savedFavouriteIds: string[] = [];
-    
+
     savedFavourites.forEach((element: IAd) => {
-        savedFavouriteIds.push(element.id);
+      savedFavouriteIds.push(element.id);
     });
     const isAdAlreadyFavourite = savedFavouriteIds.includes(ad.id);
     setIsFavourite(isAdAlreadyFavourite);
@@ -25,9 +26,7 @@ export const AddFavourite = ({ ad }: IAdProps) => {
 
     let updatedFavourites;
     if (isFavourite) {
-      updatedFavourites = savedFavourites.filter(
-        (favAd: IAd) => favAd !== ad
-      );
+      updatedFavourites = savedFavourites.filter((favAd: IAd) => favAd !== ad);
     } else {
       updatedFavourites = [...savedFavourites, ad];
     }
@@ -41,21 +40,23 @@ export const AddFavourite = ({ ad }: IAdProps) => {
   };
   return (
     <>
-      <p>Spara annons</p>
-      {!isFavourite && (
-        <DigiIconStarReg
-          afSvgAriaLabelledby="star icon symbol"
-          afSvgAriaHidden={true}
-          onClick={toggleFavourite}
-        ></DigiIconStarReg>
-      )}
-      {isFavourite && (
-        <DigiIconStar
-          afSvgAriaLabelledby="star icon symbol clicked"
-          afSvgAriaHidden
-          onClick={toggleFavourite}
-        ></DigiIconStar>
-      )}
+      <FavWrapper>
+        <span style={{ marginRight: "8px" }}>Spara</span>
+        {!isFavourite && (
+          <DigiIconStarReg
+            afSvgAriaLabelledby="star icon symbol"
+            afSvgAriaHidden={true}
+            onClick={toggleFavourite}
+          ></DigiIconStarReg>
+        )}
+        {isFavourite && (
+          <DigiIconStar
+            afSvgAriaLabelledby="star icon symbol clicked"
+            afSvgAriaHidden
+            onClick={toggleFavourite}
+          ></DigiIconStar>
+        )}
+      </FavWrapper>
     </>
   );
 };
