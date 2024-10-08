@@ -16,7 +16,7 @@ export const SearchPage = () => {
     occupationsData: IOccupations;
     initialQueries: IQuery[];
   };
-  const totalPages = Math.ceil(occupations.total.value / 20);
+  const totalPages = Math.ceil(occupationsData.total.value / 20);
 
   return (
     <AdvertsContextProvider
@@ -30,7 +30,7 @@ export const SearchPage = () => {
             <SearchField />
             <Filters />
             <DisplaySearchResults />
-            <Pagination totalPages={totalPages} totalResults={occupations.total.value}></Pagination>
+            <Pagination totalPages={totalPages} totalResults={occupationsData.total.value}></Pagination>
             {occupationsData.hits.length > 0 && <Map />}
             </SearchPageWrapper>
         </DigiTypography>
