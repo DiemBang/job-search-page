@@ -44,7 +44,6 @@ interface IAdvertsContextValues {
   changeSortingOnSelect: (
     e: DigiFormSelectCustomEvent<HTMLDigiFormSelectElement>
   ) => void;
-  toggleAllOccupationGroups: (fieldId: string | null) => void;
   changeDrivingLicenseReq: (filterValue: boolean) => void;
   changeToRemoteWorkplace: (filterValue: boolean) => void;
   changeWorktimeExtent: (checked: string[]) => void;
@@ -129,14 +128,59 @@ export const AdvertsContextProvider = ({
    * @returns
    */
   const getAdvertsData = async (params: URLSearchParams | null) => {
-    console.log('these are the current params', params?.toString());
     try {
       const occupationUrl = params ? `${BASE_URL}&${params}` : BASE_URL;
       const occupationData = await getBase<IAdResponseData>(occupationUrl);
 
       const { hits, total, positions } = occupationData;
 
-      console.log(occupationData);
+      const urlParams = new URLSearchParams(window.location.search);
+      const occupationGroupParams = urlParams.getAll('occupation-group');
+      const municipalitiesGroupParams = urlParams.getAll('municipality');
+
+      setFields((prevFields) =>
+        updateActiveState(
+          prevFields.map((occupationGroup) => {
+            const updatedNarrower = occupationGroup.narrower.map(
+              (narrowerItem) => {
+                const matchedOccupation = hits.find(
+                  (hit) => hit.occupation_group.id === narrowerItem.id
+                );
+                return {
+                  ...narrowerItem,
+                  active:
+                    occupationGroupParams.includes(narrowerItem.id) ||
+                    !!matchedOccupation,
+                };
+              }
+            );
+            return { ...occupationGroup, narrower: updatedNarrower };
+          })
+        )
+      );
+
+      setRegions((prevRegions) =>
+        updateActiveState(
+          prevRegions.map((region) => {
+            const updatedMunicipalities = region.narrower.map(
+              (municipality) => {
+                const matchedMunicipality = hits.find(
+                  (hit) =>
+                    hit.workplace_address.municipality_concept_id ===
+                    municipality.id
+                );
+                return {
+                  ...municipality,
+                  active:
+                    municipalitiesGroupParams.includes(municipality.id) ||
+                    !!matchedMunicipality,
+                };
+              }
+            );
+            return { ...region, narrower: updatedMunicipalities };
+          })
+        )
+      );
 
       setAdsData({
         hits: hits,
@@ -144,10 +188,13 @@ export const AdvertsContextProvider = ({
         positions: positions,
       });
     } catch (error) {
-      console.log('Error occured when fetching data', error);
-      return;
+      console.log('Error occurred when fetching data', error);
     }
   };
+
+  useEffect(() => {
+    console.log('these are the fields: ', fields);
+  }, [fields]);
 
   /**
    * combines both queries and filter params
@@ -240,9 +287,12 @@ export const AdvertsContextProvider = ({
 
   const handleClickOnOccupationGroup = (taxonomyId: string) => {
     setActiveSubCategories(taxonomyId, setoccupationsQueries);
+
     setFields((prevFields) =>
       toggleSubcategoryActiveState(prevFields, taxonomyId)
     );
+
+    setFields((prevFields) => updateActiveState(prevFields));
   };
 
   const resetAllRegionsAndMunicipalities = () => {
@@ -379,20 +429,6 @@ export const AdvertsContextProvider = ({
     );
   };
 
-  const toggleAllOccupationGroups = () => {
-    // LOGIC FOR TOGGLING HERE!!!
-  };
-
-  useEffect(() => {
-    setFields(updateActiveState(fields));
-    console.log('active occupations', occupationsQueries);
-  }, [occupationsQueries]);
-
-  useEffect(() => {
-    setRegions(updateActiveState(regions));
-    console.log('active regions', municipalitiesQueries);
-  }, [municipalitiesQueries]);
-
   const adsValues: IAdvertsContextValues = {
     queries,
     occupations,
@@ -413,7 +449,6 @@ export const AdvertsContextProvider = ({
     resetMunicipalities,
     resetOccupationGroups,
     changeSortingOnSelect,
-    toggleAllOccupationGroups,
     changeWorktimeExtent,
     changeEmploymentType,
     changeToRemoteWorkplace,
