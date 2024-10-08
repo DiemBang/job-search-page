@@ -13,10 +13,11 @@ export const searchPageLoader = async ({
   initialQueries: IQuery[];
 }> => {
   const url = new URL(request.url);
-  const freeSearch = url.searchParams.get('q');
-  const sort = url.searchParams.get('sort');
-  const drivingLicense = url.searchParams.get('driving-license-required');
-  const remote = url.searchParams.get('remote');
+
+  const freeSearch = url.searchParams.get('q') || '';
+  const sort = url.searchParams.get('sort') || '';
+  const drivingLicense = url.searchParams.get('driving-license-required') || '';
+  const remote = url.searchParams.get('remote') || '';
   const occupationGroupParams = url.searchParams.getAll('occupation-group');
   const municipalitiesGroupParams = url.searchParams.getAll('municipality');
   const employmentTypeParams = url.searchParams.getAll('employment_type') || '';
@@ -24,7 +25,7 @@ export const searchPageLoader = async ({
   const publishedAfter = url.searchParams.get('published-after') || '';
   const language = url.searchParams.get('language') || '';
 
-  const pageValue = url.searchParams.get('page');
+  const pageValue = url.searchParams.get('page') || '';
 
   const page: number = pageValue ? parseInt(pageValue) : 1;    
   const offsetValue = (page - 1) * 10;
@@ -46,7 +47,8 @@ export const searchPageLoader = async ({
   if (remote) {
     occupationUrl += `&remote=${remote}`;
   }
-  if (worktimeExtent) {
+  // Kolla kanske length istället
+  if (worktimeExtent.length > 0) {
     occupationUrl += `&worktime-extent=${worktimeExtent}`;
   }
   if (publishedAfter) {
