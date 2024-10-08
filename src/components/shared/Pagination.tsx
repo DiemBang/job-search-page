@@ -19,6 +19,8 @@ export const Pagination = ({ totalPages, totalResults }: PaginationProps) => {
   return (
     <>
       <DigiNavigationPagination
+        afCurrentResultStart={20}
+        afCurrentResultEnd={20}
         afInitActivePage={1}
         afLimit={10}
         afTotalPages={totalPages}
