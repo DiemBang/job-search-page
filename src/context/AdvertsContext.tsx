@@ -37,6 +37,7 @@ interface IAdvertsContextValues {
   handleClickOnMunicipialitiesFilter: () => void;
   handleClickOnOccupationField: (taxonomyId: string) => void;
   handleClickOnOccupationGroup: (taxonomyId: string) => void;
+  handleClickOnPaginationButton: (pageNumber: number) => void;
   resetAllRegionsAndMunicipalities: () => void;
   resetAllFieldsAndGroups: () => void;
   resetMunicipalities: (regionId: string | null) => void;
@@ -250,6 +251,10 @@ export const AdvertsContextProvider = ({
     );
   };
 
+  const handleClickOnPaginationButton = (pageNumber: number) => {
+    updateQuery('page=', pageNumber.toString());
+  }
+
   const resetAllRegionsAndMunicipalities = () => {
     resetAllCategoriesAndSubCategories(
       regions,
@@ -413,6 +418,7 @@ export const AdvertsContextProvider = ({
     handleClickOnRegion,
     handleClickOnOccupationField,
     handleClickOnOccupationGroup,
+    handleClickOnPaginationButton,
     resetAllRegionsAndMunicipalities,
     resetAllFieldsAndGroups,
     resetMunicipalities,
