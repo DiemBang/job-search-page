@@ -20,7 +20,7 @@ export const searchPageLoader = async ({
   const remote = url.searchParams.get('remote') || '';
   const occupationGroupParams = url.searchParams.getAll('occupation-group');
   const municipalitiesGroupParams = url.searchParams.getAll('municipality');
-  const employmentTypeParams = url.searchParams.getAll('employment_type') || '';
+  const employmentTypeParams = url.searchParams.getAll('employment-type') || '';
   const worktimeExtent = url.searchParams.getAll('worktime-extent') || '';
   const publishedAfter = url.searchParams.get('published-after') || '';
   const language = url.searchParams.get('language') || '';
@@ -64,7 +64,7 @@ export const searchPageLoader = async ({
   }
   if (employmentTypeParams.length) {
     occupationUrl += employmentTypeParams
-      .map((param) => `&employment_type=${param}`)
+      .map((param) => `&employment-type=${param}`)
       .join('');
   }
   if (occupationGroupParams.length) {
