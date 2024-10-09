@@ -48,7 +48,7 @@ const Map = () => {
           // Popups
           const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
                 <div class="map-popup">
-                    <h3>${location.headline}${location.address}</h3>
+                    <h3>${location.headline} ${location.address}</h3>
                     <p>${location.employer}</p>
                     <button class="map-popup-button" id="popup-button-${location.id}">Gå till annons</button>
                 </div>
