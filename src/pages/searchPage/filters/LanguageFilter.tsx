@@ -1,8 +1,22 @@
 import { DigiFormFilter } from "@digi/arbetsformedlingen-react";
 import useAdvertsContext from "../../../hooks/useAdvertsContext";
+import { useState, useEffect } from "react";
 
 export const LanguageFilter = () => {
   const { changeLanguage } = useAdvertsContext();
+  const [checkedList, setCheckedList] = useState<string[]>([]);
+
+  useEffect(() => {
+    // check URL to see if needs to add to checkedList
+    const urlParams = new URLSearchParams(window.location.search);
+    const languageParams = urlParams.getAll("language");
+    if (languageParams.includes("zSLA_vw2_FXN")) {
+      setCheckedList(["sv"]);
+    } else if (languageParams.includes("NVxJ_hLg_TYS")) {
+      setCheckedList(["eng"]);
+    }
+  }, []);
+
   return (
     <>
       <DigiFormFilter
@@ -13,6 +27,7 @@ export const LanguageFilter = () => {
           { id: "eng", label: "Engelska" },
         ]}
         onAfChangeFilter={(e) => console.log(e.detail.id, e.detail.isChecked)}
+        afCheckItems={checkedList}
         onAfResetFilter={() => {changeLanguage([]);}}
         onAfSubmitFilter={(e) =>
           changeLanguage(e.detail.checked)
