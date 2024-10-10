@@ -1,15 +1,16 @@
-import { DigiNavigationPagination } from "@digi/arbetsformedlingen-react";
-import { DigiNavigationPaginationCustomEvent } from "@digi/arbetsformedlingen/dist/types/components";
-import useAdvertsContext from "../../hooks/useAdvertsContext";
-import { useState } from "react";
+import { DigiNavigationPagination } from '@digi/arbetsformedlingen-react';
+import { DigiNavigationPaginationCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
+import useAdvertsContext from '../../hooks/useAdvertsContext';
+import { useState } from 'react';
 
-interface PaginationProps {
-    totalPages: number;
-    totalResults: number;
-  }
+export const Pagination = () => {
+  const { handleClickOnPaginationButton, adsData } = useAdvertsContext();
 
-export const Pagination = ({ totalPages, totalResults }: PaginationProps) => {
-  const { handleClickOnPaginationButton } = useAdvertsContext();
+  let totalPages = adsData?.total.value
+    ? Math.ceil(adsData?.total.value / 20)
+    : 1;
+  totalPages = Math.min(totalPages, 100);
+
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const currentResultStart = (currentPage - 1) * 20 + 1;
@@ -22,6 +23,8 @@ export const Pagination = ({ totalPages, totalResults }: PaginationProps) => {
     handleClickOnPaginationButton(e.detail);
   };
 
+  if (adsData?.total.value === 0) return null;
+
   return (
     <>
       <DigiNavigationPagination
@@ -31,7 +34,7 @@ export const Pagination = ({ totalPages, totalResults }: PaginationProps) => {
         afLimit={10}
         afTotalPages={totalPages}
         afResultName="annonser"
-        afTotalResults={totalResults}
+        afTotalResults={adsData?.total.value}
         afId="paginationComponent"
         onAfOnPageChange={handlePageChange}
       ></DigiNavigationPagination>
