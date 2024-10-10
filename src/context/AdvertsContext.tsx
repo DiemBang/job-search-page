@@ -290,13 +290,16 @@ export const AdvertsContextProvider = ({
   const changeLanguage = (checked: string[]) => {
     console.log('is language checked: ', checked);
 
-    if (checked.length === 0) {
-      updateQuery('language=', '');
-    } else if (checked.includes('sv')) {
-      updateQuery('language=', 'zSLA_vw2_FXN');
-    } else if (checked.includes('eng')) {
-      updateQuery('language=', 'NVxJ_hLg_TYS');
+    const checkedValues: string[] = [];
+
+    if (checked.includes('sv')) {
+      checkedValues.push('zSLA_vw2_FXN');
     }
+    if (checked.includes('eng')) {
+      checkedValues.push('NVxJ_hLg_TYS');
+    }
+
+    updateQuery('language=', checkedValues)
   };
 
   const changePublishedDate = (checked: string[]) => {
