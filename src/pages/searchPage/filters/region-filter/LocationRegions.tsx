@@ -22,7 +22,7 @@ const LocationRegions = () => {
         $padding="0 0 10px 0"
         className="filter-title"
       >
-        <h4>Region</h4>
+        <h4>Län</h4>
         <DigiButton afSize="small" onClick={resetAllRegionsAndMunicipalities}>
           Rensa
         </DigiButton>

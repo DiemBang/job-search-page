@@ -40,7 +40,7 @@ const LocationMunicipalities = () => {
         $padding="0 0 10px 0"
         className="filter-title"
       >
-        <h4>Yrken</h4>
+        <h4>Kommuner</h4>
         <DigiButton
           afSize="small"
           onClick={() =>
