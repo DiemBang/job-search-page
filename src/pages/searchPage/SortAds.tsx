@@ -1,12 +1,27 @@
 import { FormSelectVariation } from '@digi/arbetsformedlingen';
 import { DigiFormSelect } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../hooks/useAdvertsContext';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { DigiFormSelectCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
 
 const SortAds = () => {
   const { changeSortingOnSelect, adsData } = useAdvertsContext();
   const [selectedOption, setSelectedOption] = useState('Relevans');
+
+  useEffect(() => {
+    // check URL to see if needs to add to checkedList
+    const urlParams = new URLSearchParams(window.location.search);
+    const sortParam = urlParams.get("sort");
+    if (sortParam) {
+      setSelectedOption(sortParam);
+    }
+    console.log(selectedOption, "test");
+
+  }, []);
+  
+  useEffect(() => {
+    console.log("Updated selected option:", selectedOption);
+  }, [selectedOption]);
 
   const handleSelectChange = (
     e: DigiFormSelectCustomEvent<HTMLDigiFormSelectElement>
