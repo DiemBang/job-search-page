@@ -38,7 +38,7 @@ This project uses code standards by applying the ESLint and Prettier tools:
 
 ## Status
 
-This project is marked as "In Progress".
+This project is marked as "Finished".
 
 ## Getting Started
 
