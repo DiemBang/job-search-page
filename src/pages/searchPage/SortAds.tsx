@@ -5,8 +5,20 @@ import { useState } from 'react';
 import { DigiFormSelectCustomEvent } from '@digi/arbetsformedlingen/dist/types/components';
 
 const SortAds = () => {
-  const { changeSortingOnSelect, adsData } = useAdvertsContext();
-  const [selectedOption, setSelectedOption] = useState('Relevans');
+  const { changeSortingOnSelect, adsData, queries } = useAdvertsContext();
+  let selectValue: string;
+
+  const initialSort = queries.find((q) => q.query === 'sort=');
+  if (initialSort?.value === 'relevance') {
+    selectValue = 'Relevans';
+  } else if (initialSort?.value === 'applydate-desc') {
+    selectValue = 'Ansökningsdatum';
+  } else if (initialSort?.value === 'pubdate-desc') {
+    selectValue = 'Publiceringsdatum';
+  } else {
+    selectValue = 'Relevans';
+  }
+  const [selectedOption, setSelectedOption] = useState(selectValue);
 
   const handleSelectChange = (
     e: DigiFormSelectCustomEvent<HTMLDigiFormSelectElement>
