@@ -34,7 +34,6 @@ export const Home = () => {
         <DigiLayoutContainer afNoGutter className="home-top-section">
           <DigiTypography>
             <span className="motivational-span">Sök jobb här hos Diggilo!</span>
-            <h2>... Jobs listed</h2>
             <p>
               Är du redo att ta nästa stora steg i din karriär? Sök bland
               hundratals lediga tjänster från olika branscher och hitta den roll
