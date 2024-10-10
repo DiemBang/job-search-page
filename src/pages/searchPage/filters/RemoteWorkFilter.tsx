@@ -1,8 +1,19 @@
 import { DigiFormFilter } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../../hooks/useAdvertsContext';
+import { useState, useEffect } from "react";
 
 export const RemoteWorkFilter = () => {
   const { changeToRemoteWorkplace } = useAdvertsContext();
+  const [checkedList, setCheckedList] = useState<string[]>([]);
+
+  useEffect(() => {
+    // check URL to see if needs to add to checkedList
+    const urlParams = new URLSearchParams(window.location.search);
+    const remoteWorkParams = urlParams.getAll("remote");
+    if (remoteWorkParams.includes("true")) {
+      setCheckedList(["endast_distans"]);
+    }
+  }, []);
 
   return (
     <>
@@ -11,6 +22,7 @@ export const RemoteWorkFilter = () => {
         afSubmitButtonText="Filtrera"
         afListItems={[{ id: 'endast_distans', label: 'Endast distansarbete' }]}
         onAfChangeFilter={(e) => e.detail.isChecked}
+        afCheckItems={checkedList}
         onAfResetFilter={() => {
           changeToRemoteWorkplace(false);
         }}

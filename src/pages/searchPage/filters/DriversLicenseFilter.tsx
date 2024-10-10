@@ -1,8 +1,19 @@
 import { DigiFormFilter } from '@digi/arbetsformedlingen-react';
 import useAdvertsContext from '../../../hooks/useAdvertsContext';
+import { useEffect, useState } from "react";
 
 export const DriversLicenseFilter = () => {
   const { changeDrivingLicenseReq } = useAdvertsContext();
+  const [checkedList, setCheckedList] = useState<string[]>([]);
+
+  useEffect(() => {
+    // check URL to see if needs to add to checkedList
+    const urlParams = new URLSearchParams(window.location.search);
+    const drivingLicenseParams = urlParams.getAll("driving-license-required");
+    if (drivingLicenseParams.includes("true")) {
+      setCheckedList(["krav_pa_korkort"]);
+    }
+  }, []);
 
   return (
     <>
@@ -11,6 +22,7 @@ export const DriversLicenseFilter = () => {
         afSubmitButtonText="Filtrera"
         afListItems={[{ id: 'krav_pa_korkort', label: 'Krav på körkort' }]}
         onAfChangeFilter={(e) => console.log(e.detail.isChecked)}
+        afCheckItems={checkedList}
         onAfResetFilter={() => {
           changeDrivingLicenseReq(false);
         }}

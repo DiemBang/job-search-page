@@ -4,6 +4,17 @@ import { IQuery } from '../types/types';
 
 const BASE_URL = 'https://jobsearch.api.jobtechdev.se/search?&limit=20';
 
+/**
+ * Fetches occupation data from AF API and builds initial queries.
+ *
+ * Constructs the full API URL for the occupations search.
+ * This is done by extracting search params either if they are several (array) or single.
+ * Then these are appended to the BASE_URL using appendParams
+ *
+ * @param param0 - Object containing the Request Object with all its values where we use request.url
+ * @returns {Promise<{occupationsData: IOccupations | null, initialQueries: IQuery[]}>}
+ * Returns occupation data and initial query array or just null if there is an error
+ */
 export const searchPageLoader = async ({
   request,
 }: {
@@ -20,17 +31,15 @@ export const searchPageLoader = async ({
   const remote = url.searchParams.get('remote') || '';
   const occupationGroupParams = url.searchParams.getAll('occupation-group');
   const municipalitiesGroupParams = url.searchParams.getAll('municipality');
-  const employmentTypeParams = url.searchParams.getAll('employment_type') || '';
+  const employmentTypeParams = url.searchParams.getAll('employment-type') || '';
   const worktimeExtent = url.searchParams.getAll('worktime-extent') || '';
   const publishedAfter = url.searchParams.get('published-after') || '';
   const language = url.searchParams.get('language') || '';
 
   const pageValue = url.searchParams.get('page') || '';
 
-  const page: number = pageValue ? parseInt(pageValue) : 1;    
+  const page: number = pageValue ? parseInt(pageValue) : 1;
   const offsetValue = (page - 1) * 20;
-
-  
 
   console.log(drivingLicense, remote);
   let occupationUrl = BASE_URL;
@@ -64,7 +73,7 @@ export const searchPageLoader = async ({
   }
   if (employmentTypeParams.length) {
     occupationUrl += employmentTypeParams
-      .map((param) => `&employment_type=${param}`)
+      .map((param) => `&employment-type=${param}`)
       .join('');
   }
   if (occupationGroupParams.length) {
@@ -79,25 +88,25 @@ export const searchPageLoader = async ({
   }
 
   if (page) {
-    occupationUrl += `&offset=${offsetValue}`
+    occupationUrl += `&offset=${offsetValue}`;
   }
 
   const initialQueries: IQuery[] = [
     { query: 'q=', value: freeSearch },
     { query: 'sort=', value: sort },
     { query: 'worktime-extent=', value: worktimeExtent },
-    { query: 'employment_type=', value: employmentTypeParams },
+    { query: 'employment-type=', value: employmentTypeParams },
     { query: 'driving-license-required=', value: drivingLicense },
     { query: 'remote=', value: remote },
     { query: 'language=', value: language },
     { query: 'published-after=', value: publishedAfter },
     { query: 'occupation-group=', value: occupationGroupParams },
     { query: 'municipality=', value: municipalitiesGroupParams },
-    { query: 'page=', value: pageValue || '1' }
+    { query: 'page=', value: pageValue || '1' },
   ];
 
   try {
-    console.log("this", offsetValue)
+    console.log('this', offsetValue);
     const occupationsData = await getBase<IOccupations>(occupationUrl);
     return { occupationsData, initialQueries };
   } catch (err) {
