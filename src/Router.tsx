@@ -11,47 +11,42 @@ import { Home } from './pages/home/Home';
 import Job from './pages/job/Job';
 import { MyFavourites } from './pages/MyFavourites';
 
-export const router = createHashRouter(
-  [
-    {
-      path: '/',
-      element: <Layout></Layout>,
-      errorElement: <NotFound></NotFound>,
-      children: [
-        {
-          path: '/',
-          element: <Home></Home>,
-          index: true,
-        },
-        {
-          path: '/search',
-          element: (
-            <Suspense
-              fallback={
-                <DigiLoaderSpinner
-                  afSize={LoaderSpinnerSize.LARGE}
-                  afText="Laddar"
-                ></DigiLoaderSpinner>
-              }
-            >
-              <SearchPage></SearchPage>
-            </Suspense>
-          ),
-          loader: searchPageLoader,
-        },
-        {
-          path: '/search/job/:id',
-          element: <Job></Job>,
-          loader: jobPageLoader,
-        },
-        {
-          path: '/savedAds',
-          element: <MyFavourites></MyFavourites>,
-        },
-      ],
-    },
-  ],
+export const router = createHashRouter([
   {
-    basename: '/case-af-diggi-loo-diggi-ley',
-  }
-);
+    path: '/',
+    element: <Layout></Layout>,
+    errorElement: <NotFound></NotFound>,
+    children: [
+      {
+        path: '/',
+        element: <Home></Home>,
+        index: true,
+      },
+      {
+        path: '/search',
+        element: (
+          <Suspense
+            fallback={
+              <DigiLoaderSpinner
+                afSize={LoaderSpinnerSize.LARGE}
+                afText="Laddar"
+              ></DigiLoaderSpinner>
+            }
+          >
+            <SearchPage></SearchPage>
+          </Suspense>
+        ),
+        loader: searchPageLoader,
+      },
+      {
+        path: '/search/job/:id',
+        element: <Job></Job>,
+        loader: jobPageLoader,
+      },
+      {
+        path: '/savedAds',
+        element: <MyFavourites></MyFavourites>,
+      },
+    ],
+  },
+]);
