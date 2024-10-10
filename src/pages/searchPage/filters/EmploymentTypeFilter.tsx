@@ -10,17 +10,26 @@ export const EmploymentTypeFilter = () => {
     // check URL to see if needs to add to checkedList
     const urlParams = new URLSearchParams(window.location.search);
     const employmentTypeParams = urlParams.getAll("employment-type");
+    const checkedValues: string[] = [];
+
     if (employmentTypeParams.includes("kpPX_CNN_gDU")) {
-      setCheckedList(["tillsvidare"]);
-    } else if (employmentTypeParams.includes("sTu5_NBQ_udq")) {
-      setCheckedList(["timanstallning"]);
-    } else if (employmentTypeParams.includes("gro4_cWF_6D7")) {
-      setCheckedList(["vikariat"]);
-    } else if (employmentTypeParams.includes("1paU_aCR_nGn")) {
-      setCheckedList(["behov"]);
-    } else if (employmentTypeParams.includes("EBhX_Qm2_8eX")) {
-      setCheckedList(["sasong"]);
+      checkedValues.push("tillsvidare");
     }
+    
+    if (employmentTypeParams.includes("sTu5_NBQ_udq")) {
+      checkedValues.push("timanstallning");
+    }
+    if (employmentTypeParams.includes("gro4_cWF_6D7")) {
+      checkedValues.push("vikariat");
+    }
+    if (employmentTypeParams.includes("1paU_aCR_nGn")) {
+      checkedValues.push("behov");
+    }
+    if (employmentTypeParams.includes("EBhX_Qm2_8eX")) {
+      checkedValues.push("sasong");
+    }
+
+    setCheckedList(checkedValues);
   }, []);
 
   return (
