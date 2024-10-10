@@ -3,13 +3,14 @@
 ## Screenshots
 
 ### Söksidan:
+
 ![image](https://github.com/user-attachments/assets/02016d4d-359b-4ed1-973b-d4ba9e649ac1)
 
 ![image](https://github.com/user-attachments/assets/33bf5667-7370-4e07-bcb0-16d477d9ca34)
 
 ### Annons-sidan:
-![image](https://github.com/user-attachments/assets/dcb7788a-4368-4980-9ee6-c47f349e9c6a)
 
+![image](https://github.com/user-attachments/assets/dcb7788a-4368-4980-9ee6-c47f349e9c6a)
 
 ## Tech Stack
 
@@ -22,7 +23,7 @@
 ### Build Tools
 
 - Vite
-- GitHub Pages
+- GitHub Pages / Actions
 
 ## Design
 
@@ -47,7 +48,7 @@ To run the occupation search web application on you local machine, follow these 
 1. Download or clone the repository.
 2. Change directory to the code folder.
 3. Install the necessary dependencies by running `npm install`.
-4. To enable map add token for mapgl in env file, example env provided. 
+4. To enable map add token for mapgl in env file, example env provided.
 5. Start the application using `npm run dev`.
 
 ## APIs
@@ -57,8 +58,8 @@ To run the occupation search web application on you local machine, follow these 
 
 ## External resources
 
-1. https://designsystem.arbetsformedlingen.se/ 
-2. https://www.jobtechdev.se/sv 
+1. https://designsystem.arbetsformedlingen.se/
+2. https://www.jobtechdev.se/sv
 3. https://arbetsformedlingen.se/platsbanken/
 4. https://www.mapbox.com/
 
@@ -74,12 +75,12 @@ This project was an assignment in which we were tasked with creating an occupati
 
 ## Job Search Features
 
-- **Search Page**: Here we display all ads and provide users with more options to refine their job search. 
+- **Search Page**: Here we display all ads and provide users with more options to refine their job search.
 - **Filters**: User can filter by Occupations / Municipalities / Scope / Employment Type / Workplace / Qualifications / Language.
-- **Sorting**: Functionality for sorting ads by Relevance / Application Date / Publication Date. 
+- **Sorting**: Functionality for sorting ads by Relevance / Application Date / Publication Date.
 - **Suggestions**: Suggestions are displayed in a dropdown when user types in the searchbar.
-- **Map**: Displays the geolocations of the ads in Sweden on a map with popups that can redirect users to the respective job page. 
-- **Job page**: Can view all information about the job in its own page.  
+- **Map**: Displays the geolocations of the ads in Sweden on a map with popups that can redirect users to the respective job page.
+- **Job page**: Can view all information about the job in its own page.
 
 ## Authors
 
