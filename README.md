@@ -1,12 +1,13 @@
 # Diggilo
 
 ## Screenshots
-Söksidan:
+
+### Söksidan:
 ![image](https://github.com/user-attachments/assets/02016d4d-359b-4ed1-973b-d4ba9e649ac1)
 
-![image](https://github.com/user-attachments/assets/4a0e4b4c-cc0f-48d5-a9df-8f9c9c7d5ca0)
+![image](https://github.com/user-attachments/assets/33bf5667-7370-4e07-bcb0-16d477d9ca34)
 
-Annons-sidan:
+### Annons-sidan:
 ![image](https://github.com/user-attachments/assets/dcb7788a-4368-4980-9ee6-c47f349e9c6a)
 
 
