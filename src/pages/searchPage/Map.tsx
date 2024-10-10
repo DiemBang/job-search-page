@@ -23,7 +23,8 @@ const Map = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const token = import.meta.env.VITE_MAPBOX_TOKEN;
+    const token =
+      'pk.eyJ1IjoicmFsZmlzbGFzayIsImEiOiJjbTF0a29tNDIwM29xMmpwYnY4N3p6OGZjIn0.V7Dth5U1m523mcLslysw-Q';
 
     mapboxgl.accessToken = token;
 
