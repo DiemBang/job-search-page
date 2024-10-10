@@ -1,3 +1,15 @@
+# Diggilo
+
+## Screenshots
+
+### Söksidan:
+![image](https://github.com/user-attachments/assets/02016d4d-359b-4ed1-973b-d4ba9e649ac1)
+
+![image](https://github.com/user-attachments/assets/33bf5667-7370-4e07-bcb0-16d477d9ca34)
+
+### Annons-sidan:
+![image](https://github.com/user-attachments/assets/dcb7788a-4368-4980-9ee6-c47f349e9c6a)
+
 
 ## Tech Stack
 
@@ -26,7 +38,7 @@ This project uses code standards by applying the ESLint and Prettier tools:
 
 ## Status
 
-This project is marked as "In Progress".
+This project is marked as "Finished".
 
 ## Getting Started
 
