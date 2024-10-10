@@ -17,6 +17,7 @@ import {
   DigiFormInput,
   DigiLogo,
 } from '@digi/arbetsformedlingen-react';
+import { Link } from 'react-router-dom';
 
 export const AppFooter = () => {
   return (
@@ -40,10 +41,10 @@ export const AppFooter = () => {
           <div className="footer-links">
             <DigiFooterCard afType={FooterCardVariation.BORDER}>
               <h3 className="footer-card-title">Snabblänkar</h3>
-              <a href="/">Hem</a>
-              <a href="#">Om Oss</a>
-              <a href="#">Kontakta Oss</a>
-              <a href="#">Sök Jobb</a>
+              <Link to="/">Hem</Link>
+              <Link to="/">Om Oss</Link>
+              <Link to="/">Kontakta Oss</Link>
+              <Link to="/search">Sök Jobb</Link>
             </DigiFooterCard>
           </div>
           <div className="footer-newsletter">
@@ -67,7 +68,10 @@ export const AppFooter = () => {
             </DigiFooterCard>
           </div>
           <div>
-            <DigiFooterCard className="footer-logo" afType={FooterCardVariation.ICON}>
+            <DigiFooterCard
+              className="footer-logo"
+              afType={FooterCardVariation.ICON}
+            >
               <DigiLogo
                 afVariation={LogoVariation.SMALL}
                 afColor={LogoColor.PRIMARY}
