@@ -40,7 +40,7 @@ export const AppFooter = () => {
           <div className="footer-links">
             <DigiFooterCard afType={FooterCardVariation.BORDER}>
               <h3 className="footer-card-title">Snabblänkar</h3>
-              <a href="#">Hem</a>
+              <a href="/">Hem</a>
               <a href="#">Om Oss</a>
               <a href="#">Kontakta Oss</a>
               <a href="#">Sök Jobb</a>
