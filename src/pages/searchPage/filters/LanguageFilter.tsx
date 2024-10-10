@@ -10,11 +10,15 @@ export const LanguageFilter = () => {
     // check URL to see if needs to add to checkedList
     const urlParams = new URLSearchParams(window.location.search);
     const languageParams = urlParams.getAll("language");
+    const checkedValues: string[] = [];
+
     if (languageParams.includes("zSLA_vw2_FXN")) {
-      setCheckedList(["sv"]);
+      checkedValues.push("sv");
     } else if (languageParams.includes("NVxJ_hLg_TYS")) {
-      setCheckedList(["eng"]);
+      checkedValues.push("eng");
     }
+
+    setCheckedList(checkedValues);
   }, []);
 
   return (
