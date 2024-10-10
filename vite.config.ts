@@ -6,5 +6,6 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['@digi/arbetsformedlingen'],
   },
+  base: '/case-af-diggi-loo-diggi-ley/',
   plugins: [react()],
 });
