@@ -23,7 +23,7 @@
 ### Build Tools
 
 - Vite
-- GitHub Pages / Actions
+- GitHub Pages
 
 ## Design
 
