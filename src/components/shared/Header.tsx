@@ -3,11 +3,11 @@ import {
   DigiHeaderNavigation,
   DigiHeaderNavigationItem,
 } from '@digi/arbetsformedlingen-react';
+import { Link } from 'react-router-dom';
 
 const navigationItems = [
   { href: '/', text: 'Hem' },
   { href: '/', text: 'Om Oss' },
-  { href: '/', text: 'Kontakt' },
   { href: '/search', text: 'Sök Jobb' },
   { href: '/savedAds', text: 'Sparade Annonser' },
 ];
@@ -25,7 +25,7 @@ export const AppHeader = () => {
             <DigiHeaderNavigation>
               {navigationItems.map((item, index) => (
                 <DigiHeaderNavigationItem key={index}>
-                  <a href={item.href}>{item.text}</a>
+                  <Link to={item.href}>{item.text}</Link>
                 </DigiHeaderNavigationItem>
               ))}
             </DigiHeaderNavigation>
