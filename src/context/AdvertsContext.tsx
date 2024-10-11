@@ -264,32 +264,42 @@ export const AdvertsContextProvider = ({
 
   const changeEmploymentType = (checked: string[]) => {
     console.log('is employment type checked: ', checked);
+    
+    const checkedValues: string[] = [];
 
-    if (checked.length === 0) {
-      updateQuery('employment-type=', '');
-    } else if (checked.includes('tillsvidare')) {
-      updateQuery('employment-type=', 'kpPX_CNN_gDU');
-    } else if (checked.includes('timanstallning')) {
-      updateQuery('employment-type=', 'sTu5_NBQ_udq');
-    } else if (checked.includes('vikariat')) {
-      updateQuery('employment-type=', 'gro4_cWF_6D7');
-    } else if (checked.includes('behov')) {
-      updateQuery('employment-type=', '1paU_aCR_nGn');
-    } else if (checked.includes('sasong')) {
-      updateQuery('employment-type=', 'EBhX_Qm2_8eX');
+    if(checked.includes('tillsvidare')) {
+      checkedValues.push('kpPX_CNN_gDU');
+    } 
+    if(checked.includes('timanstallning')) {
+      checkedValues.push('sTu5_NBQ_udq');
+    } 
+    if(checked.includes('vikariat')) {
+      checkedValues.push('gro4_cWF_6D7');
+    } 
+    if(checked.includes('behov')) {
+      checkedValues.push('1paU_aCR_nGn');
+    } 
+    if(checked.includes('sasong')) {
+      checkedValues.push('EBhX_Qm2_8eX');
     }
+
+    updateQuery('employment-type=', checkedValues);
+
   };
 
   const changeLanguage = (checked: string[]) => {
     console.log('is language checked: ', checked);
 
-    if (checked.length === 0) {
-      updateQuery('language=', '');
-    } else if (checked.includes('sv')) {
-      updateQuery('language=', 'zSLA_vw2_FXN');
-    } else if (checked.includes('eng')) {
-      updateQuery('language=', 'NVxJ_hLg_TYS');
+    const checkedValues: string[] = [];
+
+    if (checked.includes('sv')) {
+      checkedValues.push('zSLA_vw2_FXN');
     }
+    if (checked.includes('eng')) {
+      checkedValues.push('NVxJ_hLg_TYS');
+    }
+
+    updateQuery('language=', checkedValues)
   };
 
   const changePublishedDate = (checked: string[]) => {
