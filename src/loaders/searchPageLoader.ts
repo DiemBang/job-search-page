@@ -106,7 +106,6 @@ export const searchPageLoader = async ({
   ];
 
   try {
-    console.log('this', offsetValue);
     const occupationsData = await getBase<IOccupations>(occupationUrl);
     return { occupationsData, initialQueries };
   } catch (err) {

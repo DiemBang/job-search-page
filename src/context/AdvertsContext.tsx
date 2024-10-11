@@ -70,7 +70,8 @@ export const AdvertsContextProvider = ({
   occupations,
   initialQueries,
 }: IAdvertsContextProviderProps) => {
-  const urlParams = new URLSearchParams(window.location.search);
+  const hash = window.location.hash;
+  const urlParams = new URLSearchParams(hash.split('?')[1]);
 
   const occupationGroupParams = urlParams.getAll('occupation-group');
   const municipalitiesGroupParams = urlParams.getAll('municipality');
@@ -101,8 +102,6 @@ export const AdvertsContextProvider = ({
     }
 
     refreshData(queries);
-
-    console.log('these are the current queries', queries);
   }, [queries]);
 
   /**
@@ -115,17 +114,21 @@ export const AdvertsContextProvider = ({
     try {
       const pageValue = params?.get('page');
       const page: number = pageValue ? parseInt(pageValue) : 1;
-      const offsetValue = (page - 1) * 20; 
-      
-      const occupationUrl = params ? `${BASE_URL}&${params}&offset=${offsetValue}` : BASE_URL;
+      const offsetValue = (page - 1) * 20;
+
+      const occupationUrl = params
+        ? `${BASE_URL}&${params}&offset=${offsetValue}`
+        : BASE_URL;
       const occupationData = await getBase<IAdResponseData>(occupationUrl);
 
       const { hits, total, positions } = occupationData;
 
-      const urlParams = new URLSearchParams(window.location.search);
+      const hash = window.location.hash;
+      const urlParams = new URLSearchParams(hash.split('?')[1]);
       const occupationGroupParams = urlParams.getAll('occupation-group');
       const municipalitiesGroupParams = urlParams.getAll('municipality');
 
+      // Update states based on the fetched data
       setFields((prevFields) =>
         updateActiveState(
           prevFields.map((occupationGroup) => {
@@ -175,9 +178,9 @@ export const AdvertsContextProvider = ({
       );
 
       setAdsData({
-        hits: hits,
-        total: total,
-        positions: positions,
+        hits,
+        total,
+        positions,
       });
     } catch (error) {
       console.log('Error occurred when fetching data', error);
@@ -196,7 +199,7 @@ export const AdvertsContextProvider = ({
 
     getAdvertsData(urlParams);
 
-    const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
+    const newUrl = `/case-af-diggi-loo-diggi-ley/#/search?${urlParams.toString()}`;
     window.history.replaceState(null, '', newUrl);
   };
 
@@ -227,11 +230,18 @@ export const AdvertsContextProvider = ({
   };
 
   const updateQuery = (queryKey: string, value: string | string[]) => {
-    setQueries((prevQueries) =>
-      prevQueries.map((q) => (q.query === queryKey ? { ...q, value } : q))
-    );
-  };
+    setQueries((prevQueries) => {
+      const existingQuery = prevQueries.find((q) => q.query === queryKey);
 
+      if (existingQuery) {
+        return prevQueries.map((q) =>
+          q.query === queryKey ? { ...q, value } : q
+        );
+      } else {
+        return [...prevQueries, { query: queryKey, value }];
+      }
+    });
+  };
   const changeDrivingLicenseReq = (filterValue: boolean) => {
     if (filterValue === false) {
       updateQuery('driving-license-required=', '');
@@ -264,27 +274,26 @@ export const AdvertsContextProvider = ({
 
   const changeEmploymentType = (checked: string[]) => {
     console.log('is employment type checked: ', checked);
-    
+
     const checkedValues: string[] = [];
 
-    if(checked.includes('tillsvidare')) {
+    if (checked.includes('tillsvidare')) {
       checkedValues.push('kpPX_CNN_gDU');
-    } 
-    if(checked.includes('timanstallning')) {
+    }
+    if (checked.includes('timanstallning')) {
       checkedValues.push('sTu5_NBQ_udq');
-    } 
-    if(checked.includes('vikariat')) {
+    }
+    if (checked.includes('vikariat')) {
       checkedValues.push('gro4_cWF_6D7');
-    } 
-    if(checked.includes('behov')) {
+    }
+    if (checked.includes('behov')) {
       checkedValues.push('1paU_aCR_nGn');
-    } 
-    if(checked.includes('sasong')) {
+    }
+    if (checked.includes('sasong')) {
       checkedValues.push('EBhX_Qm2_8eX');
     }
 
     updateQuery('employment-type=', checkedValues);
-
   };
 
   const changeLanguage = (checked: string[]) => {
@@ -299,7 +308,7 @@ export const AdvertsContextProvider = ({
       checkedValues.push('NVxJ_hLg_TYS');
     }
 
-    updateQuery('language=', checkedValues)
+    updateQuery('language=', checkedValues);
   };
 
   const changePublishedDate = (checked: string[]) => {
@@ -368,7 +377,7 @@ export const AdvertsContextProvider = ({
 
   const handleClickOnPaginationButton = (pageNumber: number) => {
     updateQuery('page=', pageNumber.toString());
-  }
+  };
 
   /** --- RESET REGIONS / OCCUPATIONS  **/
 
